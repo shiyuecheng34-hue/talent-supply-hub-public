@@ -1,0 +1,97 @@
+{
+  "name": "精选达人供给库",
+  "version": "1.0.0",
+  "needAuth": true,
+  "feishuResourceBindings": [
+    {
+      "bindingId": "industry-beauty",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "ShwKsQe36hxTiTtEF0Dc4W4cnPe",
+      "sheetId": "0OYgsp"
+    },
+    {
+      "bindingId": "industry-food",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "ShwKsQe36hxTiTtEF0Dc4W4cnPe",
+      "sheetId": "1RZNHB"
+    },
+    {
+      "bindingId": "industry-fashion",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "ShwKsQe36hxTiTtEF0Dc4W4cnPe",
+      "sheetId": "2JBIVb"
+    },
+    {
+      "bindingId": "industry-mom",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "ShwKsQe36hxTiTtEF0Dc4W4cnPe",
+      "sheetId": "3UBBZb"
+    },
+    {
+      "bindingId": "industry-care",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "ShwKsQe36hxTiTtEF0Dc4W4cnPe",
+      "sheetId": "4QiWFQ"
+    },
+    {
+      "bindingId": "industry-health",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "ShwKsQe36hxTiTtEF0Dc4W4cnPe",
+      "sheetId": "5rncze"
+    },
+    {
+      "bindingId": "industry-digital",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "ShwKsQe36hxTiTtEF0Dc4W4cnPe",
+      "sheetId": "6aYmtl"
+    },
+    {
+      "bindingId": "industry-auto",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "ShwKsQe36hxTiTtEF0Dc4W4cnPe",
+      "sheetId": "7myfJs"
+    },
+    {
+      "bindingId": "industry-game",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "ShwKsQe36hxTiTtEF0Dc4W4cnPe",
+      "sheetId": "8kFWgq"
+    },
+    {
+      "bindingId": "industry-commerce",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "ShwKsQe36hxTiTtEF0Dc4W4cnPe",
+      "sheetId": "9FoKhW"
+    },
+    {
+      "bindingId": "industry-finance",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "ShwKsQe36hxTiTtEF0Dc4W4cnPe",
+      "sheetId": "10chQs"
+    },
+    {
+      "bindingId": "node-1111",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "BfFYsEunBhI0PKtGKzfc6smbnic",
+      "sheetId": "0iHZMy"
+    },
+    {
+      "bindingId": "node-1212",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "BfFYsEunBhI0PKtGKzfc6smbnic",
+      "sheetId": "1tVppi"
+    },
+    {
+      "bindingId": "node-newyear",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "BfFYsEunBhI0PKtGKzfc6smbnic",
+      "sheetId": "2pzQvF"
+    },
+    {
+      "bindingId": "node-christmas",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "BfFYsEunBhI0PKtGKzfc6smbnic",
+      "sheetId": "3PUkix"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "app_name": "精选达人供给库",
+  "app_description": "行业、节点、IP、达人团、AI小星五类精选达人供给的一站式浏览与检索页面",
+  "capabilities": ["access_control"],
+  "datasources": {
+    "industry-beauty": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=0OYgsp"},
+    "industry-food": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=1RZNHB"},
+    "industry-fashion": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=2JBIVb"},
+    "industry-mom": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=3UBBZb"},
+    "industry-care": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=4QiWFQ"},
+    "industry-health": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=5rncze"},
+    "industry-digital": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=6aYmtl"},
+    "industry-auto": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=7myfJs"},
+    "industry-game": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=8kFWgq"},
+    "industry-commerce": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=9FoKhW"},
+    "industry-finance": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=10chQs"},
+    "node-1111": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/BfFYsEunBhI0PKtGKzfc6smbnic?sheet=0iHZMy"},
+    "node-1212": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/BfFYsEunBhI0PKtGKzfc6smbnic?sheet=1tVppi"},
+    "node-newyear": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/BfFYsEunBhI0PKtGKzfc6smbnic?sheet=2pzQvF"},
+    "node-christmas": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/BfFYsEunBhI0PKtGKzfc6smbnic?sheet=3PUkix"}
+  }
+}

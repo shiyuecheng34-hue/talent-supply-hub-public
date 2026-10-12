@@ -1,0 +1,30 @@
+diff --git a/es/hooks.js b/es/hooks.js
+index b18f9cb2fbe983954fb1393e3464b09d5adb806f..1b830376da27f6ac2d5d068ad89ef3489d5692d0 100644
+--- a/es/hooks.js
++++ b/es/hooks.js
+@@ -38,6 +38,10 @@ function shouldSendManifestBinding() {
+     if (typeof window === 'undefined') {
+         return false;
+     }
++    // data-web: 线上也把 manifest binding 发给服务端，否则服务端不知道读哪张表
++    if (window.__AEOLUS_FEISHU_SEND_BINDING__ === true) {
++        return true;
++    }
+     const hostname = window.location.hostname.toLowerCase();
+     return (hostname === 'localhost' ||
+         hostname === '127.0.0.1' ||
+diff --git a/lib/hooks.js b/lib/hooks.js
+index 7d774daad21590f2ea4295e94ea059094a6789c4..c66308d430c84e5650bce381aab2dd3850a34f21 100644
+--- a/lib/hooks.js
++++ b/lib/hooks.js
+@@ -41,6 +41,10 @@ function shouldSendManifestBinding() {
+     if (typeof window === 'undefined') {
+         return false;
+     }
++    // data-web: 线上也把 manifest binding 发给服务端，否则服务端不知道读哪张表
++    if (window.__AEOLUS_FEISHU_SEND_BINDING__ === true) {
++        return true;
++    }
+     const hostname = window.location.hostname.toLowerCase();
+     return (hostname === 'localhost' ||
+         hostname === '127.0.0.1' ||
