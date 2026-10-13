@@ -570,6 +570,16 @@ main {
   border-color: rgba(55, 197, 246, 0.5);
   box-shadow: 0 12px 30px rgba(0, 15, 44, 0.32);
 }
+.industry-card {
+  min-height: 224px;
+  padding: 22px;
+  border-color: rgba(88, 166, 255, 0.24);
+  border-radius: 18px;
+  background: rgba(11, 39, 76, 0.76);
+}
+.industry-card:hover {
+  border-color: rgba(91, 206, 244, 0.56);
+}
 .talent-topline {
   display: flex;
   align-items: center;
@@ -636,6 +646,120 @@ main {
   border: 1px solid rgba(32, 184, 211, 0.24);
   color: #71dced;
   font-size: 9px;
+}
+.industry-card .talent-topline {
+  gap: 14px;
+  align-items: flex-start;
+}
+.industry-card .avatar {
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: #13375f;
+  box-shadow: none;
+  overflow: hidden;
+}
+.avatar-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.avatar-photo span {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+}
+.industry-card .talent-title strong {
+  max-width: 180px;
+  font-size: 17px;
+  line-height: 24px;
+}
+.industry-card .talent-title span {
+  margin-top: 4px;
+  color: #90a6c3;
+  font-size: 12px;
+}
+.talent-title em {
+  display: block;
+  max-width: 190px;
+  margin-top: 4px;
+  overflow: hidden;
+  color: #6f87a8;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.industry-card .priority {
+  margin-top: 3px;
+  padding: 5px 9px;
+  color: #6de7fa;
+  font-size: 10px;
+}
+.industry-card .tag-row {
+  margin: 18px 0 16px;
+}
+.industry-card .tag-row span {
+  padding: 5px 9px;
+  font-size: 10px;
+}
+.price-board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding: 14px 0;
+  border-top: 1px dashed rgba(82, 148, 227, 0.24);
+  border-bottom: 1px dashed rgba(82, 148, 227, 0.24);
+}
+.price-board div {
+  min-width: 0;
+}
+.price-board b,
+.price-board small {
+  display: block;
+  white-space: nowrap;
+}
+.price-board b {
+  overflow: hidden;
+  color: #74ddff;
+  font-size: 16px;
+  line-height: 22px;
+  text-overflow: ellipsis;
+}
+.price-board small {
+  margin-top: 3px;
+  color: #8096b6;
+  font-size: 10px;
+}
+.card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 16px;
+}
+.card-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 34px;
+  border: 1px solid rgba(62, 142, 233, 0.36);
+  border-radius: 9px;
+  background: rgba(9, 42, 82, 0.48);
+  color: #b8d4f2;
+  font-size: 11px;
+  transition: .2s;
+}
+.card-actions a:first-child {
+  border-color: rgba(64, 205, 235, 0.44);
+  color: #d2f7ff;
+}
+.card-actions a:hover {
+  border-color: rgba(91, 206, 244, 0.7);
+  background: rgba(18, 86, 132, 0.54);
 }
 .talent-meta {
   display: flex;
@@ -714,6 +838,21 @@ main {
 }
 .error-panel p {
   margin: 5px 0 0;
+  font-size: 12px;
+}
+.preview-panel {
+  min-height: auto;
+  justify-content: flex-start;
+  margin-bottom: 14px;
+  padding: 14px 16px;
+  border-style: solid;
+  background: rgba(26, 86, 142, 0.16);
+}
+.preview-panel strong {
+  color: var(--ink);
+}
+.preview-panel p {
+  margin: 4px 0 0;
   font-size: 12px;
 }
 .error-panel a {

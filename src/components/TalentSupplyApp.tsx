@@ -1,3 +1,5 @@
+import { douyinAvatarMap } from '@/data/douyinAvatarMap';
+import { industrySamples } from '@/data/industrySamples';
 import { useFeishuSheetRange } from '@aeolus/feishu-table-sdk';
 import {
   ArrowUpRight,
@@ -162,19 +164,42 @@ function TalentCard({
   const fans = text(get('达人抖音粉丝量级'));
   const category = text(get(mode === 'node' ? '细分行业' : '推荐行业'));
   const score = mode === 'node' ? text(get('节点推荐分')) : '';
-  const price = compactPrice(get('抖音21-60s长视频报价(元)'));
+  const shortPrice = compactPrice(get('抖音1-20s短视频报价(元)'));
+  const middlePrice = compactPrice(get('抖音21-60s长视频报价(元)'));
+  const longPrice = compactPrice(get('抖音60s以上视频报价(元)'));
   const id = text(get('达人星图id'));
   const profile =
     id !== '-' ? `https://www.xingtu.cn/ad/creator/author/douyin/${id}` : '#';
+  const douyin = douyinAvatarMap[id];
+  const douyinUrl = douyin?.profileUrl || profile;
+  const isIndustry = mode === 'industry';
+
   return (
-    <article className="talent-card">
+    <article
+      className={isIndustry ? 'talent-card industry-card' : 'talent-card'}
+    >
       <div className="talent-topline">
-        <div className="avatar">{initials(name)}</div>
+        <a
+          className="avatar avatar-photo"
+          href={douyinUrl}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`打开 ${name} 的抖音主页`}
+        >
+          {douyin?.avatarUrl ? (
+            <img src={douyin.avatarUrl} alt={`${name} 头像`} />
+          ) : (
+            <span>{initials(name)}</span>
+          )}
+        </a>
         <div className="talent-title">
           <strong>{name}</strong>
           <span>
             {city} · {talentType}
           </span>
+          {isIndustry && douyin?.displayId ? (
+            <em>抖音号：{douyin.displayId}</em>
+          ) : null}
         </div>
         {score !== '' && score !== '-' ? (
           <span className="score">{score}</span>
@@ -187,15 +212,42 @@ function TalentCard({
         <span>{fans}</span>
         <span>{priority}</span>
       </div>
-      <div className="talent-meta">
-        <div>
-          <b>{price}</b>
-          <small>21–60s 报价</small>
+      {isIndustry ? (
+        <>
+          <div className="price-board">
+            <div>
+              <b>{shortPrice}</b>
+              <small>1–20s</small>
+            </div>
+            <div>
+              <b>{middlePrice}</b>
+              <small>21–60s</small>
+            </div>
+            <div>
+              <b>{longPrice}</b>
+              <small>60s+</small>
+            </div>
+          </div>
+          <div className="card-actions">
+            <a href={douyinUrl} target="_blank" rel="noreferrer">
+              抖音主页 <ExternalLink size={13} />
+            </a>
+            <a href={profile} target="_blank" rel="noreferrer">
+              星图主页 <ExternalLink size={13} />
+            </a>
+          </div>
+        </>
+      ) : (
+        <div className="talent-meta">
+          <div>
+            <b>{middlePrice}</b>
+            <small>21–60s 报价</small>
+          </div>
+          <a href={profile} target="_blank" rel="noreferrer">
+            星图主页 <ExternalLink size={13} />
+          </a>
         </div>
-        <a href={profile} target="_blank" rel="noreferrer">
-          星图主页 <ExternalLink size={13} />
-        </a>
-      </div>
+      )}
     </article>
   );
 }
@@ -219,14 +271,15 @@ function LiveTalentModule({
     bindingId: current.id,
     range: isNode ? 'A1:AN101' : 'A1:AC101',
   });
-  const headers = useMemo(
-    () => (sheet.data?.rawValues?.[0] ?? []).map(text),
-    [sheet.data],
-  );
-  const rows = useMemo(
-    () => (sheet.data?.rawValues?.slice(1) ?? []) as unknown[][],
-    [sheet.data],
-  );
+  const sample = !isNode ? industrySamples[current.id] : undefined;
+  const shouldUseSample =
+    !isNode && !sheet.data && sheet.status === 'error' && sample;
+  const values = shouldUseSample
+    ? [sample.headers, ...sample.rows]
+    : sheet.data?.rawValues;
+  const hasRenderableData = Boolean(values?.length);
+  const headers = useMemo(() => (values?.[0] ?? []).map(text), [values]);
+  const rows = useMemo(() => (values?.slice(1) ?? []) as unknown[][], [values]);
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
     if (!needle) return rows;
@@ -311,14 +364,28 @@ function LiveTalentModule({
           ))}
         </div>
       )}
-      {sheet.status === 'error' && !sheet.data && (
+      {sheet.status === 'error' && !hasRenderableData && (
         <FeishuErrorPanel error={sheet.error} sourceUrl={sourceUrl} />
       )}
-      {sheet.data && (
+      {shouldUseSample && (
+        <div className="state-panel preview-panel">
+          <ShieldCheck size={18} />
+          <div>
+            <strong>本地样本预览</strong>
+            <p>
+              飞书实时数据暂不可用，当前展示前 100
+              位行业样本，线上授权后会自动切回实时数据。
+            </p>
+          </div>
+        </div>
+      )}
+      {hasRenderableData && (
         <>
           <div className="result-line">
             <span>优先展示前 100 位供给，当前匹配 {filtered.length} 位</span>
-            <span className="live-dot">LIVE · 飞书同步</span>
+            <span className="live-dot">
+              {shouldUseSample ? 'PREVIEW · 样本数据' : 'LIVE · 飞书同步'}
+            </span>
           </div>
           <div className="card-grid">
             {filtered.slice(0, 100).map(row => (
