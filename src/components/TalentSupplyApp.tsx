@@ -1,5 +1,6 @@
 import { douyinAvatarMap } from '@/data/douyinAvatarMap';
 import { industrySamples } from '@/data/industrySamples';
+import { nodeSamples } from '@/data/nodeSamples';
 import { useFeishuSheetRange } from '@aeolus/feishu-table-sdk';
 import {
   ArrowUpRight,
@@ -18,6 +19,7 @@ import {
 } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import { DataApplicationProvider } from './DataApplicationProvider';
+import { IpCampaignModule } from './IpCampaignModule';
 
 type ModuleKey = 'industry' | 'node' | 'ip' | 'team' | 'ai';
 type SourceOption = {
@@ -164,7 +166,6 @@ function TalentCard({
   const fans = text(get('达人抖音粉丝量级'));
   const category = text(get(mode === 'node' ? '细分行业' : '推荐行业'));
   const score = mode === 'node' ? text(get('节点推荐分')) : '';
-  const shortPrice = compactPrice(get('抖音1-20s短视频报价(元)'));
   const middlePrice = compactPrice(get('抖音21-60s长视频报价(元)'));
   const longPrice = compactPrice(get('抖音60s以上视频报价(元)'));
   const id = text(get('达人星图id'));
@@ -172,12 +173,13 @@ function TalentCard({
     id !== '-' ? `https://www.xingtu.cn/ad/creator/author/douyin/${id}` : '#';
   const douyin = douyinAvatarMap[id];
   const douyinUrl = douyin?.profileUrl || profile;
-  const isIndustry = mode === 'industry';
+  const subtitle =
+    mode === 'node'
+      ? [text(get('节点')), category].filter(value => value !== '-').join(' · ')
+      : [city, talentType].filter(value => value !== '-').join(' · ');
 
   return (
-    <article
-      className={isIndustry ? 'talent-card industry-card' : 'talent-card'}
-    >
+    <article className="talent-card industry-card">
       <div className="talent-topline">
         <a
           className="avatar avatar-photo"
@@ -194,12 +196,8 @@ function TalentCard({
         </a>
         <div className="talent-title">
           <strong>{name}</strong>
-          <span>
-            {city} · {talentType}
-          </span>
-          {isIndustry && douyin?.displayId ? (
-            <em>抖音号：{douyin.displayId}</em>
-          ) : null}
+          <span>{subtitle || '精选达人'}</span>
+          {douyin?.displayId ? <em>抖音号：{douyin.displayId}</em> : null}
         </div>
         {score !== '' && score !== '-' ? (
           <span className="score">{score}</span>
@@ -212,42 +210,24 @@ function TalentCard({
         <span>{fans}</span>
         <span>{priority}</span>
       </div>
-      {isIndustry ? (
-        <>
-          <div className="price-board">
-            <div>
-              <b>{shortPrice}</b>
-              <small>1–20s</small>
-            </div>
-            <div>
-              <b>{middlePrice}</b>
-              <small>21–60s</small>
-            </div>
-            <div>
-              <b>{longPrice}</b>
-              <small>60s+</small>
-            </div>
-          </div>
-          <div className="card-actions">
-            <a href={douyinUrl} target="_blank" rel="noreferrer">
-              抖音主页 <ExternalLink size={13} />
-            </a>
-            <a href={profile} target="_blank" rel="noreferrer">
-              星图主页 <ExternalLink size={13} />
-            </a>
-          </div>
-        </>
-      ) : (
-        <div className="talent-meta">
-          <div>
-            <b>{middlePrice}</b>
-            <small>21–60s 报价</small>
-          </div>
-          <a href={profile} target="_blank" rel="noreferrer">
-            星图主页 <ExternalLink size={13} />
-          </a>
+      <div className="price-board">
+        <div>
+          <b>{middlePrice}</b>
+          <small>21–60s</small>
         </div>
-      )}
+        <div>
+          <b>{longPrice}</b>
+          <small>60s+</small>
+        </div>
+      </div>
+      <div className="card-actions">
+        <a href={douyinUrl} target="_blank" rel="noreferrer">
+          抖音主页 <ExternalLink size={13} />
+        </a>
+        <a href={profile} target="_blank" rel="noreferrer">
+          星图主页 <ExternalLink size={13} />
+        </a>
+      </div>
     </article>
   );
 }
@@ -271,9 +251,8 @@ function LiveTalentModule({
     bindingId: current.id,
     range: isNode ? 'A1:AN101' : 'A1:AC101',
   });
-  const sample = !isNode ? industrySamples[current.id] : undefined;
-  const shouldUseSample =
-    !isNode && !sheet.data && sheet.status === 'error' && sample;
+  const sample = isNode ? nodeSamples[current.id] : industrySamples[current.id];
+  const shouldUseSample = !sheet.data && sheet.status === 'error' && sample;
   const values = shouldUseSample
     ? [sample.headers, ...sample.rows]
     : sheet.data?.rawValues;
@@ -373,8 +352,8 @@ function LiveTalentModule({
           <div>
             <strong>本地样本预览</strong>
             <p>
-              飞书实时数据暂不可用，当前展示前 100
-              位行业样本，线上授权后会自动切回实时数据。
+              飞书实时数据暂不可用，当前展示前 100 位{isNode ? '节点' : '行业'}
+              样本，线上授权后会自动切回实时数据。
             </p>
           </div>
         </div>
@@ -449,7 +428,13 @@ function PendingModule({ module }: { module: ModuleKey }) {
 }
 
 function App() {
-  const [module, setModule] = useState<ModuleKey>('industry');
+  const [module, setModule] = useState<ModuleKey>(() => {
+    if (typeof window === 'undefined') return 'industry';
+    const requested = new URLSearchParams(window.location.search).get('module');
+    return MODULES.some(item => item.key === requested)
+      ? (requested as ModuleKey)
+      : 'industry';
+  });
   const [industry, setIndustry] = useState(INDUSTRIES[0].id);
   const [node, setNode] = useState(NODES[3].id);
   const totalIndustry = INDUSTRIES.reduce((sum, item) => sum + item.count, 0);
@@ -528,7 +513,7 @@ function App() {
           <div className="overview-title">
             <span className="eyebrow">SUPPLY · OVERVIEW</span>
             <h2>五大供给模块</h2>
-            <p>已接入行业与节点两类实时数据，其余模块等待材料补充。</p>
+            <p>行业与节点实时同步，IP 模块已接入 5 个秋冬重点合作企划。</p>
           </div>
           <div className="metric-strip">
             <div>
@@ -571,7 +556,8 @@ function App() {
             onSelect={setNode}
           />
         )}
-        {(module === 'ip' || module === 'team' || module === 'ai') && (
+        {module === 'ip' && <IpCampaignModule />}
+        {(module === 'team' || module === 'ai') && (
           <PendingModule module={module} />
         )}
         <footer>

@@ -3,6 +3,9 @@ import csv
 import json
 import re
 import subprocess
+import urllib.parse
+import urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -20,7 +23,14 @@ INDUSTRIES = [
     ('industry-commerce', '9FoKhW'),
     ('industry-finance', '10chQs'),
 ]
-SHEET_URL = 'https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe'
+NODES = [
+    ('node-1111', '0iHZMy'),
+    ('node-1212', '1tVppi'),
+    ('node-newyear', '2pzQvF'),
+    ('node-christmas', '3PUkix'),
+]
+INDUSTRY_SHEET_URL = 'https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe'
+NODE_SHEET_URL = 'https://bytedance.larkoffice.com/sheets/BfFYsEunBhI0PKtGKzfc6smbnic'
 DATASET_ID = '5685026'
 LATEST_PARTITION = '2026-10-11'
 AEOLUS_DIR = ROOT.parent / 'inner_skills' / 'aeolus-platform-analysis'
@@ -38,12 +48,12 @@ def strip_row_prefix(line: str) -> str:
     return re.sub(r'^\[row=\d+\] ', '', line)
 
 
-def read_ids_for_sheet(sheet_id: str) -> list[str]:
+def read_ids_for_sheet(sheet_url: str, sheet_id: str, data_range: str) -> list[str]:
     payload = run_json([
         'lark-cli', 'sheets', '+csv-get',
-        '--url', SHEET_URL,
+        '--url', sheet_url,
         '--sheet-id', sheet_id,
-        '--range', 'A1:AC101',
+        '--range', data_range,
         '--max-chars', '60000',
     ])
     annotated = payload['data']['annotated_csv']
@@ -104,25 +114,94 @@ def query_mapping(ids: list[str]) -> dict[str, dict[str, str]]:
     return result
 
 
+def fetch_douyin_profile(record: dict[str, str]) -> dict[str, str]:
+    params = []
+    if record['uniqueId']:
+        params.append(('unique_id', record['uniqueId']))
+    if record['shortId']:
+        params.append(('short_id', record['shortId']))
+    for key, value in params:
+        url = f'https://www.iesdouyin.com/web/api/v2/user/info/?{key}={urllib.parse.quote(value)}'
+        request = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        try:
+            with urllib.request.urlopen(request, timeout=25) as response:
+                payload = json.load(response)
+            user = payload.get('user_info') or {}
+            avatars = (user.get('avatar_medium') or user.get('avatar_thumb') or {}).get('url_list') or []
+            if avatars:
+                record['avatarUrl'] = avatars[0]
+            sec_uid = str(user.get('sec_uid') or '')
+            if sec_uid:
+                record['profileUrl'] = f'https://www.douyin.com/user/{sec_uid}'
+            if record['avatarUrl']:
+                return record
+        except Exception:
+            continue
+    return record
+
+
+def enrich_avatars(mapping: dict[str, dict[str, str]]) -> int:
+    success = 0
+    with ThreadPoolExecutor(max_workers=32) as executor:
+        futures = {
+            executor.submit(fetch_douyin_profile, record): star_id
+            for star_id, record in mapping.items()
+        }
+        for future in as_completed(futures):
+            star_id = futures[future]
+            mapping[star_id] = future.result()
+            if mapping[star_id]['avatarUrl']:
+                success += 1
+    return success
+
+
+def load_existing_mapping() -> dict[str, dict[str, str]]:
+    if not OUT.exists():
+        return {}
+    content = OUT.read_text(encoding='utf-8')
+    marker = 'export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = '
+    if marker not in content:
+        return {}
+    raw = content.split(marker, 1)[1].rsplit(';', 1)[0]
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        return {}
+
+
 def main():
     ids: list[str] = []
-    by_sheet: dict[str, list[str]] = {}
-    for binding, sheet_id in INDUSTRIES:
-        sheet_ids = read_ids_for_sheet(sheet_id)
-        by_sheet[binding] = sheet_ids
-        for star_id in sheet_ids:
-            if star_id not in ids:
-                ids.append(star_id)
+    sources = [
+        (INDUSTRY_SHEET_URL, INDUSTRIES, 'A1:AC101'),
+        (NODE_SHEET_URL, NODES, 'A1:AN101'),
+    ]
+    for sheet_url, options, data_range in sources:
+        for _, sheet_id in options:
+            sheet_ids = read_ids_for_sheet(sheet_url, sheet_id, data_range)
+            for star_id in sheet_ids:
+                if star_id not in ids:
+                    ids.append(star_id)
     mapping = query_mapping(ids)
+    cached = load_existing_mapping()
+    for star_id, record in mapping.items():
+        cached_record = cached.get(star_id) or {}
+        if cached_record.get('avatarUrl'):
+            record['avatarUrl'] = cached_record['avatarUrl']
+            record['profileUrl'] = cached_record.get('profileUrl') or record['profileUrl']
+    missing = {star_id: record for star_id, record in mapping.items() if not record['avatarUrl']}
+    enrich_avatars(missing)
+    avatars_matched = sum(bool(record['avatarUrl']) for record in mapping.values())
     OUT.parent.mkdir(parents=True, exist_ok=True)
     metadata = {
         'dataset': '【官】星图达人数据集',
         'datasetId': DATASET_ID,
         'partition': LATEST_PARTITION,
-        'source': 'https://data.bytedance.net/aeolus/pages/dataQuery?appId=1002633&isDefault=1&rid=17268794&sid=5685026',
+        'source': 'https://data.bytedance.net/aeolus/pages/dataQuery?appId=1002633&id=1791867289012435&isDefault=1&rid=17268794&sid=5685026',
+        'scope': '行业与节点板块每个分组前 100 位达人',
         'matched': len(mapping),
         'requested': len(ids),
-        'note': 'avatarUrl 留空时，页面展示姓名首字 fallback；可用同一映射继续补充抖音头像抓取结果。',
+        'avatarsMatched': avatars_matched,
+        'note': '头像通过抖音用户信息接口按 unique_id / short_id 获取；抓取失败时页面展示姓名首字 fallback。',
     }
     content = (
         'export type DouyinAvatarRecord = { uniqueId: string; shortId: string; displayId: string; nickName: string; profileUrl: string; avatarUrl: string };\n\n'
