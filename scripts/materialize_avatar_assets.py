@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import base64
 import re
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -7,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MAP_FILE = ROOT / 'src' / 'data' / 'douyinAvatarMap.ts'
-AVATAR_DIR = ROOT / 'public' / 'avatars'
+AVATAR_DIR = ROOT / 'avatar-assets'
 
 
 def download(item: tuple[str, str]) -> tuple[str, str, bool]:
@@ -42,27 +41,28 @@ def main():
     remote = [(star_id, url) for star_id, url in records if url.startswith('http')]
     AVATAR_DIR.mkdir(parents=True, exist_ok=True)
     success = 0
-    replacements: list[tuple[str, str, str]] = []
     with ThreadPoolExecutor(max_workers=32) as executor:
         futures = {executor.submit(download, item): item for item in remote}
         for future in as_completed(futures):
             star_id, url, ok = future.result()
             if ok:
                 success += 1
-                replacements.append((star_id, url, f'/avatars/{star_id}.jpg'))
-    embedded = 0
+    materialized = 0
     for star_id, remote_url in remote:
         target = AVATAR_DIR / f'{star_id}.jpg'
         if not target.exists() or target.stat().st_size <= 500:
             continue
-        data_url = 'data:image/jpeg;base64,' + base64.b64encode(target.read_bytes()).decode('ascii')
-        content = content.replace(f"'{remote_url}'", f"'{data_url}'", 1)
-        embedded += 1
+        content = content.replace(
+            f"'{remote_url}'",
+            f"'/avatars/{star_id}.jpg'",
+            1,
+        )
+        materialized += 1
     MAP_FILE.write_text(content, encoding='utf-8')
     print({
         'requested': len(remote),
         'downloaded': success,
-        'embedded': embedded,
+        'materialized': materialized,
         'directory': str(AVATAR_DIR),
     })
 
