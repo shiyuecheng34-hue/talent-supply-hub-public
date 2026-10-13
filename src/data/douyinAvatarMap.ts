@@ -5,6 +5,7 @@ export type DouyinAvatarRecord = {
   nickName: string;
   profileUrl: string;
   avatarUrl: string;
+  avatarPosition?: string;
 };
 
 export const douyinAvatarMeta = {
@@ -28,7 +29,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '邻家小鲜女',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA4v4TomCjrG17l_2NMd3GJNacB4gOyi1TsVxbUErG9zg',
-    avatarUrl: '/avatars/6786915887350808590.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -112px',
   },
   '6855606046388387848': {
     uniqueId: 'veelove01',
@@ -37,7 +39,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '甜味食光Amy',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAVx9j822i-Rh78cNqHlvWeZU995_BnYqpKVUvso5OP4s',
-    avatarUrl: '/avatars/6855606046388387848.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -224px',
   },
   '6846218651838709773': {
     uniqueId: '',
@@ -54,7 +57,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '谷大喵🍀',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhjd-v5nERGnp3EDpQ36RscrzrRjSjzf0uX0VdEfw94E',
-    avatarUrl: '/avatars/6846218651838709773.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -168px',
   },
   '6668146115163979780': {
     uniqueId: '',
@@ -71,7 +75,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '甜掉大牙',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAtDb3fXM7C59QiR9Lvt74vgW32e6bFbhaa6EsaTVywMM',
-    avatarUrl: '/avatars/6668146115163979780.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -0px',
   },
   '6742348380199976968': {
     uniqueId: 'ximengzi66',
@@ -80,7 +85,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '希萌子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAABN2F_q7knT0-JZXq3bEhxoX-JSIxCOm5CdPHCEycdnY',
-    avatarUrl: '/avatars/6742348380199976968.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -56px',
   },
   '6629663279490793479': {
     uniqueId: 'Fanhuatou',
@@ -115,7 +121,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '懒西西',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAySoACpLXe3NaEA_9tAvaaSWpMSmr4neSzUW4hCGhlbQ',
-    avatarUrl: '/avatars/6629663279490793479.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -0px',
   },
   '7005001725232807943': {
     uniqueId: 'liudachu77777',
@@ -124,7 +131,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小小刘掌柜',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAPaAhJ2Ly6xfp8v9PsK3mmf61WKgyPNLItwDihdj92v2BgnNmYh7s_fJwmv5e2uOM',
-    avatarUrl: '/avatars/7005001725232807943.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -448px',
   },
   '6842210310930038798': {
     uniqueId: 'xy1992021430',
@@ -133,7 +141,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '_陈小井',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAueNYKa96uwIrAkagO4Xs4ULVaZGT8ltPB_T2XfimOIWMj1mRQlGsrTQqyywFSuZz',
-    avatarUrl: '/avatars/6842210310930038798.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -168px',
   },
   '6596679705632440323': {
     uniqueId: 'ldhb1998',
@@ -142,7 +151,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '刘东ryuutou',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAsnwxounACWbh8ZeBd5Dx3hWrzEksx_jJLq9SLa-Sy7Q',
-    avatarUrl: '/avatars/6596679705632440323.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -0px',
   },
   '6740507188105592846': {
     uniqueId: '20148341798',
@@ -151,7 +161,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '王欢喜Fancy（彩妆买手版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAuRpwPWyFVIeIbqTPa1fdObD1aadMs-0sEOTxNLLs-aY',
-    avatarUrl: '/avatars/6740507188105592846.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -56px',
   },
   '6759335463800012807': {
     uniqueId: 'dywdnzg6pbaj',
@@ -160,7 +171,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '宵夜大哥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEHOngzwEpo9en_Gnh0r8t1hkkCY0IOiNwxSEXLVZhUkAYwcUxF4vzxlnZLcyL0VQ',
-    avatarUrl: '/avatars/6759335463800012807.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -56px',
   },
   '6789484463538569223': {
     uniqueId: 'Icy0106',
@@ -169,7 +181,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '葛冰冰（嘴毒版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAkJqvhWdNWaRAFYBG2Ld-nBODmwhYSg3DmdfOjplz6-qQHZV7_VBvyjoFgRee1Tkb',
-    avatarUrl: '/avatars/6789484463538569223.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -112px',
   },
   '6639191768417959939': {
     uniqueId: '',
@@ -186,7 +199,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '老饭骨',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzsEzo_6VeyzpnmdVHAq0zJjc75UD5YQuMK2Jp_isYMU',
-    avatarUrl: '/avatars/6639191768417959939.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -0px',
   },
   '6639183896728567815': {
     uniqueId: '',
@@ -203,7 +217,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '张甜粒子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADKee-ZZYxXbSNJ4SMKf6vMPGp14nbFtB1KdEsaF6c-mT9WRn8PKhWPwsPQZRPf3U',
-    avatarUrl: '/avatars/6639183896728567815.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -0px',
   },
   '6841765789838606344': {
     uniqueId: 'DailyDrinks',
@@ -212,7 +227,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '饮滴乜嘢',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAT9PC_W07sHgd_-AfAggrXkeK0-YqxdkazvaOAn6k2Oc',
-    avatarUrl: '/avatars/6841765789838606344.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -168px',
   },
   '6852759641646956551': {
     uniqueId: 'czxy168168',
@@ -221,7 +237,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '吃主老田',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOxGD03IOCYVebGxYDdPI_uL6mC1ycwufNDFUhaF4Sl6V6LfAaFHeSSyoQ_jwq2JG',
-    avatarUrl: '/avatars/6852759641646956551.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -168px',
   },
   '6746134799183773710': {
     uniqueId: '',
@@ -246,7 +263,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Q态屁',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAFtCIdE12oDOGkc9_0OTZMyqFKY9YZcPEQN8AlVwmdpZXzeVvQjf76yotUe2C3x6H',
-    avatarUrl: '/avatars/6746134799183773710.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -56px',
   },
   '6831825876674412552': {
     uniqueId: '',
@@ -263,7 +281,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '金大迪',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA0yo-VIfh_XywUGVirQ6luy00BFSgDEhtDcAtqDwsHBM',
-    avatarUrl: '/avatars/6831825876674412552.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -168px',
   },
   '6854329044721205261': {
     uniqueId: 'yanghuaju_',
@@ -272,7 +291,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '氧化菊',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA5h9ixlNH24PuK7Bpb9rzURa6_eWai4WwUvSdTGMLt6w',
-    avatarUrl: '/avatars/6854329044721205261.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -168px',
   },
   '6596678282177937421': {
     uniqueId: '',
@@ -289,7 +309,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小key萌萌哒【理性护肤】',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAWXNmZlVhe08-wLsE1RTjw2qU5CrCjizHVTy7oesjxHA',
-    avatarUrl: '/avatars/6596678282177937421.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -0px',
   },
   '6644320463218540551': {
     uniqueId: '',
@@ -314,7 +335,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '蓝鲸四哥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAARYzBnrDfhQ_laFyyB0-TsY7S0tzz-aIHrVFBR5_XRck',
-    avatarUrl: '/avatars/6644320463218540551.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -0px',
   },
   '6999477520437346336': {
     uniqueId: 'grbz',
@@ -323,7 +345,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '本子的日常穿搭',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEhP1sQH8LFLOI_mjBIHb0Zeyn-OG_jq77B-6icgeA2Hcdf3OD_a4aNnJOvJs8K_w',
-    avatarUrl: '/avatars/6999477520437346336.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -448px',
   },
   '7219991877972394039': {
     uniqueId: '',
@@ -340,7 +363,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '朗朗很困',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6xPDKXp1-XfQSGLFAtM1FEhDEz0jC9oHTWXidoQhjeIDu_n-tT9AJzAXJmvn-adL',
-    avatarUrl: '/avatars/7219991877972394039.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -784px',
   },
   '7138278928593977375': {
     uniqueId: '71874371348',
@@ -349,7 +373,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '特厨魏味',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAKr6C7G5U9Kl5I4_aP5lQVHey_VMAXIhgm3mMHm5Byp08Lvs_L7oknxb6kzyI86-y',
-    avatarUrl: '/avatars/7138278928593977375.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -672px',
   },
   '7378895681844412426': {
     uniqueId: 'xuwenjie777',
@@ -358,7 +383,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '许文洁',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7B67Aa7UKv5m3_doRjn6RfLgEI_7DapRrlP4e13g60lzlfBe3fER4EL227tssLHt',
-    avatarUrl: '/avatars/7378895681844412426.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -1008px',
   },
   '6869014263231414285': {
     uniqueId: 'Alborn',
@@ -367,7 +393,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '奥莉酱',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAIqvsyivLL5I25PYpM8ypc1b3J-ZxP8cv14AM_XRcHZ0',
-    avatarUrl: '/avatars/6869014263231414285.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -224px',
   },
   '7214036323248635963': {
     uniqueId: 'NiNide66',
@@ -376,7 +403,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'NiNi的厨房',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA96NeG05N6V46_GDsTAFrmsk9xfTq1tuSMtBuYvInTMu2y9R83nghzsRB99ydGIzS',
-    avatarUrl: '/avatars/7214036323248635963.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -784px',
   },
   '7112167573340291103': {
     uniqueId: '91908352339',
@@ -385,7 +413,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '李哥我饿了',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhknVaw3aLJaGJNBSo4JbVhZa6Ew4OPztMHByS4qYWrhQ3cWc53pfezwqNu9N5Vwg',
-    avatarUrl: '/avatars/7112167573340291103.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -616px',
   },
   '6629660835130114061': {
     uniqueId: 'MXHmakeup',
@@ -394,7 +423,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '造型师马小花',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7EoXIr6KahCEV_a2EG7PW2JrTOZbtyk2VOVfL2EIHs8',
-    avatarUrl: '/avatars/6629660835130114061.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -0px',
   },
   '6691482953333080076': {
     uniqueId: 'sdchihuo',
@@ -403,7 +433,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '花师奶',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6uS45k-eBvu9A-ggBDlMuwhRsAr1jHqtwyv7dvV2vhs',
-    avatarUrl: '/avatars/6691482953333080076.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -56px',
   },
   '6638858585528860685': {
     uniqueId: '',
@@ -420,7 +451,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '安吉丽欣',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAlhuxy2xbUGTDVpBuZsdvWFvpgJtxY_KyZTxaXPr-BM0',
-    avatarUrl: '/avatars/6638858585528860685.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -0px',
   },
   '6796836771825975310': {
     uniqueId: 'jay123654',
@@ -429,7 +461,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿侃letsgo',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA9FYiJQdOvbQ5q2DqTqYFCJkOa_Pbp-0BjpdlUHcV6N1kZeWTnn9NIv14n3nfebXy',
-    avatarUrl: '/avatars/6796836771825975310.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -112px',
   },
   '6810390018427715598': {
     uniqueId: 'zm00576666',
@@ -438,7 +471,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '铭哥说美食',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-S8EfAdcXrFllk3i_hLzEBhSw2ffgWxMldacevh09Pc',
-    avatarUrl: '/avatars/6810390018427715598.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -112px',
   },
   '6821080910151024654': {
     uniqueId: 'liong6666',
@@ -447,7 +481,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '勇仔leo',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAgGyF-zkfjxZmlWN8Adit3kYh7TyfgYPkb1n8RLD1AlQfCOTJJELdY3OSR_BTtfkg',
-    avatarUrl: '/avatars/6821080910151024654.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -112px',
   },
   '6870159863264051208': {
     uniqueId: 'Steven_99',
@@ -456,7 +491,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '庞师不是师',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAWv-wh5s0ED6JVP5Jn18W2i21I5gzgKnHDFF5930k3_Q',
-    avatarUrl: '/avatars/6870159863264051208.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -224px',
   },
   '7107129982152867876': {
     uniqueId: 'wangyici123',
@@ -465,7 +501,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '王艺慈',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdGiFnFiqEChCxpzpripV07w7OGboNtbFzdltI10S0gpfhfF2FctWQRrQYb3C1F1k',
-    avatarUrl: '/avatars/7107129982152867876.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -616px',
   },
   '6870169575355318280': {
     uniqueId: 'ss.sj',
@@ -474,7 +511,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '金若千',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAR2Gg6U-n_bDKuCVQyHZ11JOzXVKdSSBcH7RuJtSX0FjwzlKBtBsItFl3G_dWayv8',
-    avatarUrl: '/avatars/6870169575355318280.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -280px',
   },
   '7006199318029795341': {
     uniqueId: '22112581779',
@@ -483,7 +521,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Winnie文',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdOfKpn2Isz5BoU3LvQBAxdfTz8W4CFkzZkzbHsZaQoiTGnsSeo0-3SrzAsZaNByd',
-    avatarUrl: '/avatars/7006199318029795341.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -448px',
   },
   '6870163199681888263': {
     uniqueId: 'xiaochunriqi',
@@ -492,7 +531,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小春日青',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAvYfWCwpGXliPDpQ1mCzFCOzvZT_xZGaX_ZLAG3PJ0KI',
-    avatarUrl: '/avatars/6870163199681888263.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -280px',
   },
   '7129466813494067236': {
     uniqueId: 'szbk0755',
@@ -501,7 +541,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小布小布Gleb',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAMw6qn09MeSFcQ0oR45BROOkWMSFg9-c8TXUVuX7Nm-Y',
-    avatarUrl: '/avatars/7129466813494067236.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -672px',
   },
   '7116385886551408648': {
     uniqueId: '89824780517',
@@ -510,7 +551,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '食光机（食光简史）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAxojGvcQuuIrYNqR8CN2JOO7C2feK78D6y9ILnuGHt6Q9WuPuNFUolujJl6HPWqZc',
-    avatarUrl: '/avatars/7116385886551408648.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -616px',
   },
   '7006348362064592928': {
     uniqueId: '69563198368',
@@ -519,7 +561,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大帅的脑袋瓜',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA5wntfijiM4H4NzgH4WeHlk2AumwcWB5dqs_ETFnZiZjERO0rYMSKw8cte8EYEp53',
-    avatarUrl: '/avatars/7006348362064592928.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -448px',
   },
   '6629661984272941060': {
     uniqueId: '',
@@ -536,7 +579,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '杰西卡来了（耿直版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAkOVXqfxTQdBHvKuPeN9MnS45Mc6Kvv6Lrpj_MxpTyrs',
-    avatarUrl: '/avatars/6629661984272941060.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -0px',
   },
   '6693777798747652109': {
     uniqueId: 'TongLi66',
@@ -555,7 +599,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '料理小颖',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAKM7CHQUC8PSr8My-jGnKz25131bvSB88PTLtIe2dr4w',
-    avatarUrl: '/avatars/6693777798747652109.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -56px',
   },
   '6771308460555370504': {
     uniqueId: '',
@@ -580,7 +625,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '雨田日记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAtRvSuDQxxi1VJwA08uU8NdJqaGEYsEb_S8Oj7M3JKJ1cCszdzvLifr-viiDcc8Sv',
-    avatarUrl: '/avatars/6771308460555370504.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -112px',
   },
   '7005380106570956815': {
     uniqueId: 'yy1803999999',
@@ -589,7 +635,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '马姐美食记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAepgFUjf85LQ4GZ4VcXEcSLfaKxuIx96V7yC6BpoOG0T5yyoWpDdSK1HaA-QJ1aY9',
-    avatarUrl: '/avatars/7005380106570956815.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -448px',
   },
   '6773610552775147527': {
     uniqueId: '',
@@ -606,7 +653,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小文哥吃吃吃',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2_7Wm-fDCOte-I9QBaCyHza43zpec5yLJQNxDJO-grw',
-    avatarUrl: '/avatars/6773610552775147527.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -112px',
   },
   '6870168554533027854': {
     uniqueId: '',
@@ -623,7 +671,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '伊丽鲨白',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA57AB6imwBejFX7L1dTBU5nyVbT4YHflBbQs-OWXC3nPaKy02w78i05F7iXOeHy7i',
-    avatarUrl: '/avatars/6870168554533027854.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -280px',
   },
   '7219228747340185637': {
     uniqueId: 'Ayou8888_',
@@ -632,7 +681,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '理又又',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAxfjn-e3ISMfyjK2tAa0vZ2ZfbASWrCIWVx-940j9_P5wZrWHWCqcFio29EhJq2j6',
-    avatarUrl: '/avatars/7219228747340185637.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -784px',
   },
   '7034079634215927822': {
     uniqueId: 'RockyXU',
@@ -641,7 +691,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '厨师徐嘉乐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAUk09Yc4-raO4dU6aj1yvnFfS58FQKZ5sUrHZD6jDvXMlXcM06HcquXxVJmveGWin',
-    avatarUrl: '/avatars/7034079634215927822.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -504px',
   },
   '6739742597679415309': {
     uniqueId: 'JENNYkr',
@@ -650,7 +701,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '宝藏珍妮',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAHtWVMCn81nZxDtxU6rOMnQHTIMcNK5NEWwx_4nO8ruE',
-    avatarUrl: '/avatars/6739742597679415309.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -56px',
   },
   '6870167486596120583': {
     uniqueId: '',
@@ -667,7 +719,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '瓦萨北北',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAggolqGT1BHVff6DqWn4YS6IkCS0qQWc3qRKjjcTault8ky-Hcoek8FrrwUlTYYiE',
-    avatarUrl: '/avatars/6870167486596120583.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -280px',
   },
   '7413696815733702666': {
     uniqueId: '',
@@ -684,7 +737,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '舒舒在厨房',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAXvrZmPC7hQe9qzXf1rflGdcKmU_dQ2rTGvVU_89Rbe7Dozy_7Gwbv3uIoxEUq-xL',
-    avatarUrl: '/avatars/7413696815733702666.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -1120px',
   },
   '6870161708053168136': {
     uniqueId: 'vivichen0413',
@@ -703,7 +757,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '少女总裁',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAnra0x9If32QfR02ufGwYmWH8bVJx-YSKvBGaL8NgAJI',
-    avatarUrl: '/avatars/6870161708053168136.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -224px',
   },
   '6830819251104776199': {
     uniqueId: '',
@@ -720,7 +775,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Friday周五',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAIGDAFHiGwVXEg8GpexnSqGdAIaAvlXTOZX6VOVorFG8',
-    avatarUrl: '/avatars/6830819251104776199.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -168px',
   },
   '7287529607169835069': {
     uniqueId: 'dyqpfn1y1bhx',
@@ -729,7 +785,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '浩会整',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAk_Fk-vBDSbQdA6A-q5etzIr9IfG5Ml8B4hez7JbG-SFL-niNXW4fmjcSLAC3MQDa',
-    avatarUrl: '/avatars/7287529607169835069.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -896px',
   },
   '7424398205485318198': {
     uniqueId: '41446952578',
@@ -738,7 +795,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '火力羊子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7uJ2CJgDT2cQV5290r1Y7s6_cfe7TndQi7aOXzQ5K6CqgZZSQFzZEjV1Ou6jo0WT',
-    avatarUrl: '/avatars/7424398205485318198.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -1120px',
   },
   '6875619251558809613': {
     uniqueId: 'zhuzhushaonv1',
@@ -747,7 +805,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '猪猪少女不是猪',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA8PG0j4l4dFFQMA3sWKxfE8f07yemHr8Za8XcfoZWlcg',
-    avatarUrl: '/avatars/6875619251558809613.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -336px',
   },
   '6629656725303590926': {
     uniqueId: 'Sun0129',
@@ -756,7 +815,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '奕菲_孙嘉慧',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAn1k_PmjPz2O9qmtLmK4ww1vAxeL8jJ7b9ajj8XGB4h0',
-    avatarUrl: '/avatars/6629656725303590926.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -0px',
   },
   '6747542277385617422': {
     uniqueId: 'cd246',
@@ -765,7 +825,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '刘三三',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAGPTnnAjm_xTTPEMs6O8f7BHGthV_nQIFuANgfvan3_4',
-    avatarUrl: '/avatars/6747542277385617422.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -56px',
   },
   '6870171052677267464': {
     uniqueId: 'xggsiteng',
@@ -774,7 +835,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '北漂不亏嘴的Xgg',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAxTMBKA0vomNjQ16CHg2wsdvXBo5POR0qdW6Oo48hJkPS098F0B05T-kHHgDx2IxJ',
-    avatarUrl: '/avatars/6870171052677267464.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -336px',
   },
   '7129066558793449509': {
     uniqueId: 'awenchichichi',
@@ -783,7 +845,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿文今天吃什么',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-4RtWlPzq73cdFXNh5GGISWFxvqQw9MkiDoKTSljGjEjjpIkoesoH-A3P4RMLZKA',
-    avatarUrl: '/avatars/7129066558793449509.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -672px',
   },
   '7030068129661190152': {
     uniqueId: 'apan998998',
@@ -792,7 +855,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '桃子的早餐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAcBRt9DgsTgT9puik0S7myqWStstMGoWnFfEvedfOHeSBAqJjcBpKwvEYL7ytN0ph',
-    avatarUrl: '/avatars/7030068129661190152.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -504px',
   },
   '6870163473385390093': {
     uniqueId: '',
@@ -809,7 +873,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿里北杯',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAP9FRi2eEz6sZw7cIT7PH2SlnnBeXjHuwgUsVy8EsAI-cTvevvv012rS8VmoJ_RjR',
-    avatarUrl: '/avatars/6870163473385390093.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -280px',
   },
   '6908544121598672904': {
     uniqueId: 'bi133413',
@@ -818,7 +883,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '满意仔（努力版)',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAYKzYPMFISHXeW-uLbgI5JMi2ranVIdg7orpBE9OAZ0M',
-    avatarUrl: '/avatars/6908544121598672904.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -336px',
   },
   '7385468692294795273': {
     uniqueId: 'ppang66666',
@@ -827,7 +893,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '又该胖胖啦',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAryQg1xn3hMVcmT82jn2LoqiyAk4g0aUPjnD0cZ9Xc_97wN3UsbJQVagpq-xFQ_8R',
-    avatarUrl: '/avatars/7385468692294795273.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -1064px',
   },
   '7234903957229797437': {
     uniqueId: 'xd19881108',
@@ -836,7 +903,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '周宇宸老师',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADvmYS_5RlW8DYTMbWQlIxD1U63DVA9q_nYvhLOgtBeA',
-    avatarUrl: '/avatars/7234903957229797437.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -840px',
   },
   '7164646264531845131': {
     uniqueId: '61155334279',
@@ -845,7 +913,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Goss',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA30MG75pyWNvYsncQFOhuvSMy05Nqo0fIJcwcxgBPGlX1MDtEBIaekETf0b3_zs12',
-    avatarUrl: '/avatars/7164646264531845131.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -672px',
   },
   '6870168744174288903': {
     uniqueId: 'Cholynn',
@@ -854,7 +923,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '秋姐姐Cholynn',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_v7GgQLdY72xndQiRIRhJfRs61DQiJrx6rdZXZ6STmU',
-    avatarUrl: '/avatars/6870168744174288903.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -280px',
   },
   '7117258086707888159': {
     uniqueId: '',
@@ -871,7 +941,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '吖是草莓啊',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAysxGwtnBh0EuC_jfKR1FNf0ieJSNOBTlE1t97l41WJQ',
-    avatarUrl: '/avatars/7117258086707888159.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -616px',
   },
   '6897481069851836423': {
     uniqueId: 'fdc118',
@@ -880,7 +951,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '范大厨来了',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJ6St1rj2xTTQEVOiiUIAHA5cG17N2c_27bufEFNlk8s_9hfGaGjqczZ6QIkRsi3c',
-    avatarUrl: '/avatars/6897481069851836423.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -336px',
   },
   '7425531919217098778': {
     uniqueId: '97552831017',
@@ -889,7 +961,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '飞天小女饼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAVsyOJ0RlPQ7GGXdr0F2QzUT9yRHinTihj8MNfwxPu271iywBBwKKklNrmdsyU4Gh',
-    avatarUrl: '/avatars/7425531919217098778.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -1120px',
   },
   '7401507031871389706': {
     uniqueId: '80554480359',
@@ -916,7 +989,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '派大馨',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAWKN4xzDT64DPG1okjujtRlIAnPV1EOwLUTqhpGf2c24xtOfM9QgAUAtnvwHUuVu5',
-    avatarUrl: '/avatars/7401507031871389706.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -1064px',
   },
   '7255214592618397733': {
     uniqueId: 'ZhOu991122.',
@@ -925,7 +999,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小周饿胖了',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAO2cMrrF4h_XzW5qOqftWB5mCTMnuwCOkLfobimocVb4qFAnolvq3D1HtPu9pbIug',
-    avatarUrl: '/avatars/7255214592618397733.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -840px',
   },
   '6870169423123054600': {
     uniqueId: 'anyway_911',
@@ -934,7 +1009,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Any味',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAcCjs7UdtAJ3675mVxHoK0UQmCtkyB2_fBoB3EqfJmyw',
-    avatarUrl: '/avatars/6870169423123054600.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -280px',
   },
   '6884402358231498765': {
     uniqueId: 'Mr.iceice',
@@ -943,7 +1019,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '密斯特冰',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6-oxOirPGGe2l95Pfcpe-wRcYDhiqpT0J-njHs1Hwu4D93yMfnKaQhOp5Dg4s-qP',
-    avatarUrl: '/avatars/6884402358231498765.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -336px',
   },
   '7081136551714881549': {
     uniqueId: 'sisisisichan',
@@ -952,7 +1029,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '化妆师Sisi',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhVJ2paWgOcjMP7EzDALS605thlGTt7OPhw61-P0RbX8',
-    avatarUrl: '/avatars/7081136551714881549.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -560px',
   },
   '6947923484282454019': {
     uniqueId: 'ershuhuishenghuo',
@@ -961,7 +1039,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '二婶儿教做菜（带着二叔）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhLDudU1RQ3wW4YuHBiufuhNWEwOY-l__62Wx8xCd1to',
-    avatarUrl: '/avatars/6947923484282454019.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -392px',
   },
   '6870171071748767757': {
     uniqueId: 'dy0ufo41qrwe',
@@ -970,7 +1049,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '安七七',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAZa6qZVBGLTbzAQ4UNlYJEErMZKW8RiTSO2PHMvhj__xZrlO6uzKC2P0ID8msFY2W',
-    avatarUrl: '/avatars/6870171071748767757.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -336px',
   },
   '7246339005095084092': {
     uniqueId: 'yingshangzhilian',
@@ -979,7 +1059,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '萧正楠「正好生活」',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA8jKAqZADMnXcSbBcvpwD3K6fJv8Eb3_yGILzod4pr2Y',
-    avatarUrl: '/avatars/7246339005095084092.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -840px',
   },
   '6999676764494495774': {
     uniqueId: 'diandilahai5',
@@ -988,7 +1069,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '垫底辣孩',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdyAwlemhWajPiP1Dh4sjWiSKPHYXThfVoRSc9l0pCDEFSc2-cn3pZxGLWkEo-yhh',
-    avatarUrl: '/avatars/6999676764494495774.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -448px',
   },
   '7139745150422482974': {
     uniqueId: 'foye_go',
@@ -997,7 +1079,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '程foye',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAL4RGmmT2bv5VsysMBQsWaQ1rLq-IB9Z0fu25pAsdNsyuahzr1PPGLZnVNbhy-Ns_',
-    avatarUrl: '/avatars/7139745150422482974.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -672px',
   },
   '7251396163650191397': {
     uniqueId: '69611051262',
@@ -1006,7 +1089,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '猪小七饿了吗',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAIjWeFyb68cLLcV76cjK1Wa7K8GGBh34EzWJo3fzZsZQ',
-    avatarUrl: '/avatars/7251396163650191397.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -840px',
   },
   '6963115114165698596': {
     uniqueId: 'mixueshiji20',
@@ -1015,7 +1099,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '米雪食记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzQdrV5tHKaqpOqRmLtBFtAMTCO4DVrjttEBoH0X6yt6uOoOKeVbwWtkonb04IexC',
-    avatarUrl: '/avatars/6963115114165698596.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -392px',
   },
   '6938253392993058853': {
     uniqueId: 'xiaoman1130',
@@ -1024,7 +1109,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小蛮蛮小',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAUi8LVWO2beKFFAkEvPOCxyKikhcbnrYSaMTzUHfhOeg',
-    avatarUrl: '/avatars/6938253392993058853.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -392px',
   },
   '7219561830794919996': {
     uniqueId: '85757325641',
@@ -1033,7 +1119,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小小Q汤汤（巴啦啦小汤汤）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAr8x5keMuMcxUnMHa9ebkYR6D2MqQrlkwvgnLKYi_ow4Zuv4dauLwgI7sxf9tTnPU',
-    avatarUrl: '/avatars/7219561830794919996.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -784px',
   },
   '7159867233995325453': {
     uniqueId: 'ouou0123',
@@ -1042,7 +1129,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '欧欧吃包包',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAApBhe_CLEcSydqpRPenH7K6vPMg_Smi6EeH0DSBex06DJ7Uwkwx2zBUvAKRQCCcie',
-    avatarUrl: '/avatars/7159867233995325453.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -672px',
   },
   '7142775339968626696': {
     uniqueId: '45551873350',
@@ -1051,7 +1139,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '百变小欣',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAACKXN-xFvRrvBiWKlFjAtxcEq1cFdornqs2az3Z_OeACjvdDAU-ud_kKhR54phkMF',
-    avatarUrl: '/avatars/7142775339968626696.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -672px',
   },
   '6870168478523850759': {
     uniqueId: '',
@@ -1068,7 +1157,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '@搞事明天吃什么',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADMGKFxRyU4upsAMC2q10fTJHwa-ISsLuZ_sOjmiw3actdY6NAazOifdHhvjNzapX',
-    avatarUrl: '/avatars/6870168478523850759.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -280px',
   },
   '7471918154407477275': {
     uniqueId: '57632768482',
@@ -1077,7 +1167,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿啊达',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA3vDhMTJd1w3lEjzCSuHniwQARkcjWzBjd3LqVK-i9j2yk996IWYABKGaIWf9LXRs',
-    avatarUrl: '/avatars/7471918154407477275.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -1232px',
   },
   '7046930234402144270': {
     uniqueId: '',
@@ -1094,7 +1185,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Elvis增增',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6R__iyKjHWmKxo-rd59C3Dj8Vbdz8vNwTKOKwaJ71eQ',
-    avatarUrl: '/avatars/7046930234402144270.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -504px',
   },
   '7344134750853922825': {
     uniqueId: 'kidisadog',
@@ -1103,7 +1195,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'isiaib',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAaAwyiofXm1B2hfNLWh0BOiXtAdlPJhbgQyHUhAilDvc',
-    avatarUrl: '/avatars/7344134750853922825.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -952px',
   },
   '7164624831122685988': {
     uniqueId: '75207449626',
@@ -1112,7 +1205,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '蓝妮妮_',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALpOtDuUMQ53uf2IL87Q-ffKH7mYDqWdjIYBK0V5F4Myh4DPgI0ZudCk-ppVC4wZp',
-    avatarUrl: '/avatars/7164624831122685988.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -672px',
   },
   '7328668407048454154': {
     uniqueId: '39343743217',
@@ -1121,7 +1215,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '葡萄大人🍇',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAg8UHEABnDHUtZw3ahZVF4OcQbKaNW8GS9s9GgOBdfoo',
-    avatarUrl: '/avatars/7328668407048454154.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -952px',
   },
   '7461225191125811226': {
     uniqueId: '',
@@ -1138,7 +1233,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '°两粒盐。',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6FSBKO-eow8HKUZRHZhHgwZjwYr7MXikIXOQklQgyhlMdC4caHyRYxXXc9NtF8au',
-    avatarUrl: '/avatars/7461225191125811226.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -1232px',
   },
   '7052975302284148744': {
     uniqueId: '26032129948',
@@ -1147,7 +1243,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '佳荔🍊',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAuQLpjzcH8iY8KlOJfHF-LB59slrKWJSNU_UJaYsuwTfU2JDFkmiJWWrzxFvn8qgx',
-    avatarUrl: '/avatars/7052975302284148744.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -504px',
   },
   '6916519396831657992': {
     uniqueId: '',
@@ -1164,7 +1261,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '廖豚豚',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAlRmwbriWUrs6WcXOjwFCt7xD0SkRKUjuTONSvuox5UE',
-    avatarUrl: '/avatars/6916519396831657992.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -336px',
   },
   '7061479723926290468': {
     uniqueId: '29342540756',
@@ -1183,7 +1281,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '周周带你一起妆',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAArv9Tnk07YY0ZG1ZiF30PclmCfnPM3hBeluIJiIhfU2A',
-    avatarUrl: '/avatars/7061479723926290468.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -504px',
   },
   '7107133922227519521': {
     uniqueId: '67131288635',
@@ -1192,7 +1291,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '赵壮壮',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAZErzNFB2n7lBCmVP3eE0AuvA8jCbl1iEH4vN4ahuijZZ6k2G-JMtS0C-vwV4EtWi',
-    avatarUrl: '/avatars/7107133922227519521.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -616px',
   },
   '7519527943345799222': {
     uniqueId: '39818784067',
@@ -1201,7 +1301,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '蠕蠕在旋转跳跃',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEyltWM7j7V-9x9xCXvAHv2UIy_d1WEL2AQx7om5-1pa1ue0ViigSjwXVh-QjjYbk',
-    avatarUrl: '/avatars/7519527943345799222.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -1344px',
   },
   '7200763523478061093': {
     uniqueId: 'tianlajiang02',
@@ -1210,7 +1311,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '甜辣酱sweetchili',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2CXNS7clhDndpoBs_ZxWIhZra8GTmbkup_YQzLxTn9XW0CoSZpxufs0G-jvfFkgl',
-    avatarUrl: '/avatars/7200763523478061093.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -728px',
   },
   '7486553751050780698': {
     uniqueId: '71653382854',
@@ -1219,7 +1321,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小姜快乐屋',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAakgH7z1cgT2gwPJvrSys6LaTQzV5MlQ7Z8CtQClUXyjYbFW1xQeZOrpEipQLGOUy',
-    avatarUrl: '/avatars/7486553751050780698.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -1232px',
   },
   '7057824056782880776': {
     uniqueId: '45962270241',
@@ -1228,7 +1331,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '闪光皮皮鲁🌙',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAPWxWOylxYD2AH-pgTFrQrRor6x2AkrggUp5zLy3o82QJm815_yUBAzxFY7Ixl0_8',
-    avatarUrl: '/avatars/7057824056782880776.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -504px',
   },
   '7184770780989751355': {
     uniqueId: '42442878445',
@@ -1237,7 +1341,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小噗饱饱',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA1FoItkaue83iFqft41U8qiq5qsEB4Hp0OYBBXcV9sLvk0pakAUFSXCfT_tA7hTMC',
-    avatarUrl: '/avatars/7184770780989751355.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -728px',
   },
   '7356255439372746806': {
     uniqueId: '79485480628',
@@ -1246,7 +1351,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '胡茜Annnnn',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAGB72YRJ2X2Vs10D_4t5A035FovELbKpcQ_QtMuIq_pXZzS1NNr6_QhXoxQhX6nBr',
-    avatarUrl: '/avatars/7356255439372746806.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -1008px',
   },
   '7202636411730657338': {
     uniqueId: '48545565741',
@@ -1255,7 +1361,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '樱桃老丸子呀',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAAq_pBt3PrnFAGEa09VRXd6SXcvfqHp3X2z-z3Io95fLu71QNKefPOZqM7dOcyyd1',
-    avatarUrl: '/avatars/7202636411730657338.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -728px',
   },
   '7182439406823800889': {
     uniqueId: 'YLWD7777',
@@ -1264,7 +1371,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿min学姐（包教包会版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEnOR5rumYmlDlZb47NpcEyVHjp2u82n_qK7gIrYAe720HVob4NPiT-Jg1yeVWuaM',
-    avatarUrl: '/avatars/7182439406823800889.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -728px',
   },
   '6961207360505249831': {
     uniqueId: '',
@@ -1281,7 +1389,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '上青杰哥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQYK2lwOsDFJa-69-xYfdxmpxBeSYwADYBCAGuuXONhBv96wJYoTDrt5fF6cSyohW',
-    avatarUrl: '/avatars/6961207360505249831.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -392px',
   },
   '7187082973886283814': {
     uniqueId: '41507391922',
@@ -1290,7 +1399,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '马步停Leeea',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAtdlAUHuIrxGeUQMYEqcYnLn1FgqxFivXJl0F6mQsYro',
-    avatarUrl: '/avatars/7187082973886283814.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -728px',
   },
   '7099713892904861710': {
     uniqueId: 'mixfoodlab',
@@ -1299,7 +1409,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '米焙食验室',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAyPYVoAMQN8Uj0Uzr_Qu0wNqQSjUIyONux1ywJSF28MiADX0tJEQkc-_5ajubQwJp',
-    avatarUrl: '/avatars/7099713892904861710.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -616px',
   },
   '7199822605799391288': {
     uniqueId: 'XZ.6142399',
@@ -1308,7 +1419,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '徐知涵',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA0NtFzxpI-BFgWlAu5kkJjroX3KyRr2d49Y_kAuqjp0uXj71CaCyMN4hlFgeGCSwR',
-    avatarUrl: '/avatars/7199822605799391288.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -728px',
   },
   '7324971853670252594': {
     uniqueId: 'dongguYAM',
@@ -1317,7 +1429,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '盐冬菇-',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAG_gSrlIxutRtlonvIgqFKBpbDlynyMwk2TexKtDzPoM',
-    avatarUrl: '/avatars/7324971853670252594.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -952px',
   },
   '7332383130587758643': {
     uniqueId: '',
@@ -1334,7 +1447,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '化妆师周霞',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAKVh3XHkVRvltgc5OKQ4Nsxs7kchr2Fn6FlOkU-shMJk',
-    avatarUrl: '/avatars/7332383130587758643.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -952px',
   },
   '7483085520421584905': {
     uniqueId: '53889043069',
@@ -1343,7 +1457,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '妮妮的料理时间',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAnDqpoup26OGo2ZprHZFd8GLuGjy3T634HcZnrOh_fCWaPjAfEhX5SRjT1SV3gA7M',
-    avatarUrl: '/avatars/7483085520421584905.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -1232px',
   },
   '6916453458186895367': {
     uniqueId: '54q888',
@@ -1352,7 +1467,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '热面皮',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAkpQck-6hQub2IirKxq3u1P4-yddcUaBSmSAi1tCZpso',
-    avatarUrl: '/avatars/6916453458186895367.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -336px',
   },
   '7504966633035661322': {
     uniqueId: '65586074411',
@@ -1361,7 +1477,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大芽',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA4eZzyVxmDayPUWLBDJpyLCOzqFi9pmiK5KFx8Oq8lWU',
-    avatarUrl: '/avatars/7504966633035661322.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -1288px',
   },
   '7167661278125621286': {
     uniqueId: 'lbrj520',
@@ -1370,7 +1487,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '萝卜日记X',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAuelj8TW0qt9sjWdaeF2s82jqMvK3yPdV8vYtzRSJu8k',
-    avatarUrl: '/avatars/7167661278125621286.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -728px',
   },
   '7063710781757456420': {
     uniqueId: '48575645444',
@@ -1379,7 +1497,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '明天谁做东',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_M5dOMrn_OJDEseTF8rBFm1WGT0v25Vg0uvTyJDKlqVgxS5sPN2S6ZZX8LlIquSo',
-    avatarUrl: '/avatars/7063710781757456420.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -560px',
   },
   '6959329352848769057': {
     uniqueId: 'yzxpxx',
@@ -1388,7 +1507,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一只小胖潇的大梨🍐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA3GvlACi09v9DDYT5_L-4oVS9jkXkp5wzVNyLJy3rrvi1DfA24z3aLV-UE_Wg5c_2',
-    avatarUrl: '/avatars/6959329352848769057.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -392px',
   },
   '7094145750778839053': {
     uniqueId: '47028658636',
@@ -1397,7 +1517,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Tiger西西',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAaztgKskHUBBR2AdKTvIP4C8IBh4SFjmIEklSo2ScK_I',
-    avatarUrl: '/avatars/7094145750778839053.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -616px',
   },
   '7054801497296470049': {
     uniqueId: '35758868796',
@@ -1406,7 +1527,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '种草大户萌叔Joey',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA3Ti2BcUvyQPgG4gEEp5ysLwiOLIZjpACzExx5ssEu2cbmH1tJ4KO23V7enxbTJhJ',
-    avatarUrl: '/avatars/7054801497296470049.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -504px',
   },
   '7081142197969485831': {
     uniqueId: '',
@@ -1423,7 +1545,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '鲁菜行者',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEzaRGQ9UPK5JYVjwqpzxU7q2Bt_nxzn7q1KKH8Fxhy05z_Wsa50ufUWV5Wwk271-',
-    avatarUrl: '/avatars/7081142197969485831.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -560px',
   },
   '7079986087359152159': {
     uniqueId: 'DuoNa.DN',
@@ -1432,7 +1555,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Donna 多娜周日14:00冬季首发',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAANmlUO0S9ve2NRcI7UO4MxPoiHjqQUnnLcAUIzmld0lW1QFp3vqori_zEMj90xW4_',
-    avatarUrl: '/avatars/7079986087359152159.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -560px',
   },
   '7540579672682135578': {
     uniqueId: '36874645525',
@@ -1441,7 +1565,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '苏苏的美食记录',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAudB-oMITj761SHExPZ1cM6Vi4NeNnvwv7IFfDg9UTgGTsiUayDsbWB1dW9ZhRgLj',
-    avatarUrl: '/avatars/7540579672682135578.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -1344px',
   },
   '7340897729209434139': {
     uniqueId: '68720470903',
@@ -1450,7 +1575,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '二人食记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA4tAyU-z1TGpj2ZiPkrlyfAa9nvaAQf3Pcd0CRHAj6go',
-    avatarUrl: '/avatars/7340897729209434139.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -952px',
   },
   '7517892416553746482': {
     uniqueId: '23159382775',
@@ -1459,7 +1585,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '是Lucy&Lily💕呀',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA72AmD2tOhQ8e6_nsmLTiE5kAtC4FQUzTxad08x3sEHM_EuRxlYfdu65o8V7s0n8X',
-    avatarUrl: '/avatars/7517892416553746482.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -1344px',
   },
   '7210754478885044282': {
     uniqueId: '84596458878',
@@ -1468,7 +1595,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '化妆师奕彤小雨',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAWl_yvitVV3tXo4-mjBh_WBik5eZNGJyJGc_MHrPUvAuvt-5PLDADfuWsUGuP6eYL',
-    avatarUrl: '/avatars/7210754478885044282.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -784px',
   },
   '7082553043807371295': {
     uniqueId: '',
@@ -1485,7 +1613,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '明明闲不住',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA83ZNDZpBKxEVI_kVnwpZOLa9gFqpdDozhr16lYiO2wiGS8esEJhOQGu2lxPDEBjN',
-    avatarUrl: '/avatars/7082553043807371295.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -560px',
   },
   '7339073061038653478': {
     uniqueId: '304081259hyb',
@@ -1494,7 +1623,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '化妆师韩佳远（面授课报名中）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAttq67hiyCWFlm49b1IGv7fB5daxN1zbh-oGOE1-izySfMC4-CWTiIkQYnrDS-bhg',
-    avatarUrl: '/avatars/7339073061038653478.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -952px',
   },
   '7370580686622851123': {
     uniqueId: '53184963052',
@@ -1503,7 +1633,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '猴哥爱做江湖菜',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA9RDBvk1RzT5NxSvAJJBf0MuuHSsY5RJxnDhu-wh5Ut4GxZGioC6MCr7aExG0-4b5',
-    avatarUrl: '/avatars/7370580686622851123.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -1008px',
   },
   '7543839461086199835': {
     uniqueId: '49382281881',
@@ -1512,7 +1643,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '许小猫_mona',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_VsVG2F9k-KRRngclLQvUwJV9KJm8oJOzo9Dnex56A8',
-    avatarUrl: '/avatars/7543839461086199835.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -1344px',
   },
   '7084777202490802211': {
     uniqueId: '',
@@ -1529,7 +1661,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '饭饭陈住气',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAtAsyUBz7aNdEauE4UW_PZBzQ_X3GhqK5iXVEotfnTCI',
-    avatarUrl: '/avatars/7084777202490802211.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -560px',
   },
   '7621123052335530034': {
     uniqueId: 'HiJIJIOwO',
@@ -1538,7 +1671,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '熊熊日记📦',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAiDBKCm8Sa_5S7f367AfSBkZIdShEOYuTPiATu-4WKXrnLcsqfXDNcCYQejnM4msb',
-    avatarUrl: '/avatars/7621123052335530034.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -1456px',
   },
   '7376678147585998875': {
     uniqueId: '',
@@ -1555,7 +1689,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '丸子吃多点',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAcBvSuIoJUGfCrSn5Q8pf6Df0J73nHkdzdZJPU-yOqKj9q_axZnp7zrO9KwDcVuI9',
-    avatarUrl: '/avatars/7376678147585998875.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -1008px',
   },
   '7574405359570255881': {
     uniqueId: '32363349755',
@@ -1564,7 +1699,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '差不多日记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAi3WrgphmRTGLGMpW4zhPoZEopWN7IuK8qDHDVY5cIAT_V6Tv5wnJq_4kqdlmaWo0',
-    avatarUrl: '/avatars/7574405359570255881.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -1400px',
   },
   '7612419541406056474': {
     uniqueId: 'shine9717',
@@ -1573,7 +1709,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '林晨',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdMCCmuf-jYzQd-bZtYMgPKTsGpWUfpiov-eY-ytSNaM',
-    avatarUrl: '/avatars/7612419541406056474.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -1456px',
   },
   '7640874209974992934': {
     uniqueId: '20233737476',
@@ -1582,7 +1719,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '黄昭昭',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAPUEmyGGsGxOZiu9L2kWMpHPGygS1Y4G3Pgwyy8K0PY_2APABGYSDlHx4h_uHoaoQ',
-    avatarUrl: '/avatars/7640874209974992934.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -1456px',
   },
   '7564408088084152347': {
     uniqueId: '76428816636',
@@ -1591,7 +1729,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '教化妆的大姨',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAX5XBUv3cTdY7xLctLTrQyF33BtDQtYPGd0NhXYcv4S36BwTu00JEbqgxQ3JXbb7Q',
-    avatarUrl: '/avatars/7564408088084152347.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -1400px',
   },
   '7646720304210771978': {
     uniqueId: 'JCLjiangchenglan',
@@ -1600,7 +1739,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '姜乘澜',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAoyFQWZF9nVEVceqNol0wiIM17LTHoandxsR11E-w_3k',
-    avatarUrl: '/avatars/7646720304210771978.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -1456px',
   },
   '6629663001697845262': {
     uniqueId: 'xiaozhuzhu531',
@@ -1609,7 +1749,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '逛吃小猪猪',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAec-tid4Mj0_662ZibkJlh8RseKjRJz3PYrXEPVRA0Vs',
-    avatarUrl: '/avatars/6629663001697845262.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -0px',
   },
   '6696678471633993739': {
     uniqueId: 'AnsonBar',
@@ -1618,7 +1759,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '安森的话事酒馆',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAP_yqNJPWCNvGlJXz2z59g2Q_KBMTTYj-FD0IqOrnfqjTW67wBbDV-FDRwAwf-7TU',
-    avatarUrl: '/avatars/6696678471633993739.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -56px',
   },
   '6730044209664884747': {
     uniqueId: '',
@@ -1643,7 +1785,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '甜味乔巴',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAZoOgL55pwFqTF-3P7-rUsoPCHPZecO9aprF41Biv086eToCRCyqqVS9du1LAmNQs',
-    avatarUrl: '/avatars/6730044209664884747.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -56px',
   },
   '6629659088030531592': {
     uniqueId: '',
@@ -1668,7 +1811,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '绵羊很cool',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAa4AUf5YzDDX25EqF8j2oC-1zrqTD0NIjvtKX0ZMcycecYJwtcA7N_G40Pvtwcd0_',
-    avatarUrl: '/avatars/6629659088030531592.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -0px',
   },
   '7290962037700558903': {
     uniqueId: '81110384825',
@@ -1677,7 +1821,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '奶粉小斤（晚9-11点直播）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAyCCkL5qKG1ojS94zN88rYwEHmAWZn7RxmFLGuDbKNE0',
-    avatarUrl: '/avatars/7290962037700558903.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -896px',
   },
   '7443089553247698983': {
     uniqueId: '68943949733',
@@ -1686,7 +1831,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '可可姐姐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAITLrsUNJUSWIamVsBYfL8r3xrJKsqPEj17ZpASshZCE',
-    avatarUrl: '/avatars/7443089553247698983.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -1176px',
   },
   '6855617228696453133': {
     uniqueId: '35316223178',
@@ -1695,7 +1841,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '美少女壮士清清',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA9lt9JjUOE5H6GBLhHhE8qDA9POk--qTuOfmyi_Z4VXM',
-    avatarUrl: '/avatars/6855617228696453133.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -224px',
   },
   '7462415898456883209': {
     uniqueId: '66069396102',
@@ -1704,7 +1851,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '奇迹厨厨',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAoXxp2sFbX706pa7vmqhZy592TOKO-i6v3a6kQwjryJPfa_bm_E801QVuCX9wVCEB',
-    avatarUrl: '/avatars/7462415898456883209.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -1232px',
   },
   '7466278479290433571': {
     uniqueId: '64774003479',
@@ -1713,7 +1861,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小梁当爸（15号威尔贝鲁睡袋溯源）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAmc6D6QRc-qj6XBgeapw1XWQ9mpgucjAk_5GVW_letoc',
-    avatarUrl: '/avatars/7466278479290433571.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -1232px',
   },
   '6747567262464475150': {
     uniqueId: 'GanGan233',
@@ -1722,7 +1871,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '我淦',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA75fLY4YUfhSCxCwazDN87B8dxm8mjzxJDpFNw5v2x0M',
-    avatarUrl: '/avatars/6747567262464475150.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -56px',
   },
   '7426310077566419007': {
     uniqueId: '59501166011',
@@ -1731,7 +1881,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小葱酱Mami🌿',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA82eBtG2iEnAsSvDi8peu7FgrpmsBMHScoZDpTwXSDIZopBcvycIKaAr4_79PL-Yc',
-    avatarUrl: '/avatars/7426310077566419007.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -1120px',
   },
   '7405125732692819977': {
     uniqueId: '62067155923',
@@ -1740,7 +1891,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'HAPPY小狗o3o',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_TptntHnCtbPta8Mh0uZsHfqwNrBq4WkspT_az501oOJz2_ipyRDCxvLRJZq7Rip',
-    avatarUrl: '/avatars/7405125732692819977.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -1064px',
   },
   '7031386055358021645': {
     uniqueId: 'mingyuansungugu',
@@ -1749,7 +1901,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '孙咕咕',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAaDAzStEb6crE5e66zm9urRGKbxCxPyBHQzcpVRj3x68',
-    avatarUrl: '/avatars/7031386055358021645.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -504px',
   },
   '7020965954544730120': {
     uniqueId: 'guoma21520',
@@ -1758,7 +1911,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '果妈的双倍幸福',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAcUAhIz9Jw8JmjktOKyBO1paVtxL80hJEVY6fBM3eefdwljJ5Vlq_DsHz6XW4zKDb',
-    avatarUrl: '/avatars/7020965954544730120.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -448px',
   },
   '7163680063018237959': {
     uniqueId: '74621219138',
@@ -1767,7 +1921,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '冯宝',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAMonp0IN4Bi-oKgof_X6pGa_MIWvO6lTMT7iQEWtCpWk',
-    avatarUrl: '/avatars/7163680063018237959.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -672px',
   },
   '7250168270211252285': {
     uniqueId: 'baoliguigui',
@@ -1776,7 +1931,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '宝力龟龟',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQe6aSC9jpV_cNPyhiVMmjxlHTbH95jKRk2epjtj47E3oM_-8xPsJCy2NJ97Nv5YO',
-    avatarUrl: '/avatars/7250168270211252285.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -840px',
   },
   '6864119541841002496': {
     uniqueId: 'OOTD77KK',
@@ -1785,7 +1941,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '77KIKI',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAyCkVE9sH5JAizZpjZT-JFC4GQMXp6MiLD_tGqqh2KBNPPShLUBe0P_d1VhtxSFQD',
-    avatarUrl: '/avatars/6864119541841002496.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -224px',
   },
   '6870107991119495175': {
     uniqueId: '22334455mawenyu',
@@ -1794,7 +1951,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '银角大王',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-xybSn9HiwnpTJI7_VpIIkIZ6YUOMs5EoLzzqvpRZ3c',
-    avatarUrl: '/avatars/6870107991119495175.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -224px',
   },
   '7031338976862535692': {
     uniqueId: 'dalululu927',
@@ -1803,7 +1961,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大陆lululu',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzrXdYpvPc2Tchgd4oe1gBYT5m2YZ2mvh8IWPeJoqAUU',
-    avatarUrl: '/avatars/7031338976862535692.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -504px',
   },
   '7373932213445869579': {
     uniqueId: '60952964019',
@@ -1812,7 +1971,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小新爱吃肉肉✨',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzwRGQoqIrgilcjK_d8vX2hZW6npkFRau2W7xQTN2I5LwgxpEPYMde0lPu3jqtiSI',
-    avatarUrl: '/avatars/7373932213445869579.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -1008px',
   },
   '6852857552468705293': {
     uniqueId: 'HZxiaofanqie',
@@ -1821,7 +1981,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '杭城小番茄',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAg-BV_WdOB0MTG5-95mEwB3ZZmvtEryFXykvAFiJ6auGwJ2HvyjtGe85DrftRrFuW',
-    avatarUrl: '/avatars/6852857552468705293.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -168px',
   },
   '7410204969535537202': {
     uniqueId: '50509130680',
@@ -1830,7 +1991,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '江边圆舞曲',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAVN-wHzONHJXmSbfP7OMTJYSplYxT1ixaCGzAADyGtm8nZIqNYDyUoLPWm353vsgV',
-    avatarUrl: '/avatars/7410204969535537202.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -1120px',
   },
   '7036216786865356836': {
     uniqueId: '',
@@ -1847,7 +2009,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一只伍伍',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAnITfA1cSec8Zcn5RiXsS1YDYacAd74DxPpnIKtqXHpgzbKCqtpHPNj9GaORrP9mX',
-    avatarUrl: '/avatars/7036216786865356836.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -504px',
   },
   '7317436368089513994': {
     uniqueId: 'Mika0430',
@@ -1856,7 +2019,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Mika咪卡',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA0m6YjH65HrAbu5RFTeTvV7_o_n3HHjZ74SrkSjivxOkaTqvkCPzJVpoy37TFlhTR',
-    avatarUrl: '/avatars/7317436368089513994.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -896px',
   },
   '7316035588312793114': {
     uniqueId: '',
@@ -1873,7 +2037,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '白开水不好喝',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAS7zKf-oA9gGfGrGskb5JVTCK8v0yxRcnLMgvWctCz1k1G6LAm6iKcwmyDZ11nnEV',
-    avatarUrl: '/avatars/7316035588312793114.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -896px',
   },
   '7140557404210462734': {
     uniqueId: 'lxzlyp82',
@@ -1882,7 +2047,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '七海Christ',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAPzNT8Vsd2B76iELYzJ1S6Yqc8mp0MbEIhueTaz5UHJOOuy_bCl9ajiaVtqCzTz6O',
-    avatarUrl: '/avatars/7140557404210462734.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -672px',
   },
   '7455173554980536329': {
     uniqueId: '42308814521',
@@ -1891,7 +2057,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小麦芽和妈妈',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAApf3yo3Qwlt6AHA4BN6ADvi9iQCQKg2quO6hadd6-NqPPU7BpXOq5YEb5nU3oTIBT',
-    avatarUrl: '/avatars/7455173554980536329.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -1176px',
   },
   '6870160441574686728': {
     uniqueId: '',
@@ -1908,7 +2075,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '刘虔🔑国际婴幼睡眠咨询师',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAXgA03JZ_1seSzaDxnoxREUWnj8C7ff8MghwCU-aiAL4BXCOa-fA2cUtKl6F7lDIa',
-    avatarUrl: '/avatars/6870160441574686728.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -224px',
   },
   '7524670732060590090': {
     uniqueId: '',
@@ -1925,7 +2093,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '芮米Remi',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAMvoyv8HWrPiHOZtoRW05TqPK_efrLiapwjnovNsRvPp0-1-K5ELHIugwnDfJwc6f',
-    avatarUrl: '/avatars/7524670732060590090.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -1344px',
   },
   '7209545460753629243': {
     uniqueId: '',
@@ -1942,7 +2111,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '是哈哈吖',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAjN8R4oRYpguL1LFCOfqXeoRmPX6sQ6CP5-yUZlNeMSPMJ2FXtObhDMt-NMnOBQh6',
-    avatarUrl: '/avatars/7209545460753629243.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -784px',
   },
   '7033800983549313061': {
     uniqueId: '30499879635',
@@ -1951,7 +2121,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '开心小玥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7C5SuKepsvEh6iNPnL8D7xcHR4PwtuTl7ouT5qEYpifl4mTgonor4pFdh8LhO7zi',
-    avatarUrl: '/avatars/7033800983549313061.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -504px',
   },
   '6887809253877219335': {
     uniqueId: 'synmei',
@@ -1960,7 +2131,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '泥美(限量版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAIjLcOF9wen3DLSOJTEqqYzeRLmArsQlc4PHsOK832ntWlIGXUrbGJph8-AOvWL0e',
-    avatarUrl: '/avatars/6887809253877219335.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -336px',
   },
   '7426992428881543218': {
     uniqueId: '80276384139',
@@ -1969,7 +2141,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Vivi吃瘦了🍪（带娃版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAMMGe-VVAi87hI4wvLpAnWQBzHfBg4OBRnhJ-nnWLUl8',
-    avatarUrl: '/avatars/7426992428881543218.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -1120px',
   },
   '6870162026396647431': {
     uniqueId: '87493415669',
@@ -1978,7 +2151,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '温雅Wensley',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA73hLDSi6QgYOg6D1hIheuZkFJF1SafhO0vizQLmvaKw',
-    avatarUrl: '/avatars/6870162026396647431.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -224px',
   },
   '7213822534729334839': {
     uniqueId: '65992704106',
@@ -1987,7 +2161,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '佳一份芋泥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAB6jD7WKOTvI4H1P63TY220M6BhOyzsqyAWPM40e__qY',
-    avatarUrl: '/avatars/7213822534729334839.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -784px',
   },
   '7546593589121843250': {
     uniqueId: '62136220806',
@@ -1996,7 +2171,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'z随便不随便',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA9BsSHcuLuUzX2pDaqJGPaFLtiZMNNV6cVusGEci9kxGlworzkg0ucWYyTI2zFNco',
-    avatarUrl: '/avatars/7546593589121843250.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -1344px',
   },
   '7471894366844354587': {
     uniqueId: '64151354312',
@@ -2005,7 +2181,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小豆子爸爸',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJJxtKWMjhzqW7GNfj5_XqzEka5Zx88qyCiEcrnjels64iYPLX_TAMOxBu7gj9DzN',
-    avatarUrl: '/avatars/7471894366844354587.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -1232px',
   },
   '6870160134794919950': {
     uniqueId: '',
@@ -2030,7 +2207,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '不太忧郁大帅哥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAACXtMYvmVRER1fEnLEspHh_Qhl_hpW2Zyn4NerMcEiRY',
-    avatarUrl: '/avatars/6870160134794919950.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -224px',
   },
   '6870169635317088269': {
     uniqueId: '73976355018',
@@ -2039,7 +2217,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '咸咸子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAmK0D6JgG3ap9GCtxks1oriJWXEIrR9-iHY8HDi6Ag3jH_jacuPEPADnkFN9jEkoY',
-    avatarUrl: '/avatars/6870169635317088269.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -280px',
   },
   '7537135110720126995': {
     uniqueId: '57731739995',
@@ -2048,7 +2227,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小葵辅食日记📔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA5KI4A46xOqOneCJGLzXfisAYMRm_QUv2Lec_5VYfKioDfGLSrp8igbh2iZtoqRMJ',
-    avatarUrl: '/avatars/7537135110720126995.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -1344px',
   },
   '7198780909896597504': {
     uniqueId: '77273356002',
@@ -2057,7 +2237,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '艾薇蟹子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2Cfy1tZcdS0cs3lSiZDv094Hvqphud7GjiO7wL8-4w1L-DOx0Avm1yfI9lnW202y',
-    avatarUrl: '/avatars/7198780909896597504.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -728px',
   },
   '7480435077302714405': {
     uniqueId: '57496442621',
@@ -2066,7 +2247,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '奶糖的御膳房',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAwefrQcO-ZK-lqQNklr4f69N35c1qmA3MI0iIMUWd_L6ehK0eBAswfj_6EzYgiEQ2',
-    avatarUrl: '/avatars/7480435077302714405.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -1232px',
   },
   '7039193256994799654': {
     uniqueId: '',
@@ -2083,7 +2265,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Selene',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAToj36RiFZHjH2BBc4-OD8vGJkBpa7jzugfdq76WNXYnMy17333olOdPgYNIE2-tr',
-    avatarUrl: '/avatars/7039193256994799654.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -504px',
   },
   '7474816561170087975': {
     uniqueId: '95906280978',
@@ -2092,7 +2275,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '远远妈在带娃（育婴师版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASeiGs4P3y5EBPbBgdTr50-g9Dv7OLaw4imVY1j081Cc',
-    avatarUrl: '/avatars/7474816561170087975.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -1232px',
   },
   '7083678262013984781': {
     uniqueId: '78607884907',
@@ -2101,7 +2285,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '张琪er',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAh9bDTB8waHFZVLdNQRydzmRlsF5XVM6iWdY1iP5ukcQax4mH6Xn0rLAv2ik8_9O7',
-    avatarUrl: '/avatars/7083678262013984781.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -560px',
   },
   '6870165518356054029': {
     uniqueId: 'YURIO58',
@@ -2110,7 +2295,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '尤里喔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADEJYpcltJYdpRemTidRkfBDoSwivkF0PbkGeqbECYXg',
-    avatarUrl: '/avatars/6870165518356054029.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -280px',
   },
   '6870169026543222791': {
     uniqueId: '20847462341',
@@ -2119,7 +2305,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '上下名',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzXIj5uqHswQCdd3NAOxEZV4tclK23gFBMQn3o4LWzd4',
-    avatarUrl: '/avatars/6870169026543222791.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -280px',
   },
   '7549425515568840750': {
     uniqueId: '37041936966',
@@ -2128,7 +2315,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '颂伊宝',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAqscqPgl1dvzyOMA_Ad7S2zNSWs3cl9FahQkXtsc2_vHP2u-sHkS9xrfXHrHgaMQx',
-    avatarUrl: '/avatars/7549425515568840750.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -1400px',
   },
   '7393199335963361318': {
     uniqueId: '29318775894',
@@ -2137,7 +2325,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '老羊厨房',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAtDpcRynK98f0OYxQKiDx0mCtbtkjpy2jvOrYGL84fBEJvddcJXTa8cNueGFt4WhW',
-    avatarUrl: '/avatars/7393199335963361318.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -1064px',
   },
   '7422203168013942794': {
     uniqueId: '',
@@ -2154,7 +2343,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '西瓜说世界',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAWyb9R_3aZfR2TybJKcB8n79-rj8TmmpO151vyxuxUAdwzwixK2sYpzxwMa6ApxqG',
-    avatarUrl: '/avatars/7422203168013942794.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -1120px',
   },
   '7049324080796794910': {
     uniqueId: '',
@@ -2171,7 +2361,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '酒窝奶奶科学育儿',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAkprpe8AuHsig-8H58bEC7lH7z-WnwBnf-9xsMVf6vdG-nYyfAGUsCbf1NXnS7Xv0',
-    avatarUrl: '/avatars/7049324080796794910.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -504px',
   },
   '6891928546596372487': {
     uniqueId: 'erke365',
@@ -2180,7 +2371,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '儿科魏光宇',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAbLWm9TVeD8oGTIdPGmKnfvkeaKvFamJipfaxYmCayBXYBMLz7Pzvc7wa1tB4LirE',
-    avatarUrl: '/avatars/6891928546596372487.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -336px',
   },
   '7481262938393673765': {
     uniqueId: '33506772405',
@@ -2189,7 +2381,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '我好咕噜虾',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAxmyjPUYfLgxIXZJWF5OB3-Rcl0MO3MsabPFTfLtdwsE',
-    avatarUrl: '/avatars/7481262938393673765.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -1232px',
   },
   '6870170482440667150': {
     uniqueId: 'yourslumo',
@@ -2198,7 +2391,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '松鼠牙_',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAWPyvCPduubaq4mXkWSZ5NXU72-XAPN1XL2OYv5yYZutBrOpbSbF5pScLg_KkiSnV',
-    avatarUrl: '/avatars/6870170482440667150.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -336px',
   },
   '7323512243507691557': {
     uniqueId: '25544698208',
@@ -2207,7 +2401,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'BettySays',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6QD3474TnqQynCEzg4-7c873D06ntkjoLMJBNxwdBWg',
-    avatarUrl: '/avatars/7323512243507691557.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -952px',
   },
   '7324267686857277491': {
     uniqueId: '',
@@ -2224,7 +2419,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大胆菠萝包',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOla87x3tb-roXUCSeMYB9Xc1quJex3tAFBplsnpHpyjiiVsq1eaY5KY3c4eATFtr',
-    avatarUrl: '/avatars/7324267686857277491.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -952px',
   },
   '7325352906272538662': {
     uniqueId: '51284611751',
@@ -2233,7 +2429,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '南风的每一餐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAMYmb-dNgvPU5ga38WR4Frbke3oYEb6hW0U3R1iSxkuKRlAPppO9V-LsZPluEziO1',
-    avatarUrl: '/avatars/7325352906272538662.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -952px',
   },
   '7232866879021252663': {
     uniqueId: '39446341525',
@@ -2242,7 +2439,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '糖糖吖～',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAwqSB4zOn5tnzf5GZZRYfjnocxGeTnQ7uwOWJj8Cz7NA_3Nfz_j4v3WGkf05gYWpL',
-    avatarUrl: '/avatars/7232866879021252663.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -784px',
   },
   '7064962352981999651': {
     uniqueId: 'yuxin_1104',
@@ -2251,7 +2449,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '胖丁胖不胖',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQehO5q0lvySO2sZFO0gkFLNIrf4Zf8eQXpjV3Qwj-eE',
-    avatarUrl: '/avatars/7064962352981999651.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -560px',
   },
   '6868101981437706254': {
     uniqueId: 'Wanxiyu_',
@@ -2268,7 +2467,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '张心蓝',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAe2Fv7VzMDXu3gi7YJjsDIsclcqK1WWQ4GrqgxFWD7J0',
-    avatarUrl: '/avatars/6868101981437706254.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -224px',
   },
   '7428907169522647050': {
     uniqueId: '601521742ww',
@@ -2277,7 +2477,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '方脸玥晨呀～（婚礼休假中）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJGD8a7gDwIuYzOQP8DIMeNfRxzzY5dic9IbDjgYFWE9TKliSBxlGYh12bwdjdFZa',
-    avatarUrl: '/avatars/7428907169522647050.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -1120px',
   },
   '7230681647748743224': {
     uniqueId: 'xiaomayunyun',
@@ -2286,7 +2487,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小马晕晕yunn',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_AgkFEBajmWSggR0osIvigBt56RoxCUtzM-ZX7cg45o',
-    avatarUrl: '/avatars/7230681647748743224.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -784px',
   },
   '7342433471194726463': {
     uniqueId: 'rouliguanguan',
@@ -2295,7 +2497,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '肉梨关关',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2f40T7RNVYfN1vWAS4Pe_BRy0cbnSa0SjqYzJ46UfCw',
-    avatarUrl: '/avatars/7342433471194726463.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -952px',
   },
   '7259683862370844683': {
     uniqueId: 'AClamei222000',
@@ -2304,7 +2507,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'ACdemand',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA1Kcd77bBGBZXf-LP05MMOIjEpuAogRzktO5dkqw_sCk',
-    avatarUrl: '/avatars/7259683862370844683.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -840px',
   },
   '6870164602412335111': {
     uniqueId: '',
@@ -2321,7 +2525,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '叫我大冰冰（已瘦55斤）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAmRmHS2yF5IngJ43ddmrnhCdO7IKGz_ZkrFk7KPjY6agxbzvkbly-Lb6QqGC9O89L',
-    avatarUrl: '/avatars/6870164602412335111.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -280px',
   },
   '7104951536492478497': {
     uniqueId: 'smartegg666',
@@ -2330,7 +2535,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '淡淡teok',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAZVZAizyIkZgO7z-JWLE6tcXhO4KKVAcm0Y0Bsx0WJv1uafQ6e5XQnJOxDDsFHyhh',
-    avatarUrl: '/avatars/7104951536492478497.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -616px',
   },
   '7080882887108591628': {
     uniqueId: 'zhuzhuacf',
@@ -2339,7 +2545,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '猪miumiu',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAmFOkxVUfI5zUcPusudLlFx3-p8z0hZfdKojPptsxuxYgnQfA8DEyWEuAVp8fAJSf',
-    avatarUrl: '/avatars/7080882887108591628.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -560px',
   },
   '7518822485496692799': {
     uniqueId: 'wsbbaqaq',
@@ -2348,7 +2555,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '米女过家家',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-ZDevqbg4FfBclQ_6gRCVhDhk1oXw7w-oZvbNly0DbQ',
-    avatarUrl: '/avatars/7518822485496692799.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -1344px',
   },
   '6989139556297605120': {
     uniqueId: '63748174259',
@@ -2357,7 +2565,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '草鱼爱吃鱼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA--B8rgPVGipaSkTZOEj_NiMl1cWrhKTG4HtXFK-qxSQ',
-    avatarUrl: '/avatars/6989139556297605120.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -448px',
   },
   '7242560333003358268': {
     uniqueId: '98286937007',
@@ -2366,7 +2575,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '逃跑的美式鱼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAweJNZUBP4_Svv99K5-B63ZUleMmtVpMnwuYB5ZkdlwonNqYa2G3d1Xe74MpSJwB8',
-    avatarUrl: '/avatars/7242560333003358268.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -840px',
   },
   '7255555350135308325': {
     uniqueId: 'Gulili_bacl',
@@ -2383,7 +2593,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '吴爸爸的早餐日记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAvbVySaoiJbUbHymqxLMTMoWoy5m3jybj_ZtILScBFnw',
-    avatarUrl: '/avatars/7255555350135308325.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -840px',
   },
   '7350520840137474057': {
     uniqueId: 'ray_qian1',
@@ -2392,7 +2603,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '营养师大瑞瑞',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAZlVwiOLfXtI8WuLpdmSSBIdUpaEivWbQ0_5eXX4IeYo',
-    avatarUrl: '/avatars/7350520840137474057.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -952px',
   },
   '7564685994293723174': {
     uniqueId: '38323111022',
@@ -2401,7 +2613,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '伶骨',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAP1lmnmo7IHXMCKJRvWqpPL-m1saUMTP0_Pu73ZCD6cd6iyZGkmkltE5xCF8QGYBS',
-    avatarUrl: '/avatars/7564685994293723174.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -1400px',
   },
   '7362584890316947495': {
     uniqueId: '',
@@ -2418,7 +2631,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '老马母婴科普',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJS7aBVp1PkTBw0fLj_DLdsldjuFLIh-dQ2snE1pVAuo',
-    avatarUrl: '/avatars/7362584890316947495.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -1008px',
   },
   '7501184237043712063': {
     uniqueId: 'Shawnqwe6445',
@@ -2427,7 +2641,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '第一口就喝到了猪咪耶',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_b0UO5iQ7MQC5WfYMztdgoOBnVAtWlDzbUAEjMcWGJLCC8xl4GqGLE45J_CLcUjZ',
-    avatarUrl: '/avatars/7501184237043712063.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -1288px',
   },
   '7129849875897778190': {
     uniqueId: 'RUNTU2222',
@@ -2436,7 +2651,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '闰土RUNTU',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASlsKyBE0w83jNcA7x_AL91PwKc27jymn2BC7rJT2R-0',
-    avatarUrl: '/avatars/7129849875897778190.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -672px',
   },
   '7495678559300157490': {
     uniqueId: 'zj_2025666',
@@ -2445,7 +2661,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '张英姐育儿好物',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAACdj5bksS9zH0QOzuaShl8zk4gAMdlMT6zo7DWqtkBZ1u2ZGiCC9Qdg4OiCeBw6Eu',
-    avatarUrl: '/avatars/7495678559300157490.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -1288px',
   },
   '7536022225036509222': {
     uniqueId: 'quqiii6677',
@@ -2454,7 +2671,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '曲七',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAaYcMKU0V7LDUu5GYeTXoP9jQzQtluwXe6TbvlXOUbbw',
-    avatarUrl: '/avatars/7536022225036509222.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -1344px',
   },
   '7494575354737066010': {
     uniqueId: 'YrRrrrrrr',
@@ -2463,7 +2681,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'arui的小尾巴',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOI83gP6q5fxev6lXL_-l4952RnH-EGO3ajy4qqkaTcU',
-    avatarUrl: '/avatars/7494575354737066010.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -1288px',
   },
   '7080775125938733071': {
     uniqueId: 'Jww_11',
@@ -2472,7 +2691,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '士多屁梨',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA854Q4ho6KzUK-tqfTjPKw_VaVn1gK7tJ3foyi6pykOb9eXo7uTOLCzn13Y-osMHX',
-    avatarUrl: '/avatars/7080775125938733071.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -560px',
   },
   '7299483851712102415': {
     uniqueId: '20879122911',
@@ -2481,7 +2701,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '久妹麻麻24号22点青漾时光洗护po价',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAiGpEfiT8AeVaNLCIbfo11eYM8khk2Q0wvdQIpAuIus8',
-    avatarUrl: '/avatars/7299483851712102415.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -896px',
   },
   '7063455503283650564': {
     uniqueId: 'yuandamin',
@@ -2490,7 +2711,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'F班圆大敏',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAtUd96AelfY1CNAWtRE7kMff82G2oVLPx6cI73Oef0Hc',
-    avatarUrl: '/avatars/7063455503283650564.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -504px',
   },
   '7501592731798470683': {
     uniqueId: 'wxbfsj666666',
@@ -2499,7 +2721,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '吴小宝和李大Q',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6L2c2CPESB2m5rO-uykdbAVuGOXO4eMkUjUo8D9-FGMaNTGdZnOfbLJvRqaGRV3D',
-    avatarUrl: '/avatars/7501592731798470683.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -1288px',
   },
   '7262158847958057016': {
     uniqueId: '82210200536',
@@ -2508,7 +2731,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '卡卡本卡',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA0Lm3yOXH0F9YqMzRJwfiDdbZMw4D82QwKtJeyCBKDm6MmSD_Biy9BT67nF214AuO',
-    avatarUrl: '/avatars/7262158847958057016.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -840px',
   },
   '7355818204461006874': {
     uniqueId: 'jingzhimama089',
@@ -2517,7 +2741,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '精致妈妈做辅食',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA9jRdOvfVUFMlsh0hZIHhRpygFrXItcFfEHmLe-r9ST1OAQxkbH5tTUhcw5Vov3nX',
-    avatarUrl: '/avatars/7355818204461006874.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -1008px',
   },
   '7591839424086818842': {
     uniqueId: '67332547390',
@@ -2526,7 +2751,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '机游哒S',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzKYI6Nye6A7MA-Id0dOIicId8S_WAvLCdE4YbGOm4x0',
-    avatarUrl: '/avatars/7591839424086818842.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -1400px',
   },
   '6989606213621121060': {
     uniqueId: 'WFqianyibin',
@@ -2535,7 +2761,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '钱以斌',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAO0lCR_2_KanfdwoZ5YYw3BWHYUJR_QL6CT4e2GaaLIcZSmT57sTwT5H3IHxdBJii',
-    avatarUrl: '/avatars/6989606213621121060.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -448px',
   },
   '7255555213216448551': {
     uniqueId: 'ML19710519',
@@ -2544,7 +2771,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '添添奶奶辅食分享～',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2kYpuOR16pVQabz22qP5lURsb1RqyQVLAPqEwFShKi0',
-    avatarUrl: '/avatars/7255555213216448551.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -840px',
   },
   '7484846411939315762': {
     uniqueId: '50895674304',
@@ -2553,7 +2781,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '六金金✨（测评版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAU04lGEfP4jnCcCRDkye8zEDUstg72mMF9ul_xL5fLr9pV77q9l6X-CzH8Htrsb6Y',
-    avatarUrl: '/avatars/7484846411939315762.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -1232px',
   },
   '7054140449480507425': {
     uniqueId: 'youzaijianfei',
@@ -2562,7 +2791,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '我月月啦（被迫改id版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAD2XrgBeE0BzvbWjmgUHkTak-RsxdI8nN7IbRrqp1KEs',
-    avatarUrl: '/avatars/7054140449480507425.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -504px',
   },
   '7108638811105525768': {
     uniqueId: '34204602517',
@@ -2571,7 +2801,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '馒头麻麻功课党',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAm48JA2RVHBIASw_rqN3zFmX1qs3-eGmH_Vcyyq3gizKkeAUFDH7etjO2Q4z2hgUY',
-    avatarUrl: '/avatars/7108638811105525768.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -616px',
   },
   '7413206189623738405': {
     uniqueId: 'xxxiwhaha',
@@ -2580,7 +2811,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '呼叫圆脸胖尼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAqc2siuzTV0D9MOplKeWgA_Tud3fRGmlNbHejXpDCqgJIhjL0mRRmUiSUtRtN4GCx',
-    avatarUrl: '/avatars/7413206189623738405.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -1120px',
   },
   '7369655121854070823': {
     uniqueId: 'Edanhh',
@@ -2589,7 +2821,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一颗鹅蛋hh（155/85斤）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAXikKxrLDgrTdYKAh_YkmJdqg2y93T2EVbUQ6XRaKnQdngnU3y8tTV4Nc5SuX6ZFT',
-    avatarUrl: '/avatars/7369655121854070823.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -1008px',
   },
   '7494211638887710757': {
     uniqueId: 'DYCJ0001',
@@ -2598,7 +2831,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '暖宝成长记🍼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAg0YXBpk38Sl7JATGfuYwd8ZnNXqroWEYWhrmsxsU8EwokjzDbVq2k2Y21Dsk_2fi',
-    avatarUrl: '/avatars/7494211638887710757.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -1288px',
   },
   '7353281593722699814': {
     uniqueId: '63430251523',
@@ -2607,7 +2841,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '席颖行（重生版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAI3UWBTyKzKxRb9-I-HRODUX7MDzOkK7Bgbw1n6qz-cE',
-    avatarUrl: '/avatars/7353281593722699814.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -1008px',
   },
   '7082648185998573603': {
     uniqueId: '94371744368',
@@ -2616,7 +2851,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '范范的菜',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAVv5tcLpebgOMH4vPMh6Lf-eZiaz7QNNv3fNfJIVSuIs',
-    avatarUrl: '/avatars/7082648185998573603.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -560px',
   },
   '7442298424466079756': {
     uniqueId: 'Dali1810',
@@ -2625,7 +2861,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Corrie_white_',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAKkCVHe-bqnUdQA0CkUudxA7o-KrYUIpAhvH_shzoWO4',
-    avatarUrl: '/avatars/7442298424466079756.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -1176px',
   },
   '7497155489244184613': {
     uniqueId: '22374893186',
@@ -2634,7 +2871,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '皮皮妈妈',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAN_l-7hUCKs48fzOKsiHpw0mtMvqNNDeX1MpT8oQDKQBvophhpmX8g973yU6HH8nt',
-    avatarUrl: '/avatars/7497155489244184613.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -1288px',
   },
   '7440408022590947379': {
     uniqueId: '32586135967',
@@ -2643,7 +2881,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '塔塔的时尚笔记本📒',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAd4FmthRJmg09wD2vkNsXwY6LtT45U2x7-V_fI1PlbEk6ulq_m3yNZByiNrGJKeZx',
-    avatarUrl: '/avatars/7440408022590947379.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -1176px',
   },
   '6987627432207450143': {
     uniqueId: 'Caimutianzi',
@@ -2652,7 +2891,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '油泼辣子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAabGKjybvz09ZvS0F9qxQ91lizt9md4TS0A1g-nbO-vI',
-    avatarUrl: '/avatars/6987627432207450143.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -392px',
   },
   '7078259146264412190': {
     uniqueId: '95765499909',
@@ -2661,7 +2901,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '颐美禾育儿小百科',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAes7L1oqUZqNDJjOQSfod6G0LITCgjRj5ZwkPHaInLliI3n9t4thdc6k7FLCb2nE5',
-    avatarUrl: '/avatars/7078259146264412190.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -560px',
   },
   '7392793683227049995': {
     uniqueId: '53139744427',
@@ -2670,7 +2911,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '孕产陪伴马老师',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA9hi0nrSVfG5n7a82b4Kd9eqeR56vHCTC7rGnb-TA8YI',
-    avatarUrl: '/avatars/7392793683227049995.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -1064px',
   },
   '7271098196821016634': {
     uniqueId: '',
@@ -2687,7 +2929,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '张英姐懂婴语',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAZ-0lzKpD4GpUS3Wk0btfapgqSq7a1Q2k-q01_IvmINlU2MU1mwzZOFPQuIA2XpkU',
-    avatarUrl: '/avatars/7271098196821016634.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -896px',
   },
   '7115079916692963361': {
     uniqueId: '74137146251',
@@ -2696,7 +2939,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '不够爆炸wxy',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAk_wB5B-v1du0HDS3oQV5rgo0ME-T8mflMZckM3Dj19k',
-    avatarUrl: '/avatars/7115079916692963361.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -616px',
   },
   '7362819818384261146': {
     uniqueId: '81564573081',
@@ -2705,7 +2949,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大大大怡_',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAWycuhDoLARSSSO-EW8DC6rtz_WO0efFK9321AcMuSHpJ0kN0ap2-c5gmrkCfm5JZ',
-    avatarUrl: '/avatars/7362819818384261146.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -1008px',
   },
   '7421948738559541257': {
     uniqueId: 'XBD668888',
@@ -2714,7 +2959,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小布丁辅食记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhPMiRD39voVTdvYnyAEbvU9SfDR4YSSKkohp-9Zf8GY',
-    avatarUrl: '/avatars/7421948738559541257.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -1120px',
   },
   '7444475222562078758': {
     uniqueId: '82299788900',
@@ -2723,7 +2969,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '橘子老师早教启蒙',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEI4JFZShkVhVxsrkg_nbqstK225W-VNXhWqge23iOE-TlTEiSJISo_LW0YKC1EOW',
-    avatarUrl: '/avatars/7444475222562078758.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -1176px',
   },
   '7007398741644673060': {
     uniqueId: 'TaTaW',
@@ -2732,7 +2979,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '王塔塔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALUKDmoIk113w6gd-qDhyOyJ6fw6n-n_PROIKZ7KgfRg',
-    avatarUrl: '/avatars/7007398741644673060.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -448px',
   },
   '7547912889806356518': {
     uniqueId: '96362770886',
@@ -2741,7 +2989,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大写小Q',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAnT_T_LRGYVL6LiccalW_3uWha0X3W6SCi-xp5NbCrG3YKVuZZd82ip6yhOjwlR67',
-    avatarUrl: '/avatars/7547912889806356518.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -1344px',
   },
   '7267061799357251642': {
     uniqueId: '87159875753',
@@ -2750,7 +2999,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '排骨排骨汤',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAARCrnSDd-ftBkc-RwJXPLneR7WPUacS6RR57RrBieLIs',
-    avatarUrl: '/avatars/7267061799357251642.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -840px',
   },
   '7608197153399242778': {
     uniqueId: '38357684440',
@@ -2759,7 +3009,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '瑶瑶日记🍼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAE28h96S_j-tIiNTUELcWobagbmULV9Kh1zlrp7E6DqfyXLe5hdIhjdLQLF-cSTy1',
-    avatarUrl: '/avatars/7608197153399242778.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -1456px',
   },
   '7505063064362811446': {
     uniqueId: 'molimama1229',
@@ -2768,7 +3019,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '🐉奥利妈妈',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAni85hsVZ5A5riP8KElb2uOe6QxIX1Mws2mC9STNtS46Fgp9qQGKbwnriO56kBPsk',
-    avatarUrl: '/avatars/7505063064362811446.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -1288px',
   },
   '7011422213328863269': {
     uniqueId: 'LS19930318',
@@ -2777,7 +3029,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '胖甜的幸福生活',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAKile59Kylv3Yno161gNNeptrpV9LV-E6w1oBtyoKI3wD5nTsuhF-7nuMJpKextFV',
-    avatarUrl: '/avatars/7011422213328863269.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -448px',
   },
   '7112826539883888648': {
     uniqueId: 'mzgwy',
@@ -2786,7 +3039,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '研旧所',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAkt0sTYjcDqSLYB9PjOvE1UJKql-RbY_K3UXXuQ-T1pReK9jeCd5S7cXoRX_T_GQ-',
-    avatarUrl: '/avatars/7112826539883888648.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -616px',
   },
   '7328444540312879113': {
     uniqueId: 'ttdady666',
@@ -2795,7 +3049,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '育婴师韬爸',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASx3yi-p4Yyh1hzTrpLtD6N2c-2x5MeVzv-MIECftu-_9S2D1VKz7w-Tz5oI9u8qk',
-    avatarUrl: '/avatars/7328444540312879113.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -952px',
   },
   '7506342238473945139': {
     uniqueId: '38299966953',
@@ -2804,7 +3059,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '欣欣(辅食日记)',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAG_KbyVG9v_hHE3d1xi_L0y82x9ht0bOIUE7Sjyexl--sxEJx8zytEL5ezJqiy7QO',
-    avatarUrl: '/avatars/7506342238473945139.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -1288px',
   },
   '7126461567712886791': {
     uniqueId: 'xuaner7722',
@@ -2813,7 +3069,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '刘璇Tutu.',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAsz7almiIUOTqv9kmt7VAgzFj6WpBq-APjwfHPg1Ce70',
-    avatarUrl: '/avatars/7126461567712886791.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -672px',
   },
   '7502391404446875674': {
     uniqueId: '32617670487',
@@ -2822,7 +3079,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '悦恩oni',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAg7TE7o7SJWlB_0RzjbMOcn0BkoNqyXzUskUDoiDkU1c',
-    avatarUrl: '/avatars/7502391404446875674.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -1288px',
   },
   '7527148051899613210': {
     uniqueId: '',
@@ -2839,7 +3097,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Lin堅定（小Lin必胜',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAjXfq7KFod2Oqgk_qmFdR2nMsrBocDOvamdVA2yUvJJ7PJDmDnoWHX4zpMVwJSn4e',
-    avatarUrl: '/avatars/7527148051899613210.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -1344px',
   },
   '7633970281161162802': {
     uniqueId: '',
@@ -2856,7 +3115,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '铛铛爸爸育儿',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAbEdYK2sdtY9_ys_2Otz3APWqxKHiE86W6CCEX0iTngw',
-    avatarUrl: '/avatars/7633970281161162802.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -1456px',
   },
   '7347517887680102427': {
     uniqueId: 'Zxt20221118',
@@ -2865,7 +3125,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '添添妈妈辅食分享',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAz34xR2hrWgVYoFmtCy-y6ms0Tsqhp-WnhUJBjrJH-eDw3VzcnON8ZPIgK6AKfsNH',
-    avatarUrl: '/avatars/7347517887680102427.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -952px',
   },
   '7570726312264859691': {
     uniqueId: '30830241772',
@@ -2874,7 +3135,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '鲜在',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzGhYT4Fy6QDHHlxDKMXGz6hRyF7fcldnY0oz_wRhBT0',
-    avatarUrl: '/avatars/7570726312264859691.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -1400px',
   },
   '7414797002812162085': {
     uniqueId: 'yunfan0317',
@@ -2883,7 +3145,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '云帆育儿',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAiYQYeGTYFusyfs3s2j7deeFszgirx1pgvPAH4bsop4w-fD8aTi2xFLMZXGV3wEZO',
-    avatarUrl: '/avatars/7414797002812162085.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -1120px',
   },
   '7303471510520332338': {
     uniqueId: '75078553222',
@@ -2892,7 +3155,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '艺只喵喵',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAsHsp81qD3QSLFOcjvzfM6E-CCn2sPaRposjmUf-Pulo',
-    avatarUrl: '/avatars/7303471510520332338.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -896px',
   },
   '7522039921989648425': {
     uniqueId: '94610818568',
@@ -2901,7 +3165,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小森辅食记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAfJk4lcuOnVwZdo77ShwTdcaiRcRgVSqWBipXHJx2x-4MT76UjKzrQniv5jw5yZdL',
-    avatarUrl: '/avatars/7522039921989648425.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -1344px',
   },
   '7431771268547887141': {
     uniqueId: 'Rose199812',
@@ -2910,7 +3175,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '也是肉丝（露脸版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAe1fwnQOJaO6n3n5AJUf8aaCwdPSd3ZlH-wHC5gAUVUfzmhR4tTMVeX3jXhcDBNf2',
-    avatarUrl: '/avatars/7431771268547887141.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -1120px',
   },
   '7441973183409356809': {
     uniqueId: '29775608304',
@@ -2919,7 +3185,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Joy爱穿搭',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOXWxosZ5-gJTMK1Dnt1eKf-wNn3GeOKXyMagKoahfXk',
-    avatarUrl: '/avatars/7441973183409356809.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -1176px',
   },
   '7426382128901783579': {
     uniqueId: '24101997890',
@@ -2928,7 +3195,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '北北的小饭桌',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_sbvfv6Yzs-3KIMb1N8s67WLLHlBsRWqPJEuwCpGGxE',
-    avatarUrl: '/avatars/7426382128901783579.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -1120px',
   },
   '7249236720388931645': {
     uniqueId: '97974990865',
@@ -2937,7 +3205,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '别叫我吴师傅',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAs3PLJMoAqPQhAW6XZccijzBtdhvQarL25ccFGGq6m8I',
-    avatarUrl: '/avatars/7249236720388931645.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -840px',
   },
   '7024660056020877326': {
     uniqueId: 'PAIGU_666',
@@ -2946,7 +3215,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '叫我排骨',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAALi0dLXiy3xdZnyD6qOLBbFU8GZA9DmqyUVDUHLQOBqaaZthqFV0408Gr1mUpHk2',
-    avatarUrl: '/avatars/7024660056020877326.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -448px',
   },
   '6995080012483264526': {
     uniqueId: 'hm970930',
@@ -2955,7 +3225,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '蒋小蛋子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAGrv1O1VSOfiPpfiR_DdyyyMAQcWg-9pI_T7m1ejz8wUmt9GMB8STeKxYOrm1Z6yR',
-    avatarUrl: '/avatars/6995080012483264526.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -448px',
   },
   '7585385800116731956': {
     uniqueId: 'CHICMONDE_',
@@ -2964,7 +3235,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'CHICMONDE世蔓',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAFeGhyRTB9Rz3JMoO-pCfMD4b_NJRZOjqMrFiyBWg_RAWUd1suCX18-oOOFEWwSbF',
-    avatarUrl: '/avatars/7585385800116731956.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -1400px',
   },
   '7252953027785523260': {
     uniqueId: '',
@@ -2981,7 +3253,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '谁的甜',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA0mjD2cdZFx6eno3dioerIvg0r8IykSfQGfcxIGWDSCX0lOGOiwm6T4EuNhdnu-0B',
-    avatarUrl: '/avatars/7252953027785523260.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -840px',
   },
   '7448177312144556047': {
     uniqueId: '71619120619',
@@ -2990,7 +3263,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '馒了个馒头',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAreekNayfUfA35fHYQVqNPJy96i4Z7445KFRKDd4hsRTdrKTeq5t5bGdjeltZrVW3',
-    avatarUrl: '/avatars/7448177312144556047.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -1176px',
   },
   '7387772923374731274': {
     uniqueId: 'Raku1120',
@@ -2999,7 +3273,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '是阿越呀🌙',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAMzUZKoXAbWaXmbYqfwcztnu1MbLNleHFxZ0xa1XbjIQ',
-    avatarUrl: '/avatars/7387772923374731274.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -1064px',
   },
   '7447556328932769819': {
     uniqueId: 'hcs202442',
@@ -3008,7 +3283,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '旺仔辅食记📝',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADfuLdi6kFPfIvoi5gDr75-oWTBfqF9nhIfJcXRXb27IxfXs2KQf7Ng1D-oeEAXcr',
-    avatarUrl: '/avatars/7447556328932769819.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -1176px',
   },
   '7449664049316691995': {
     uniqueId: '35230408588',
@@ -3017,7 +3293,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Bahati其琪',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA3-u7ESnxFT91PbongTgEEAaBcVmFdazWThsPHiZ-8IP5eZVhHBDZ_fLLQTYtS2wV',
-    avatarUrl: '/avatars/7449664049316691995.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -1176px',
   },
   '7557922097985486889': {
     uniqueId: '65344523914',
@@ -3026,7 +3303,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '萝卜不黄',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2IN-70b0l7wUx8D1RVItWdpQDo16MbwBgdf5OzvUon9xFIlmH8HN3iR6c1Y1nYy5',
-    avatarUrl: '/avatars/7557922097985486889.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -1400px',
   },
   '7532393120286441518': {
     uniqueId: 'sweetlaura99',
@@ -3035,7 +3313,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一只派派',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6QaeU1gOCTy0jYh_yDG2loWpT0H4wBmncxkxumYBaes',
-    avatarUrl: '/avatars/7532393120286441518.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -1344px',
   },
   '7398794918384107559': {
     uniqueId: '62091228062',
@@ -3044,7 +3323,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大头芯',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAiO7YOe3yoB8cFA2xdIeUfWpivWwXbJ0D8s1yxpLBATZOY5iPTf2nzWYordLhcStv',
-    avatarUrl: '/avatars/7398794918384107559.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -1064px',
   },
   '7609645886267719686': {
     uniqueId: '69250203241',
@@ -3053,7 +3333,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '康康爸辅食记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAfnmLvKodOkJ-tZRNOB6pJsdX1G50NeX0Vx6VnG-IMOr5SEDiiVSGXoRMVZVwBbLA',
-    avatarUrl: '/avatars/7609645886267719686.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -1456px',
   },
   '7438859153302356005': {
     uniqueId: '87168835450',
@@ -3062,7 +3343,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '新沙洞大头',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAABAmoa180EhFVFvQ3LVonEr_nA14oc-olo7mCeNxL1Tg',
-    avatarUrl: '/avatars/7438859153302356005.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -1176px',
   },
   '7546074385711366170': {
     uniqueId: '38508083668',
@@ -3071,7 +3353,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '85岁爱神',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA8LW0ChK_m_kY7sfG3pa6Fnj3x3Svzy35q-ws_gdbWqRRyPXhy_3PD9BRBIsWiR_P',
-    avatarUrl: '/avatars/7546074385711366170.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -1344px',
   },
   '6629656249568854019': {
     uniqueId: 'wsmaxiaohuai',
@@ -3080,7 +3363,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '马小坏美食',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJ4Y-Qpkp5X4XeuOwPU9YpC2r71yl9GT8m2SHb61tR3U',
-    avatarUrl: '/avatars/6629656249568854019.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -0px',
   },
   '6629689594902216717': {
     uniqueId: '26511691514',
@@ -3089,7 +3373,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '彭彭不吃饭',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA9HmC49xo-ISKml12JosbX1wjGXlmglyUpqSNhTvTAHA',
-    avatarUrl: '/avatars/6629689594902216717.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -0px',
   },
   '7559996286070587401': {
     uniqueId: '38282059330',
@@ -3098,7 +3383,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一颗门牙的反击',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAp03ENhPNr9yNrJNOmOEdzoZcWfjLExIMV0FNCTV2CK-QzueCXe-xdZu3Rg8BoErL',
-    avatarUrl: '/avatars/7559996286070587401.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -1400px',
   },
   '7583642955873779721': {
     uniqueId: '61645750139',
@@ -3107,7 +3393,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '麦子style',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAtN-dNYu0D8ST7_TwElzq7TOuLEoFFvLiddOBovAefZCactp9ISGVzYSfgFIHDFMl',
-    avatarUrl: '/avatars/7583642955873779721.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -1400px',
   },
   '7494129750294659083': {
     uniqueId: '30712878582',
@@ -3116,7 +3403,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '这个女人DiDi',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAO1xuBL-P8JkoDydklXoRT0IvlkWBpNcUK_XmQI0V2cygc_tTmTmTAKA2owLLwjDz',
-    avatarUrl: '/avatars/7494129750294659083.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -1288px',
   },
   '7402550217720987658': {
     uniqueId: 'RNAstrandedgirl',
@@ -3125,7 +3413,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'RNA结构少女',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-Tx3BA7UiYOohyFcTZHULFHeyDXedkAgI9bkuOfz_Gpyj4fs_CAXlAzGJQoNrbDa',
-    avatarUrl: '/avatars/7402550217720987658.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -1064px',
   },
   '7226543640204542011': {
     uniqueId: '39904295157',
@@ -3134,7 +3423,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '雅文宝宝',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAyoyBA_BL3e00XQBn2YS-l7p0Bl11tVBf60U3vEb49WqVDZFT0oGBpI_BbzlDjYut',
-    avatarUrl: '/avatars/7226543640204542011.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -784px',
   },
   '6870163871865241607': {
     uniqueId: 'kaiho0818',
@@ -3143,7 +3433,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '启豪Kaiho',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAALIGFLCTQGScGOnVTq1Il8J6-zza_mq5-6i9vfo1EFI',
-    avatarUrl: '/avatars/6870163871865241607.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -280px',
   },
   '6870169581311229960': {
     uniqueId: 'seven4lee_.',
@@ -3152,7 +3443,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '笨蛋小红',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAbt9s-QOAE4AdzdWVMAkqOxPFFG2fQK78yD24d5sOYA_V-ZuKKKD82La1Id1a-Tij',
-    avatarUrl: '/avatars/6870169581311229960.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -280px',
   },
   '7548110202474594304': {
     uniqueId: '63636194757',
@@ -3161,7 +3453,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '老嬷爱穿搭',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAyGeYFr_I0ucnzj3Z-XNrlqbu0AVTTXNBZt_NO3HzAO6pTWV8zjSrLTYsrlYCfOg2',
-    avatarUrl: '/avatars/7548110202474594304.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -1344px',
   },
   '6870170961820254222': {
     uniqueId: '94042483250',
@@ -3170,7 +3463,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '抠脚仙女王翠花',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJcNS-dC5AaqkawBXnI9O-0zIKa4IDoa2JGRYU5QN-oppoixxDye9N3s4AH5PPNq7',
-    avatarUrl: '/avatars/6870170961820254222.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -336px',
   },
   '7272704506528268346': {
     uniqueId: 'celinedeng_',
@@ -3179,7 +3473,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '邓阿姨',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAIwvxwaRioJ_JJ6iM1A0dnfhhoBe2qQodBYANHYMs-9olXEwGg95__EL2AUIXKn62',
-    avatarUrl: '/avatars/7272704506528268346.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -896px',
   },
   '6773613511395246087': {
     uniqueId: 'D13131341',
@@ -3188,7 +3483,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'MMMMMM',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAjq6daMJ2zgfESCWyljzLrAOHpGJjx5JVuZ0rZvqg2OI',
-    avatarUrl: '/avatars/6773613511395246087.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -112px',
   },
   '6629664660125646855': {
     uniqueId: 'ming0625',
@@ -3197,7 +3493,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '黄钢明',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAACMgMERbkWkj9_5fVkA2pTidoPSHo_DOJK-28BdyGiZk',
-    avatarUrl: '/avatars/6629664660125646855.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -0px',
   },
   '6763258149672583179': {
     uniqueId: 'Daydream_d',
@@ -3206,7 +3503,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '白日梦',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAG207NPe5Qt0PY5s4X1kEfoJDAls_MU-8OIGGq5tw0Ao',
-    avatarUrl: '/avatars/6763258149672583179.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -112px',
   },
   '6771334605027934221': {
     uniqueId: '',
@@ -3223,7 +3521,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '欧阳佳佳',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAxR2s10jLNWGYBCqTW3KMZ_Pp8Z99BzFNuezPfkX2iRg',
-    avatarUrl: '/avatars/6771334605027934221.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -112px',
   },
   '6629657109141127171': {
     uniqueId: 'weiwuxia',
@@ -3232,7 +3531,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '法国Cleo魏无瑕',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAN1ocfJXU3-E4VjScywvIMdPorD2tHel2afPUKbRyEh0',
-    avatarUrl: '/avatars/6629657109141127171.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -0px',
   },
   '6748722897960828939': {
     uniqueId: '',
@@ -3249,7 +3549,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '冰狗的小日子丫',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJHirv6B0nI9a0o1YUl3_5hoGdxqOz75BbSS551a7Cd6BCv5s0pyf6NWS6Io-hXBz',
-    avatarUrl: '/avatars/6748722897960828939.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -56px',
   },
   '6735299959165288456': {
     uniqueId: 'ffjsf',
@@ -3258,7 +3559,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '馥郁杨Kylie',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA4atYnbtP_Q3E5jznjaQ4Et9EDERklH3PlVkXRAZiGf3D5vK28SU4VhYzwN5BjXpY',
-    avatarUrl: '/avatars/6735299959165288456.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -56px',
   },
   '6853282724094935040': {
     uniqueId: 'Dg.go',
@@ -3267,7 +3569,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大冠Gogo',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAiYAHvrYazxXy4QYxiYhTRAG5WG3SonufGeokR9IAeis',
-    avatarUrl: '/avatars/6853282724094935040.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -168px',
   },
   '7480766490237468681': {
     uniqueId: 'chengzhixu2007',
@@ -3276,7 +3579,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '程祉徐 Zhi-Xu Cheng',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAvQzPtcYf7h3kPdPX6GNatpRNWhx6jDxIwgsDFrYL1gI',
-    avatarUrl: '/avatars/7480766490237468681.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -1232px',
   },
   '7323860748474515467': {
     uniqueId: '84440056803',
@@ -3285,7 +3589,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '叶来香🍁',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhPcICW7ccBHl3NXTO7YtlCBbDdnQpJINPc5qu4Dqj6he_-YeQ7G80iK_LFTVBZvc',
-    avatarUrl: '/avatars/7323860748474515467.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -952px',
   },
   '7173683370113630212': {
     uniqueId: 'IBCLCyao666',
@@ -3294,7 +3599,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '爱分享的大师姐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAik04Z_py8eSGl2b6XrjhTEi_pmOgQpcAHCtVnlRAptOC7L9zJWVyC1DJZCB1sGPb',
-    avatarUrl: '/avatars/7173683370113630212.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -728px',
   },
   '7477026949857509413': {
     uniqueId: '87043314802',
@@ -3303,7 +3609,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '霖霖辅食记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAWx4OSelGejvoXs7iPE6Z4_Py3oLuFYdIF26h3svGrUfeUxieNWCbOnx-pu3dd_KF',
-    avatarUrl: '/avatars/7477026949857509413.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -1232px',
   },
   '6866436036092755982': {
     uniqueId: 'dacuiqitan',
@@ -3312,7 +3619,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大崔奇谈',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA0O0nNPyVB2dA6O9YdXkUKxXuJ4Q4AUDUL_wahxjuYSY',
-    avatarUrl: '/avatars/6866436036092755982.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -224px',
   },
   '6866511539508084751': {
     uniqueId: 'dyq814g9690b',
@@ -3321,7 +3629,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一份加面过油肉拌面',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAXGAdoCJGwJqxvf0g3qGcPpXS_saB--eTnOjnhHojJjt1_E24cg1bfCiLpuTywRB1',
-    avatarUrl: '/avatars/6866511539508084751.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -224px',
   },
   '6747914807845847051': {
     uniqueId: 'Luna96725',
@@ -3330,7 +3639,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '王鹿子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAodo03pXWo9kwiq9F4QyJVqarb_v6BELn3n4R2GklXnk',
-    avatarUrl: '/avatars/6747914807845847051.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -56px',
   },
   '7316439574954115099': {
     uniqueId: 'zhuwangwangj',
@@ -3339,7 +3649,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '朱旺旺就是朱旺旺呗',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAwSu-n3swYzadeDRrtbFRQxfHS6ZxT3XTy5zzq3xKI4k',
-    avatarUrl: '/avatars/7316439574954115099.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -896px',
   },
   '6868844747910283279': {
     uniqueId: 'dy5q5mb3z8cl',
@@ -3348,7 +3659,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '千寻昭昭',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6wGAOPkQabaCqI1udac6C4Qds1FzKp-jy5cLc-FBkL2h-oDu7HW5nmmz4FD-cx2H',
-    avatarUrl: '/avatars/6868844747910283279.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -224px',
   },
   '6853331768724946947': {
     uniqueId: '',
@@ -3365,7 +3677,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '谜鹿0225',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_kpjDv081e-RxnY0_TYLrHA7c40HS-cd-W1KCeBwKR1433UjqS3VDlCWd_DNDam2',
-    avatarUrl: '/avatars/6853331768724946947.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -168px',
   },
   '6870160345860669448': {
     uniqueId: '',
@@ -3390,7 +3703,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '铁头(高兴妈妈)',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAC5rNc9datZf1uN0k_JRy8R0YJQXYeTrt6Wr0qBdFlRA',
-    avatarUrl: '/avatars/6870160345860669448.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -224px',
   },
   '7409852605452533796': {
     uniqueId: 'ccaixx1995',
@@ -3399,7 +3713,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '野生丁仔MAX',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAfbbRa92c2YzwzVG3nNCF4hBo0iI_bU46sbp1wk2ftOk',
-    avatarUrl: '/avatars/7409852605452533796.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -1120px',
   },
   '7053001046699802661': {
     uniqueId: '',
@@ -3416,7 +3731,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '罗罗琳',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAnIklDTNmgStCdEmYK3HD4k_nnRt-H4jWVVkhVFcMRgI',
-    avatarUrl: '/avatars/7053001046699802661.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -504px',
   },
   '7478893885939417127': {
     uniqueId: '56746161788',
@@ -3425,7 +3741,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '珂珂小盆油',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAATmRLJliksuPleVZhYXhUxZl4n9C3KKqiEH5Aab1eOuWaJ5IL4l_qzI8LMqJLqlOz',
-    avatarUrl: '/avatars/7478893885939417127.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -1232px',
   },
   '7405133912176869414': {
     uniqueId: '',
@@ -3442,7 +3759,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'VOGUE',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAStWI_FGagIZSLi0lBuqKe7aS1D1750nSgSIqx3tlfKI',
-    avatarUrl: '/avatars/7405133912176869414.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -1064px',
   },
   '6761211042996420615': {
     uniqueId: 'hyt19990204',
@@ -3451,7 +3769,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '皮皮廷',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAkWMPntGRZYRXHYjuXCbJaSpM6b8aFadmek-u-DENiGY',
-    avatarUrl: '/avatars/6761211042996420615.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -56px',
   },
   '6777591019425759235': {
     uniqueId: 'MN1912111',
@@ -3460,7 +3779,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '姜了了',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAfGdQQ8gkHlR949Zc6f8usr_8o72lYXMfvAxiq8U4AdLmkLzfsdoc8yo3_8SpVNhv',
-    avatarUrl: '/avatars/6777591019425759235.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -112px',
   },
   '7063653063759757312': {
     uniqueId: '',
@@ -3477,7 +3797,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '韦珊心理',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAuL_FDqKYgbruGXSuxcXmJDkFLt_T_f8sLGHcfiFT2g931iXfSZuE_-ZwCR3zPVDg',
-    avatarUrl: '/avatars/7063653063759757312.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -560px',
   },
   '7045094657608384520': {
     uniqueId: '59922569596',
@@ -3486,7 +3807,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '暴躁的小鱼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAoVqTb9DVtD8LVEtYdXd4nCsgIyfdET_46QUSj6_9W9bqvW5ioCjqyF5npkx__oFL',
-    avatarUrl: '/avatars/7045094657608384520.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -504px',
   },
   '6858083571572162573': {
     uniqueId: 'Yuanbao6606',
@@ -3495,7 +3817,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '七宝小圆子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAApTyS4-0eXvnNoZzWcIbR0M2DywGZ2OOsJbO7U6ybiuY',
-    avatarUrl: '/avatars/6858083571572162573.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -224px',
   },
   '7413542984286732325': {
     uniqueId: '',
@@ -3512,7 +3835,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿养',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADfl5gZ69FlAyiVWjMe3nig8Wa66WVpqAgKRvs71s7ui7b1IHQ2Cwwq2PN6GuGbu5',
-    avatarUrl: '/avatars/7413542984286732325.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -1120px',
   },
   '6870167715395403783': {
     uniqueId: 'ladymaSH',
@@ -3521,7 +3845,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '馬姐在上海',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAaW-OzN1nHQyOT3Iayzng1Q6bGELkxRxPD08RxJiK2aY',
-    avatarUrl: '/avatars/6870167715395403783.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -280px',
   },
   '7185378386901106749': {
     uniqueId: 'zsymzsy',
@@ -3530,7 +3855,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '苏苏🫧',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAtSOj4yOgw3gi33_NBtQ6AiITnYtfSg7UXDP4AynaBhM',
-    avatarUrl: '/avatars/7185378386901106749.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -728px',
   },
   '6870161141406892046': {
     uniqueId: 'lTuzi',
@@ -3539,7 +3865,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一个在版纳的化妆师兔子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAkAByj_bROO0Jxy8DfR_Qy76X4XGNqOMrsJtVj7F1n8M',
-    avatarUrl: '/avatars/6870161141406892046.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -224px',
   },
   '7423614036593344564': {
     uniqueId: '51883451156',
@@ -3548,7 +3875,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '芋泥脑袋',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAATJ85CL08CD5YKQlmxGQlXRDG6UxhkBUr0svmmfvwoc8',
-    avatarUrl: '/avatars/7423614036593344564.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -1120px',
   },
   '7360856459355095049': {
     uniqueId: '',
@@ -3565,7 +3893,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一一妈霞姐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAtjLuRrTfmIwtTud5xNEugAYQ8VHYWtk0YK8yTedrN7A',
-    avatarUrl: '/avatars/7360856459355095049.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -1008px',
   },
   '7288971553717370935': {
     uniqueId: '42870058094',
@@ -3574,7 +3903,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '猩球世界',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAljnht2Wqm0rsbhVzHbExQCJKFO3RDCNlYZxKdcmbCsgb2IQmZb0eYFDm2LrwdJJL',
-    avatarUrl: '/avatars/7288971553717370935.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -896px',
   },
   '7078316915696861198': {
     uniqueId: 'xiaomaoo6',
@@ -3583,7 +3913,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小麻哦哦',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdr0gzU2Pmk2-fu2uyCoyXyocYOSh2VWBpkWjhZFhjPLtoit76GqT-8zI5URwlVMo',
-    avatarUrl: '/avatars/7078316915696861198.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -560px',
   },
   '7265285489219862539': {
     uniqueId: '77675578111',
@@ -3592,7 +3923,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Olga姐姐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAWwcXLQaOlIV4k04tSI4xYaYmCzRZt1a9_IDDutj7Wzra_yNzBUDrPQgV8UVJ_dsH',
-    avatarUrl: '/avatars/7265285489219862539.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -840px',
   },
   '6870169585727832077': {
     uniqueId: 'zhangyutie',
@@ -3601,7 +3933,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '章鱼铁',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAELOsQArz9ECSK9P9yieiH_RPx9GcXXLw2v64CFODcnTFGSc_EQRmfzuQoou838cX',
-    avatarUrl: '/avatars/6870169585727832077.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -280px',
   },
   '7501952325406818343': {
     uniqueId: '22348605448',
@@ -3610,7 +3943,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '鱼碎碎念',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhNRJBfOq8xvH6airvRvjroB5yXFA0SSzPaPEhbFP8d3OlfI_H896pSAYQti5hSp2',
-    avatarUrl: '/avatars/7501952325406818343.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -1288px',
   },
   '6870166592689274894': {
     uniqueId: 'Tian_tianye',
@@ -3619,7 +3953,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '徐太太',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAApsN5x5BPefU38yxGudal2VvTkYecQPNdE3KLBrY1RE0',
-    avatarUrl: '/avatars/6870166592689274894.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -280px',
   },
   '6870168391001309198': {
     uniqueId: 'WYZPLMM',
@@ -3628,7 +3963,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '我要做漂亮姐姐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA68Ow8ax_6EDjTFPLAHeYikeCpv3n4JNsW_6qT-EmuW8',
-    avatarUrl: '/avatars/6870168391001309198.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -280px',
   },
   '7054860155250278436': {
     uniqueId: 'coucouye',
@@ -3637,7 +3973,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '凑凑耶',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAL_ILjnUnBDCbEv-DJH-hEmme1MEyYW_4vtieti3_1KcpQvEXesCxGEfqFkRt2jId',
-    avatarUrl: '/avatars/7054860155250278436.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -504px',
   },
   '7429282068783333427': {
     uniqueId: 'dypjir70budp',
@@ -3656,7 +3993,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '子回頭是浪',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAUCAMUEIyw_WjddbYdt0dXSYQTE0McI0uPcW7-RCpLjqhWEd-KPGql7c3hQg4GLAD',
-    avatarUrl: '/avatars/7429282068783333427.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -1120px',
   },
   '7065613279053217829': {
     uniqueId: 'babyhuahuahua',
@@ -3673,7 +4011,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '白以萱',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAyp8J8kTyPMZw8O3ghBb2OrhW782ms42PXZ6G8jQBfwU',
-    avatarUrl: '/avatars/7065613279053217829.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -560px',
   },
   '7451525786231635995': {
     uniqueId: 'dafa1688',
@@ -3682,7 +4021,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '黄橙子当妈',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAvL7fP6ZFyveaBYAHHSYH1dMgU41i4hChVVkW1h7BgCY',
-    avatarUrl: '/avatars/7451525786231635995.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -1176px',
   },
   '7576547856752853030': {
     uniqueId: '58822791665',
@@ -3691,7 +4031,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'DNA螺旋内卷',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA9WFIHlXKuv1nKxBByDA5Agq0HwVxRTST38W4Lhbn8UAfKWePKcFX-7lyT16wV2fP',
-    avatarUrl: '/avatars/7576547856752853030.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -1400px',
   },
   '7207803562498195516': {
     uniqueId: '24740745533',
@@ -3700,7 +4041,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一个小诚宝',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAnyMVF2-o2gHlUancSWRv7iEmuaMriIT35rOijkU1dwMpxh2ZtbPUFtkh7NZFSIpX',
-    avatarUrl: '/avatars/7207803562498195516.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -728px',
   },
   '7521965338842365971': {
     uniqueId: 'laoxi5711',
@@ -3709,7 +4051,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '村里的老熹',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAArs_1FheQDt2LFi9Xmm9xSScVC-pXw_8V3WOTX-Sn4FpgCkYkxzgbvPLikvg__wCB',
-    avatarUrl: '/avatars/7521965338842365971.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -1344px',
   },
   '7339779114306961418': {
     uniqueId: '98718546869',
@@ -3718,7 +4061,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一口日记📔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAjgWzj2PCUVbywS_sOwBqSiMGgxRTXKCwWeCeunw7b6mqbAVHg06FYEn-z3I0eBtC',
-    avatarUrl: '/avatars/7339779114306961418.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -952px',
   },
   '6870161446789971981': {
     uniqueId: '',
@@ -3735,7 +4079,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小羊不吃羊',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAquqMyVol16HN_7ELsSovenG7YyFSW7WnKieE0a5S774fsvKLfLXV2lICPWPremEl',
-    avatarUrl: '/avatars/6870161446789971981.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -224px',
   },
   '7057424547179397157': {
     uniqueId: 'ZHEnxiang0886',
@@ -3744,7 +4089,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '盐系少女小任',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAIMxovSMBxP71SpbsJeQuABwsB3bR_ehjBI4S-2m5RCw',
-    avatarUrl: '/avatars/7057424547179397157.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -504px',
   },
   '6870161617787551757': {
     uniqueId: '',
@@ -3761,7 +4107,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'NA.',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAABtITow96QrfmCxKwOzZ390XSjfg30rWR20XcFgSVZvh_CP8_xX9-kpq-le1PbDxX',
-    avatarUrl: '/avatars/6870161617787551757.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -224px',
   },
   '6870164510993285134': {
     uniqueId: 'dqpp666',
@@ -3770,7 +4117,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大桥乒乓',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAMiywSn9R2bTABYCvC0Tz0GjatIYPPCqHAHTWbq4piUs',
-    avatarUrl: '/avatars/6870164510993285134.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -280px',
   },
   '7395795408540925979': {
     uniqueId: 'lxylxyyy0418',
@@ -3779,7 +4127,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '不说',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALbfNup395EH5v8uZJBc_JD1Xs892TM5dPZsjbtnybMcCs-i71W6-VeahoIxBfUSy',
-    avatarUrl: '/avatars/7395795408540925979.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -1064px',
   },
   '6870169279325536264': {
     uniqueId: 'SLL05233',
@@ -3788,7 +4137,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '酸辣梅子酱',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAApjuKCLR05QGY22lpEtF1oXUkHvrpQfaVz97impfAzkU',
-    avatarUrl: '/avatars/6870169279325536264.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -280px',
   },
   '7501670999591485478': {
     uniqueId: '87494747103',
@@ -3797,7 +4147,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '剃头酱',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAY43LkzWJNqrPB_LCfBeXQld3l_YXK4vAXXB0JoQWQMA',
-    avatarUrl: '/avatars/7501670999591485478.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -1288px',
   },
   '7485038480658006043': {
     uniqueId: '93459219684',
@@ -3806,7 +4157,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '费宇的心灵驿站',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAyWuHXztMFis9sd4kYRzOuoXGRFUnAPOupHqSXt0d1LY',
-    avatarUrl: '/avatars/7485038480658006043.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -1232px',
   },
   '7485207709102964773': {
     uniqueId: 'q665541',
@@ -3815,7 +4167,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '黎居居',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAvRhwNGrwZ2ecg-bhaiIqCdrabN3_JbTFTBARbuOlyQw',
-    avatarUrl: '/avatars/7485207709102964773.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -1232px',
   },
   '6910300784924033037': {
     uniqueId: 'sunlaosanxiaojie',
@@ -3824,7 +4177,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'LuLu和她的小猫小狗',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAfqZ0C_kU2EP8_0-frUCfr6rEWuYoCQu0HFraknH3vK4',
-    avatarUrl: '/avatars/6910300784924033037.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -336px',
   },
   '7592095740283387942': {
     uniqueId: '55429859529',
@@ -3833,7 +4187,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小羊粥粥^🍔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAO9_iUOLZ1bheJqRCfKm7PClCBJn2eXmibJERwUKw2Nyn3-kHn_9G-EGrtlIK7t2R',
-    avatarUrl: '/avatars/7592095740283387942.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -1400px',
   },
   '7506118086647349274': {
     uniqueId: '82826860448',
@@ -3842,7 +4197,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '胖姐清洁妙招',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAAfYz1c8yLe2EwY_rQDLyLc4iY3fXSuK7hLNfePWEbXlAYyLZLuhNAn76cytcjx-O',
-    avatarUrl: '/avatars/7506118086647349274.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -1288px',
   },
   '7581754412343754762': {
     uniqueId: '23516736505',
@@ -3851,7 +4207,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '马可菠萝派🍍',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA8uN2ndBuQKalNGglgqOAWyLeSGwx1djSujBqXKFpgipjLD8C4mUa63I95ydwB9Vj',
-    avatarUrl: '/avatars/7581754412343754762.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -1400px',
   },
   '7221405351218774071': {
     uniqueId: '',
@@ -3896,7 +4253,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'echo陈果',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAHDMhfGMY5BIcS0k4_eN9_F0tKIRMK91Tq1SqfjixLBM',
-    avatarUrl: '/avatars/7221405351218774071.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -784px',
   },
   '7098747292752019470': {
     uniqueId: '',
@@ -3913,7 +4271,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '付晓婷f306《我在黑龙江等你》',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAnFoA0T1KmxtgDim7AACd71JzsCUVL-24R75sGmgCGL91n_qmY81unKdDSY1McKuv',
-    avatarUrl: '/avatars/7098747292752019470.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -616px',
   },
   '6973984670757158925': {
     uniqueId: 'dingxiaoting0',
@@ -3922,7 +4281,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '丁小小',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAeMH1t7OsIdxsAxGYLyESXFhnRoFWAc9idky8prQSN6U',
-    avatarUrl: '/avatars/6973984670757158925.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -392px',
   },
   '6967491028517388301': {
     uniqueId: 'mmxdd323',
@@ -3931,7 +4291,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '凌幺幺',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAmtsLn0qX3rj4wOHunq-fb4Sgnbx5a1X4XePYlMyvGUo',
-    avatarUrl: '/avatars/6967491028517388301.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -392px',
   },
   '7081130008231542820': {
     uniqueId: 'klb66666666',
@@ -3940,7 +4301,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '机车公主',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAx3qP4TyiLDHnC_AUBh5syOJp6uPd2pUZhQVBn0yf7pwMY75fYRDBFVUQywgH6nLP',
-    avatarUrl: '/avatars/7081130008231542820.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -560px',
   },
   '7213565695852806205': {
     uniqueId: '71630738733',
@@ -3949,7 +4311,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '夏冬冬',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA61MCNTau2Mh8kS2HvHyyOZ6byXgFSjefRFj8rVYQEf09RpcCQWnf_x9Ut1ujlVWE',
-    avatarUrl: '/avatars/7213565695852806205.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -784px',
   },
   '7523870148487282727': {
     uniqueId: '29671568373',
@@ -3958,7 +4321,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大熊总兵',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAifAM8QUzH_nOCnw2IN_1RlwUMVBZOpztRKg2G61i8OsKUvJ283sQ656716p8Pley',
-    avatarUrl: '/avatars/7523870148487282727.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -1344px',
   },
   '7236369313416871939': {
     uniqueId: '',
@@ -3975,7 +4339,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '😺猫猫国国王ovo',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAGD1X4zAIerBQH9odm4fy5C_rZ5wzguqFsrIdooiNPzUNM7DlyvDfpVVz2mpKwADj',
-    avatarUrl: '/avatars/7236369313416871939.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -840px',
   },
   '7410418779449983027': {
     uniqueId: '51565845305',
@@ -3984,7 +4349,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '薯条卷卷',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAuaE0HRu_9bTjxDv5Bq-CYW4SeU1A9Qrnx4Iom0r5ZPQH1KBNlHX04gzEbOuVF1Oq',
-    avatarUrl: '/avatars/7410418779449983027.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -1120px',
   },
   '7217009625705480249': {
     uniqueId: 'EmilyWade.',
@@ -3993,7 +4359,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小白一家在美国',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALmCw1ZhG2RpqUGRvjKCjttTy6dxhwe41b9N7bFaI7jg',
-    avatarUrl: '/avatars/7217009625705480249.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -784px',
   },
   '7455580447104303130': {
     uniqueId: '50773808127',
@@ -4002,7 +4369,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '叫我羊羊阳',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAWUtLqVauD00cptJ1QsVwwJ-xfAff2-F2rJgSMGU0t276HzcSbfXGGknXp9B230ym',
-    avatarUrl: '/avatars/7455580447104303130.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -1176px',
   },
   '6982522484050378783': {
     uniqueId: 'OliviaZQY0131',
@@ -4011,7 +4379,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '钟大瑶🍑',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_4jEBO15cDqw_MypAr2frhT9taoUJheXvkC7BPBeExc',
-    avatarUrl: '/avatars/6982522484050378783.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -392px',
   },
   '7209273120375439364': {
     uniqueId: '48751732294',
@@ -4020,7 +4389,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '来福来福',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAf9Hlibc4o3ROUihKzyCwthxNyG42Txlxw_jJ2qWkBYg',
-    avatarUrl: '/avatars/7209273120375439364.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -784px',
   },
   '6890093281313554446': {
     uniqueId: 'xiaoxiong6188',
@@ -4029,7 +4399,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小熊出没11号Moromoro秀场款来袭',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA3TlW2W1LyP_JYeO75VvBp4Veml9BN7salWBoIRSHmAI',
-    avatarUrl: '/avatars/6890093281313554446.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -336px',
   },
   '7593947488218775578': {
     uniqueId: 'gpc515151',
@@ -4038,7 +4409,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '顾得猫宁（带娃中）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA__t8CL9yhvVgC_8dbIU751UXQ-4J8QbF2VrctKEABdM',
-    avatarUrl: '/avatars/7593947488218775578.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -1400px',
   },
   '7482710762750738482': {
     uniqueId: 'gtyc012',
@@ -4047,7 +4419,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '钢铁鱼刺',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAsvO6PlVWFXNYxRcR3cWaeipRov6CVajKUzUl-OR-WNnzrsx2fv9d2_XdIpUZE7S2',
-    avatarUrl: '/avatars/7482710762750738482.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -1232px',
   },
   '7472785630989123610': {
     uniqueId: '80047345633',
@@ -4056,7 +4429,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '波妞辅食记🐟',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAyt96ZvTtejqkJoD9AaLSwNWAUpC-INrtDTN-1-lFk4mRbq3fwY4mH-cMcEuJ-6k9',
-    avatarUrl: '/avatars/7472785630989123610.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -1232px',
   },
   '7488906333119315995': {
     uniqueId: '89344026091',
@@ -4065,7 +4439,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '伊伊来啦',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAyoVbShO3iIBuG1D_h4kBg5H-VTcoyXe0koy5HKtNxb91EOsKDafQah0G0P-DJFp_',
-    avatarUrl: '/avatars/7488906333119315995.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -1232px',
   },
   '7352043243137138739': {
     uniqueId: '52513793127',
@@ -4074,7 +4449,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '猫猫头..',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAH6opE6WrNUOcEVQjlakGlBAYf5n2h1K0n4_QDw1rlk9424itTuVRqv8vU-oD8wLG',
-    avatarUrl: '/avatars/7352043243137138739.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -1008px',
   },
   '7428531311804940307': {
     uniqueId: 'lsq01629',
@@ -4083,7 +4459,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '奶糖',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAjyUS4vpREbQNSVm5VreH0oXiUAI-aTesuYdKaOODPI9vPbUjUpPNJKsmekHpMe42',
-    avatarUrl: '/avatars/7428531311804940307.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -1120px',
   },
   '7532395795320930345': {
     uniqueId: '43564353330',
@@ -4092,7 +4469,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '张张没烦恼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQx_qLC3cbM-2d4NTBI9MhHP5o7IxKzHc1wZfietSogmaYdiqiS0-sS0Au9ylICQs',
-    avatarUrl: '/avatars/7532395795320930345.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -1344px',
   },
   '7356160391065387020': {
     uniqueId: 'Xianchongyuan',
@@ -4101,7 +4479,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '是线线吖',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA9Ksine2rb1SJTqjzIPZMFAk9R3CLVHi8QbQy4tNdSTpPfxdhrtLhh8LqbI0lmHXm',
-    avatarUrl: '/avatars/7356160391065387020.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -1008px',
   },
   '7168800955683569667': {
     uniqueId: 'genius6612',
@@ -4110,7 +4489,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '勇哥健康课堂',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAACHFeNuIwghehQSbcwRrpiMnzOwNguZsHrM1bTLN8VF-gNSrnbSwkDiyce6RgHbKL',
-    avatarUrl: '/avatars/7168800955683569667.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -728px',
   },
   '6939761075671810084': {
     uniqueId: 'yudan2233',
@@ -4119,7 +4499,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一只鱼蛋仔🐱',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAPgG6F1z6yAvNZ9-d7OfYRSJHqZFSqW6sV1SR-CvQn6o',
-    avatarUrl: '/avatars/6939761075671810084.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -392px',
   },
   '7229557025628225595': {
     uniqueId: '20997902016',
@@ -4146,7 +4527,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '赵加一',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAd1ZtmEcLYNs-IiD_d_xZb3Kkm3Tgc1YRvbPQA9jFLzQLJBCW1N3WrGEkcSNxdJbs',
-    avatarUrl: '/avatars/7229557025628225595.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -784px',
   },
   '6942575452150038559': {
     uniqueId: 'z18132797567',
@@ -4155,7 +4537,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '周舟讲穿搭',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASasNnFYb60hQJxTuqtMWbdtnt67A0VDz571tWoXzGo4',
-    avatarUrl: '/avatars/6942575452150038559.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -392px',
   },
   '7363168761363202085': {
     uniqueId: '72747915288',
@@ -4164,7 +4547,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '媗媗麻麻辅食日记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAyhaMaYB3FJttahDo_d_QC5d2_a88WorgZOuXouNmkp7qxbcJTbxDbvKUbstBH3_M',
-    avatarUrl: '/avatars/7363168761363202085.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -1008px',
   },
   '7027885299757744158': {
     uniqueId: '71842178798',
@@ -4173,7 +4557,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '融三胖',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAaHSaVD9TflCddH8q8RrpZTQwuTbqTOo86l2SxKubwv0',
-    avatarUrl: '/avatars/7027885299757744158.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -448px',
   },
   '7602492195018539059': {
     uniqueId: '50821593740',
@@ -4182,7 +4567,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '彤彤Kyra',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOyyF0zUtdcKgRRTm9JxROGCQtiwzb5NsbEXKxbuy7fXX1owJ28ld6_63zDplsfe_',
-    avatarUrl: '/avatars/7602492195018539059.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -1456px',
   },
   '6887873820389015565': {
     uniqueId: '',
@@ -4209,7 +4595,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '宇航的航',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_7a3VDnW-YjE_sPuxzVORgf6ePlS0nb8hEozpMu2AixXro-iK3BX04QmwS1TfO6z',
-    avatarUrl: '/avatars/6887873820389015565.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -336px',
   },
   '7444220331109122075': {
     uniqueId: 'lidayuan712',
@@ -4218,7 +4605,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '李大圆当妈',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAKeJdgJQP9LFNR6B3uLNJShMR7xDevLdfhrWFxWMXC6W0ZURTCb_-azdvRdE4Gv22',
-    avatarUrl: '/avatars/7444220331109122075.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -1176px',
   },
   '7273449950757781561': {
     uniqueId: 'Forever_327324',
@@ -4227,7 +4615,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Rach团',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA3Hj9wqRosxWSV8L37Z-1N9t9R1_R4A19Frf1eDlPJmZiH0hnKlHj6seZxrY5Aqsf',
-    avatarUrl: '/avatars/7273449950757781561.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -896px',
   },
   '7562111691342348331': {
     uniqueId: '40316483677',
@@ -4236,7 +4625,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '硕硕大王',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAUBt7uuqeRjO0ac7BVUFbxC0Pm_mTtnLZMCIU-707LunoAXI0bExIxpJdGeb_Kpio',
-    avatarUrl: '/avatars/7562111691342348331.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -1400px',
   },
   '7039966115065233445': {
     uniqueId: 'ZQL666188666',
@@ -4245,7 +4635,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '桃子妈咪💗育儿小课堂',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAiXDc4XRQVKqzjYydB99RBEWYvhwm22LNSA-ySJmIkmw',
-    avatarUrl: '/avatars/7039966115065233445.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -504px',
   },
   '7382139544038014991': {
     uniqueId: '21527947404',
@@ -4254,7 +4645,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '可乐妈咪吖',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAR_SgaofAUDr52DWzuetXKC4JHdN3lf0D-i-Kmc2tDos',
-    avatarUrl: '/avatars/7382139544038014991.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -1008px',
   },
   '7005112701202464805': {
     uniqueId: 'pfmama1118',
@@ -4263,7 +4655,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '泡芙妈咪15号8点RUFI留香洗衣液破价',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAgXxa_jn43vKub2XxNAAV496vpKgq2BDuAUPA6QvEkmA',
-    avatarUrl: '/avatars/7005112701202464805.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -448px',
   },
   '7156869617778950152': {
     uniqueId: 'Youyou_225',
@@ -4272,7 +4665,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '又又不油',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAtetZaIhPULmZAOYqdYBXRbOMHZy-r2fIiTKSD9gphE4',
-    avatarUrl: '/avatars/7156869617778950152.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -672px',
   },
   '7378684710098042890': {
     uniqueId: 'dongba777',
@@ -4281,7 +4675,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '育婴师东爸',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAANABCmKPYdvJk6vuE_kKtTy9f-zf9w-pr6rxrmXUcypE35zEaIciIzzZLuXL2Wp9O',
-    avatarUrl: '/avatars/7378684710098042890.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -1008px',
   },
   '7394086172462415926': {
     uniqueId: '35518737223',
@@ -4290,7 +4685,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小路的日常',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAy8aG-7IGhlYDkLYvzLNFeXpeLVS16lLCYUBIxUWj2EEHlPN45k7DDL0b0YEnvCvV',
-    avatarUrl: '/avatars/7394086172462415926.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -1064px',
   },
   '6999975274213277733': {
     uniqueId: '',
@@ -4307,7 +4703,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '贺贺辅食日常',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAh3W1QS_-CBOlV25mZ-KNQmF6GSQzmjzvoawbccEWApi-xqOG_9XK982NcGKTJB4Q',
-    avatarUrl: '/avatars/6999975274213277733.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -448px',
   },
   '7457921558439264293': {
     uniqueId: '24233852531',
@@ -4316,7 +4713,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿灵当妈了',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA8twxMmI17VFcZiwt76FCYRGoW0BoCwVOWhWoM8fd_C1tHaesrk0Nkn-k9N2Xe4Z0',
-    avatarUrl: '/avatars/7457921558439264293.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -1176px',
   },
   '7458624818800230463': {
     uniqueId: '',
@@ -4333,7 +4731,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '豆芽妈妈Nicole',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAw79R3YHVPluhrfbeirufiwu5rCk6FrtszlI8QeywvPc',
-    avatarUrl: '/avatars/7458624818800230463.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -1176px',
   },
   '7481539498755293234': {
     uniqueId: '30610862044',
@@ -4342,7 +4741,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '崩崩',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAayB898PXFlo0DKu4ccM1InDtBQqPZs8y6Bja2azIIJe2yMVXasoYQ_TjmPje7YDL',
-    avatarUrl: '/avatars/7481539498755293234.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -1232px',
   },
   '6968260705849966606': {
     uniqueId: 'ximi_8818',
@@ -4351,7 +4751,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '鹿卡Lulu',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAjSghmutOM8eqZRjB7N5pq11q_qMLszQK-ZTYYNIgVvahRFLRIJdsYl96YKwaMJDm',
-    avatarUrl: '/avatars/6968260705849966606.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -392px',
   },
   '7221443538729304102': {
     uniqueId: '',
@@ -4368,7 +4769,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '旖旖小虎🐯',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAApqGD-avTTzGgc_01MP33EJbucXIx7ZhuX9bFue1TxCdLbzJOfMDYJC56f7Z7lQPQ',
-    avatarUrl: '/avatars/7221443538729304102.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -784px',
   },
   '7137225395228655646': {
     uniqueId: '40387031236',
@@ -4395,7 +4797,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '无厘头鸭',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEU0qxHB97vNDcyEIKmuIEkdm79SeuNAAKC3SAdoq8_gBcuaNFAXIYN56ha-RfoIp',
-    avatarUrl: '/avatars/7137225395228655646.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -672px',
   },
   '7578825189169823771': {
     uniqueId: 'amii810',
@@ -4404,7 +4807,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Amii',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAyhESlBp73Qqc478hzWbf7iL6NNK8DCashbHBG9lGTjHRDWVoCF72H-Rv89G0zvey',
-    avatarUrl: '/avatars/7578825189169823771.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -1400px',
   },
   '7401470503946289161': {
     uniqueId: '91960781503',
@@ -4413,7 +4817,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '童童-',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAANll4MzNXF_-gSC5t8oUqDTpExDZtTn_p-QgmRTHFO-g',
-    avatarUrl: '/avatars/7401470503946289161.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -1064px',
   },
   '7460515562888626185': {
     uniqueId: 'jj20240801',
@@ -4430,7 +4835,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '龍喜儿（10.10上午8点见）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA70tAQEPCp55xCY0DQRjNh2aW47oVtzmnnwNNkjC8F7NAbg1bt1VYC6-4r4cAtt0X',
-    avatarUrl: '/avatars/7460515562888626185.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -1176px',
   },
   '7540195639892639798': {
     uniqueId: 'Xinjiujiu',
@@ -4439,7 +4845,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '辛九儿(重生版)',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA29PmwbigJvD_RbIuS9sOCslSQEbTZcl0KS45sj_gPWU',
-    avatarUrl: '/avatars/7540195639892639798.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -1344px',
   },
   '7254231210275110916': {
     uniqueId: '85877984459',
@@ -4448,7 +4855,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '哈尼不腻',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAcUCBdorIqq0vWbbPeB58ZD2QWrGYTH-MHsM_fC2NwS57c-oFYU5gd2tuaYPAWckl',
-    avatarUrl: '/avatars/7254231210275110916.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -840px',
   },
   '7254921671054721080': {
     uniqueId: '54life',
@@ -4457,7 +4865,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '54的独居生活🤍',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2q-_uW4NGB0AwUaCio1qGBe53XWaOXhhPWeU8uyivuk',
-    avatarUrl: '/avatars/7254921671054721080.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -840px',
   },
   '7274251459808460857': {
     uniqueId: '54669532087',
@@ -4484,7 +4893,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '峰峰疯了🌋⁹²³（新歌《无名高地》',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAlyG2LWD8si6h1wragLsUmbgK031NlxRpYPohWWBYblpwsXLYuaLMk9r6F0iIsLlu',
-    avatarUrl: '/avatars/7274251459808460857.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -896px',
   },
   '7334762448387309609': {
     uniqueId: '',
@@ -4501,7 +4911,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '苏七七的视界',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAUEog3ghdjOwnJC02B8bsa6PwJT7nIJeB72vCWJNJ7EI',
-    avatarUrl: '/avatars/7334762448387309609.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -952px',
   },
   '7401141114419281971': {
     uniqueId: '95809328875',
@@ -4510,7 +4921,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '月月鸟',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAqIAUpF1zPDIHY2QHTelwbEFeKSipSxsSbPqHCv_PxxcUgt7RATKIZGo58lYEwrr7',
-    avatarUrl: '/avatars/7401141114419281971.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -1064px',
   },
   '7590353252068098082': {
     uniqueId: '86602128338',
@@ -4519,7 +4931,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小张永远在恋爱',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAkkT0w6VjCO57RffpnN8Om-8-kPHpgLbImyFedb4If3RwyHeM_yJVLLkYbjaDbF3U',
-    avatarUrl: '/avatars/7590353252068098082.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -1400px',
   },
   '7402534045675946035': {
     uniqueId: '',
@@ -4536,7 +4949,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '冷却报告',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2pELVq72pbjKhh4E4PMzPKFOJPw5qKsrefNjEAtka79iYhvXrOZvZWHR2tjsI9Hi',
-    avatarUrl: '/avatars/7402534045675946035.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -1064px',
   },
   '7279039307183030327': {
     uniqueId: '110wumeng',
@@ -4545,7 +4959,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '梧萌',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAz46OX2aUWcnGhNSfuiB04dvWIMQLFFCqaoz6O199_L36vvxIpTI_zuDSZTqIOBkt',
-    avatarUrl: '/avatars/7279039307183030327.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -896px',
   },
   '7468879949701578779': {
     uniqueId: '29172151782',
@@ -4554,7 +4969,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '帅帅爸在带娃',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAZJmXTZN13MY2k3rG0-6epGcPwqQavjixG5W_uFZxCRqv1RMFntOuXU-iBrm6TqZ4',
-    avatarUrl: '/avatars/7468879949701578779.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -1232px',
   },
   '7525411121663049738': {
     uniqueId: '66331698454',
@@ -4563,7 +4979,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'BL2_',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA1fnXDCm0aQp5Xe0NdNsdAdOnXCYjlPKRqAI4Vl-gsUvBPF8rOORSZUeMYp7v4YMO',
-    avatarUrl: '/avatars/7525411121663049738.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -1344px',
   },
   '7572548333625933875': {
     uniqueId: '',
@@ -4580,7 +4997,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '喵小贝&twins',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAggIi6gjKFiYREUUiRIfD1uqNq5qyZ1ZU-VM6uk-uI-3W7k0lpKSpcLhBE1w73Eea',
-    avatarUrl: '/avatars/7572548333625933875.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -1400px',
   },
   '7087477089179271180': {
     uniqueId: '',
@@ -4597,7 +5015,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '咩咩楠',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOycIFZ9PFIc0ygbRf3ukTTr7OIXV69EmY-4e8Ju3p6w',
-    avatarUrl: '/avatars/7087477089179271180.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -616px',
   },
   '7609242319350399014': {
     uniqueId: '55845070403',
@@ -4606,7 +5025,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '元宝妈妈',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAaVASJ_EAJRQ9KLe25dRlQC6TTU6REowTegJb9-MlfptWvWh-JudO06sMBzbuoy3-',
-    avatarUrl: '/avatars/7609242319350399014.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -1456px',
   },
   '7628499631391014975': {
     uniqueId: 'GXMMMJD123',
@@ -4615,7 +5035,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '过一沐Edmond',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA4bT_G1m5_HaM8J-mW_d70835xZT04cYBX1xu5JNuWrY',
-    avatarUrl: '/avatars/7628499631391014975.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -1456px',
   },
   '7347411926021832767': {
     uniqueId: 'YSWJ01',
@@ -4624,7 +5045,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '客说历史',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAvyGDos0xwaq-LAI9pAtDHF82WaTSrdk5qaCKPRP4OuKG8hkZCgHcDvnyqNtRF0sX',
-    avatarUrl: '/avatars/7347411926021832767.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -952px',
   },
   '7265705168581165110': {
     uniqueId: 'Minoxss',
@@ -4633,7 +5055,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '薛杉杉',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAN-ahoJwvYmR54VlSS2JxlMHQ-rMSMzlZn1-S9hc75w4',
-    avatarUrl: '/avatars/7265705168581165110.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -840px',
   },
   '7621398330462961707': {
     uniqueId: '76755737009',
@@ -4642,7 +5065,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '3311',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAKBv5nR3QsGql5yqu-QerOuLGNAAMnc-iSZCMIaLQPHw',
-    avatarUrl: '/avatars/7621398330462961707.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -1456px',
   },
   '7476716313081610277': {
     uniqueId: '45288241052',
@@ -4651,7 +5075,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '恬妈早教',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAZykVw-_elnZjHnCtNtKuPKeIG-niLY816NMZ2X15TWh7OvbyEC2YZKgl2v2MSYGe',
-    avatarUrl: '/avatars/7476716313081610277.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -1232px',
   },
   '7167030169838813214': {
     uniqueId: '72686646329',
@@ -4660,7 +5085,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '半薰',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAARptX9TbZl_gg2utWDh35TO-L9RD16Vvl3Tv5ej2CKlw',
-    avatarUrl: '/avatars/7167030169838813214.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -728px',
   },
   '7579834883350986762': {
     uniqueId: '56600096558',
@@ -4669,7 +5095,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小熊喵宅家',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA8qFbh2v4JXzGrKf-B09_hJlci0SHX0Rjl-wEEW7ZHFFM57ecQc4NCsJta7DJTrei',
-    avatarUrl: '/avatars/7579834883350986762.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -1400px',
   },
   '7538285567348310054': {
     uniqueId: 'kiki003322',
@@ -4678,7 +5105,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '胖姨～（退休生活）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAONX6IllemSZpJ6BJeQjlLmtniwzVXXqI_6x6PsieQcE',
-    avatarUrl: '/avatars/7538285567348310054.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -1344px',
   },
   '7411882512957341708': {
     uniqueId: '89559882023',
@@ -4687,7 +5115,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '卷卷育儿记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAqFDhZJQOvN6lGKiOAp6_A8tzp13dlaAzW00WzvGZk9AnacUOJgj7Uv2bQbk-Hd4g',
-    avatarUrl: '/avatars/7411882512957341708.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -1120px',
   },
   '7625194154246537254': {
     uniqueId: 'WW09210507KK',
@@ -4696,7 +5125,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '哎呦薇',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASyou5YQQDn4oeVhWT-rYgsUniyVIE0DbxOL7z9JmEEi3EIbwoXz8v_tAWK-1EMJd',
-    avatarUrl: '/avatars/7625194154246537254.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -1456px',
   },
   '7127211710443683853': {
     uniqueId: '94265986946',
@@ -4705,7 +5135,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '暴躁绿崽（爆红版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAwcTxA97KkGdOvBAiuZTdQAaJhAsiTEWS5vviktnEQqypiBaqYOToNLj1gsZEyYo9',
-    avatarUrl: '/avatars/7127211710443683853.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -672px',
   },
   '7593547000046911498': {
     uniqueId: '78854672116',
@@ -4734,7 +5165,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '吉伊是天',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAL6zI3jiOpgg_X1Ug7ivFV_kooge7L05rGmVnpLTkBhwne2L79h5tovnboitSxjtb',
-    avatarUrl: '/avatars/7593547000046911498.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -1400px',
   },
   '7600340029637918729': {
     uniqueId: '40285490675',
@@ -4743,7 +5175,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一一辅食记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAjPsorniJPsTkX6U3ojCC3OmtaNHj751XcJPCYhnaoCxleN6fMp_pkr6cEc1W72jJ',
-    avatarUrl: '/avatars/7600340029637918729.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -1456px',
   },
   '7602536891056914482': {
     uniqueId: 'Lin_23227',
@@ -4752,7 +5185,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '是，林白',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAARC-F7DSh21gRVdECoRw0_l3L70pZYnpUKLzI2_Iar3s',
-    avatarUrl: '/avatars/7602536891056914482.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -1456px',
   },
   '7404665502938693670': {
     uniqueId: '82140549782',
@@ -4761,7 +5195,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '时尚BBQ',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA3dJmtn1Dbxpi0Tevg5PF-BYPz7VRvBLwTGdMzJ0uk8czjv5aVGNqr_u9p6HmHwqa',
-    avatarUrl: '/avatars/7404665502938693670.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -1064px',
   },
   '7216599934731026490': {
     uniqueId: 'chaolinglulu',
@@ -4770,7 +5205,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '超龄路姐在香港',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7h4y_bd26xH-g9IoWN26ygPnEQ6SXR6cwFDsGKeJTho',
-    avatarUrl: '/avatars/7216599934731026490.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -784px',
   },
   '7638811334670942246': {
     uniqueId: '',
@@ -4787,7 +5223,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小越女',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA8DMQ3Up29-XRStb64woJau-Ak2FzyHLhZGGO2hUuEUk',
-    avatarUrl: '/avatars/7638811334670942246.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -1456px',
   },
   '6674797180349317123': {
     uniqueId: 'XCGMax',
@@ -4796,7 +5233,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '晓春哥XCG',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAo1U-cIx8f_b7gJcnMGaxt3B9wagpYV9eVHbqf587Alk',
-    avatarUrl: '/avatars/6674797180349317123.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -56px',
   },
   '7098464748894683173': {
     uniqueId: 'qiongping123',
@@ -4815,7 +5253,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '摄影兵工厂',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAlfaXEaQqrWk_zRV7Tes1OTmZlRiG8MYgGTvMsBIUeZk',
-    avatarUrl: '/avatars/7098464748894683173.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -616px',
   },
   '6739065715858341892': {
     uniqueId: 'cidiwuyin',
@@ -4824,7 +5263,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '此地无垠',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAqULNwbKrowdAaV8zw4-KpHeIpVBhQq6BC32HOOGKIjw',
-    avatarUrl: '/avatars/6739065715858341892.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -56px',
   },
   '6629724166629097485': {
     uniqueId: 'Konsn66',
@@ -4833,7 +5273,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Konsn玩数码',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAiLlMOHFDl38JOPvoyoWaMyNdpYh6ixGEv68A8_Ny440',
-    avatarUrl: '/avatars/6629724166629097485.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -0px',
   },
   '6812899253665398797': {
     uniqueId: '666hanlaoshi',
@@ -4842,7 +5283,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '韩路聊车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAnCcn8se9wv-i5wPBg_H7JjAY0iQ8KeFzIt_V4S8hhoU',
-    avatarUrl: '/avatars/6812899253665398797.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -112px',
   },
   '6764575752244428803': {
     uniqueId: 'lintianyi01',
@@ -4851,7 +5293,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '陈美一',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAM4VCb9zBb4HD2up1yWopL9Xpfn5xiow9j8Bnn7qlJ5lShvLoQBONPSRZ0F3P05A7',
-    avatarUrl: '/avatars/6764575752244428803.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -112px',
   },
   '6664795748468523019': {
     uniqueId: 'ZEALERTECH',
@@ -4860,7 +5303,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'ZEALER',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAm95C-UkQrrmvSn-VrOBzYuK3JldZvf7PPpbFVuwBPeA',
-    avatarUrl: '/avatars/6664795748468523019.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -0px',
   },
   '6725813515447173124': {
     uniqueId: 'ww456',
@@ -4869,7 +5313,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '东阳的日常～',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAHQv_do5_OEat0qYBcQrU9FGuD-r7weKrdDXCotSqIv0',
-    avatarUrl: '/avatars/6725813515447173124.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -56px',
   },
   '6771305033267937291': {
     uniqueId: 'aibijiao666',
@@ -4878,7 +5323,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '真机实验室(爱比较)',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAs0n3zon_4WuLit6gqZOPr2wVydZP6RYOQopO6kD_TYo',
-    avatarUrl: '/avatars/6771305033267937291.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -112px',
   },
   '6720031125701394436': {
     uniqueId: '',
@@ -4903,7 +5349,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '黄油小融',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAw0q79p3_f5t95wm71oYNDK404Al96eJq4J4Tqs821PeifJdamLW2sBbZ3JN5AnrZ',
-    avatarUrl: '/avatars/6720031125701394436.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -56px',
   },
   '6850614914688483341': {
     uniqueId: 'du_xiaobai',
@@ -4912,7 +5359,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '科技杜小白',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAgihVq3PXA16v3UHJlV6tt1NPD4Te7Fy0FGm7XCHxkxs',
-    avatarUrl: '/avatars/6850614914688483341.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -168px',
   },
   '7320794520533073920': {
     uniqueId: '86497713086',
@@ -4921,7 +5369,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小龙的科技生活',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAANjQDyMN8cgT-Ar1tDytW3zZaLrFu_Q_-YcskV2p1kMKRXkNQWHaMTsckKc2ckPAG',
-    avatarUrl: '/avatars/7320794520533073920.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -952px',
   },
   '6855216498437259277': {
     uniqueId: 'ritashiruirui',
@@ -4930,7 +5379,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Rita是瑞瑞',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAHonse53Z3fRdYAUL654pJ0CPcosmkUa7mciDzscvoPMNkEBzJgTO1YW5aE56C0A2',
-    avatarUrl: '/avatars/6855216498437259277.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -168px',
   },
   '7001558299233484836': {
     uniqueId: 'Cherrymiaojiang',
@@ -4947,7 +5397,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '治怪兽的波医生',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAACoD7rIx3AMVkLmXb_-SUiQSCJAZfISRQlxzbtK0lpmxRISMj4EwurO05CPrAIGn8',
-    avatarUrl: '/avatars/7001558299233484836.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -448px',
   },
   '7103084919458365470': {
     uniqueId: 'sheyiniso',
@@ -4956,7 +5407,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '摄影iso',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAz915ACl3pC5Pxuw_Ak-tZqXQDK3R7rZueSAR52UuTXIdWDKuKyVUhPGgI5VOTbgh',
-    avatarUrl: '/avatars/7103084919458365470.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -616px',
   },
   '6661816528813424653': {
     uniqueId: 'luoxiuxiu666',
@@ -4965,7 +5417,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '罗休休',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAiyUyx1jg1cPS_QTWv7Dgj8Q6lAyq3u80NJ9TjtWFBcc',
-    avatarUrl: '/avatars/6661816528813424653.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -0px',
   },
   '6722995826584469518': {
     uniqueId: '415593412siqi',
@@ -4974,7 +5427,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '鬼迹',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6h4x0GEDOHBFfSJ15ixFW0mHgXiG2Foz6ltp5WohkxI',
-    avatarUrl: '/avatars/6722995826584469518.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -56px',
   },
   '6777326830815805447': {
     uniqueId: 'goupiroubao',
@@ -4993,7 +5447,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '汽车特技yoyo',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAqtIq7Ek-5TM5zv2uLm6mokr3WhY3MtOuclYAdndQf7I',
-    avatarUrl: '/avatars/6777326830815805447.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -112px',
   },
   '6761265698854404109': {
     uniqueId: 'zhongwenze',
@@ -5002,7 +5457,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '钟文泽',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEtHRPLzTBpAIJce_BOKZTbZRPWS4tbqXTAxih6-Yeew',
-    avatarUrl: '/avatars/6761265698854404109.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -56px',
   },
   '6803386703923904519': {
     uniqueId: '',
@@ -5019,7 +5475,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小白和橙子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzNEXNrBSJU0WgLADEOKAfFr_FQ2shEXMR5dGqL9d4MRf52yqw76QRzqVHbIuBwly',
-    avatarUrl: '/avatars/6803386703923904519.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -112px',
   },
   '7004571747169075236': {
     uniqueId: '',
@@ -5052,7 +5509,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '张大头同学',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA0cnjFmICukyxZt3HpkbHavIk2L8Na8vYsrCIvpBV9Iw',
-    avatarUrl: '/avatars/7004571747169075236.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -448px',
   },
   '6802395211667341320': {
     uniqueId: 'cheping666',
@@ -5061,7 +5519,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '毒辣车评',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALwvk96idutNP_xquzPYTlmlWOhrILMSVD9w-RsIIU3-Cshs-aZ0EHbup0LYPqqnP',
-    avatarUrl: '/avatars/6802395211667341320.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -112px',
   },
   '6629722292110753806': {
     uniqueId: 'cxldb001',
@@ -5070,7 +5529,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '陈翔六点半',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA4N4OrZzTSmCPp8vVAqCeyU215Kav2JgFv2Lfy4DNWRs',
-    avatarUrl: '/avatars/6629722292110753806.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -0px',
   },
   '6726887022411120652': {
     uniqueId: 'DDM_5201314',
@@ -5079,7 +5539,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '叮叮喵dxy',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAZQnZpHtld5jvKDHcnc5BNzsYDH6UyvhGT7AJOIJ1FG4',
-    avatarUrl: '/avatars/6726887022411120652.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -56px',
   },
   '6870159397536923656': {
     uniqueId: '',
@@ -5096,7 +5557,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '不齐舞团',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAx6Lhd2mhDub8e3C5YPNk1ow-inCnpF59v4TmSsOPpKg',
-    avatarUrl: '/avatars/6870159397536923656.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -224px',
   },
   '6664839368877801486': {
     uniqueId: 'ah2011',
@@ -5105,7 +5567,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '王松傲寒',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAi6gwK1Cebym8LDswkInjPpUmorypfzOZbJYA8yOSTkg',
-    avatarUrl: '/avatars/6664839368877801486.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -0px',
   },
   '6788258952929869837': {
     uniqueId: 'jqsg999',
@@ -5114,7 +5577,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '猪坚强',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAusI9_HjAWs0yt-lRg5JgSlvII4bW_rz_QFKFfQJ5buE',
-    avatarUrl: '/avatars/6788258952929869837.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -112px',
   },
   '7346932885774925863': {
     uniqueId: 'C15917',
@@ -5123,7 +5587,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '茶白White',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA98KnWJzWyYWklqcJDYkEnmMET19opuQ9iSMRqKa4mnA',
-    avatarUrl: '/avatars/7346932885774925863.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -952px',
   },
   '6870162913286422541': {
     uniqueId: '',
@@ -5140,7 +5605,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '牛哥说家电',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdF5ntA9VYPVO5ylk7jJTFlmfhDVGYoXsxMcmMuusgPE',
-    avatarUrl: '/avatars/6870162913286422541.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -280px',
   },
   '6870167776946814984': {
     uniqueId: 'lidachuidy',
@@ -5149,7 +5615,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '李大锤同学',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdlUOPcywlpMOrM79QqzXqBPnUErtfdIa9QqKOVVXFOw',
-    avatarUrl: '/avatars/6870167776946814984.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -280px',
   },
   '6629660448583057422': {
     uniqueId: 'Tongavision',
@@ -5158,7 +5625,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '摄影师汤卓蚕',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADFjQ-NhjjspM1abfCIZ_deHrRJcuFoboU1RY17gTyX8',
-    avatarUrl: '/avatars/6629660448583057422.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -0px',
   },
   '6766040871415578631': {
     uniqueId: 'shankouzhu17888',
@@ -5167,7 +5635,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '西西不嘻嘻',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALF04NlGfLfSlhbDknqBS3oklUEMD2_8urtXkG-OjqXdcQdbKAyhpfrW5w06Y68UY',
-    avatarUrl: '/avatars/6766040871415578631.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -112px',
   },
   '7355652010642767922': {
     uniqueId: 'ACG3841',
@@ -5176,7 +5645,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '野生的装机宅',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJPkE8sq4XhSC6XVBdLjEwm1qhdSjR8eaBjZWB7SdDB7ngkYa7YaZ3h2vBfUZaUh9',
-    avatarUrl: '/avatars/7355652010642767922.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -1008px',
   },
   '7062215615729106974': {
     uniqueId: 'zkbturbo1227',
@@ -5185,7 +5655,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '📷小张同学turbo',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAIwySQdP5UrOvqf2pCINIOYd1Y1ovQgICvdMdh-jFuOg',
-    avatarUrl: '/avatars/7062215615729106974.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -504px',
   },
   '7005600880376414241': {
     uniqueId: '39610470787',
@@ -5194,7 +5665,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '华肥娘娘',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAnpkJTR_m3PIus5zgejNU4UghxBkh_a5PulvznSfCefiCPenTRQdNNnr9N7baLltL',
-    avatarUrl: '/avatars/7005600880376414241.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -448px',
   },
   '6841457878843260941': {
     uniqueId: 'yypcar',
@@ -5203,7 +5675,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'YYP颜宇鹏',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAABw-B4qfqMmbSbYL0d_S9IeEfBdt-lPQjktspRZ67aBk',
-    avatarUrl: '/avatars/6841457878843260941.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -168px',
   },
   '7092629098899439624': {
     uniqueId: '25177939930',
@@ -5212,7 +5685,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '摄影师冷西风',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_jBtUTVcUaioMLVd04J8hz3YGo7kC1WcdXnxYMK3gK0',
-    avatarUrl: '/avatars/7092629098899439624.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -616px',
   },
   '6830638243323576327': {
     uniqueId: 'ariergan',
@@ -5221,7 +5695,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿甘体验',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAmggbtLYQzxpi-wW0OYqpdd8arPVi0571Wk0uKOd4rzE',
-    avatarUrl: '/avatars/6830638243323576327.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -168px',
   },
   '6870163006865539079': {
     uniqueId: 'HJSDC888',
@@ -5230,7 +5705,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '郝健说电车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhgcApHoAvpHcfA3M5L_RK0WDILuvoSsr9zsfOzzqros',
-    avatarUrl: '/avatars/6870163006865539079.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -280px',
   },
   '7233658240699990053': {
     uniqueId: '',
@@ -5247,7 +5723,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '车二哥说车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAArIwIyonzkOzleE_89_MIEGEuEbU_1PXK_zH99T-6HTQ',
-    avatarUrl: '/avatars/7233658240699990053.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -784px',
   },
   '7017339919156641823': {
     uniqueId: '',
@@ -5264,7 +5741,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '心动投递员Nana',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAYEa89HNwj5cZt72G3Ehdi3bP8V1ULqhPPOi7f2YZJvU',
-    avatarUrl: '/avatars/7017339919156641823.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -448px',
   },
   '6870166736482598919': {
     uniqueId: 'yingshipig',
@@ -5273,7 +5751,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小猪Kevon',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAKWfRcRajHeGwTyS4L6pJTEAGPOnU7qs33YYosz9LQjs',
-    avatarUrl: '/avatars/6870166736482598919.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -280px',
   },
   '7374680831561367579': {
     uniqueId: 'laosiji2017',
@@ -5282,7 +5761,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '老司机出品',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAARskrQ3qtdZ7Wc1kPUAIL0Hz58sh-Hcy2wBaitfYErZJL0AILeE29hbiJmYK4MMdc',
-    avatarUrl: '/avatars/7374680831561367579.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -1008px',
   },
   '7017643739271135262': {
     uniqueId: 'webgzs',
@@ -5291,7 +5771,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '破坏王老唐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAABaAc3dg6riMySTD1oVZAS27SqqZMS6fJP3be4yclqmNOI_-ZbRnXhIqFW08I9rwP',
-    avatarUrl: '/avatars/7017643739271135262.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -448px',
   },
   '7106516239471607819': {
     uniqueId: '',
@@ -5308,7 +5789,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '摄影吴老师',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAUVvJKGwwI2Hd66nUhEnwlE4URXMzgl3v4HfUHyTqucA2TOQhpfLJC9U5lfEqMoFY',
-    avatarUrl: '/avatars/7106516239471607819.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -616px',
   },
   '7030135752277098504': {
     uniqueId: 'Ljgsws',
@@ -5317,7 +5799,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '燎结构',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAj9FzforEdn5YSWHwsoKjeZTLifpexYY2sUtwwWqaKCo',
-    avatarUrl: '/avatars/7030135752277098504.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -504px',
   },
   '6870162134802628616': {
     uniqueId: 'LIFENGPS',
@@ -5336,7 +5819,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '高泽宇',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA4ui0jI2jkmnX2dRDwEUbX-bHh4PAabpXqTYcwoBWbJw',
-    avatarUrl: '/avatars/6870162134802628616.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -224px',
   },
   '6770919866900676620': {
     uniqueId: 'TonyKeJi',
@@ -5345,7 +5829,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '托尼聊科技',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAcOojIWhWFzjskZEH_YbwIm4RfpW-gk3byhhNUPUUgW72AC-zj8ZG4-8351WhChoD',
-    avatarUrl: '/avatars/6770919866900676620.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -112px',
   },
   '6790135851746590728': {
     uniqueId: 'WangYuKai0701',
@@ -5354,7 +5839,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '脱缰凯✨',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASVa-8R_3SGeSaJudPW8WD-cUJVqxnvFtcPjH66IESVo',
-    avatarUrl: '/avatars/6790135851746590728.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -112px',
   },
   '7249234273817853956': {
     uniqueId: '30688625993',
@@ -5363,7 +5849,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '懒狗小黑',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJApACMirCKZxKdWxglDLEsCxGVKYA3r9C-jNaG9Zx_QhKqy4EH3otrXwmC83viTZ',
-    avatarUrl: '/avatars/7249234273817853956.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -840px',
   },
   '6870163609909985294': {
     uniqueId: '',
@@ -5380,7 +5867,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '三哥车问',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASdj-lTLpDQSX-njVcOagPMbJOpVADwsV0atyoOLZaP8',
-    avatarUrl: '/avatars/6870163609909985294.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -280px',
   },
   '6596677958415417352': {
     uniqueId: 'Chenzhixin',
@@ -5389,7 +5877,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '陈志鑫',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA1ladZNMQ6ka2DRY240JWA6lU7p-HCeF92AXN7nvpWtU',
-    avatarUrl: '/avatars/6596677958415417352.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -0px',
   },
   '6703779113024356355': {
     uniqueId: 'zsg797988',
@@ -5398,7 +5887,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '双面笑笑',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEN051aTjkVocVc_f1w_Mj7WVxLDIoktwe1p-Y6c0S-Q',
-    avatarUrl: '/avatars/6703779113024356355.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -56px',
   },
   '6777580554419175431': {
     uniqueId: 'yanchuangshuoche',
@@ -5407,7 +5897,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '闫闯说车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAfAoC2pOtisSkN_K02NL9PvPCznxOM8yWldJO9Zcpetw',
-    avatarUrl: '/avatars/6777580554419175431.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -112px',
   },
   '7392607620432920613': {
     uniqueId: '30568907566',
@@ -5416,7 +5907,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '令小山',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAFl6uXz4hwndh89Dw9eTMVyQlxVkHxVf5my3bmCto32yOCX1RdQS2RZYmC65vX7_N',
-    avatarUrl: '/avatars/7392607620432920613.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -1064px',
   },
   '7111906554537836577': {
     uniqueId: '',
@@ -5433,7 +5925,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '邻家晓亮',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAnfGjsWU3lPLyWa3J0Yh-eMTmvqkxN3pKj05Eg10N8Aa0FxJ0DgipHJxDz9IJ6SyH',
-    avatarUrl: '/avatars/7111906554537836577.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -616px',
   },
   '7228968618409590844': {
     uniqueId: 'dytxuosognue',
@@ -5442,7 +5935,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '宋思涵',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAYoAxasc3UAjU99UCLFR4WToTw-ZJDC7XR9HYkNLPDeJyH-IGR3dxc6ApWAV3UjW8',
-    avatarUrl: '/avatars/7228968618409590844.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -784px',
   },
   '7002655142625411103': {
     uniqueId: 'wuneiyouequan',
@@ -5451,7 +5945,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '屋内有饿犬',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALy443WFdgMzQSywpUN00CUcdqiOZeB3FW1joTZGwEFUwxwRYa8O-lhYKzFbHBPte',
-    avatarUrl: '/avatars/7002655142625411103.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -448px',
   },
   '7230268134882541628': {
     uniqueId: 'photomuyan',
@@ -5460,7 +5955,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '牧言Photo',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAmw9EGP2GO8Rm4t4Tthrl7rvnyTXAtjdsc6SkVXo7U6B-Skqnlq5AHjP7ngkzntc8',
-    avatarUrl: '/avatars/7230268134882541628.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -784px',
   },
   '7362131554253930533': {
     uniqueId: 'BaikePC',
@@ -5469,7 +5965,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '白客评测',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAThLN8IxLom4eZnJMtHr2Fg091-E3L7fKJQdi4Vo7DmY',
-    avatarUrl: '/avatars/7362131554253930533.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -1008px',
   },
   '7399577274422394918': {
     uniqueId: 'huangkun309',
@@ -5478,7 +5975,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '懂点电脑的老怀',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAf3UsmLOEUOhGSjAolQcCWQPvtda0GIFQLGqbqXn_BKs',
-    avatarUrl: '/avatars/7399577274422394918.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -1064px',
   },
   '6867660090023870477': {
     uniqueId: '_bighuhu0410_',
@@ -5487,7 +5985,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'huhu壮壮',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAxW6vZ38F9Se08ZzXYN7B8I_k0ky6j0s4lQ5hPFTq90Q',
-    avatarUrl: '/avatars/6867660090023870477.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -224px',
   },
   '6894238586036551688': {
     uniqueId: 'ddpnxsy',
@@ -5496,7 +5995,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '爱玩的大栋',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAq7hJfWNujZbScsVKY-zhgm2j2bUiSeKw7BOyWAGurA4',
-    avatarUrl: '/avatars/6894238586036551688.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -336px',
   },
   '7441896389488934953': {
     uniqueId: 'DrivingArt',
@@ -5505,7 +6005,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'DrivingArt',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAja35QoeC04OYAqErJaD2khG0_rtai8zMeJQVxXE1FWo',
-    avatarUrl: '/avatars/7441896389488934953.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -1176px',
   },
   '6821410920741224461': {
     uniqueId: 'sdkc',
@@ -5514,7 +6015,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '三刀侃车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhxAU3JQ5dofzkkOwoXvzlAhJjq0CkiuDu9M9WfI2__4',
-    avatarUrl: '/avatars/6821410920741224461.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -112px',
   },
   '6629658486231793672': {
     uniqueId: 'huaixiubang',
@@ -5523,7 +6025,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '淮秀帮',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAbruMfXngBdynwf0CHFNvFlbS0z_vFpkUO3pwcMfFn6Y',
-    avatarUrl: '/avatars/6629658486231793672.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -0px',
   },
   '7137181621626929165': {
     uniqueId: 'Qianyy_',
@@ -5532,7 +6035,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '钱莹莹',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAbbIIlF9dv1G6niXncFchQNUrFumb18BGB4iEUcfhfQtxMBHu6Qc3YpvdUytXPwoY',
-    avatarUrl: '/avatars/7137181621626929165.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -672px',
   },
   '6961420507598028807': {
     uniqueId: '',
@@ -5549,7 +6053,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '李九儿Ultra',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAaFnYDU5ZWQoJItixU5kK_8RGcvqCc9tXs6pkiy5kl000dQHLFSqOs6djqLpUpGVj',
-    avatarUrl: '/avatars/6961420507598028807.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -392px',
   },
   '7234383518099308582': {
     uniqueId: '61398739876',
@@ -5558,7 +6063,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一只周头',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAP6l9X9nq8S7tPKJjHN9FNueA1AuZkgZPPDa7e_qs9Jriakm9H1fnJDisdO5hz5FH',
-    avatarUrl: '/avatars/7234383518099308582.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -840px',
   },
   '7121260514604220423': {
     uniqueId: 'hengshuxieping',
@@ -5567,7 +6073,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '横竖斜评',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAesp8ZXsecKXoXLQ1jmBhjZ1kY5tWf-Bzl0wRUWRnLGSJWIflMVKPZ8ZrHPjLLBb8',
-    avatarUrl: '/avatars/7121260514604220423.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -616px',
   },
   '7407351829090172938': {
     uniqueId: 'xiaokebibixia',
@@ -5576,7 +6083,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '数码科到底',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAATyR32yNiyPuL6VKoAmLBjg_ULlLeC8DKKAMe5AzZjuU',
-    avatarUrl: '/avatars/7407351829090172938.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -1064px',
   },
   '7412230683034124298': {
     uniqueId: 'ymznzb',
@@ -5585,7 +6093,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '洋咪子📷',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAgbTx02r6ZdbQlfcWnkdbP-2RgQ9pG62YoykYWvUMFHhqZgHC6r8ZRW_rg7s36Tp5',
-    avatarUrl: '/avatars/7412230683034124298.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -1120px',
   },
   '7158757599972687911': {
     uniqueId: '92063979340',
@@ -5594,7 +6103,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '肆周飞行（课已上线）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7JMp5zzhzGgF8DHwUzvVWAdMQR_sfnRMbPnIE8XyzRXU9FeWlzMpnt14goP-7HBS',
-    avatarUrl: '/avatars/7158757599972687911.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -672px',
   },
   '7439239272961425435': {
     uniqueId: '',
@@ -5611,7 +6121,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '差评硬件部',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAtPjduUiDtZMycSASxX7AI8Tpdj_Epib2gzwUjs-pPJApvsklj75PrxtKHG2IoCPo',
-    avatarUrl: '/avatars/7439239272961425435.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -1176px',
   },
   '7063628716089278478': {
     uniqueId: 'Vipouran',
@@ -5620,7 +6131,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '猫叔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdGWH4J-x-UyjnQn7v-DEEq-tvep6FU41D_l2bv8G6CNLgxcB0D0oZeHeyUW4RWMo',
-    avatarUrl: '/avatars/7063628716089278478.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -504px',
   },
   '7129705281772060708': {
     uniqueId: '36207816949',
@@ -5629,7 +6141,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'chilly香菜',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAn_6SrmEwg6IvmGn01OIlx--3uLN7M8Ec8Zgez2vlmjQLB7q4vIbvZEiXzX5esWLC',
-    avatarUrl: '/avatars/7129705281772060708.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -672px',
   },
   '7035663606834266149': {
     uniqueId: 'yeom',
@@ -5664,7 +6177,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '王大嗓门',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAE94g9L4bSD0Q74LWUNGT1hzEhv59t5bFPRhNWdfqK4pmkqFmc6E5OKjF7e-rOcP2',
-    avatarUrl: '/avatars/7035663606834266149.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -504px',
   },
   '6967318566299238407': {
     uniqueId: 'HM082692',
@@ -5673,7 +6187,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿莫西木木',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAs0GE-aV2YdGeJKzzY26sUgjnKYIOc__RbnCmFBNATtmYsBq07aTxvrSAUDCmxt3W',
-    avatarUrl: '/avatars/6967318566299238407.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -392px',
   },
   '7422158018516615187': {
     uniqueId: 'WLCCOFFEE',
@@ -5682,7 +6197,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '杨长顺',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAa-pQgkXYPk2IIFLkUoEP5UO1t4OqkjCTwp_y_-Cdt9I',
-    avatarUrl: '/avatars/7422158018516615187.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -1120px',
   },
   '7258178157541326906': {
     uniqueId: '20857169054',
@@ -5691,7 +6207,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '开车妮妮子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAWX-UaLICV67sh4I1WrO88p5UCY7KjOpWRpoUKynjqmZPQB3RkRFTf74Qdw8qx6aG',
-    avatarUrl: '/avatars/7258178157541326906.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -840px',
   },
   '6870169252976918541': {
     uniqueId: 'dy988p8ttic8',
@@ -5700,7 +6217,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '北斗星阿帅',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQG5BfnISbh7XZLvJHbKZxjnqGLPaKu_n8noI_ayODj8',
-    avatarUrl: '/avatars/6870169252976918541.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -280px',
   },
   '7235548973610565692': {
     uniqueId: 'mmxdy',
@@ -5709,7 +6227,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '莫梦醒',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA0fHj-UpZaYQVMWHwNCk5uwciN78kD9_cvVJIjs0_w0g',
-    avatarUrl: '/avatars/7235548973610565692.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -840px',
   },
   '7314184574227972122': {
     uniqueId: 'wyyftm1219',
@@ -5718,7 +6237,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '猪皮香奈儿',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAj30zQmATHJXW5AMMtttTtshrNE-5vYl4xct-Qcazre0',
-    avatarUrl: '/avatars/7314184574227972122.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -896px',
   },
   '7154376481613807623': {
     uniqueId: '',
@@ -5735,7 +6255,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '贪玩歌姬小宁子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAR6iHjUDDEP6gvIv4OMnD0ZyulltvQtsA1axnAu2p5-E',
-    avatarUrl: '/avatars/7154376481613807623.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -672px',
   },
   '6870154772293353480': {
     uniqueId: 'zhaiTX',
@@ -5744,7 +6265,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '有点硬核的宅同学',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAi4z66vwinGzwVxA-mtVc61shb4qI4jmXNpzBTLb1yo0',
-    avatarUrl: '/avatars/6870154772293353480.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -224px',
   },
   '7302640768575864870': {
     uniqueId: '55928524529',
@@ -5753,7 +6275,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '懂车阿伟',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAi_4wIDnvYOZVjMFWcNYJaFuhLy5ntsY36NuATWDTBlxC8otQ_f6Q7HjLJ6p8ev1N',
-    avatarUrl: '/avatars/7302640768575864870.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -896px',
   },
   '7057378799276539937': {
     uniqueId: 'bwcx0743',
@@ -5762,7 +6285,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '说车的马王爷',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAKVsUeihYra7RCOO7wdzbE50tTshoHgAxPHspDeiYZDiR4KWiAIeiESYaONoEWs7S',
-    avatarUrl: '/avatars/7057378799276539937.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -504px',
   },
   '7034146549248557068': {
     uniqueId: '',
@@ -5779,7 +6303,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小岛假日',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASgrFjgwqs2yGsgGYyaaq0OKkXMteS81wCbgKprSJSpbUK4goEaJX4nZvO_8JJmy0',
-    avatarUrl: '/avatars/7034146549248557068.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -504px',
   },
   '6959980624497082404': {
     uniqueId: '',
@@ -5796,7 +6321,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '白呀白Talk',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALNBwZ0jwwoM4MOpiOHwb6BRccGiJZDKOn3ji_PBolkE',
-    avatarUrl: '/avatars/6959980624497082404.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -392px',
   },
   '7296779586040233994': {
     uniqueId: 'Visionphoto01',
@@ -5805,7 +6331,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '木杉',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAGCOwD7NlyVxZPLrul3poqXFUQJs4rYNw0XnL6omDYobtQoGc_F0jCb_ASisTEHrM',
-    avatarUrl: '/avatars/7296779586040233994.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -896px',
   },
   '7317973805404520467': {
     uniqueId: 'Lengqingchuan',
@@ -5814,7 +6341,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '冷青川',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA9FCj-klRjG2s6MqrarM-uF8ZwM3WEQOJxVtG8byo__E',
-    avatarUrl: '/avatars/7317973805404520467.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -896px',
   },
   '7187581052481699897': {
     uniqueId: 'xlvision20721',
@@ -5823,7 +6351,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'XLvision',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQR0ZxZ67EuXSeUPbRfp5glNyCk4ErR0xLiK7Zrp6Uwz5oHBbFO7tX9cdT6Lmikc9',
-    avatarUrl: '/avatars/7187581052481699897.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -728px',
   },
   '7242137376309379131': {
     uniqueId: 'damipingce2020',
@@ -5832,7 +6361,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大米评测',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-eJd7xM1gmfuYr8fD3C9BVgDcSi38GFfKXLKr69YJwmsdR2pYIee684k-04VHEfz',
-    avatarUrl: '/avatars/7242137376309379131.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -840px',
   },
   '7255881497847005196': {
     uniqueId: 'kedadingding',
@@ -5841,7 +6371,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '可达丁丁',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA4LEpH1CgUIEFKR8t-RAxQDCvtAtRQ9G2A-RmWvr5Uno',
-    avatarUrl: '/avatars/7255881497847005196.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -840px',
   },
   '7258475726439972875': {
     uniqueId: 'Qualiaqu',
@@ -5850,7 +6381,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '夸利亚Qualia',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAlSoidXvMhNodS2QdJzgKmKrLh4FZJv_NvsmvV1AdKD4',
-    avatarUrl: '/avatars/7258475726439972875.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -840px',
   },
   '7258140802881159224': {
     uniqueId: '',
@@ -5867,7 +6399,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一晨叔叔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAIToalBWY1B-Xp-CEXpzIT7VO4JSnV_T-8BHWEpk7EKA',
-    avatarUrl: '/avatars/7258140802881159224.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -840px',
   },
   '7068830011532247070': {
     uniqueId: 'Wmy0728.',
@@ -5876,7 +6409,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '遥遥小宝',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-4SEwrg1A5lyQBX_NLMj61TPwTWsiNshC4GjXDaoRJs',
-    avatarUrl: '/avatars/7068830011532247070.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -560px',
   },
   '6899730431764070414': {
     uniqueId: 'Timagic',
@@ -5885,7 +6419,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '时代玩家',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_OKGjmk7DUpklekP10GhqaU5jQP9tF_t_CJ2Gu7IG2uEb9CDAhrGgDkyFXkecYwB',
-    avatarUrl: '/avatars/6899730431764070414.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -336px',
   },
   '7118221177624985607': {
     uniqueId: '',
@@ -5902,7 +6437,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '极客湾Geekerwan',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAXXVrVvbTDOhdGW_LzlSDkdN2hZT_CRXmzzafGN-GIbkV6skPAaH2uANSFru076ZT',
-    avatarUrl: '/avatars/7118221177624985607.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -616px',
   },
   '7451431721007841318': {
     uniqueId: '96548375919',
@@ -5911,7 +6447,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Jackie兄',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAyXJsxoIRbBwhKgsImXGzihfV8ntSNuRCX2_8waKu7Ic',
-    avatarUrl: '/avatars/7451431721007841318.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -1176px',
   },
   '7269972026834550843': {
     uniqueId: 'upspeedracing',
@@ -5920,7 +6457,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '圣甲虫爱开车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAmH2utlVXkp-6coKHuk8hnUaS14LP9j4KWSPqj91G2rmfUj192PTIczcZgZ1AY91b',
-    avatarUrl: '/avatars/7269972026834550843.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -840px',
   },
   '6870167623758249991': {
     uniqueId: 'swj4845',
@@ -5929,7 +6467,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '秋鱼奈橙菜',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAmptVvlJP9z5yleQ4nmRCWgli1QZIqAPR5CKX8PaqoF0',
-    avatarUrl: '/avatars/6870167623758249991.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -280px',
   },
   '7075320550553452558': {
     uniqueId: '30751904178',
@@ -5938,7 +6477,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'LAO曦子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAYwY_-_9vUgFNgVtWXJw0GXvu807zoyhBAtRM9yOVO1YeURupxlSHNxDAfgoNBayF',
-    avatarUrl: '/avatars/7075320550553452558.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -560px',
   },
   '7476456919763255334': {
     uniqueId: '87021732865',
@@ -5947,7 +6487,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '主厨崔迪',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAC2qSzVr5HY6icwnupWOjY81ngjlSWtgexI3z2iIgqVU',
-    avatarUrl: '/avatars/7476456919763255334.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -1232px',
   },
   '7453414491313668159': {
     uniqueId: '78871898985',
@@ -5956,7 +6497,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'S总',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2IaWCmAp2HdWIfbGQBBuDfBwRc5f9yz-X1D1K1Q4TCY',
-    avatarUrl: '/avatars/7453414491313668159.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -1176px',
   },
   '7172681548934676487': {
     uniqueId: 'gete599',
@@ -5965,7 +6507,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '我叫杂工哥特',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQbUKVnKE_cS82RZxr8ZJD4uVAGAkhiqm51HKI5vDbso',
-    avatarUrl: '/avatars/7172681548934676487.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -728px',
   },
   '7081227775826198542': {
     uniqueId: '44269461547',
@@ -5974,7 +6517,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小王同学数码知识',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAmzEBSYaxVvUEWuA_BJBVNNbRAHP1Nz6whAhOZpiOXzI',
-    avatarUrl: '/avatars/7081227775826198542.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -560px',
   },
   '7410299970856681499': {
     uniqueId: '65619925114',
@@ -5983,7 +6527,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '林湾村男子铁道职业学院院长',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA8MFV2fPvYe3D_iJfjYYDo8RQTbxzCbvpAqS3kwOor3Q',
-    avatarUrl: '/avatars/7410299970856681499.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -1120px',
   },
   '7083714310987481095': {
     uniqueId: '82172870602',
@@ -5992,7 +6537,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '数码杂谈君',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_ULgYwPpOzQqEl3eNjJLKudbTkqWS3EhpbmtQjwRbuY',
-    avatarUrl: '/avatars/7083714310987481095.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -560px',
   },
   '6988424693153792037': {
     uniqueId: 'Claimandy',
@@ -6001,7 +6547,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '王豪豪',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAAEqPDjSCCxXWtjl9H_RgsOKkTqg5C1tj6D2bW82SFy3IWY0VBoyxdHJGubaZY14l',
-    avatarUrl: '/avatars/6988424693153792037.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -392px',
   },
   '7277604277801975844': {
     uniqueId: 'door_keji',
@@ -6010,7 +6557,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '科技趣室',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADP96D4Wgy8GrSjUWgv_pB_WAtkyr5fkYJJ-MhS5IzGOhNiVRgwyuKNxBcVazQ_ac',
-    avatarUrl: '/avatars/7277604277801975844.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -896px',
   },
   '7400006412790661156': {
     uniqueId: 'itz_bronny',
@@ -6019,7 +6567,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'BBBronny',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAKwDyVcEzJPy3bUAV5D7mvRdOtNejAs6vdg3fYAhrypU',
-    avatarUrl: '/avatars/7400006412790661156.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -1064px',
   },
   '7442146003005734950': {
     uniqueId: '29284587618',
@@ -6028,7 +6577,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '梨里lili',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAf751iB4eRF0npcUZpOv1Nc1Nd1Oq1Xwbo0Vanvo7S10wd-GsdGzmb2ILBb8YMVIA',
-    avatarUrl: '/avatars/7442146003005734950.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -1176px',
   },
   '7079694550985342990': {
     uniqueId: 'wxwh3000',
@@ -6037,7 +6587,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '友人朦',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_wkrKsIjgPyZeRVbhAsXyBCzOaCet44YvPvIoZwUmhk',
-    avatarUrl: '/avatars/7079694550985342990.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -560px',
   },
   '6982190558630379551': {
     uniqueId: 'dsfx',
@@ -6046,7 +6597,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '电识分享',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA33P8WJh9BMoaLzERIrb0bBMC8P-abqjVqHCsq33Yco4',
-    avatarUrl: '/avatars/6982190558630379551.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -392px',
   },
   '6974732266907893767': {
     uniqueId: '66218230095',
@@ -6055,7 +6607,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '甜蜜老张',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAHprx6n2jTwvazpZadBBg8vuzPJahT6WGFc3ZanKV10OAY4soa5zWrZiEzJRMCA4f',
-    avatarUrl: '/avatars/6974732266907893767.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -392px',
   },
   '6995724053877096463': {
     uniqueId: 'ChenPhotos',
@@ -6064,7 +6617,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '陈与诚📸',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAHw0m2D-eUe19CXynBtJKEDodgTSy1eXXWxaU7kc1Ct_slWM86iphSIYdENHOz6MM',
-    avatarUrl: '/avatars/6995724053877096463.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -448px',
   },
   '7436969119196381193': {
     uniqueId: '88452723539',
@@ -6073,7 +6627,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '神奇阿宇',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAE5b4OdySsTmJqWpsf5H-xQbQ8m_uNaGkaeguHyz6gPQ',
-    avatarUrl: '/avatars/7436969119196381193.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -1120px',
   },
   '7400279309128040499': {
     uniqueId: '67030692594',
@@ -6082,7 +6637,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '硬件茶谈',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAoI6NbxoawvtqCOjNWePzwRoEIzGpM774sdUf0EuCkodHMSF1C3Px9pR94KgmEI87',
-    avatarUrl: '/avatars/7400279309128040499.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -1064px',
   },
   '7071568642793537574': {
     uniqueId: '',
@@ -6099,7 +6655,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿七米德',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAXeh8HlLYrn3edtlosiI3DqWvVbHI_kxaemj_DnrfjirO2wC2N-3dBRKKtyNi2obq',
-    avatarUrl: '/avatars/7071568642793537574.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -560px',
   },
   '7205285563878866981': {
     uniqueId: '54376573916',
@@ -6108,7 +6665,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '机拍z',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAk7iJr9z3z7dd8aA0XzBy3ej500toae_W69k91be1TwM',
-    avatarUrl: '/avatars/7205285563878866981.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -728px',
   },
   '7570046920970731570': {
     uniqueId: 'qiuqiuhuo777',
@@ -6117,7 +6675,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '球球火',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdpuhi3-dzYkilx2KKt-BzWf7015rj-PWwHFLDFnlgbQ',
-    avatarUrl: '/avatars/7570046920970731570.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -1400px',
   },
   '7452333617193156658': {
     uniqueId: 'FXDLMNMPC',
@@ -6126,7 +6685,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '没那么评测',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAABs0E385z6H34hWTUJPeaZ_evDJzlMx7A-IUNiuHsS8I',
-    avatarUrl: '/avatars/7452333617193156658.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -1176px',
   },
   '7088557541864505351': {
     uniqueId: 'Y99983',
@@ -6135,7 +6695,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '云老师剪辑课',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQ6hSNJq1yJybgWP52fJbCosB084T2YPLIqmqAh6mrL5guXvFjbtqJmE_dSFKirOa',
-    avatarUrl: '/avatars/7088557541864505351.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -616px',
   },
   '7435227032318902298': {
     uniqueId: '46946740652',
@@ -6144,7 +6705,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '霞姐车知识',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA1Ve5g3SRuCg5XRR0MEGrhTc55Gd6TzLT7_8XH1mxj-oOs87vjACc99DyTzh-cZD1',
-    avatarUrl: '/avatars/7435227032318902298.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -1120px',
   },
   '7142912370279448588': {
     uniqueId: '',
@@ -6161,7 +6723,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '在下莫老师',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQ1dFO9i4ulRYixl_ALyg1XFRoO_CpGDQR9LiacuDc_k',
-    avatarUrl: '/avatars/7142912370279448588.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -672px',
   },
   '7213465822021304377': {
     uniqueId: 'azu_wszn',
@@ -6170,7 +6733,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿祖外设指南',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADXmlqkUSiz0eVB6VkWZv9tMr_jhzQimoHPKu-npN108vyMXWiqwzpWq8fy5ELAx0',
-    avatarUrl: '/avatars/7213465822021304377.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -784px',
   },
   '7327950483505545243': {
     uniqueId: '',
@@ -6187,7 +6751,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '编导伐木机',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAAunlEbIAUytddB_EARRTVRA6qq3syHGhF0rIPAcNGaa_54Dky6zUiljaKL-HtzlK',
-    avatarUrl: '/avatars/7327950483505545243.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -952px',
   },
   '7549016438929883187': {
     uniqueId: 'xiudoule6',
@@ -6196,7 +6761,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '秀豆了',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAukjrwsfW_uxZ-yMwk7izORyxv3b8cM6VtjEblyAqcMtJK4Ahmd1KF14w_lgO9_3F',
-    avatarUrl: '/avatars/7549016438929883187.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -1344px',
   },
   '7172001696975945766': {
     uniqueId: '64328705644',
@@ -6205,7 +6771,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '锅盖飞同学.',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAE-txeDBPUTm0Uaoijk71ApwffHvIzSpSO3ZgDAgPZbkJiLJW3RkkNA2XwYzlGNQG',
-    avatarUrl: '/avatars/7172001696975945766.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -728px',
   },
   '7539542930311086106': {
     uniqueId: '93124321929',
@@ -6214,7 +6781,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '星星球居民w',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAgPJ7eauLmdlhrlHJPm9cLtcUiGKEbLOuz5L85UkhfQU',
-    avatarUrl: '/avatars/7539542930311086106.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -1344px',
   },
   '7017132327570505742': {
     uniqueId: 'sanshicamera',
@@ -6223,7 +6791,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '三石摄影',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAkO823z7ZiGI9xXzjl7kgt1SPbHjQS0u0nruGaTUlmiLFsP_Xbu70XVG7yRbP7Yle',
-    avatarUrl: '/avatars/7017132327570505742.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -448px',
   },
   '7493363824416653321': {
     uniqueId: '56151686435',
@@ -6232,7 +6801,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '柚子ㅤ',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAsk_nurUGhSATKhwLtas3fw9Uzn0biTyKMhWQz7hjdxDkpyRHQDSwcwr-bg3qMJQE',
-    avatarUrl: '/avatars/7493363824416653321.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -1288px',
   },
   '7168406547322634271': {
     uniqueId: '',
@@ -6249,7 +6819,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小枝寄信（十月大理',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEaLXvO2wpsQuqlt-GzKMnUniNzvFRme4FLU7BBG1mjQ',
-    avatarUrl: '/avatars/7168406547322634271.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -728px',
   },
   '7169097187320660004': {
     uniqueId: 'Liaobusiwanche',
@@ -6258,7 +6829,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '玩车廖布斯',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAApCR2xeJorejn8y6hJWVu-dhq7VfSRFah-oSMXj1vvQazmnUWvR_M4IRlkQT5XFeR',
-    avatarUrl: '/avatars/7169097187320660004.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -728px',
   },
   '7509401594497073161': {
     uniqueId: '47672136416',
@@ -6267,7 +6839,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '李三金(健身干货)',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA0MRwdI48LvsyP-G3aSiqTi5jV_Hx1HizLzxPtX6e4x7CZblQQKThmX4_WojwfyNS',
-    avatarUrl: '/avatars/7509401594497073161.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -1288px',
   },
   '7514200134725402661': {
     uniqueId: '81203676219',
@@ -6276,7 +6849,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大枫吹',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAu473OQEJX1CN23fst6F0UyXsdHL5D1bkJYjnQJRxaA9Wxa9mQ5Cdb6NlevdGsxNs',
-    avatarUrl: '/avatars/7514200134725402661.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -1288px',
   },
   '7084169759725453349': {
     uniqueId: '',
@@ -6293,7 +6867,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '丹妮妮妮妮',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAaynIo7QfVkNF4PZvV-t7cTog2MAEYOWf-WpdubSli90ok02LZE2ENUFmTFAG8Nr0',
-    avatarUrl: '/avatars/7084169759725453349.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -560px',
   },
   '7592446008584306751': {
     uniqueId: '73817926882',
@@ -6302,7 +6877,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '朱朱Julie呀',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAeSO72r1angJ-Zzw8p4r1JT10ITP1Lvyu2pxnJLmq7Hgu2Ba3eVGIqOr8u6BeFwPZ',
-    avatarUrl: '/avatars/7592446008584306751.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -1400px',
   },
   '7208441537414299706': {
     uniqueId: 'JoJoLovesYou',
@@ -6311,7 +6887,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '撸铁的JoJo',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdlOjJZ_QSHflcpKKKHioGeqHar53-QI2MnxghPw7am6qko_k2KY5n-OIe20OBIQ7',
-    avatarUrl: '/avatars/7208441537414299706.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -784px',
   },
   '7085006092782190623': {
     uniqueId: 'lry_0929',
@@ -6320,7 +6897,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '卢柔伊',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAYeKL-dJ7L0XDoUvZ0Ce6XxL4O65pKm9lvEi-ytM0AwU',
-    avatarUrl: '/avatars/7085006092782190623.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -560px',
   },
   '7461997745780293669': {
     uniqueId: '',
@@ -6337,7 +6915,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '喜公子拍点啥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAmJOkiwG7_2f8tQkm3Zl5NnAI4obkkExavGnac43KriA',
-    avatarUrl: '/avatars/7461997745780293669.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -1232px',
   },
   '7492763633588371494': {
     uniqueId: '',
@@ -6354,7 +6933,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '安多𝑋𝑖𝑎💎',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdMwD7cMgL1kwIrnILjsvD8gdpyAyRD2iYoWh3DD1zg0',
-    avatarUrl: '/avatars/7492763633588371494.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -1288px',
   },
   '7495812896216383497': {
     uniqueId: '27350077320',
@@ -6363,7 +6943,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '老周叭叭叭',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAI7QQDy8P6ZJUb5h7DcAcWEAEXgKw1e5JwfUAmo-q5vwXxdIqw86YjYG-Zy1qTA9r',
-    avatarUrl: '/avatars/7495812896216383497.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -1288px',
   },
   '6629657084751249412': {
     uniqueId: 'Dili001',
@@ -6372,7 +6953,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '王小明',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAARAyP2NxtvoiCoOlV5yucR42p5sD3GB6rE-02_kB8-Lg',
-    avatarUrl: '/avatars/6629657084751249412.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -0px',
   },
   '6629664957086564359': {
     uniqueId: '',
@@ -6405,7 +6987,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '绘说篮球',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOQJxYx4coVWekeSWCFQxoBCaRlIXQHLJtGc1sUkItoE',
-    avatarUrl: '/avatars/6629664957086564359.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -0px',
   },
   '6741209301131460621': {
     uniqueId: 'Rongshu233',
@@ -6414,7 +6997,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '容叔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALaDFsBMX_Vc2kdwxrPENU2stAn-U2PKvXcIpuPmlcrI',
-    avatarUrl: '/avatars/6741209301131460621.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -56px',
   },
   '6788660613728960520': {
     uniqueId: 'TJ441088937',
@@ -6423,7 +7007,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '天机',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAi60tp8PufSiD2aGSm29A6E5MejzIln0bseIqc6D27LpItrl0IZn_O0zoVWx_z2Y4',
-    avatarUrl: '/avatars/6788660613728960520.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -112px',
   },
   '6870164497114333197': {
     uniqueId: 'zouluyao',
@@ -6432,7 +7017,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '走路摇zly',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAsPd6gdI_ZDATS8xW-qbduwBGNQKVlqClPQksZ3vg6BQ',
-    avatarUrl: '/avatars/6870164497114333197.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -280px',
   },
   '6844764269045612552': {
     uniqueId: 'kay11kay22',
@@ -6441,7 +7027,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '玖仟',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAqAKjldpwDV4WA9CMrYYMcwAjQUtRESkWp5gja8zWLgk',
-    avatarUrl: '/avatars/6844764269045612552.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -168px',
   },
   '6977596565200306184': {
     uniqueId: 'chekuazhang',
@@ -6450,7 +7037,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '5号车库阿张',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASgeKDYx9duP2X3huJYfnsjVEta0IglawdKkro8ezUdA',
-    avatarUrl: '/avatars/6977596565200306184.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -392px',
   },
   '6867756606281498631': {
     uniqueId: '',
@@ -6467,7 +7055,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '噶噶鸡（厉鬼之主）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAApvwRPvnLhZ7S8bvKl0FVmZNAS544Uxjhx6QGHw6R6Tv4ts_h0QVjUTTLjRbGukVO',
-    avatarUrl: '/avatars/6867756606281498631.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -224px',
   },
   '6797636234983260168': {
     uniqueId: 'dawanchejia',
@@ -6476,7 +7065,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大玩车家',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA68BjMV5wGkvbxxiJa2F70vYH8xclQ2vxXF-JyOS-15FW3rIf8z0UAgyy8nzXmuee',
-    avatarUrl: '/avatars/6797636234983260168.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -112px',
   },
   '6629656345236733966': {
     uniqueId: 'AK920',
@@ -6485,7 +7075,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'AK游戏解说',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAi6OHkZ5vYf7VG-2RylHtZP0SvaHBtqbxipC5ejtSui4',
-    avatarUrl: '/avatars/6629656345236733966.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -0px',
   },
   '6653354283339087875': {
     uniqueId: '',
@@ -6534,7 +7125,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '懂车小黑',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAO3w91teauHIZhwUFsPuTvqOxY93yRas2LcZBTGjjK1fskWKDH0fQD6gy0Cbx3tG7',
-    avatarUrl: '/avatars/6653354283339087875.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -0px',
   },
   '6834747521718288391': {
     uniqueId: 'Jiashipai',
@@ -6543,7 +7135,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '驾仕派',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADop-NTYTyEZtih65nwZBuvbCKrAOSrRcigiB4qSpCxg',
-    avatarUrl: '/avatars/6834747521718288391.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -168px',
   },
   '6841923451570094088': {
     uniqueId: 'Lhc99778',
@@ -6552,7 +7145,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '李皓辰y',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAuX4qqlM0XqRfZu_Md48BF-q3pkqi16_ZzlcRk3Q-S3G64hyBx4lVgw-tv88LToDB',
-    avatarUrl: '/avatars/6841923451570094088.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -168px',
   },
   '6851573742007484430': {
     uniqueId: 'lajiaobulasiji',
@@ -6561,7 +7155,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '辣椒不辣斯基',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAh17pQjPOFj-Mmp1zeb7tGnEYcwuzjKKPRccwVTLTC_6fDkM1Fp6DCRmO6UTDzske',
-    avatarUrl: '/avatars/6851573742007484430.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -168px',
   },
   '6814395198148182023': {
     uniqueId: '',
@@ -6578,7 +7173,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '姚厂长讲车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAK91gqjOBSBFerKBu3MkjzvQfZNtioOdNk8of39JAN60',
-    avatarUrl: '/avatars/6814395198148182023.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -112px',
   },
   '6629659275507531790': {
     uniqueId: '',
@@ -6595,7 +7191,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿白',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJ6-XDWKY600cgIDOv8KiuYsTEMUBEef-k-v0Jah3GQA',
-    avatarUrl: '/avatars/6629659275507531790.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -0px',
   },
   '6959897336256397320': {
     uniqueId: '',
@@ -6612,7 +7209,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '游戏人阿管',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAIJX9uByK54wK86dYzaEsihZN8LvPxUnCmS-7SifQ1a4',
-    avatarUrl: '/avatars/6959897336256397320.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -392px',
   },
   '6697561034212769799': {
     uniqueId: 'mumuuu',
@@ -6621,7 +7219,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小暮mumu',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdWqdgVEyBzm3T9clX5HU7_kEGbi_bqBiLMqX16m9meM',
-    avatarUrl: '/avatars/6697561034212769799.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -56px',
   },
   '6731906466661269508': {
     uniqueId: 'yikeyouxidan',
@@ -6630,7 +7229,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一颗游戏蛋',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAMQw7uWMRrCECTNK2WzkCJw1ERi9DWYbl8sYiqFOftQYrFUzo0ifNktBYv_LC8tt3',
-    avatarUrl: '/avatars/6731906466661269508.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -56px',
   },
   '6689571743662604301': {
     uniqueId: 'XutingKickdown',
@@ -6639,7 +7239,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '旭婷爱玩车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA3-UR0-sVGHbuiAlDmWMm4T6TCORL1GbIs8ChoodM4OxhnCoA0FSJZTPX592G_Vuv',
-    avatarUrl: '/avatars/6689571743662604301.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -56px',
   },
   '6767984580709318669': {
     uniqueId: '',
@@ -6664,7 +7265,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '秋晨同学',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7zrUmosDDi-W7TArU7lfKab1andyB9WK09UvhQE34M0',
-    avatarUrl: '/avatars/6767984580709318669.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -112px',
   },
   '6629689757452468231': {
     uniqueId: 'hanyejiaolian',
@@ -6673,7 +7275,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '寒夜教练（橱窗零食超好吃）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEPOYqgHFYfw90vLV47n9sfNfE-FMfOnwN059hc3qqq8',
-    avatarUrl: '/avatars/6629689757452468231.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -0px',
   },
   '6828127897551634440': {
     uniqueId: 'duxie6688',
@@ -6682,7 +7285,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '不信鞋先生',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAApdrAtRtLLO0GdKeWZAbtfd8ttfV63vH0jX8rXt71CEnYTadMwgpU-VOjjbveIrSv',
-    avatarUrl: '/avatars/6828127897551634440.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -168px',
   },
   '7325858138786103315': {
     uniqueId: '45440358848',
@@ -6691,7 +7295,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Mine威杰',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAd1gQuEwXvGeBCpld5tqj7GjWpFCgJjKKiC3DyFv_tZR6T0EOxkZQxOMx5roiBOUq',
-    avatarUrl: '/avatars/7325858138786103315.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -952px',
   },
   '6799034151287652360': {
     uniqueId: 'ma339',
@@ -6700,7 +7305,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '拉货神车马哥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAez9RarbSJez5KfbBmtwyyYzbDgfHHDpThLjk85-AEnc',
-    avatarUrl: '/avatars/6799034151287652360.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -112px',
   },
   '6824390322110332942': {
     uniqueId: 'yqccars',
@@ -6709,7 +7315,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '袁启聪',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJM1MjZHqM7Ek9K9JIQFZaY0TnTx0VeulS5_wsmA8WOs',
-    avatarUrl: '/avatars/6824390322110332942.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -168px',
   },
   '7171818214299533348': {
     uniqueId: 'nz201688',
@@ -6718,7 +7325,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '南镇St',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAUAzJv6PyokqIBlioG75q1FtN2lOnLBbBUwkgN4DFk4lh-1rsTkubgXdpJn8IMEOW',
-    avatarUrl: '/avatars/7171818214299533348.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -728px',
   },
   '6836956059295285256': {
     uniqueId: '',
@@ -6743,7 +7351,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '乔治追漫',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAiePVqSPWdN89BBhaW-hBymE8Zyd5GsM5Cv8MUPnNrICCmwE4bajXT6miCCJBdEct',
-    avatarUrl: '/avatars/6836956059295285256.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -168px',
   },
   '6838470624055132167': {
     uniqueId: 'siyan0105',
@@ -6752,7 +7361,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '丝言不吃包子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7YwGv20pNx9E2dEpZka9L3ENaT9xKLsYnwQiZnQqG4E',
-    avatarUrl: '/avatars/6838470624055132167.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -168px',
   },
   '7343974174009851955': {
     uniqueId: '84229514604',
@@ -6761,7 +7371,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小薇汽车科普',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAUOlmRJiVVA1qafjgxwJricW0NuHVSW1JUUC8m2c6xoQ',
-    avatarUrl: '/avatars/7343974174009851955.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -952px',
   },
   '6852220500194623500': {
     uniqueId: '',
@@ -6778,7 +7389,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '快车帝',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA0o2NcFbTHR3gHjDihdngP3Aaju1fp0hS_tzZDgq6dA-YWpGfrMz0QrrB_yUcebMB',
-    avatarUrl: '/avatars/6852220500194623500.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -168px',
   },
   '6870161945710821389': {
     uniqueId: '777yqqq',
@@ -6787,7 +7399,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '张七七七',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADIXI5azhQrGZgGrrYcrGwWJqOvgu8c1UtNPG0gtN3hk',
-    avatarUrl: '/avatars/6870161945710821389.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -224px',
   },
   '6596679893533065219': {
     uniqueId: 'six622',
@@ -6796,7 +7409,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '六二二同学',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAABWC7yPBK69TxeB-2UvTI7L5_ZzK8qDvdwc8wAhCpw2Y',
-    avatarUrl: '/avatars/6596679893533065219.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -0px',
   },
   '6833675509830778887': {
     uniqueId: 'yolenda0929',
@@ -6805,7 +7419,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '优拉Yola',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAib5BSoVURRGJmnVNJGiuE5v1e1dArB9V9rS1svjcKME',
-    avatarUrl: '/avatars/6833675509830778887.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -168px',
   },
   '6711989005430292491': {
     uniqueId: '',
@@ -6822,7 +7437,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '栗川芥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAsUQQZ4meLDPuBjdncxe_YRlfE2emXCTF87_eQFBlb4U',
-    avatarUrl: '/avatars/6711989005430292491.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -56px',
   },
   '6825462994038685704': {
     uniqueId: 'lyfjs666',
@@ -6831,7 +7447,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '俗人不漫剪',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAGdXlQrmbqA8m7NjArZbYtTu0p0-oYWs8HvJvvgIWKXI',
-    avatarUrl: '/avatars/6825462994038685704.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -168px',
   },
   '7023658009976897549': {
     uniqueId: 'dy1mtbc2fwtuj',
@@ -6840,7 +7457,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '口无遮拦的柏哥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAABJpboEzSZd4rUb9AwtwJPIOT2cfYsfh8mTzGv3PRWgq--_xo3-HaumJcsy91_FMw',
-    avatarUrl: '/avatars/7023658009976897549.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -448px',
   },
   '6659962628749656072': {
     uniqueId: 'djcars',
@@ -6849,7 +7467,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大家车言论',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAARLKJ_a-XJPh57V0sF1tesLRQMmxv9Q4DQ314W1SKCjE',
-    avatarUrl: '/avatars/6659962628749656072.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -0px',
   },
   '6748721546459611149': {
     uniqueId: 'WUPEIPINDAO',
@@ -6858,7 +7477,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '吴佩频道',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALhsz7alfk-uGZzhDxb72FIcJhs5WHNdMOFiQKqPyd1c',
-    avatarUrl: '/avatars/6748721546459611149.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -56px',
   },
   '6769374082954690571': {
     uniqueId: '886fugui',
@@ -6867,7 +7487,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '王富贵不贵的',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAARwshk_PHTA4-Z9j0-tT42b6fxQis16o6gniUIgQCkBM',
-    avatarUrl: '/avatars/6769374082954690571.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -112px',
   },
   '7182775103225069605': {
     uniqueId: 'SQdianfeng',
@@ -6876,7 +7497,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '神奇的巅峰',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAadyZ4XPdxPRVNFViHphWzskmH9S6rlF637szYgwTuCN1M3yyBFYycnBzmrydNNhs',
-    avatarUrl: '/avatars/7182775103225069605.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -728px',
   },
   '6661778398035050509': {
     uniqueId: 'yourenyinghua',
@@ -6885,7 +7507,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '友人映画',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAl941v-ws6pR-YKr87Pn1lCA_eSTq83YIi3yl6g0ON8o',
-    avatarUrl: '/avatars/6661778398035050509.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -0px',
   },
   '6671148811877875725': {
     uniqueId: 'ngsc0604',
@@ -6894,7 +7517,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '牛哥说车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzRKt2SOl3mPhDR3jKUG5WMiYIbLpPRJrgRCsQDxNsSo',
-    avatarUrl: '/avatars/6671148811877875725.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -56px',
   },
   '6763226427845246979': {
     uniqueId: 'xiatiany106',
@@ -6903,7 +7527,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '夏天y',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAr7FUze9wy143QZ6CcuDN--JBBxOiCiJV6rdfxc7mRVQ',
-    avatarUrl: '/avatars/6763226427845246979.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -112px',
   },
   '6772041904474292238': {
     uniqueId: '',
@@ -6920,7 +7545,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小86',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAApsrw61P0GyQW50xwVtMiaAC0987ScsuX6kLmI1Dq4bsAfJQkoNwzh2zUXcIkxVC2',
-    avatarUrl: '/avatars/6772041904474292238.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -112px',
   },
   '7345457028050518042': {
     uniqueId: 'JanqiOvO',
@@ -6929,7 +7555,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '神时衍',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAuE03tbyCAuv9Xv8ew7px5D2Avvh_A3DLbX84Y0Q1NPY',
-    avatarUrl: '/avatars/7345457028050518042.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -952px',
   },
   '7165388621124468773': {
     uniqueId: 'jiaoshouliaoche',
@@ -6938,7 +7565,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '宋先生和车友',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAF0Fh51afP_GLNWbOYLdXWfCuCpvmoW_0GIYRTzdhpGI',
-    avatarUrl: '/avatars/7165388621124468773.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -728px',
   },
   '6670662098579619844': {
     uniqueId: 'mryx520',
@@ -6947,7 +7575,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '追风Gamer',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAMHRYI3zTbEkAurO4qM16JkL87g47vjztX_TP6Pib0KA',
-    avatarUrl: '/avatars/6670662098579619844.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -0px',
   },
   '6699651685620383758': {
     uniqueId: '',
@@ -6964,7 +7593,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '汽车伟命题',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA9x9r6JwW5r-9WnNJYagWrvDjuwnHGiHMKfxfPdG_zP8',
-    avatarUrl: '/avatars/6699651685620383758.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -56px',
   },
   '6725935254273523716': {
     uniqueId: 'ngsc123456',
@@ -6973,7 +7603,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '牛哥-老司机',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhjc13F8x68pbCNNpIzVR44Dl5KACffQu9jnraYs4iFM',
-    avatarUrl: '/avatars/6725935254273523716.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -56px',
   },
   '6758734091169824782': {
     uniqueId: 'guaishoujs',
@@ -6982,7 +7613,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '解说小怪兽',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAgEFhSG8qLsfzKZJS8ImsVLnwTQLWUrBNuv_y7Iel8FE',
-    avatarUrl: '/avatars/6758734091169824782.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -56px',
   },
   '6794617887509184526': {
     uniqueId: 'yuanshuliaoche',
@@ -6991,7 +7623,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '苑叔聊车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQrL7G92ne3wxhvJTIC_w2ftxIGuIaNP-Rgo2wNbHxLc',
-    avatarUrl: '/avatars/6794617887509184526.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -112px',
   },
   '6870164881786535949': {
     uniqueId: 'DF199326',
@@ -7000,7 +7633,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大丰说车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAATNQgdHujklLUsB1UA2n36N1jbpFScgSPssoGMTPkOYQ',
-    avatarUrl: '/avatars/6870164881786535949.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -280px',
   },
   '7163828860897722401': {
     uniqueId: 'S520syh',
@@ -7009,7 +7643,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小宋同学',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAACaYHXEOT0i9slVuaqUNKaAkXOPN2U5SxWenZSaWQDsIazYKDzJ5kO6Tfi65CQZsG',
-    avatarUrl: '/avatars/7163828860897722401.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -672px',
   },
   '7359889837156991003': {
     uniqueId: 'W13551110142',
@@ -7018,7 +7653,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '刘机油说书',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAekOCQhfxRiqPDiCoQeiqZLUmSmqwmqgCM-XEPOTFsDU',
-    avatarUrl: '/avatars/7359889837156991003.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -1008px',
   },
   '6870161980590669838': {
     uniqueId: '',
@@ -7043,7 +7679,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '失态『动漫推荐』',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAlyoiAHLIMtvf4AMyb3YJM4q0FIPI4WixbYO4aZwkdzo',
-    avatarUrl: '/avatars/6870161980590669838.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -224px',
   },
   '6841133444781572109': {
     uniqueId: 'dyl7rmvk0w8x',
@@ -7052,7 +7689,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '会爆炸的老蔡',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAvMcJsHvM4Y_Nwhg8yo20byjKD9FH_KCjNCZR5LhJSJdCvtYGYkwie3RqBB9wo-zG',
-    avatarUrl: '/avatars/6841133444781572109.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -168px',
   },
   '7345834869332639807': {
     uniqueId: 'Akinoyuno_7',
@@ -7061,7 +7699,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Akinoyuno',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAolDrB87SVeAxJqzUnJI80BM0n-CmJ9NynFLzubmKnRg',
-    avatarUrl: '/avatars/7345834869332639807.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -952px',
   },
   '6868292325437603854': {
     uniqueId: 'zzx1314012390',
@@ -7070,7 +7709,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大翔看动漫',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAwglKMZI3rHmKntNIpgqne5m4JNMhqNY_0Y92HG_aSWWsmUVQrKOZQR-sBhDTXfmC',
-    avatarUrl: '/avatars/6868292325437603854.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -224px',
   },
   '7018764415889735711': {
     uniqueId: 'laosijiuaiche',
@@ -7079,7 +7719,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小高总驾到',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAg5jgleLmzjaeXcs92kHiDAEkg4BpUkvryZM1M2Jx7G0yhuLAU0U0HeJC8x3HRW99',
-    avatarUrl: '/avatars/7018764415889735711.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -448px',
   },
   '6853371342520057856': {
     uniqueId: 'shijulonga',
@@ -7088,7 +7729,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '是巨龙啊',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAGf5j8-1h3RtyOOd1biQ1V894qNWv38x3rKgFnFamjjAdxkpbWWE_GrTHRs3IyTpd',
-    avatarUrl: '/avatars/6853371342520057856.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -168px',
   },
   '6870160903484997646': {
     uniqueId: 'yizhilugou',
@@ -7097,7 +7739,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一只撸狗',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAn845RPSGCxaOEYNARGonYbOJJ7QMn_QAvNNdknOXCiY',
-    avatarUrl: '/avatars/6870160903484997646.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -224px',
   },
   '7368518997177794611': {
     uniqueId: 'yc6600666',
@@ -7106,7 +7749,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '说车吧大毅',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAARuXJKEhyiaQmGOypuGLcgJfq9oXG1KFRfQNqzOf1eAY',
-    avatarUrl: '/avatars/7368518997177794611.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -1008px',
   },
   '7350868543832850442': {
     uniqueId: 'hzhzichen',
@@ -7115,7 +7759,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '梓宸爱公子   🪰',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAHn58e98pYwuEzug7NYDra3EeVwdRQrMxPGwUktIYuuU',
-    avatarUrl: '/avatars/7350868543832850442.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -1008px',
   },
   '6999843189880258597': {
     uniqueId: 'Tchoshin_Impact',
@@ -7124,7 +7769,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一万根韭菜',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAWMMjg4Jdma51Ouojd02lKJYpOioWg6ukD6huvMn2BuaVw5nSInAcrIi9be92-qSf',
-    avatarUrl: '/avatars/6999843189880258597.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -448px',
   },
   '7188595406660436005': {
     uniqueId: 'YImumu0905',
@@ -7133,7 +7779,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '我的世界一木木',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAArAT06MtKKsh36G-vtnAIR_07kQRPSrckFBoyF2iaDeUtzfFMO1W2PCDu95UJLCQj',
-    avatarUrl: '/avatars/7188595406660436005.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -728px',
   },
   '6870163413260042254': {
     uniqueId: 'XiaoYunnn',
@@ -7142,7 +7789,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '允崽',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAlZuXpbX_sfm-aIqCZnun7hkDAoaL1j1h4yu0tEs-yd8',
-    avatarUrl: '/avatars/6870163413260042254.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -280px',
   },
   '7176263382427762699': {
     uniqueId: '',
@@ -7159,7 +7807,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '老郭机械局',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAs1_rka0N_tjsFY_E8rNYfQEn-uzgyfu5CQKZJODam9o',
-    avatarUrl: '/avatars/7176263382427762699.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -728px',
   },
   '6870164138329374733': {
     uniqueId: '',
@@ -7176,7 +7825,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '来电报告',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAn2Dr5BSRtHToxGFRpyPdR8d7n5Tmkwsf3POhxzGbawmy_xm69IYNB6USmpuGBYby',
-    avatarUrl: '/avatars/6870164138329374733.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -280px',
   },
   '6859514244346413063': {
     uniqueId: 'shushuman666',
@@ -7185,7 +7835,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小宅GAME',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA1ZGDGudODDICjcIyqpCST7mzY-fgJhhceucobUSaYrA',
-    avatarUrl: '/avatars/6859514244346413063.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -224px',
   },
   '7363231621275353125': {
     uniqueId: '',
@@ -7202,7 +7853,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '参谋长说车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAv9s4V8PkfMPxe32quWRfZZevdrz4JTJ8uoOlI_Gjbic',
-    avatarUrl: '/avatars/7363231621275353125.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -1008px',
   },
   '7049346966387425293': {
     uniqueId: 'shege666888',
@@ -7211,7 +7863,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '天霸蛇哥（三角洲行动）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-9dBFUN_lpp9sPeEhWM5mWifldz042UGC7WLx1y4G0m4vwdhGhOEX7IppPZU2oI3',
-    avatarUrl: '/avatars/7049346966387425293.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -504px',
   },
   '6870163907466493959': {
     uniqueId: 'cangjian',
@@ -7220,7 +7873,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '藏剑天涯',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA3FieuSF8YA79w28EUKszNJHVl5FFJMxXVtHz6XGaO-Q',
-    avatarUrl: '/avatars/6870163907466493959.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -280px',
   },
   '7190165414301663292': {
     uniqueId: '90404255594',
@@ -7229,7 +7883,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '帮哥说车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAqgOE_XR9i8Fqt7Pg9uZ1TP9ZWTqYa4NderGT2qEek3DY51geSzVfLXTpfQVBvLnr',
-    avatarUrl: '/avatars/7190165414301663292.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -728px',
   },
   '6870170056320352264': {
     uniqueId: 'shiyizhiyu8',
@@ -7238,7 +7893,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '是一只鱼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7TJYBjKpFc-fy-b0P9u55j4ncCMfTy7X5vBSgFyW1WD-shiUXFD9PEvxXYHh_5mK',
-    avatarUrl: '/avatars/6870170056320352264.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -280px',
   },
   '7005014166754820137': {
     uniqueId: 'WWZZ6633',
@@ -7247,7 +7903,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '玩物涨智',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhpSqOKx1La2GKdZEqqMWVhx8jZa-bz39LlOadxYZhn-_7M1sKbIt6oZY-ZIiUMxK',
-    avatarUrl: '/avatars/7005014166754820137.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -448px',
   },
   '6910191897910706183': {
     uniqueId: 'Genshin_XiaLuo',
@@ -7256,7 +7913,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '烦恼死的夏洛',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAjzJ909HXM8ap-Fnou-HUr7VYiGfpFH_Nn4DYnEC-xGM',
-    avatarUrl: '/avatars/6910191897910706183.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -336px',
   },
   '7283300387606511676': {
     uniqueId: '',
@@ -7273,7 +7931,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '夜的第七章。',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAV-vkUAGfTaRvmOvWin5wx1IFJV7Rjh1dULQdUACUDKU',
-    avatarUrl: '/avatars/7283300387606511676.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -896px',
   },
   '6870122362512097293': {
     uniqueId: 'No38carreview',
@@ -7282,7 +7941,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '38号车评中心',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAw2HMDZdmkRiDSqJCG-pIOFbpxVSsT0HXrMdy2qRcP80',
-    avatarUrl: '/avatars/6870122362512097293.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -224px',
   },
   '6917929471475449863': {
     uniqueId: '',
@@ -7299,7 +7959,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '狼哥说（车指南）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA3FDvoDubzXk63QjQLJGWY36L9--ygBnXwxu2_5fO3A0',
-    avatarUrl: '/avatars/6917929471475449863.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -336px',
   },
   '7054450599944781854': {
     uniqueId: 'xuanauto',
@@ -7308,7 +7969,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '工科女-映璇汽车工作室',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAX9hdeXkPPuVMSN7dPH5enqCkFCfVJCGhvMlrKACweVA',
-    avatarUrl: '/avatars/7054450599944781854.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -504px',
   },
   '7031434011469676580': {
     uniqueId: 'dingdangmaoz54',
@@ -7317,7 +7979,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '-叮当猫-',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA8I9Gj30wvDm6w0Eyl5Trom-oOh5tVtHeiMxF4dTKCtZNwY1hB4BlcAN4hWkQkF9U',
-    avatarUrl: '/avatars/7031434011469676580.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -504px',
   },
   '7394460326692913202': {
     uniqueId: 'Lhf210227',
@@ -7326,7 +7989,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '主驾susintel（汽车测评版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAi2J6415d7tmsiGoK1UfqdmLRgbxdgtTv5eW02z35xSUAQO55a0hJ6yCUcPC3dOk8',
-    avatarUrl: '/avatars/7394460326692913202.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -1064px',
   },
   '7363239810339127306': {
     uniqueId: '',
@@ -7343,7 +8007,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '爱车小歌er',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAACXvl1lPHsAFtcphBXw7pjh32tNi4l4OUJZY-bjY1lWMym9pIj67KSXevcW5Q_Ujo',
-    avatarUrl: '/avatars/7363239810339127306.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -1008px',
   },
   '6935061146558791716': {
     uniqueId: 'hualongdianjingN',
@@ -7352,7 +8017,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '话龙电竞',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzLsf1O_CG7ugwhQZvvjcYYgY02rTxQ5iaXr7ZOhmAQI7491SsU7cOynusMHQzse4',
-    avatarUrl: '/avatars/6935061146558791716.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -392px',
   },
   '7192492678557204535': {
     uniqueId: 'anxingpeilian',
@@ -7361,7 +8027,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '安行汽车陪练',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAloNgTC3fG-HjFj-94Ieqs2VxfJNsxvJdYaPYsoYu_q0',
-    avatarUrl: '/avatars/7192492678557204535.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -728px',
   },
   '6914423948633440260': {
     uniqueId: 'Gwavan',
@@ -7370,7 +8037,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '帆仔Oink',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASGQmCu1cHaj1DB4WHKKY-iPHaxHkpa2XeiIgIqCFUoo',
-    avatarUrl: '/avatars/6914423948633440260.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -336px',
   },
   '7224878385900568613': {
     uniqueId: 'wsrzsl1233',
@@ -7379,7 +8047,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '依波',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAc7g4_Uf-VBG_Q89Nu6W0yFTotg5uFeRQ1UXV5HrgEiY',
-    avatarUrl: '/avatars/7224878385900568613.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -784px',
   },
   '6877510173565386759': {
     uniqueId: 'AzhuZm6',
@@ -7388,7 +8057,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '啊猪漫漫说',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2IY8KoGzytkGSWcrBN3qVMOjAH8cmvE0ne5rC4QZzXI',
-    avatarUrl: '/avatars/6877510173565386759.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -336px',
   },
   '7225434601022292007': {
     uniqueId: '',
@@ -7405,7 +8075,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '李啾啾',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAqF5jGvUPojlQj7x0tGoh6lKk_u2ruYCZ0xrHRFI-r-g',
-    avatarUrl: '/avatars/7225434601022292007.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -784px',
   },
   '6921338001943429128': {
     uniqueId: '',
@@ -7422,7 +8093,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '杰哥的车铺',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAYnsY6cltPrMRm5gGMvB9jwzWK1YLGAx6zziqm2GSrw4',
-    avatarUrl: '/avatars/6921338001943429128.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -336px',
   },
   '7154336466917654542': {
     uniqueId: '',
@@ -7439,7 +8111,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '张小闹聊养车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAZsYM7T1WFd7aXUwaEsbQHzfxvWgFp2TgoA8VheZxfcw',
-    avatarUrl: '/avatars/7154336466917654542.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -672px',
   },
   '6963508759440130086': {
     uniqueId: 'adanglaile',
@@ -7448,7 +8121,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿当来了',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAlfsYWuQyKZszoKJFyOxjyr7y8p0S7WLtfMd6jb7Nb2A',
-    avatarUrl: '/avatars/6963508759440130086.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -392px',
   },
   '6910201799567736845': {
     uniqueId: 'DQSC',
@@ -7457,7 +8131,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大琦说车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7XBEtYQLAIezOdSW4p45iG3dUwBuJM24IWOU-98mc6g5K190yzXrMGBrAjRD3F_2',
-    avatarUrl: '/avatars/6910201799567736845.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -336px',
   },
   '7322409774362935346': {
     uniqueId: 'h1347989106',
@@ -7466,7 +8141,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一根华仔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdJ9YH2g3uB5hauCHfRlDj3Odi_7hGvIziIB8smxWMNA',
-    avatarUrl: '/avatars/7322409774362935346.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -952px',
   },
   '7154444331850399777': {
     uniqueId: 'Ycgzs911',
@@ -7475,7 +8151,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '杨宸(前职业射手教学）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAARnOnSYgHOMZQZfKbeBjzcG9nRZUUmhgTqfXJtFKoIgCTGfmfm8-d7KXi3K8phLDD',
-    avatarUrl: '/avatars/7154444331850399777.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -672px',
   },
   '7046719040378634254': {
     uniqueId: '',
@@ -7492,7 +8169,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '蛋黄mayo_',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAiePS75cT-LY0JY7_AUfyAHNMUxn1wczqZ0D4eeJwEaw',
-    avatarUrl: '/avatars/7046719040378634254.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -504px',
   },
   '7444590304369311770': {
     uniqueId: 'YSSJ007',
@@ -7501,7 +8179,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '野生试驾',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA65twMZh0CNoceMQ61ZdR9cn6E0_5d4PGxSI4aGeIOtoSrXxGazS35dg5O6MM0NWh',
-    avatarUrl: '/avatars/7444590304369311770.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -1176px',
   },
   '7063694399212879908': {
     uniqueId: 'piaoyouguohai',
@@ -7510,7 +8189,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '飘油哥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA0aRR7MJvLUd5wskOzzGypr1e5LVud6PMtbzppZTgZZY',
-    avatarUrl: '/avatars/7063694399212879908.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -560px',
   },
   '7316473667197206537': {
     uniqueId: 'HyperAnAn',
@@ -7519,7 +8199,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '飞驰人生-麻舰心',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA95FjjTv8t4gQKBGejR14WhO0QZGq55XANW7PxzBiJaCSGeAgSBpFmkkRCWEww4t-',
-    avatarUrl: '/avatars/7316473667197206537.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -896px',
   },
   '7316918956323766310': {
     uniqueId: '69089412405',
@@ -7528,7 +8209,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '星雨',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAt-KevYnA5xQRu8YnuKFpyFxR_YRpcIogNfhSvg45zzc',
-    avatarUrl: '/avatars/7316918956323766310.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -896px',
   },
   '7224971033659310141': {
     uniqueId: '35219473130',
@@ -7537,7 +8219,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '游泳的艾米',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOqNvuPkmzb_EtV0tKcRw-pNnX1zpyV-6wj-ygPfhIhmdJiUld7Wmf0V7rfkHxYmw',
-    avatarUrl: '/avatars/7224971033659310141.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -784px',
   },
   '7224972259557900345': {
     uniqueId: '',
@@ -7554,7 +8237,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一条老韩鱼🐟（原神）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAaTjtxoGL1Zou4QORNw1nAyE6rKD3gowHvuyv8XFdmjbqGJrxmllie-Q8_Nx5jWrB',
-    avatarUrl: '/avatars/7224972259557900345.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -784px',
   },
   '6870171484283731981': {
     uniqueId: 'kkuu236',
@@ -7563,7 +8247,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '周咬金',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAcikbs1QRhH4JW1_uPAc4zm3iHDixKA6-_UWg4uUt79ffhLmnuNLJXojTvg-rqMws',
-    avatarUrl: '/avatars/6870171484283731981.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -336px',
   },
   '7411744309348974629': {
     uniqueId: 'vi09099',
@@ -7572,7 +8257,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '拉杰',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAiXOu2ZlitzFnad80qcE2GHf7C_N_9FPuIf2OZ3DJetujNh07_NgvPd6B5ohOCxuV',
-    avatarUrl: '/avatars/7411744309348974629.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -1120px',
   },
   '7463706236198846527': {
     uniqueId: '',
@@ -7589,7 +8275,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '满电田七',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAo2AGfy8nr9Im1f-gAD-8HgodyfrlhCNpWdX4Xn8kXcD67Sr_7pPcGjFS5ORoeyok',
-    avatarUrl: '/avatars/7463706236198846527.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -1232px',
   },
   '6883781508587323399': {
     uniqueId: 'DYG2016567',
@@ -7598,7 +8285,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '极客小腾',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2q2XfoOutgmqoTQjk6PzmJ__qQqXWtDsWxRmd7514f5m8g2XDtFLB_B6SWAyRh_4',
-    avatarUrl: '/avatars/6883781508587323399.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -336px',
   },
   '7226292386706489381': {
     uniqueId: 'jdjjdsjshehje',
@@ -7607,7 +8295,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '暗区刘团长',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAvzCG1qWN42OcI62oBf-5RrTcHfcE3IwqccglGiwxtOY',
-    avatarUrl: '/avatars/7226292386706489381.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -784px',
   },
   '6922396852016922631': {
     uniqueId: 'laoyang828',
@@ -7616,7 +8305,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '洋芋',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASn65CC_eQ2QduI0LfOPdL-sjx6NdtgayWNm1Tzoq2dw',
-    avatarUrl: '/avatars/6922396852016922631.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -336px',
   },
   '7042028817392599071': {
     uniqueId: '',
@@ -7633,7 +8323,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '懂车教官',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAUmw1XVD1bE3ObutNS9t2673LaLn4GGKpXugvYGXP2y6QiImXeFc_NkejJoO7XFRf',
-    avatarUrl: '/avatars/7042028817392599071.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -504px',
   },
   '6896688294956908551': {
     uniqueId: 'laolijiangche',
@@ -7642,7 +8333,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '老李讲车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAsi3isVQSUNZW_9e_rBPiDHFS52W8OR8mvOvfi3T82ksXqNafd45twQed-ir0ezfI',
-    avatarUrl: '/avatars/6896688294956908551.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -336px',
   },
   '6938272429781286943': {
     uniqueId: 'jihanzhu',
@@ -7651,7 +8343,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '纪憨猪',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA94vDnJkIDhzkRpEhmpOSsiSVzRJ5Q0EZ1FwJH6ebnUo',
-    avatarUrl: '/avatars/6938272429781286943.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -392px',
   },
   '6926027004693184519': {
     uniqueId: 'TuTuturutu',
@@ -7660,7 +8353,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '图图凸凸凸',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAIp6E_v3j9hMCkdrj-ZucDgJoSBaDoYio7wXVxKtPMBU',
-    avatarUrl: '/avatars/6926027004693184519.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -336px',
   },
   '7419894539504058419': {
     uniqueId: 'PS3Paul',
@@ -7669,7 +8363,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'PS3保罗',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAW4HpA6wuMEfYf9C0rj4gRieCBFE94BMMwaIN0s0lBWTbJI8-vHGiZRirLxKm3wSJ',
-    avatarUrl: '/avatars/7419894539504058419.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -1120px',
   },
   '7568408620275073075': {
     uniqueId: 'SQCE17',
@@ -7678,7 +8373,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '十七车评',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA0LjBlVXMDDFb1FAX_NoGy5oyWK0bqoB-Nn1rMZooGWQ',
-    avatarUrl: '/avatars/7568408620275073075.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -1400px',
   },
   '7069161600615186439': {
     uniqueId: 'mxjnnjs11',
@@ -7687,7 +8383,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '黑豹懂车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA5xhpwMSRnjInypvTDJ0fjHJEHgdrX93u1mf37mqugaq1DZl6KkWqcnHsEvXvT6Qu',
-    avatarUrl: '/avatars/7069161600615186439.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -560px',
   },
   '7264451430537232440': {
     uniqueId: 'xianbuzhudehuabi',
@@ -7696,7 +8393,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '闲不住的画笔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAxHlwEQXE_ffb4mlfUMsKV-vFk3hBsXQUgOiLPH1eY2N_OA2CG-JZGtWABCN5Q1Vn',
-    avatarUrl: '/avatars/7264451430537232440.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -840px',
   },
   '7584677032068382758': {
     uniqueId: '24788153625',
@@ -7705,7 +8403,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '第47秒的蓝',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAANGyl19R8e0w5Vf0NkWwmbni6JsSxMLRfIjUXSN-xOI_t-noygbNfuBskF0Vbaq2D',
-    avatarUrl: '/avatars/7584677032068382758.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -1400px',
   },
   '7049321649208098847': {
     uniqueId: 'saoji5201314',
@@ -7714,7 +8413,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '范特鸡',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA69wjWWOESDFRDl0u7tUASsNpb15F_5kEtb9-Iqn7Bs0',
-    avatarUrl: '/avatars/7049321649208098847.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -504px',
   },
   '7462385759522127910': {
     uniqueId: 'Guisucheping',
@@ -7723,7 +8423,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '龟速车评',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA4dHD3ZUQ1SGwmWaN-h0T0qOoxMK80YccElosKkFDz-zI9FwIDxjIMXvqzR1RuaJ0',
-    avatarUrl: '/avatars/7462385759522127910.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -1232px',
   },
   '7442199833852510259': {
     uniqueId: '27284915039',
@@ -7732,7 +8433,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大蓝聊车（深度解析）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEGxBoQkqwpTsXfX_d_1Gi0lNT0w6UkJqxeQUCesowQkCF6_t6cWAPrKP0TvCo2SX',
-    avatarUrl: '/avatars/7442199833852510259.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -1176px',
   },
   '7386588243354976267': {
     uniqueId: 'YuanQiJun8888',
@@ -7741,7 +8443,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '袁启俊',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-iIjmkTOXxdIp58X2daJfk9P3IbBduCxy8Uc71uylL4',
-    avatarUrl: '/avatars/7386588243354976267.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -1064px',
   },
   '6951962405043699748': {
     uniqueId: 'susu963',
@@ -7750,7 +8453,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '游苏（射手教学）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAYIsHZvF0rgXnAsQcjBj52QXrAGrHV_yOPv5oczpJ66XgHteI_Zpyr4lxmE8L8RNO',
-    avatarUrl: '/avatars/6951962405043699748.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -392px',
   },
   '7119363645167042573': {
     uniqueId: '73973190546',
@@ -7759,7 +8463,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大萌',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAsGbpU393-MrgL2JbjpLEfTXX80awC9wiJ7y3cmQKY2_J38GLtXJR6XqeEBZ98xWB',
-    avatarUrl: '/avatars/7119363645167042573.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -616px',
   },
   '7375710377067151397': {
     uniqueId: '34418825321',
@@ -7768,7 +8473,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '画师禾月（剧场版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAg2n7mkXsn70X172oqzhgl_Kc_rS-PzpaWgBlOTM9nBY',
-    avatarUrl: '/avatars/7375710377067151397.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -1008px',
   },
   '7407486445184778291': {
     uniqueId: 'DSCS66',
@@ -7777,7 +8483,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大胜CS2',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAaOLCDTMMRH2qKeyd6upsH3iiQi4DeZTSjYFdvaBs-qU',
-    avatarUrl: '/avatars/7407486445184778291.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -1064px',
   },
   '7154337141919580196': {
     uniqueId: 'laoqingjiao7',
@@ -7786,7 +8493,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '老青椒',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOs9uAAePTfG9iTTfzimMGBvJKgdafNDJIdlwwEoLW5Q',
-    avatarUrl: '/avatars/7154337141919580196.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -672px',
   },
   '7399840655834513419': {
     uniqueId: '23933644620',
@@ -7795,7 +8503,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '郑州南博万',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAmnkaLTFmX3fIBBiYLMyp0n9FW_bxuStwgt-nCihwZYKnQu_3gAxIatyV5v4NCuo6',
-    avatarUrl: '/avatars/7399840655834513419.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -1064px',
   },
   '7407778799909077019': {
     uniqueId: 'Js57070',
@@ -7804,7 +8513,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '触电一休',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAUxTIkqBZYC4KHFpRLvWoyrVMqCM_LrVOf-oIAKUa7VU',
-    avatarUrl: '/avatars/7407778799909077019.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -1064px',
   },
   '7493544902370787379': {
     uniqueId: '98456872356',
@@ -7813,7 +8523,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '沈老师教车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAHUzv0_ZsOJjTqNjNfJGkV11rEChi_jYcfFR-pDWP_fb4fMTvOYUtOC3K8FyhspCq',
-    avatarUrl: '/avatars/7493544902370787379.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -1288px',
   },
   '7229449818546896954': {
     uniqueId: '27648333975',
@@ -7822,7 +8533,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '清冽（打野教学）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAvDUWN1DzWh3WcD93ORusNSvGdB71OP7IzxwnnLsv7V9PMrqllvOw4G47v-Hns58O',
-    avatarUrl: '/avatars/7229449818546896954.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -784px',
   },
   '7460912066103083060': {
     uniqueId: 'GDchatCar',
@@ -7831,7 +8543,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '肉哥聊车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALzA00gpUFPMvX30O3igkDUpeHlOh24ds_-ngvk73Xz4PA68KQUb1EJD-vqUpb4Fa',
-    avatarUrl: '/avatars/7460912066103083060.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -1176px',
   },
   '7323123705301696575': {
     uniqueId: 'A9307S',
@@ -7840,7 +8553,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '长春有证陪练程先生',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAru6VwqIBiWH3lbxy0iRp_Tg91-Vzb33dsxEjwDVkZn6iy6030I3STUR42HBQWxVL',
-    avatarUrl: '/avatars/7323123705301696575.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -952px',
   },
   '7455691217142022171': {
     uniqueId: '47415411748',
@@ -7849,7 +8563,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '机械-阿軍',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAbrzb7--aibKPqjIi1vgE7TdDp5bIQsWMvNQgqNfq43hmuyuu4SWniuglNvsobLSj',
-    avatarUrl: '/avatars/7455691217142022171.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -1176px',
   },
   '7077204421079203876': {
     uniqueId: 'a6699679',
@@ -7858,7 +8573,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '地图君',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAARWKA7PeyvGDvTxgjKKCB3AHSqyum7U0-phC8TkZyjoqy_TOyW8J0jLHiuzrNEjXA',
-    avatarUrl: '/avatars/7077204421079203876.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -560px',
   },
   '7565756824983699494': {
     uniqueId: '90068641690',
@@ -7867,7 +8583,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '悟凯（三角洲行动）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAY59iwlw_hCO--Spf8WiZE5FqjwptZtUqr5zMotney6Y',
-    avatarUrl: '/avatars/7565756824983699494.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -1400px',
   },
   '7095010887286652936': {
     uniqueId: '',
@@ -7884,7 +8601,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '栗子050',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_ywKGotXaDTTDbMRs1b-fxI4y_jn72JlTCeyTJZCQT_Qoabv46Aztd3b8s1iwzN7',
-    avatarUrl: '/avatars/7095010887286652936.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -616px',
   },
   '7600647630640644134': {
     uniqueId: 'autohero',
@@ -7893,7 +8611,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '侠路相逢',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAoUdNeJOpS-OhioSVhSvB7nulHzty55nRnU8Df2WJSqQ',
-    avatarUrl: '/avatars/7600647630640644134.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -1456px',
   },
   '7305787646456889371': {
     uniqueId: '',
@@ -7910,7 +8629,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '老赵喷车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA5opuLVUvviq1gcG7YtnshcYfZzJquXGdRH6B9hSw1E4',
-    avatarUrl: '/avatars/7305787646456889371.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -896px',
   },
   '7577315287293231140': {
     uniqueId: '48719987861',
@@ -7919,7 +8639,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '懂车小彬',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAk9mpFofCPQpsv1I1SVFxdb-A_BWiJnGy1qoDQxLEB4s',
-    avatarUrl: '/avatars/7577315287293231140.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -1400px',
   },
   '7551250907116077083': {
     uniqueId: '11.121314',
@@ -7928,7 +8649,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '历史机动车',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALOlhf4upslAZjSe7qn9uPeDbprBNXogMsIbqXHBgtQU',
-    avatarUrl: '/avatars/7551250907116077083.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -1400px',
   },
   '7516803719389151270': {
     uniqueId: 'pianmu45',
@@ -7937,7 +8659,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '偏牧',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAh0zDNuNMoyElqm3tV3alTGA5jzsWi1Rsoh-4s2XKbzaVvWNJVB2b8kfsV2gWS0p1',
-    avatarUrl: '/avatars/7516803719389151270.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -1288px',
   },
   '7675593251323117587': {
     uniqueId: 'YU134147',
@@ -7946,7 +8669,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大鱼爱路飞动漫解说',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEoV6DJEDBcOwT25pe01zVyN1p3JHa8ZW-KJS3qzhApA',
-    avatarUrl: '/avatars/7675593251323117587.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -1456px',
   },
   '6674733924322639883': {
     uniqueId: 'loongcaijing',
@@ -7955,7 +8679,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Mr龙财经',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQX5IPq2S4ueZVu_G5qfk6D6aLIC1JWNhaV9dh2nt_P0',
-    avatarUrl: '/avatars/6674733924322639883.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -56px',
   },
   '6816188374529884168': {
     uniqueId: 'v15372048818',
@@ -7964,7 +8689,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '方远大叔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAu0rcw3NynlMUB06gm46cgHvhluemnBi4HissKJ6tsDI',
-    avatarUrl: '/avatars/6816188374529884168.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -112px',
   },
   '6739855315983925256': {
     uniqueId: '',
@@ -7981,7 +8707,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '徐大浪🔥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAUuND9S7qopNcp0VB-KK2akt04r9D0H00kwgCW7TFOj0',
-    avatarUrl: '/avatars/6739855315983925256.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -56px',
   },
   '7131605130176102407': {
     uniqueId: '',
@@ -7998,7 +8725,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '行走的大…大大羊腿',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzFTjZYroPTv4raXwJHeTaq3cui7BtVE_W-8mBaGAMe0',
-    avatarUrl: '/avatars/7131605130176102407.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -672px',
   },
   '6851942923441799182': {
     uniqueId: 'Lmm08282',
@@ -8007,7 +8735,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '林姐财经',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAY76aAQl9qUjLvKgEJHPwilasAcdOSg4arfRLLO66gZk7DqVhYy-ExVz8eFaNeyYE',
-    avatarUrl: '/avatars/6851942923441799182.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -168px',
   },
   '7279599099073003579': {
     uniqueId: 'Lzyjujian8888',
@@ -8016,7 +8745,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '杨大牛',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOUICMAb8qDLf-4b_n8lXDwoaba0d-4arPMwJ2vucwZY',
-    avatarUrl: '/avatars/7279599099073003579.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -896px',
   },
   '6838507788503613448': {
     uniqueId: 'dysldq44s6nw',
@@ -8025,7 +8755,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '张茄子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAycYGHO5FJ8xSW0Fvvxq5vEhKgzcC_OoyWhwRKwMkRYISP7ujyQMMQuT1ieiHoqt6',
-    avatarUrl: '/avatars/6838507788503613448.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -168px',
   },
   '6852551934767792141': {
     uniqueId: '99money',
@@ -8034,7 +8765,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '飞哥说财',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAMILi_wWBVtz8B4Ac_Gyq3e0TtT4PYE4F-oojdnARDas',
-    avatarUrl: '/avatars/6852551934767792141.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -168px',
   },
   '7492333596871655478': {
     uniqueId: '62686610507',
@@ -8043,7 +8775,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '赵进你的心',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQgjfrzLOTS99XGveaN1KKbcbRLalzHVAPff5r18DhWw',
-    avatarUrl: '/avatars/7492333596871655478.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -1288px',
   },
   '6855586710705668109': {
     uniqueId: 'shuijing2026',
@@ -8052,7 +8785,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '财姐水晶',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2D4eQkVXL1CTXyyYjfpAJFdOkLaw5_rObLWXhwtlXQs',
-    avatarUrl: '/avatars/6855586710705668109.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -168px',
   },
   '7403743977708453939': {
     uniqueId: '79566825892',
@@ -8061,7 +8795,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '打工没人要的小高',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOtC6iE06LH_sa8YdY6ey07SPtv9R6Gu1HtPDCZyhqEpvb0KywA3GAIrEsJvzsVvk',
-    avatarUrl: '/avatars/7403743977708453939.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -1064px',
   },
   '6840434991512420366': {
     uniqueId: 'JunHong7777',
@@ -8070,7 +8805,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '俊鸿',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAbKBYRi3XisSu_tnG0kaoH2oZ8O_vNM1yyxz20LIKH74',
-    avatarUrl: '/avatars/6840434991512420366.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -168px',
   },
   '6858076578337783808': {
     uniqueId: 'maosenlu',
@@ -8079,7 +8815,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '猫森璐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAArxeQlHz8rpKLdDrwu7FmtmLzA85EiG6BOeLGd9s6ljU',
-    avatarUrl: '/avatars/6858076578337783808.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -224px',
   },
   '6832641622300164103': {
     uniqueId: 'sunmaolvde',
@@ -8088,7 +8825,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '毛驴的',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA8eNwJbZByTaKm-F-vdFNMg11qXjEPNglQZxS1PpKA5M',
-    avatarUrl: '/avatars/6832641622300164103.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -168px',
   },
   '7015424432978001950': {
     uniqueId: 'wangdaqin7777',
@@ -8097,7 +8835,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '王大沁',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA8Bdr_mW9MhX5BnUQjYac3wzXbOvph9Bp_41jfKmB7o1jIRcvnEHsUeJfHtmwSwcD',
-    avatarUrl: '/avatars/7015424432978001950.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -448px',
   },
   '6881583420548333575': {
     uniqueId: 'zoudarui001',
@@ -8106,7 +8845,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '武婕',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdLstRnsOKbzr0y9s0uxlpoQeoslodm_X09IoSMh9Q4fpx8JvxCN-mFfX1A4_w5RM',
-    avatarUrl: '/avatars/6881583420548333575.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -336px',
   },
   '7292187058582323250': {
     uniqueId: '52513396500',
@@ -8115,7 +8855,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿昌的储蓄分享',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAB3E3W_emazTM3LvU8elsXXFyJlbAhgiusrr3yCIOoFLTSx7VvugFZ81BrE1-Dqlq',
-    avatarUrl: '/avatars/7292187058582323250.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -896px',
   },
   '6761282414309294087': {
     uniqueId: 'Angel_707',
@@ -8124,7 +8865,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Angel趣商业',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAUH7AZudZWWyQCyyPbkWQ_7ow8KyvkkmCWiSCO3qnx1o',
-    avatarUrl: '/avatars/6761282414309294087.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -112px',
   },
   '6851156995697803271': {
     uniqueId: '',
@@ -8141,7 +8883,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '交易员小郑的退休生活',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADKe7VW3AR878YWe_PYGrwTN8cuA4EJ-BZdO13A-DQ7frUFUj3FdIX8bmNPvIXsjL',
-    avatarUrl: '/avatars/6851156995697803271.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -168px',
   },
   '7156069146445217799': {
     uniqueId: '97021851765',
@@ -8150,7 +8893,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '课代表财经',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAeyZNA1-xUzN5Z05xzONcy1gxcQxKo4JrCHFBKcEEWMI',
-    avatarUrl: '/avatars/7156069146445217799.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -672px',
   },
   '7405556243097452556': {
     uniqueId: '72513180409',
@@ -8159,7 +8903,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '特别分子Mark',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA8aW27S6M18QH4la4fi0euG0lMp9u2rQNhoigkJuMJUymfinfvjRKZZ9g0EDbuWX6',
-    avatarUrl: '/avatars/7405556243097452556.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -1064px',
   },
   '6732056701043736580': {
     uniqueId: 'tangshiyetang',
@@ -8168,7 +8913,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '汤遥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAABnKRwcGEwSsjWxLmNK9MLyTRFjCiw2TKTWeHVrwHiFaLG7uJOvLeW6oy1-x8TwQ0',
-    avatarUrl: '/avatars/6732056701043736580.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -56px',
   },
   '7134967866687750185': {
     uniqueId: '',
@@ -8185,7 +8931,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '财经单挑社',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAACs7HEw1Fih3i0JWaFLi1I5-S9LAhvSfAJjT9kT7xrAA',
-    avatarUrl: '/avatars/7134967866687750185.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -672px',
   },
   '6854476020838301709': {
     uniqueId: 'egnyg',
@@ -8194,7 +8941,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '鹅国宇哥🇷🇺',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2g824uD3FT0i2pX8IMT4R4L30i7jnbyV95dMx-CsKvI',
-    avatarUrl: '/avatars/6854476020838301709.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -168px',
   },
   '7067335779432808455': {
     uniqueId: '',
@@ -8219,7 +8967,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '黄正义',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_7U970AhVrMx4t7s4KVb4OJ0pDr089w7qv7UTz6JUK0',
-    avatarUrl: '/avatars/7067335779432808455.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -560px',
   },
   '7386930066300600358': {
     uniqueId: '',
@@ -8244,7 +8993,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿沛',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAwQqcSu2Nvm-vUWWyrZ3tza6B9XaWFfcXce4xu27d-Iw22Eie9W9jhqwjqMlaaW_w',
-    avatarUrl: '/avatars/7386930066300600358.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -1064px',
   },
   '7149385031650115587': {
     uniqueId: '69493819870',
@@ -8253,7 +9003,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '柚子大王',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAphk9pm46-8ZqmCRt1wEZAXMOu792i8IqUAUlb-BKINTnOgMK7up3td4MAIE1DVA7',
-    avatarUrl: '/avatars/7149385031650115587.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -672px',
   },
   '6808691593747365902': {
     uniqueId: 'XuLiang',
@@ -8262,7 +9013,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '狗良',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2qrYWmb71TyL2JsSX5tkH1Io3GW45JHwefCb8VrvAXI',
-    avatarUrl: '/avatars/6808691593747365902.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -112px',
   },
   '6675169759241175054': {
     uniqueId: 'xlfdly',
@@ -8271,7 +9023,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小李飞叨·李洋',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAIWwaECKCegBlnG3Vjc013QFKg94RN84JQWX-r5JBJZE',
-    avatarUrl: '/avatars/6675169759241175054.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -56px',
   },
   '6809507345194827789': {
     uniqueId: '',
@@ -8288,7 +9041,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '深圳雄财主',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA8ZKQsS4tp5-DkWdBGTTtQCYVksXV3S21QqjKIOMxcC8',
-    avatarUrl: '/avatars/6809507345194827789.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -112px',
   },
   '6807288602028933134': {
     uniqueId: 'zhinancaijing',
@@ -8297,7 +9051,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '直男财经',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADUObyc_aoKXnXnV01JEcZMdvU0_ZFvFnVQAU-weztOgHubCQont1aDrDASxWu8B6',
-    avatarUrl: '/avatars/6807288602028933134.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -112px',
   },
   '6850685034806902797': {
     uniqueId: 'lugektc666',
@@ -8306,7 +9061,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '璐哥看透彻',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAHCWFZ8Pc8eOZvQ6E7qGGi1v6fF_Yl2PWwW9yOM0_vcyZOuNhUDOHlw7lN98QKuWu',
-    avatarUrl: '/avatars/6850685034806902797.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -168px',
   },
   '7312025550023819274': {
     uniqueId: 'lz19910303',
@@ -8315,7 +9071,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '是铮铮啊🕊️',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAAHux7edEhWrPI1j4esmzqNNNQnexz3awUmZwCDsDJ7E',
-    avatarUrl: '/avatars/7312025550023819274.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -896px',
   },
   '6834411791062155271': {
     uniqueId: 'goyo2020',
@@ -8324,7 +9081,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '苟酉',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7oOuf01FLbWEZ-CncS576OzeFMdp_mdqdRuHOzQw9fjONemDtVRtZJCqkNZ-qwLc',
-    avatarUrl: '/avatars/6834411791062155271.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -168px',
   },
   '7031006976108658701': {
     uniqueId: 'wwdxgogogo',
@@ -8333,7 +9091,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '张梦一',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-WFTyVioFyoh6sfuukufbvhZhReg6CCyu4VfO3XQHDf9JllUxbUBRfH5zLNOUPE4',
-    avatarUrl: '/avatars/7031006976108658701.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -504px',
   },
   '7324538467107012617': {
     uniqueId: 'wm_370',
@@ -8342,7 +9101,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '亲爱的清也',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALFD1So731JxAPE-uH--FVXhLhEaXhrCJbn2B2ddC53w',
-    avatarUrl: '/avatars/7324538467107012617.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -952px',
   },
   '6938607449922338829': {
     uniqueId: '',
@@ -8359,7 +9119,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '权永',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAE7k88lcsayVHwThj11ribzLnhyQRVBwSS28nrJUu6Y3THexwQvKJz9VKraG1cLFC',
-    avatarUrl: '/avatars/6938607449922338829.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -392px',
   },
   '7030287705669894174': {
     uniqueId: 'wyzpj2021',
@@ -8368,7 +9129,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '财经汪院长',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAx2F5o2jv56HpycjxcCHlP520LurYDxOrKXRV3uXtCcaYoxaqizs7PnU-1S3wb-Gr',
-    avatarUrl: '/avatars/7030287705669894174.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -504px',
   },
   '7305354233136545826': {
     uniqueId: 'YIBAI1998',
@@ -8377,7 +9139,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一柏',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAHyXotr513HXtc2Fgds3kp0KK_s2G2jQgX469JD23QnU',
-    avatarUrl: '/avatars/7305354233136545826.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -896px',
   },
   '6852516526931574798': {
     uniqueId: '',
@@ -8394,7 +9157,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '时间交换家',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAcK6DyJfjsOTyzwEaXjo22yngAWqM2HFTBPzEexPa0p--EHIGslhuccK4LTGN9zQX',
-    avatarUrl: '/avatars/6852516526931574798.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -168px',
   },
   '6870170209546665998': {
     uniqueId: 'gxcj666',
@@ -8403,7 +9167,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '公信财经',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJtc6L3nTvnle9yRCKKwVjHs9pvh3X-ZH3daoKvx-kX3R6mwe1Q-FHSHrr_Qp73N7',
-    avatarUrl: '/avatars/6870170209546665998.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -336px',
   },
   '6870170850352431112': {
     uniqueId: 'SNcityTvShow',
@@ -8412,7 +9177,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '南瓜宇宙',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAY7D6LhbYX6q6HOcygkDJKSeynsl3to_wEZ7a98tp7t3LW1vMoqq4PH1G2oNN5q14',
-    avatarUrl: '/avatars/6870170850352431112.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -336px',
   },
   '7541676121626574894': {
     uniqueId: '38228121429',
@@ -8421,7 +9187,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '我真叫邓超',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7qcsxzK-Qhn9mgE6Ck-CmcZlWVVBbLmQDR-iPfX8_MxRCsPl1A8LWVHad7zostJH',
-    avatarUrl: '/avatars/7541676121626574894.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -1344px',
   },
   '7004779058571509768': {
     uniqueId: 'GG58561392',
@@ -8430,7 +9197,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿建欢乐多',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA5oLeiG9mpHSxq1HrRXjKu9oD1y1pJgrigtzcLJuDahA',
-    avatarUrl: '/avatars/7004779058571509768.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -448px',
   },
   '6774963825146855438': {
     uniqueId: 'tlaolao',
@@ -8439,7 +9207,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '我是田姥姥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAqPJbRaf6CBJ95I0lPvjHJnqu1E8ELwQsqVsR1pABv4I',
-    avatarUrl: '/avatars/6774963825146855438.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -112px',
   },
   '7025627812153262087': {
     uniqueId: '30950479314',
@@ -8448,7 +9217,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '迂磨二公子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADUIECsn4CLAVk_TIPZ8-cWAUjBUxAifP-LDOWLlYyrsxl9vPjSIVmZIaO_-TtSRI',
-    avatarUrl: '/avatars/7025627812153262087.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -448px',
   },
   '6870160198896451598': {
     uniqueId: 'Fangtanzhang2023',
@@ -8457,7 +9227,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '行走方探长',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAKy0AZDhfxBDJVLuYzafFWRZU8HAzsrTZGd3bc-dkKAo',
-    avatarUrl: '/avatars/6870160198896451598.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -224px',
   },
   '7422905790169612298': {
     uniqueId: '96004298723',
@@ -8466,7 +9237,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '成大器',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAAak74DJsvEsg4cLXcU2G75VonDE560zjOXLlCrlK4hQ',
-    avatarUrl: '/avatars/7422905790169612298.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -1120px',
   },
   '7056716761655148551': {
     uniqueId: 'AlphaGo1921',
@@ -8475,7 +9247,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大都督陆逊',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAcCisPErG9joni4f5ifzICM02Yds1kugYHuXduSYxuwZvP4UJYgJLgYHcAnl-tELf',
-    avatarUrl: '/avatars/7056716761655148551.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -504px',
   },
   '7157581895285342239': {
     uniqueId: '81405073708',
@@ -8484,7 +9257,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '桂非妃',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAnOzGForJhV7gP_us2lJI2es77Vvs3WfML8D_6CwSq8qNvVTTJBOJZO9cRrTV3E2C',
-    avatarUrl: '/avatars/7157581895285342239.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -672px',
   },
   '7149878529734213671': {
     uniqueId: '',
@@ -8501,7 +9275,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '星球旅人小姜',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAK-_uIgwdC5MEHkNF9XeRF4zyRZqTCiQOlHXxEAsW_hs',
-    avatarUrl: '/avatars/7149878529734213671.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -672px',
   },
   '6839160485560975373': {
     uniqueId: 'shangyebo',
@@ -8510,7 +9285,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '进击的沈帅波',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAG22gaY1_knLZ2E7EwamZwjZhvVPZox_aKW3foFsBsOp8kVPfVU4orMN5ohqY_Wzb',
-    avatarUrl: '/avatars/6839160485560975373.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -168px',
   },
   '7293440890104709171': {
     uniqueId: '32047025863',
@@ -8519,7 +9295,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '安妮的职场与生活',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzwJPF5lIfb1u17jjUU3Lu1gui0xr6m45a6Q2rZSns6s',
-    avatarUrl: '/avatars/7293440890104709171.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -896px',
   },
   '7187936619712741431': {
     uniqueId: 'dyc3x64fq9pd',
@@ -8528,7 +9305,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '青年门派',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAq5w2SLqkF5s92n2mJVlj9I_OdBsQGZzmcxzetPJl73ZbAeKI1dQ4vKtGeBq7YOxF',
-    avatarUrl: '/avatars/7187936619712741431.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -728px',
   },
   '6870165202965364750': {
     uniqueId: 'shipindao',
@@ -8537,7 +9315,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '食贫道',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAPlbGvgleDxAvxrEwJXlW7T3lQfEBKRSe1tw0zhm3Fvs',
-    avatarUrl: '/avatars/6870165202965364750.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -280px',
   },
   '6870162324309671943': {
     uniqueId: 'lingzhippt',
@@ -8546,7 +9325,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '猫眼儿观世界',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAbWDPV3kKIb996-E1kZuWs7t-IFbqcnKziXqmwUlp4Rw',
-    avatarUrl: '/avatars/6870162324309671943.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -280px',
   },
   '7181753244358541373': {
     uniqueId: 'pangdandan618',
@@ -8555,7 +9335,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小聪明张建国',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhHuzlhd84zLcLQKAh5FlC0HMTZIoYaKcvX5-PcJ-hGQ',
-    avatarUrl: '/avatars/7181753244358541373.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -728px',
   },
   '6870168363562172423': {
     uniqueId: '',
@@ -8572,7 +9353,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '悠悠自得',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7NqPxlo_bs_HMQaQV69V96I7rvw0RB0zIiJ8QPXBkU8',
-    avatarUrl: '/avatars/6870168363562172423.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -280px',
   },
   '7553209407262179371': {
     uniqueId: '',
@@ -8589,7 +9371,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '关中铁人张大户',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAttqELA_pA5Z9MwUqolavCnxVb3_9BweSG2dfgVkBa1rbsshq3AfVni0zt8ECYEzl',
-    avatarUrl: '/avatars/7553209407262179371.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -1400px',
   },
   '7441893142577889318': {
     uniqueId: '58791129092',
@@ -8598,7 +9381,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '笨鸟怎么飞',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAu5JO6-xlWuHn9nP3J18qkHdOGLJXn1casBXvyKUKT-k',
-    avatarUrl: '/avatars/7441893142577889318.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -1176px',
   },
   '6870164212560166920': {
     uniqueId: '1145063460hhh',
@@ -8607,7 +9391,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿权',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEOuO28YbryVcEpL5eQ50TBosvhTe6-QaLcVwcLCbBKg',
-    avatarUrl: '/avatars/6870164212560166920.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -280px',
   },
   '7406785018728546356': {
     uniqueId: '53690099776',
@@ -8616,7 +9401,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '嘟比爆爆',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6h5108nnRg-5vZ5t4vCt4tzcY0XJ74gx7BoE58wbJbkV0H50MaEHFPPpbku7UAx6',
-    avatarUrl: '/avatars/7406785018728546356.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -1064px',
   },
   '7553926346942988297': {
     uniqueId: 'Fwy0815',
@@ -8625,7 +9411,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '东明范兽医',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-pVieux9VDQ9Kaoo_xdtnBMwQlQcsQf2UIzJYgwL8xebX-II3i0AQMVfSFVwyC3B',
-    avatarUrl: '/avatars/7553926346942988297.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -1400px',
   },
   '6913540944021159943': {
     uniqueId: 'bushidanni',
@@ -8634,7 +9421,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '不是丹妮',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7Dw-Nhxu0acR7nI72jKo8b62kenqmUBOLVOG001v_RvwBLbZngvn59vHnlk5Wan1',
-    avatarUrl: '/avatars/6913540944021159943.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -336px',
   },
   '7213323191177969716': {
     uniqueId: '46082905810',
@@ -8643,7 +9431,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '企鹅起不起飞',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6Woaur3KuqgPw1YpSWQRyUfWAiSXCLz_K07Aq6agPL0GlNYj3y2kngSsQao4dj9I',
-    avatarUrl: '/avatars/7213323191177969716.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -784px',
   },
   '7444991856032612361': {
     uniqueId: '58638818925',
@@ -8652,7 +9441,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '方师傅',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAl2E7hujSfRJcR9Vx9RBz2PmO5ZolvYA768XGQqIOsMQ',
-    avatarUrl: '/avatars/7444991856032612361.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -1176px',
   },
   '7320245286721290250': {
     uniqueId: 'kon898',
@@ -8661,7 +9451,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一鸣财经',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_0YhWOn5ljVopcARIKtajFplrPi2_nHiChaJDJzLOXA',
-    avatarUrl: '/avatars/7320245286721290250.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -952px',
   },
   '7319796237878689842': {
     uniqueId: 'Hello.fairytale',
@@ -8670,7 +9461,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '你好童话',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALBeIDWQOiB5cwUNyCfXLnDRj7nVt_Ig9EeLWfl7ptqg',
-    avatarUrl: '/avatars/7319796237878689842.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -952px',
   },
   '7350768781754368037': {
     uniqueId: 'Hellowshu001',
@@ -8679,7 +9471,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '李文殊',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAwCxFjP911H9NlyBpa3BIrLOGFYvrUMNp8p5vC89vXRM',
-    avatarUrl: '/avatars/7350768781754368037.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -952px',
   },
   '7538780372192985115': {
     uniqueId: 'honghong.do.it',
@@ -8688,7 +9481,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '宏宏',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAfJTRkPZAlXAyCZV6C7bimW1i2_JPC1rEDOhwOaKLM-CA3OZsNbLS_IJ4pcps4bUp',
-    avatarUrl: '/avatars/7538780372192985115.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -1344px',
   },
   '7017990351893823518': {
     uniqueId: 'V812388',
@@ -8697,7 +9491,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '远哥逛吃（刮刮乐换饭）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAwBq2Ol3i86slqsOwGwyhg3sqq182uBPozzEBy4Sw3n0',
-    avatarUrl: '/avatars/7017990351893823518.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -448px',
   },
   '7564710671829434406': {
     uniqueId: '54904676261',
@@ -8706,7 +9501,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '股市林教头',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAGQsX_v1W67NObeS_4sM6J0UYiWqEXRYtQQPtDy40dmuyBrfth_f_VDvMeqdqE52a',
-    avatarUrl: '/avatars/7564710671829434406.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -1400px',
   },
   '6932613913406078990': {
     uniqueId: 'YuWai2050',
@@ -8715,7 +9511,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '域外编撰者',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJox_wSVf2rV0Wu8i0bXyCJx7KeDxACOXVoxzXGvP_Tk',
-    avatarUrl: '/avatars/6932613913406078990.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -336px',
   },
   '7502040527039103013': {
     uniqueId: '57874416162',
@@ -8724,7 +9521,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '王文远',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAsExZRgiEfY7RfdvKwLpHwYkYiTkXBezZsk1S0mWS5_GjfMuYE4_5GrRz4gDKEOug',
-    avatarUrl: '/avatars/7502040527039103013.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -1288px',
   },
   '7048591877146148871': {
     uniqueId: 'bxxw',
@@ -8733,7 +9531,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '百姓兴亡财经',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALERfXgzmum3ybf2TW9BJOfpzzHIu4V5LqfMWaTKpf5FgjnhuYT-svgQp5LWVTvzF',
-    avatarUrl: '/avatars/7048591877146148871.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -504px',
   },
   '6870168348395569166': {
     uniqueId: 'qiaohaowan',
@@ -8742,7 +9541,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '创作失败',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJXebUVpJVRdqpuslbPWYGayAEpNjijEjVar950GnItw',
-    avatarUrl: '/avatars/6870168348395569166.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -280px',
   },
   '6870163525482840071': {
     uniqueId: 'Liaoxiaoai',
@@ -8751,7 +9551,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '廖小爱',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA3yyhD8TtLL2CSpzmCV48VQDsn1-35ptfWOUM6ku6THQ',
-    avatarUrl: '/avatars/6870163525482840071.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -280px',
   },
   '7403288609823916058': {
     uniqueId: 'Zhl2011065125',
@@ -8760,7 +9561,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '赵律师（长沙）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAY9lpETVpTLuUvzYf2CfrdJ60KplKUFY7-ooms95_6sA',
-    avatarUrl: '/avatars/7403288609823916058.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -1064px',
   },
   '6980235723584569351': {
     uniqueId: 'BusinessAlert',
@@ -8769,7 +9571,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '知危',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzD6-xia15-1oSudb4c4ir00MXPpo3G-6YxkFs4ALZwNI79dCIfSeazn6Z11Nwf8n',
-    avatarUrl: '/avatars/6980235723584569351.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -392px',
   },
   '7319479634985222182': {
     uniqueId: '71720600418',
@@ -8778,7 +9581,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小雅来洛',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzhU7LayFamoUA0Gnuyt4ChqLcKj2-rDMsNQW11FabAWCTqxuIAHMn7XqKEzXzmVO',
-    avatarUrl: '/avatars/7319479634985222182.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -896px',
   },
   '6870171613057253389': {
     uniqueId: 'caijingbbj',
@@ -8787,7 +9591,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '财经不眠姐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOcZrQhLW3fJAK9_D5HYETwIW9jKmqt39PGNaL-tTgZAHbB-POcuhWNt96bwxR_Gf',
-    avatarUrl: '/avatars/6870171613057253389.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -336px',
   },
   '7176455452652208165': {
     uniqueId: 'zhaosun621',
@@ -8796,7 +9601,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '老斯',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEMA3ZiHB3o_QJaHokRoS0sSOIpiq0EdWMqPOkRHGDM80qdx-FMxCkl2REOfduaRv',
-    avatarUrl: '/avatars/7176455452652208165.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -728px',
   },
   '7094708099532980255': {
     uniqueId: 'hsp66696',
@@ -8805,7 +9611,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '何丢丢不走丢',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdXbdGkx20KXAxIA4vXf03yq9s1OhiVgGcjtPUV1H6Vo',
-    avatarUrl: '/avatars/7094708099532980255.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -616px',
   },
   '6870170568893661197': {
     uniqueId: 'linnuo569',
@@ -8814,7 +9621,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '周周的周',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOe9ZrlAZ9iPSxFvVLxDzoIq21TJg6VXdsNTLqY7FrpetTq1PkWZOGX-4tCTrXe-o',
-    avatarUrl: '/avatars/6870170568893661197.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -336px',
   },
   '7626255399646724123': {
     uniqueId: 'dlzslj',
@@ -8823,7 +9631,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '曾海龙',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA1Imp6Ea3WdgOosRI20MeOAIlgRZkimJ0qJi4q_Vz3zg',
-    avatarUrl: '/avatars/7626255399646724123.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -1456px',
   },
   '7204491497851322424': {
     uniqueId: '28767586348',
@@ -8832,7 +9641,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '王九五',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA3GIKxnyh1Qj_VA1tWpVGG17IRF_4meXmNza1cF473gE',
-    avatarUrl: '/avatars/7204491497851322424.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -728px',
   },
   '7333249499814428712': {
     uniqueId: '70653740069',
@@ -8841,7 +9651,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '漠生铁铁',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAsqMBycgw-7_VAC2HvGJoF4Yohwmu--u8LlC5uw_mxhvWfXaJh5YWe-mO4L78UANH',
-    avatarUrl: '/avatars/7333249499814428712.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -952px',
   },
   '7427905191975845898': {
     uniqueId: '27158869242',
@@ -8850,7 +9661,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '佑佑的财商日记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAp3a7HM33uSu9Ne41BxM2Z6FZoktNUtrOeY_l1IRDEH5l_7Tx6W11loRlXUcXJe1i',
-    avatarUrl: '/avatars/7427905191975845898.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -1120px',
   },
   '7459029253573574683': {
     uniqueId: '',
@@ -8883,7 +9695,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '碱性蛋白',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-uNBXWUGfDRfeuu4P5WKIve2CBQZhTwSgyF8h9HV9QZcFhuKzkxZE6wpJjM47wvp',
-    avatarUrl: '/avatars/7459029253573574683.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -1176px',
   },
   '7181060621444579383': {
     uniqueId: 'YangBaYi.Y81',
@@ -8892,7 +9705,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '杨八壹',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAACoBC-oS5nOCtCc-oSnCrfaNTsz4EpU_m3FxeGbnIHQ9bc8yqwIJncbnvrpf0QciN',
-    avatarUrl: '/avatars/7181060621444579383.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -728px',
   },
   '7341962993741070363': {
     uniqueId: '26972358985',
@@ -8901,7 +9715,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '李哥社保笔记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-L8iArbQaP6DtUJCJ72dq5wyTf07BZ7HqkgYOrW12Mo',
-    avatarUrl: '/avatars/7341962993741070363.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -952px',
   },
   '7265723631718629431': {
     uniqueId: '',
@@ -8918,7 +9733,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '张宇洋',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAqJt_woxt2xTCgg6DZ0gNsXdXsD8TzTwG-pLn9C-JFt8ch_LWyWci3d2cwFtSklSR',
-    avatarUrl: '/avatars/7265723631718629431.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -840px',
   },
   '7455603735314563099': {
     uniqueId: '51588842454',
@@ -8927,7 +9743,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '菜大P',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAk4R9NhUer0Hye6f-aCvTNgz0dC_fZxtcH4wrzc7iAP7A2zobrzh54RNvXGT3JIbw',
-    avatarUrl: '/avatars/7455603735314563099.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -1176px',
   },
   '7076643473452957730': {
     uniqueId: '57064953122',
@@ -8936,7 +9753,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '有趣的小罐书',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAV5TjTaM9y8Hz76Q4bPtvW90dkerESOM5kj74ljEtF0U',
-    avatarUrl: '/avatars/7076643473452957730.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -560px',
   },
   '7460389370086359076': {
     uniqueId: 'Hl20250523',
@@ -8945,7 +9763,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'QQ猩',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAkxAi0Fo2C7h4HwtC7J0IO2Mlk4i9VmorhiPc9ak7r_UBO62LWIWvEsjT5GOzKppz',
-    avatarUrl: '/avatars/7460389370086359076.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -1176px',
   },
   '7600328048004562985': {
     uniqueId: 'super2025',
@@ -8954,7 +9773,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '财经Super',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAFW4RYrhs4cvt4SSHsE7mBNdyNIte873DqA9KpfjSgfGRzyIwNfDKOKjtDhjxCvcW',
-    avatarUrl: '/avatars/7600328048004562985.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -1456px',
   },
   '7125032900029841422': {
     uniqueId: '43031008930',
@@ -8963,7 +9783,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '多肉超超',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6Zlxatt2lE3BjA28-5zsvFQ9NNuVSxToAITSlHboPLE',
-    avatarUrl: '/avatars/7125032900029841422.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -616px',
   },
   '7231185104217833527': {
     uniqueId: 'Wyh.19991111',
@@ -8972,7 +9793,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '黑蛋儿',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAATMjiL91fc6Iv27jYxDEmnaHPnMSiZT1WPiaNj5DezKKHjFvAOXyDhpkARlZ1kpd0',
-    avatarUrl: '/avatars/7231185104217833527.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -784px',
   },
   '7338443530387324965': {
     uniqueId: 'wwj2019.',
@@ -8981,7 +9803,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'WJpotter',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAUbimJKqYqlxwH6YSHj1OtQYJ-qtcxM5_XMzhdHQ1XJPmknGNIoXqz4oeTl3f_A7B',
-    avatarUrl: '/avatars/7338443530387324965.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -952px',
   },
   '7231488972197724175': {
     uniqueId: 'rzandjj',
@@ -9000,7 +9823,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '菁崽看财经',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA1N-ZYVv19HNMjIkiUuSkcYJ9jjBQkVa8JeJRdRs-3j0ZByWoz8nMi2FwtRMmaWwR',
-    avatarUrl: '/avatars/7231488972197724175.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -784px',
   },
   '6933492643145973768': {
     uniqueId: 'newwave7',
@@ -9009,7 +9833,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '废物青年指南',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAUoCZ43ibra4fHteQTm_sDjtzzDnZ5c12hqF4mwVM5-VLjlCT6VUWf22YymRi8vUI',
-    avatarUrl: '/avatars/6933492643145973768.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -336px',
   },
   '7355795722689576960': {
     uniqueId: '45773075225',
@@ -9018,7 +9843,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '高璐明聊投资',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADgjoX_8tRshHhuIJhzzXiEHjdT-O4pHVli7Ov9u0g7I',
-    avatarUrl: '/avatars/7355795722689576960.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -1008px',
   },
   '7191711450857996348': {
     uniqueId: 'daweige31',
@@ -9027,7 +9853,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大威哥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAsYaohHQsHYz6K_FTMpqxlhkcWTI7toGwcoUsB5QK2r29G74iIkYO9KG3qq77ParM',
-    avatarUrl: '/avatars/7191711450857996348.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -728px',
   },
   '7339907982643167273': {
     uniqueId: 'Yetang_14134',
@@ -9036,7 +9863,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '钟也棠',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAl9igOrhcrcMbBmNDKReyfei3zHJynmephmtCui2dlxY',
-    avatarUrl: '/avatars/7339907982643167273.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -952px',
   },
   '7350984431802253363': {
     uniqueId: '61954871724',
@@ -9045,7 +9873,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '终于跟你分享',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2cFi86xSiFI0MQtOlj2CSrdSx5gP_dUHM6M1nJJskLZMd1b9kHMNs7dy6sd9KyRH',
-    avatarUrl: '/avatars/7350984431802253363.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -1008px',
   },
   '6953111573950889996': {
     uniqueId: 'caijingniniz',
@@ -9054,7 +9883,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '财经妮妮子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAg7bL1KRHMcX3ydfXyS12r3Zseu-jSbYXRzRHjtaKMRf3o8kpOw9l1GDQ6vKQlLll',
-    avatarUrl: '/avatars/6953111573950889996.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -392px',
   },
   '7266965499030798394': {
     uniqueId: 'zhiyancaijing',
@@ -9063,7 +9893,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '直言财经',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_qjQvmocuJ8IXq01l2x-kJX0kFJ8w6sv5nKTtH13d1bRGDQ9ALoC9CzG-_TcegDd',
-    avatarUrl: '/avatars/7266965499030798394.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -840px',
   },
   '7405481269766651939': {
     uniqueId: '27885702383',
@@ -9072,7 +9903,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '跟着Mark学储蓄',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAn9K88vImesXsa2T5HGOpiyzaR9wwYkL-0RWjvXNJHNuwfbzydlzlOJ9b06zdz9f2',
-    avatarUrl: '/avatars/7405481269766651939.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -1064px',
   },
   '7098360218605584397': {
     uniqueId: 'GWYGJT_V',
@@ -9081,7 +9913,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '给我一个镜头V',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAI_Ozlwlo52XeWV9fWcFDENZtNZLWIkTslaBf5t8muYcTXX1kxzeAsN_BXYWHpat7',
-    avatarUrl: '/avatars/7098360218605584397.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -616px',
   },
   '7262210678377676863': {
     uniqueId: 'FFangDz',
@@ -9090,7 +9923,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Der正',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAoTpHY_ZDVy3VlKA7-lc-D-jfmRrPolZyIRPpFcmOGVE',
-    avatarUrl: '/avatars/7262210678377676863.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -840px',
   },
   '7078500563633045511': {
     uniqueId: '62599802173',
@@ -9099,7 +9933,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '亲爱的郭_Ricky～',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEYLkwIxhTxWOLqE0ozIMPDsm_QWaRwWPoeWq6wdYclw',
-    avatarUrl: '/avatars/7078500563633045511.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -560px',
   },
   '7082328020656226341': {
     uniqueId: '31049154220',
@@ -9108,7 +9943,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '旺了旺仔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAYpssABXLOKIf2-pYvHdPd1iirjcwb7u2tX8HPjPGrVOBL-nhAJz-wcghzP8KzJij',
-    avatarUrl: '/avatars/7082328020656226341.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -560px',
   },
   '7370741806667038729': {
     uniqueId: '',
@@ -9133,7 +9969,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '枭潇',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7HW_DP6GrOZGwU6XkCjuDjYmsLDP5jyroLMd8z2FpeU',
-    avatarUrl: '/avatars/7370741806667038729.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -1008px',
   },
   '7495590383271804937': {
     uniqueId: 'IloveJINZHOU',
@@ -9142,7 +9979,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '凌海市李宏五金水暖',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7okZQbCoVP4s8OuYsUHC7noka3lQmrKITlUT73fi4bWSNzz7O2gESjqut6wex7h9',
-    avatarUrl: '/avatars/7495590383271804937.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -1288px',
   },
   '7382436658219597851': {
     uniqueId: 'Tutu66_mama',
@@ -9151,7 +9989,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '红姐的裁缝铺',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAH7lH4RnDaZdZrb85gj7qdf-WElRbwFe_JtK0X6LDtGWGqLiABtd2j0IqBmW8zqg-',
-    avatarUrl: '/avatars/7382436658219597851.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -1008px',
   },
   '7612547187028787227': {
     uniqueId: 'hanlinwinner',
@@ -9160,7 +9999,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '极点战法',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAABx3VBWbFRU3fKeTMRBTHOenzg2d0nEDkM6gX9LpqvSQ',
-    avatarUrl: '/avatars/7612547187028787227.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -1456px',
   },
   '6952364831139692555': {
     uniqueId: 'lzylzylzylzy666a',
@@ -9169,7 +10009,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '刘植宇',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAPgi3AmTjBIPy00ptgMer5QNLPC6bliGteDTSDJapgeY',
-    avatarUrl: '/avatars/6952364831139692555.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -392px',
   },
   '7477430246170427403': {
     uniqueId: '22684269900',
@@ -9178,7 +10019,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '呀呀呀瓶子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQ-TyHC7GFMAtRWR6vIU26Cs8akK3Sp7whREj882F20769O_Y71XguL7ZoNXg8KtO',
-    avatarUrl: '/avatars/7477430246170427403.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -1232px',
   },
   '7672287765400125478': {
     uniqueId: 'Dapin',
@@ -9187,7 +10029,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '男妇女队长',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEvCrhXJ7AjmpSpf761lv9r5f3zRR8c3CDyFyNYs97j4',
-    avatarUrl: '/avatars/7672287765400125478.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -1456px',
   },
   '7381453050356957203': {
     uniqueId: '95335051258',
@@ -9196,7 +10039,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '丰总Steven',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAup_vKNjWh54XHTLYSicd0dCCnHemgHREYvbvxRYiBrveV3vRpXIs7I-6T_WX8NuA',
-    avatarUrl: '/avatars/7381453050356957203.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -1008px',
   },
   '7093061404030140430': {
     uniqueId: 'Hao61413534',
@@ -9205,7 +10049,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '十三昊',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAATr9ul4GNHaGGCPWoDMyUsMVK7wtRZCwVWV2JIQGHycYEaUUudCI-zEzjAwwZ6Fa8',
-    avatarUrl: '/avatars/7093061404030140430.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -616px',
   },
   '6981679540682620942': {
     uniqueId: 'fupeng715',
@@ -9214,7 +10059,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '付鹏的财经世界',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAy5ym9wTQRRPyS8wY1UA4SXkgUkw7gZyg1Pkws_ppDtO2z0uOpWjbUWassaacpe8C',
-    avatarUrl: '/avatars/6981679540682620942.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -392px',
   },
   '7543939383202218023': {
     uniqueId: 'Huma3404',
@@ -9223,7 +10069,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '胡麻',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6BD98tgQcY4JfsXTjrzsNuKaV5V0clDRb7KIjY5hWrjABwSJTWp2e49VKsI2mLGM',
-    avatarUrl: '/avatars/7543939383202218023.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -1344px',
   },
   '7363243736907808806': {
     uniqueId: '12711281224o',
@@ -9232,7 +10079,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '半个朋友💭',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAX2cv3L8_40kDwUQ3pTAtSJWIR3kEpI49cBJ46JhC2pE',
-    avatarUrl: '/avatars/7363243736907808806.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -1008px',
   },
   '7155058363158495245': {
     uniqueId: 'dayueyueer',
@@ -9241,7 +10089,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一个大岳儿',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQDGWLyEuxkN_jb2r6v005BFWXN_ebRVpCY1KjDC658UOa79TSjnId-1bjuatxD0d',
-    avatarUrl: '/avatars/7155058363158495245.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -672px',
   },
   '6983947720297807909': {
     uniqueId: 'lijunjun9917',
@@ -9250,7 +10099,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '礼君君',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAED2B9aruapJ9q0Fz_RhLUT7RUxrryyGoAa3fboYVRQ2rgsgARFUsIxW264i0jsN2',
-    avatarUrl: '/avatars/6983947720297807909.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -392px',
   },
   '6984626162639044616': {
     uniqueId: 'ychxt999',
@@ -9259,7 +10109,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '羽城海岛生活',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAiORvdFwB0j9QVgd8gJ5XDn-7VwmvyzWaOMFf9zVytplOt92cv2FZ2vuTtVKm3EK0',
-    avatarUrl: '/avatars/6984626162639044616.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -392px',
   },
   '7383955295334039603': {
     uniqueId: '60131008589',
@@ -9268,7 +10119,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '毛球球 -.-',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAABneB4jp3hkf24wAaGSrCPVPnNdQBl-amFqszg6b7lRw',
-    avatarUrl: '/avatars/7383955295334039603.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -1008px',
   },
   '7234405482373316665': {
     uniqueId: 'hongshu_66',
@@ -9277,7 +10129,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '洪树',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJkMFatR9HAnpypRQCs3P5xOeGZjfCGys5IvUeAzTpWbHND7EVPjtEcfMKWkj3fTs',
-    avatarUrl: '/avatars/7234405482373316665.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -840px',
   },
   '6998402171297333278': {
     uniqueId: 'Nana19961224',
@@ -9286,7 +10139,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '娜娜小胖的旅行',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAv7bA0b37VLOA8cdT3OjnA1lEHejNZTURA_KcIXWmSyZxPgY2cpRCd8-x93FPxNjX',
-    avatarUrl: '/avatars/6998402171297333278.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -448px',
   },
   '7423267828737769523': {
     uniqueId: 'anglian666',
@@ -9295,7 +10149,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '只做热点的道士',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAfmkgbDP3cTho597WkU8Fg3e3c2qZazPbEKbRvJOfngM',
-    avatarUrl: '/avatars/7423267828737769523.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -1120px',
   },
   '7296223362508914725': {
     uniqueId: '23213604023',
@@ -9304,7 +10159,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '我是张小吹',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADRGUaLxzyLPKI7Jyam7cjapCtQMSa3Vm50U9-6ARoWVQf28H1DN6njb6K7FYDOGS',
-    avatarUrl: '/avatars/7296223362508914725.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -896px',
   },
   '7122808512312262663': {
     uniqueId: 'nihaopiaoliamg',
@@ -9313,7 +10169,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '吾心心',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA9jrRwkL3ARvw0k35BexWRMOHxtSCE6H0Mj5m3O6yD4I',
-    avatarUrl: '/avatars/7122808512312262663.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -616px',
   },
   '7262729059828760631': {
     uniqueId: 'chengzidengdeng',
@@ -9322,7 +10179,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '橙子登登',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAANwmm28qtSzX8IrZcngFoSc7r0DwNS0Qzsokuwh-yYIA4jxIIbg0ks_8NpQzq33Yd',
-    avatarUrl: '/avatars/7262729059828760631.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -840px',
   },
   '7442538412990529587': {
     uniqueId: 'zhugegecaijing',
@@ -9331,7 +10189,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '诸葛哥财经',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAA7GfhZGmMCNHHbUS797JGra_munWnAH88TLgbOm5X-fKuw2aIaZqaaGO3Iu-hr6l',
-    avatarUrl: '/avatars/7442538412990529587.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -1176px',
   },
   '7018769107772244001': {
     uniqueId: 'DADA_NO_SLEEP',
@@ -9340,7 +10199,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '达达还不困',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOT7Q2sfKTLirAF03nH_C3ILgcRF2dCM9bgg7JXOFJa4',
-    avatarUrl: '/avatars/7018769107772244001.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -448px',
   },
   '7107081721153224707': {
     uniqueId: '',
@@ -9357,7 +10217,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '郭桓钧',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAoNrzUYN7GxFHewK3zFL2VvOQg2ue72Cbn_8wInFJbIo',
-    avatarUrl: '/avatars/7107081721153224707.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -616px',
   },
   '7517626857471082534': {
     uniqueId: 'MikeYangOfficial',
@@ -9366,7 +10227,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'M&M麦克兄弟',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_HUPz2VuKb82iVT_Azm7OpLLqsH3WO8dU53lS6deos82sFtTuFOLp1vRfusfYLMN',
-    avatarUrl: '/avatars/7517626857471082534.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -1344px',
   },
   '7342820393004204083': {
     uniqueId: '',
@@ -9383,7 +10245,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '都业华',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOMn_p4dcxe5GM8bRDd8t_JD-SUZDHBJSpOd3RqySO5E',
-    avatarUrl: '/avatars/7342820393004204083.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -952px',
   },
   '7425999364536926258': {
     uniqueId: 'kuanglegeka',
@@ -9392,7 +10255,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '矿了个卡',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAANg12anpLmp7Xf6IzatMKob-oN6FOTG2tVDx3Qv09MPc',
-    avatarUrl: '/avatars/7425999364536926258.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -1120px',
   },
   '7416679467998773274': {
     uniqueId: '79842472707',
@@ -9401,7 +10265,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '金融街小龙女',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_XPOOXl2qR1TbXtRXRGDquVLEWU-729Gzii94rTTS57whbQ7HeeDxwt5G2ErFghV',
-    avatarUrl: '/avatars/7416679467998773274.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -1120px',
   },
   '7132102205120708644': {
     uniqueId: '',
@@ -9418,7 +10283,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '股市淘票小立君',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAkPSH9EvcJg6BPG_7BUuomMm4mhV-4_4hG8m4ypqLzs8',
-    avatarUrl: '/avatars/7132102205120708644.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -672px',
   },
   '7417047037708877875': {
     uniqueId: '31978177452',
@@ -9427,7 +10293,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '黄大圣叨叨叨',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAslohntxQ6LXXLfsEhbiDprOTc5QNXS_h2TNAXAkokN4',
-    avatarUrl: '/avatars/7417047037708877875.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -1120px',
   },
   '7458074190604664866': {
     uniqueId: '26405368211',
@@ -9436,7 +10303,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '之昱',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAXMfeJaaBGfrq1-ZbOCxRSwbjhtWKUqGekhJZtdDSuPA',
-    avatarUrl: '/avatars/7458074190604664866.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -1176px',
   },
   '7273521923726770187': {
     uniqueId: 'liuduoduo15926',
@@ -9445,7 +10313,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '叛逆少女刘开心',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAjTn4co-8XwsyMIVrxrqQXuE5LMJbVlDVhh9dlzpRIgk',
-    avatarUrl: '/avatars/7273521923726770187.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -896px',
   },
   '7494260524570378267': {
     uniqueId: 'kaishuxiaohao',
@@ -9454,7 +10323,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '凯叔有财',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEnUo75Zb3ZOQrpl67mcClKGPCCExvB1zPJ4B6utU2bU',
-    avatarUrl: '/avatars/7494260524570378267.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -1288px',
   },
   '7311894811110277158': {
     uniqueId: '36395546591',
@@ -9463,7 +10333,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '何小鱼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAj0oZdT2xhk2ZQE-RplmYHgtpFtRU3EQWrMVTSwm2u_UjXrElOfzVoYxH_8dgc9Wc',
-    avatarUrl: '/avatars/7311894811110277158.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -896px',
   },
   '7552068420468998153': {
     uniqueId: '79250340495',
@@ -9472,7 +10343,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '林静瑶',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAFXVp6TLEnYgxOeJ9Bfqstco5MR2u6_rDkfjCKH7cvWjUnwzGutiklNBTL0JtCSkU',
-    avatarUrl: '/avatars/7552068420468998153.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -1400px',
   },
   '7628935665870176298': {
     uniqueId: '70858771847',
@@ -9481,7 +10353,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '张盟主说股',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA5LbdFY8Y2aTtt7bkUv625NV702xjxOTysYVr-utufUc',
-    avatarUrl: '/avatars/7628935665870176298.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -1456px',
   },
   '7503438866217435175': {
     uniqueId: '',
@@ -9498,7 +10371,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '璎英呐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAACnLN61XPs4jnrCsncV9TWa8Rv_UJvk2Mouecc35fkyA',
-    avatarUrl: '/avatars/7503438866217435175.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -1288px',
   },
   '7578760098210644006': {
     uniqueId: '95008115078',
@@ -9507,7 +10381,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '跟着郭磊学缠论',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAWtY97ZTAbD4IuPGw-VMZIr2KcjrPMsswtcDFKF3oU2pOkA6HmDR3gKDdOdhsU02c',
-    avatarUrl: '/avatars/7578760098210644006.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -1400px',
   },
   '7584395606425075721': {
     uniqueId: '',
@@ -9524,7 +10399,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '敏敏超靠谱',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQIS8GkrrxWnJsw_9yrsgCCCH-3aQuj8SL3ZCCVEfNTtW7zn09wel5tNxTQYqq8tA',
-    avatarUrl: '/avatars/7584395606425075721.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -1400px',
   },
   '7686008015585361962': {
     uniqueId: 'Musaeee',
@@ -9533,7 +10409,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '缪斯Musae',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_sltXDC1_YVCo3r7XJ8QO1JnRRY81q_aBjGsX4SWkjMZmHv52xNiXPLZJSSsMJOb',
-    avatarUrl: '/avatars/7686008015585361962.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -1456px',
   },
   '6756880870692356103': {
     uniqueId: '',
@@ -9550,7 +10427,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小谢的化妆室',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAwJoUQfMnYcLc1bQpdw2tnK-I54Aq0UMNZlC891pDx2cxHNao4jK6m5jphp_ucyB7',
-    avatarUrl: '/avatars/6756880870692356103.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -56px',
   },
   '7225162643986710585': {
     uniqueId: '',
@@ -9567,7 +10445,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '李越同',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAIxA6Lh1MsyUhCnsrVhjbvurCYvZuBuSsghfdHRn_boUxiTGkXyfcNgDkSRha-DGx',
-    avatarUrl: '/avatars/7225162643986710585.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -784px',
   },
   '6818482701671071757': {
     uniqueId: 'May200313',
@@ -9576,7 +10455,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'C多士',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOkmDgnDE_Z6Num6g89gI7PI9X-BpHSXyauLuNuDKqsc',
-    avatarUrl: '/avatars/6818482701671071757.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -112px',
   },
   '7230706196653539389': {
     uniqueId: '56827169623',
@@ -9585,7 +10465,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '其实是一只番茄鸭',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAvIq0BANIiqc25Nahnk89NgatlRohpF0-NPGnGrSoKj4',
-    avatarUrl: '/avatars/7230706196653539389.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -784px',
   },
   '7073833142724853796': {
     uniqueId: 'wangcheese',
@@ -9594,7 +10475,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '王七四',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAd0pwnHUo9Xc6S298l9kU4w1cgZCP1FQn5pcPisVbi4Y',
-    avatarUrl: '/avatars/7073833142724853796.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -560px',
   },
   '7170364608631275557': {
     uniqueId: '40831730902',
@@ -9603,7 +10485,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小朱在变美🐷',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAfaLnXlGnY0ljsKkFgfLGgncOKLvHC8URfkRY0PZL1uhMtLRJjHGveDePGZ87bBVA',
-    avatarUrl: '/avatars/7170364608631275557.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -728px',
   },
   '6863345160047034382': {
     uniqueId: 'Z30823082',
@@ -9612,7 +10495,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '祁宋zZ',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAACVDM3peZVlB0YRNtpJrSVLQKT3NrPFNqHR4nVMC9Xmg',
-    avatarUrl: '/avatars/6863345160047034382.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -224px',
   },
   '7535313997080297499': {
     uniqueId: '55984280222',
@@ -9621,7 +10505,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '脏脏包：）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAL5eYly_BgnJR6HijmmXzxKjcX-CyWJGJ4I2zW8ffnzBL7y-X7B2m8MYVB79mT-Ix',
-    avatarUrl: '/avatars/7535313997080297499.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -1344px',
   },
   '6858973973879717902': {
     uniqueId: 'kexueshijie',
@@ -9630,7 +10515,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '科学视界',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAh_ItMrmBXQ5mHFf7JAvUavS-BBJJ7Zz9oGGImnSnTJ8Tms-qxXPlSLwfS2YqEEcJ',
-    avatarUrl: '/avatars/6858973973879717902.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -224px',
   },
   '7125071172219174925': {
     uniqueId: '37823132206',
@@ -9639,7 +10525,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'ISHS施施',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAB9tpr6neqYGK80-G-VZECODns2F71W3z8yIDA53Ri5_TerUQKGaiX3dKZt471xA_',
-    avatarUrl: '/avatars/7125071172219174925.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -616px',
   },
   '7033650068213202957': {
     uniqueId: 'aprilyesnono',
@@ -9648,7 +10535,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '我才是ALLNut4',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAl1l5U-FfI9Ea8WfVpzVf4-o1ygjX_YHSXoPTFy1Dr7M',
-    avatarUrl: '/avatars/7033650068213202957.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -504px',
   },
   '6629658474793926659': {
     uniqueId: 'blbl886688',
@@ -9657,7 +10545,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '美兰兰吖',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA1Mm1BGO26bG-bttf0ASQoQrSEn6WcdJ9w1Fw2Ta0T58',
-    avatarUrl: '/avatars/6629658474793926659.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -0px',
   },
   '6750550713434112007': {
     uniqueId: 'Ysh_04519',
@@ -9666,7 +10555,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '于Anna',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAVn1_mopX8QSXuTzEUoQDKepM2wZ6msnobeTEPZ9-5QE',
-    avatarUrl: '/avatars/6750550713434112007.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -56px',
   },
   '7283785293038256188': {
     uniqueId: 'dolly820',
@@ -9675,7 +10565,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '万万Dolly',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAusKGz7d0SMkvi8wDhd3yeJc_7dKavHtiPOcWP2KB7uM',
-    avatarUrl: '/avatars/7283785293038256188.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -896px',
   },
   '6870161044220674061': {
     uniqueId: 'Elkkirin',
@@ -9684,7 +10575,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '不是麒麟',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAKUnxqqMYdQbRsh8PDHQ0icLnKsvTB5rRjtSNolE7NgE',
-    avatarUrl: '/avatars/6870161044220674061.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -224px',
   },
   '7079767101258334216': {
     uniqueId: 'xm_Guards',
@@ -9693,7 +10585,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '辛里奥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAuvlH-UoCOF2XuqxQ-CH84-2QxTqwuwVzEu7AYFxU_0E',
-    avatarUrl: '/avatars/7079767101258334216.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -560px',
   },
   '7087040829256106025': {
     uniqueId: 'zhiriwit1122',
@@ -9702,7 +10595,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '知日wit',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAi0mfqsfNRZXPoNw3rpFJ9sSi30i20OpvTB_5qqxUgvA',
-    avatarUrl: '/avatars/7087040829256106025.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -616px',
   },
   '7223962969959301177': {
     uniqueId: '65365823277',
@@ -9711,7 +10605,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小陈碎碎念',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAkQVRUtDokae7QhXumLDmJAKlPQGj4BgBiJuWGv_TJ4o',
-    avatarUrl: '/avatars/7223962969959301177.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -784px',
   },
   '7082649794174255104': {
     uniqueId: 'qiaooooooooo',
@@ -9720,7 +10615,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Uu',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAcBf5LQPb-tZ0DkG3ptx7qhGvxwEa8DbrXHS5nHWEY4g',
-    avatarUrl: '/avatars/7082649794174255104.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -560px',
   },
   '7064493083781496865': {
     uniqueId: 'YWD666677778888',
@@ -9729,7 +10625,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '月王丁',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-WkWlBwHejcPFFx3LCWdMlSAdepNnkm4ZQs42oz4D-MviYCs1jaX97CXa69sIH5C',
-    avatarUrl: '/avatars/7064493083781496865.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -560px',
   },
   '7345400080981032970': {
     uniqueId: '72695686142',
@@ -9738,7 +10635,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小武同志🐎.',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQBOvBoQg-OXGOgFhWudBgiKfNZF6Bpg3hdXu8gx2fj-2KPvt8h20N8qkPWhMOTN8',
-    avatarUrl: '/avatars/7345400080981032970.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -952px',
   },
   '7058274355104448526': {
     uniqueId: '20386803286',
@@ -9747,7 +10645,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '好爱吃薯条',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJQfp3DZoPjEgbLpdo-ZsmSq4gvVKEGh1-KdLidHgbdsZnw_Le7bCi1DlHyHb9TKQ',
-    avatarUrl: '/avatars/7058274355104448526.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -504px',
   },
   '6865175551624085504': {
     uniqueId: '91280142791',
@@ -9756,7 +10655,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '蒋不听（目标80斤版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAB50G1muMdijEUPhqZMM0bgox989dXxLr4qyqiDJvEpU',
-    avatarUrl: '/avatars/6865175551624085504.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -224px',
   },
   '7337927318565814322': {
     uniqueId: 'yukuai6',
@@ -9765,7 +10665,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '我是鱼块',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAyXrQQXcr-uRhD1VA1UdVf56n6Ff8qFcB_y09M7e6xtyvNd6httcqVHixuZVb21T3',
-    avatarUrl: '/avatars/7337927318565814322.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -952px',
   },
   '7485960941213843475': {
     uniqueId: 'xr1624048494',
@@ -9774,7 +10675,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Kiwie',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAx1q2iYJ4X2_M1forpIaExXhV1ulP1Io-eUniByIIZ4gC0XO9vo3ykjXYRH5_MGXy',
-    avatarUrl: '/avatars/7485960941213843475.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -1232px',
   },
   '7244407171247505469': {
     uniqueId: 'Yyff999993',
@@ -9783,7 +10685,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '夏日妍妍',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAw5XH5bvS_NdA-t6jRa_rlVdLUtRcOk_NxIGyUoIvnJE',
-    avatarUrl: '/avatars/7244407171247505469.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -840px',
   },
   '7307887004618850367': {
     uniqueId: 'Zhamaoxiaodi08',
@@ -9792,7 +10695,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '炸毛小笛Dexxxi',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAR6d1NsRyGUtMGiu_BorWzGi4mE-FARMidfhkisFCsBAgcsaV6Cr3RhMOpiaYrIBl',
-    avatarUrl: '/avatars/7307887004618850367.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -896px',
   },
   '7043971073863483399': {
     uniqueId: '',
@@ -9809,7 +10713,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小程不烦',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAWbD-ydn86NP-gAz7wfpxRf1tsEVZaf1XhWcJA_M7JwRKdgn729QA_o_3Qo44uTmy',
-    avatarUrl: '/avatars/7043971073863483399.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -504px',
   },
   '7194808801248149564': {
     uniqueId: 'Lcr20021008',
@@ -9818,7 +10723,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '拎出苒',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAPy1RQOyXHVcnpbj9mbJt6s0jt_a5o50BAfmrTV-jbUTvZjtI8nQVVEycYNKQRE7B',
-    avatarUrl: '/avatars/7194808801248149564.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -728px',
   },
   '7415256357726584886': {
     uniqueId: 'songshibayiyooo',
@@ -9827,7 +10733,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '宋十八亿yooo',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASZnVQ_vZnA0LE-yGpdm60xyChhCnGZeT0SycmqS9o5Q8XDUlBzCYMbQcK2XK0ntZ',
-    avatarUrl: '/avatars/7415256357726584886.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -1120px',
   },
   '7420074698777559081': {
     uniqueId: 'hsds131422',
@@ -9836,7 +10743,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '好说戴说/戴震',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAcA9a--HmibvcoJ_0YCQYZ1qqbn2uCj5e4CVdc0c6y6s',
-    avatarUrl: '/avatars/7420074698777559081.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -1120px',
   },
   '7079275276978356232': {
     uniqueId: 'Dokixxn',
@@ -9845,7 +10753,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Doki 蟹蟹',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2MpRxY0JuyCCHGVDpjz5cObi6lBum9MIcfgZKXuTdxM',
-    avatarUrl: '/avatars/7079275276978356232.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -560px',
   },
   '6622921542042910734': {
     uniqueId: '',
@@ -9862,7 +10771,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '是木子耶',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOuCmDaJa9cchxIVT08QIAfGfNmoHAKYD0i2pI-ABeeFIDXpijh3kDr35Z41_q-1t',
-    avatarUrl: '/avatars/6622921542042910734.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -0px',
   },
   '7507192856365236262': {
     uniqueId: '91342070710',
@@ -9871,7 +10781,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '千萬別吃夜宵',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_2igWfj3ikDy0QemBFYGcyt_9Myy22keoBYPIzwx3KV6yeJWliNXjawlRYcLukio',
-    avatarUrl: '/avatars/7507192856365236262.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -1288px',
   },
   '7426293336291573798': {
     uniqueId: '55198612209',
@@ -9880,7 +10791,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一只土木',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAARUVXGK2Jzy6x5rAvY5AbKjYvuq58BH9H9YJurl0L-EFo5zGbO-3wM1h2MRkpN-GJ',
-    avatarUrl: '/avatars/7426293336291573798.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -1120px',
   },
   '6950176870482575367': {
     uniqueId: '',
@@ -9897,7 +10809,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '女版张飞',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAFwBvk4EtFV3JD27Ber01tvZdpdpaYyjSUm0AgkdXRjCkBr--K6PujcNxU-ULn6JC',
-    avatarUrl: '/avatars/6950176870482575367.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -392px',
   },
   '7187022792448016422': {
     uniqueId: 'iskoalaa',
@@ -9906,7 +10819,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '是圆脸考拉',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAs_3KfQN9RTiVWovoJDo3Q2dWm7Wvf2PvNrEy6vsMsq8',
-    avatarUrl: '/avatars/7187022792448016422.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -728px',
   },
   '7320242530715598857': {
     uniqueId: 'Goslow0902',
@@ -9915,7 +10829,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '倦羊',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAI84dZQCsl6xowy1dnFXqN-XZ75K9KjBHicloJeSFnYA',
-    avatarUrl: '/avatars/7320242530715598857.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -952px',
   },
   '7022102906501333005': {
     uniqueId: '73761438131',
@@ -9924,7 +10839,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一只小鱼瓶',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAGo9WKAhGa0o7L2ikkCfjJLDO9vcs8Ps64PTaII_h3ji40bM89S-wvdypna_rVpGx',
-    avatarUrl: '/avatars/7022102906501333005.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -448px',
   },
   '7156896003138781191': {
     uniqueId: '34483605867',
@@ -9943,7 +10859,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '姜饼饼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAATBS5Lbig-rSigb2upL-yBzFD05-EP9IHq0vOvZMmkBulqb_NMH3ASUBCNe9geiUl',
-    avatarUrl: '/avatars/7156896003138781191.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -672px',
   },
   '7582569423370715190': {
     uniqueId: 'xiazhenliu121',
@@ -9952,7 +10869,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '夏枕流',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_uZ8nQlDX7Er2RpPLuM0VUcWt-jLOsEiS50RalBgjDSbwWENGXodvBVKJI4Tt0i1',
-    avatarUrl: '/avatars/7582569423370715190.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -1400px',
   },
   '7595479869513793572': {
     uniqueId: '28875734066',
@@ -9961,7 +10879,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小冉同学Y',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA28ikZdckrDNR1GdUqGcBFw3ERplufbCMmsjwzQlFIbD-SfSx_Y2bcRXCI_oI6BpQ',
-    avatarUrl: '/avatars/7595479869513793572.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -1400px',
   },
   '7020405886627610631': {
     uniqueId: 'ququouyang',
@@ -9970,7 +10889,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '区区欧阳',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7Qr_sQhd249cduqGY9TqBTNVAi589a1-idW2WlxlawYuO6g2cvnCXPh8eDEaNO_-',
-    avatarUrl: '/avatars/7020405886627610631.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -448px',
   },
   '7602509063011696667': {
     uniqueId: '81712993414',
@@ -9979,7 +10899,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '龙哥调研日记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAyO56CGsbD6F5pjLxjIpwszlBDrJCVuEe-8mpICqINHXUJb1NRSZ3LS3AO64n9QBr',
-    avatarUrl: '/avatars/7602509063011696667.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -1456px',
   },
   '7405787945816293415': {
     uniqueId: '71014467966',
@@ -9988,7 +10909,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '爆蛋粥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAYyp6qz4nVxvldjiRxZI10ki5OxP6jpWlGvWMxkeBCo2ST5uRCbmHzrpXWpb3gJsW',
-    avatarUrl: '/avatars/7405787945816293415.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -1064px',
   },
   '7454231339278008358': {
     uniqueId: 'Boom20211109_',
@@ -9997,7 +10919,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '飞天蛋挞',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAihw_1Kq9FjjuvJ3MJ-7-gaSREp_Z2hnFaU2TLIGRW52VkPMxMqzMN8GOy0xPE9Ts',
-    avatarUrl: '/avatars/7454231339278008358.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -1176px',
   },
   '7427410390075572261': {
     uniqueId: '61954975838',
@@ -10006,7 +10929,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小鱼好困',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAMLMMSgDcfz3OBxbAojiCBwyx_HsdoYc2el1dkwbyBiNl5EFopqEkB_sykjuF5xUX',
-    avatarUrl: '/avatars/7427410390075572261.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -1120px',
   },
   '7513876783716892684': {
     uniqueId: '42479501966',
@@ -10015,7 +10939,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '早睡小张',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASaWaGHwayPIeSn0hGtDz8J1a3Koq_-orcqAPzL_FGSExQVLUUHqnwIUx-Q-be2jH',
-    avatarUrl: '/avatars/7513876783716892684.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -1288px',
   },
   '7508930120745222154': {
     uniqueId: '34699920402',
@@ -10024,7 +10949,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '裴裴要学会化妆！！！',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQoJRwjph0-zoTtCx4Eh7J2Tth9u3Ty7AyhQaHPVlxmY',
-    avatarUrl: '/avatars/7508930120745222154.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -1288px',
   },
   '7515649366023995419': {
     uniqueId: '54130164501',
@@ -10033,7 +10959,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '兔酱 ₍ᐢ..ᐢ₎♡',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAburaZeBv6Sg-3THAyBiflLhg43gu9jhEGla3eCnXvLP1qAxrLJYdFQqpwAioFW8-',
-    avatarUrl: '/avatars/7515649366023995419.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -1288px',
   },
   '7456885584804610111': {
     uniqueId: '60168452364',
@@ -10042,7 +10969,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小酱挞挞',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAVn_xiCN8PlWQPHjPX0KDzZK3npJUv9jLEKia9_Eq2gSWI6m_nXNNGtXOoIkmPNFJ',
-    avatarUrl: '/avatars/7456885584804610111.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -1176px',
   },
   '7095667007898517534': {
     uniqueId: '56283154140',
@@ -10051,7 +10979,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '欧泡泡时间到',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASiqpwZrzxIK064f46YCSdZKSyKX451EplnfZVIe1bgsPtOT-7YFgTcWW5osiKBf4',
-    avatarUrl: '/avatars/7095667007898517534.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -616px',
   },
   '7442251673789005875': {
     uniqueId: 'I7UOoO_',
@@ -10060,7 +10989,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '照烧邱刀鱼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6M296r4c0w-iGZK9RPyUPXyLGRGGzg5sFF_jgzuEp2E',
-    avatarUrl: '/avatars/7442251673789005875.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -1176px',
   },
   '6976835148692062249': {
     uniqueId: 'sjs95279527',
@@ -10069,7 +10999,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '鲫鱼大叔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAlGriSKB0G92BHytnazBFeldxQQENcdZtwwfRgEqZ9s3AnUPtzlJ-7OjGlFKuvGID',
-    avatarUrl: '/avatars/6976835148692062249.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -392px',
   },
   '6988092645859917861': {
     uniqueId: 'ccccttting',
@@ -10078,7 +11009,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一条辣cc',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAidvu6JmmjdxTJTw-x9hSys74u6cst7xn9fbcfuhaHX4',
-    avatarUrl: '/avatars/6988092645859917861.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -392px',
   },
   '7602251240205975602': {
     uniqueId: '39032494815',
@@ -10087,7 +11019,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小鲤小鲤',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAqCXusatVbYDxxAQO7JUnggNjeRuAnbpbakpS5OzINMdseudYKMsrkYUA-em9I-ua',
-    avatarUrl: '/avatars/7602251240205975602.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -1456px',
   },
   '7117880565327462407': {
     uniqueId: '54349363958',
@@ -10096,7 +11029,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '无语茜（嘴碎版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAABCBehfi_So6mYp1lT6T37VWhyxT2-DEY5oIVMH_vxCN_P2tF2fMpva8q718a8SSO',
-    avatarUrl: '/avatars/7117880565327462407.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -616px',
   },
   '7440024876804472883': {
     uniqueId: '46079057180',
@@ -10105,7 +11039,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '肿眼小新',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAANOYBc_JnjmBxuDfdABO1eKeu8XMU2vucY9wGpQ8Td_Y',
-    avatarUrl: '/avatars/7440024876804472883.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -1176px',
   },
   '7372239807721766921': {
     uniqueId: '59116098643',
@@ -10114,7 +11049,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿熊didi',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAHeLf0Ehdh0u61toY_DVLCNVG7rSWRIvvOEbaFkLE1Nt-lvoJiuPr60W3PVa3pq6Y',
-    avatarUrl: '/avatars/7372239807721766921.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -1008px',
   },
   '7208350635463278596': {
     uniqueId: 'mengmengzhan98',
@@ -10123,7 +11059,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '萌萌战队',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAYz4lQFKTuSyGMvL1xs1Y-UD9OJS8EIQH_IVQpSI7_DU',
-    avatarUrl: '/avatars/7208350635463278596.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -784px',
   },
   '7224927770780893221': {
     uniqueId: '',
@@ -10140,7 +11077,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '青菜特猫头',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAXQFZbqTCZEH_lRBTFeSzEIsxTXczlBL7Ync6y9PtECUm4rVpqtzbpyT77uos6vY8',
-    avatarUrl: '/avatars/7224927770780893221.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -784px',
   },
   '7500963804944007195': {
     uniqueId: 'anaishiwo',
@@ -10149,7 +11087,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿奶是我',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAw_BW7LD9Pkg-PPoewbKVsVoIgTBh7e0cHXnXfhxXNYE',
-    avatarUrl: '/avatars/7500963804944007195.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -1288px',
   },
   '7000889727607898147': {
     uniqueId: '49314119061',
@@ -10158,7 +11097,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '新闻胖哥',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASCH7iCDcI5WQ821yJQT1natfQv_qeltivLAttbq3tQBEwzHtaYJDA10M0HoouA7i',
-    avatarUrl: '/avatars/7000889727607898147.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -448px',
   },
   '7377653664860143666': {
     uniqueId: '85955268440',
@@ -10167,7 +11107,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '威猛大虎姜端端',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6V4Cw2chli3i_gGchOkyWnXNPMsW48-K-2sRshXo9hKPrhmRg8rOJ4ofZcFX9v4o',
-    avatarUrl: '/avatars/7377653664860143666.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -1008px',
   },
   '7003420848858071072': {
     uniqueId: '45656087332',
@@ -10176,7 +11117,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '又又仔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAve-E3IBZnXOC7nxSODpRagu7Ys0x727_PdZDvy7pLt8',
-    avatarUrl: '/avatars/7003420848858071072.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -448px',
   },
   '7607814691171074099': {
     uniqueId: '87360619854',
@@ -10185,7 +11127,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小刘同学（化妆跟练版',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAKzwbB1qYax14fbi-IYfxmCiZAWtgCOLxMvSn6FPA9cMao-d2Ohxg2pE7VfTmqZez',
-    avatarUrl: '/avatars/7607814691171074099.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -1456px',
   },
   '7392580622239137829': {
     uniqueId: '38660747164',
@@ -10194,7 +11137,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '无山根的阿月',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAl01C9CUEYyRkTowmZuhX3ct9jA-Ogm9L-pizOh8tGyE',
-    avatarUrl: '/avatars/7392580622239137829.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -1064px',
   },
   '7610806062005878835': {
     uniqueId: '92885307096',
@@ -10203,7 +11147,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '井零',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAS04SlJsTbljCAK4U1aJm7G-QgzFMEzTLZUw2SUPuMP8',
-    avatarUrl: '/avatars/7610806062005878835.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -1456px',
   },
   '7122339183796060164': {
     uniqueId: 'M2427098661',
@@ -10212,7 +11157,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '看咩咩',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAKQw0HnO8x7G3LP-BVSXDMBPT2cuRQKx50-j_8_t9zg9rsAaSEa-byX5KrM2Bq9uT',
-    avatarUrl: '/avatars/7122339183796060164.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -616px',
   },
   '7511390326146203659': {
     uniqueId: '',
@@ -10229,7 +11175,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '有点卷卷',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAX8c84KjQqZIyHOhs8qCAFIvaSLuUlkvm3okfj3SCkKgqDhVBRG7NygrYV4LT1a1Z',
-    avatarUrl: '/avatars/7511390326146203659.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -1288px',
   },
   '7523894034381668379': {
     uniqueId: '76252054703',
@@ -10238,7 +11185,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '美羊羊桑',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADgQ-oIh2DY0YRsv5MjKwr0Sz3xF8ht17bVqK-Iv2T5xpOKoX6FQF3S3w1oNMrw9X',
-    avatarUrl: '/avatars/7523894034381668379.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -1344px',
   },
   '7165218531498262559': {
     uniqueId: '24053292017',
@@ -10247,7 +11195,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大鱼小七',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOphXJuFNRmuAAuJzDo6YQa0zJrf4n09kJp7UOciUuMqWt9sHCEj-vJjhhPDGzSDm',
-    avatarUrl: '/avatars/7165218531498262559.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -672px',
   },
   '7473865901251493939': {
     uniqueId: 'Xx0309x.',
@@ -10256,7 +11205,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '好多鱼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzqgd8Tpu4LwKphYjju0tyLEGw63V7GZ3erUrJxdtWkM',
-    avatarUrl: '/avatars/7473865901251493939.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -1232px',
   },
   '7163892508814999586': {
     uniqueId: '88092331277',
@@ -10265,7 +11215,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '芝川桃',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAsOzWGK5V8apQNIzZVHHkvHNljb7Qdvag_sfSib7TAsE',
-    avatarUrl: '/avatars/7163892508814999586.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -672px',
   },
   '7513855251250675763': {
     uniqueId: '50502520468',
@@ -10274,7 +11225,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '桃思咬咬',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAO1MKDe19KVVlmpPy_eXrJpoYgpb9fxhvendqxvBfpPaK8BJEWBR7szjBx3jaFelW',
-    avatarUrl: '/avatars/7513855251250675763.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -1288px',
   },
   '7256104899086123064': {
     uniqueId: 'Xxiaota666',
@@ -10283,7 +11235,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小塌（大发版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAfFV32SDHeQ814TrluBx7IzAui5LhndZpyMpPplt7JRA',
-    avatarUrl: '/avatars/7256104899086123064.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -840px',
   },
   '7267208608562020409': {
     uniqueId: '43731038382',
@@ -10292,7 +11245,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '彩虹糖不是糖（烧饼）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAABSAMdlKkX3cqurWJQt5R4-x2nTmZX0_yM29UtOjk11E',
-    avatarUrl: '/avatars/7267208608562020409.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -840px',
   },
   '7523642093672071218': {
     uniqueId: '40088770699',
@@ -10301,7 +11255,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '圆脸小邓',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAqpksREa68U13eTAI6C02q9eKltfSnpM8_7gbIzEc6QHlwTc2CxDhVWsjLh4TBufd',
-    avatarUrl: '/avatars/7523642093672071218.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -1344px',
   },
   '7597348390329909299': {
     uniqueId: 'cc12_hhazj',
@@ -10310,7 +11265,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '翻新酱',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAWIXEFtyd7IILW2B77S_7yHcIX3OuxAqMHqWcvlH8HWnfAPSTYLdQQaKTikStq5nt',
-    avatarUrl: '/avatars/7597348390329909299.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -1456px',
   },
   '7629159310177599530': {
     uniqueId: '56545235468',
@@ -10319,7 +11275,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大勇财经',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAuYPQzdrmhGeFHju8mqzqXcxitM3X3p5emDtu7G8TwhK0NcIwIkEto2x5Q_Prc6w7',
-    avatarUrl: '/avatars/7629159310177599530.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -1456px',
   },
   '7537182295732518955': {
     uniqueId: '55571456402',
@@ -10328,7 +11285,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '桃兔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAl0KvQ8fUcvC0CDTBcVH5TxjwX8_ctsVrFcOUbt7E14Y9Y6aBqRJ43hTZeGHD9Bdk',
-    avatarUrl: '/avatars/7537182295732518955.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -1344px',
   },
   '7521775817485516850': {
     uniqueId: '70364309127',
@@ -10337,7 +11295,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小羊3号',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhLtSKE-C_wIQHjC6KFSLWLXNx5cEodK5ssG6pVCyJzKFb6n0gP8EH-koffWgCd4t',
-    avatarUrl: '/avatars/7521775817485516850.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -1344px',
   },
   '6945675202265088008': {
     uniqueId: 'kendingfacai333',
@@ -10346,7 +11305,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'serpent發財（幸运版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-w8JpkntXnG5558ZroVjMEdGYxZSCMj8Pm5hMlZmjIQ',
-    avatarUrl: '/avatars/6945675202265088008.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -392px',
   },
   '6789659413180317703': {
     uniqueId: 'ling494814336',
@@ -10355,7 +11315,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '声优小俏妞',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAI83FGapcHBtV5yQ5RkgiT9UQqU9ECZdHwTOhpxcs-oU',
-    avatarUrl: '/avatars/6789659413180317703.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -112px',
   },
   '7546073933343260723': {
     uniqueId: '86714297787',
@@ -10364,7 +11325,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '榆晚不是鱼丸',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAh1ML_ntJesRGh8NurtZqDRJNOrrQoeB9UDHlqnvG-KB0O5UHisV66DnEK7x7oy9d',
-    avatarUrl: '/avatars/7546073933343260723.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -1344px',
   },
   '7231852893597335609': {
     uniqueId: 'Liyaoyao1299',
@@ -10373,7 +11335,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '李耀耀',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzoF7bWZf0v5i-8VQ8ymRYhBrlzluJvQEAv7mLfdfFJM',
-    avatarUrl: '/avatars/7231852893597335609.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -784px',
   },
   '7510778390568239115': {
     uniqueId: '70881821134',
@@ -10382,7 +11345,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一知喆。',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAh0RPVVcP5_4kdDjivkDqnxb4HQTDb4HUMSDmO_t4pRLjzGzsjAGU1mxZt40QJMMs',
-    avatarUrl: '/avatars/7510778390568239115.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -1288px',
   },
   '6870161343312297992': {
     uniqueId: '82926628769',
@@ -10391,7 +11355,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '睿睿wan',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAANStzsuW1Q8g3WgoOBTltTfaDQbBOKSxrmFlO5-yJ_U8',
-    avatarUrl: '/avatars/6870161343312297992.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -224px',
   },
   '7269287563792220179': {
     uniqueId: 'dy6f1nu6m482',
@@ -10400,7 +11365,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '帕尼尼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7SqWc1ePq5YXn01pekwLRGpYO4pvWVAEpu9ou0e8m-g',
-    avatarUrl: '/avatars/7269287563792220179.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -840px',
   },
   '6866775155708788743': {
     uniqueId: 'Ding1664',
@@ -10409,7 +11375,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小叮的婚后旅行',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAFDnhsKQs2gSBFFDuNDRo99iNZ8J7Mc9lpuHJzfHPTmicg-uTgft2xMRD-VK9lU1z',
-    avatarUrl: '/avatars/6866775155708788743.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -224px',
   },
   '6629656504402182151': {
     uniqueId: '',
@@ -10426,7 +11393,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '你给我咩啊',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAABYsdRA7CQset5FwkZ6A80sAmA0UZIDPhRqDwXnbUoC3a1xZPcwN4WBSw9wIxz3YU',
-    avatarUrl: '/avatars/6629656504402182151.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -0px',
   },
   '7283610508643532859': {
     uniqueId: '26766436773',
@@ -10435,7 +11403,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '讲点理吧',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQTQqg8Oy3udmcKul3UwTNucBTywiq0LRUX__8G6FRKo4GDeIszGI5XyV9l8yMEvy',
-    avatarUrl: '/avatars/7283610508643532859.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -896px',
   },
   '7409376690033393703': {
     uniqueId: 'Z_Sunhy888_',
@@ -10444,7 +11413,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一坨尚熙Sunhy（漏勺美妆版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA4kRcM92UC1kgX7moIiQP_T9LJAK2zC0NDX8otoF_kGoFfBIfmkm2RxcquR3_CBhJ',
-    avatarUrl: '/avatars/7409376690033393703.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -1064px',
   },
   '7595857573033099302': {
     uniqueId: '63743094836',
@@ -10453,7 +11423,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Dusk',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJcMr9h3coO6Z0uxg7hOCzw6QmczkhByyBYXNmz8Gl9CA3Fjfq6bY1-SN6krZ0fH6',
-    avatarUrl: '/avatars/7595857573033099302.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -1400px',
   },
   '7284841911385325602': {
     uniqueId: '30547520726',
@@ -10462,7 +11433,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '不吃白米饭（努力涨粉版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA5vyQ7IbleNYcVXjHkvUwjchAHMz6YN0YuGWHPAHdhL3Uj9-69Aed2PPezHcMw_bj',
-    avatarUrl: '/avatars/7284841911385325602.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -896px',
   },
   '7201505186169225277': {
     uniqueId: 'jiujiangjie40',
@@ -10471,7 +11443,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Jiu酱',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzhPEJLDXKkNDFTZWPY6ErvDJFC5Bxu3t7cxc_LBtb3G_EyAS3yP5Un22LNNGE6S4',
-    avatarUrl: '/avatars/7201505186169225277.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -728px',
   },
   '7396238013128245299': {
     uniqueId: '23705726430',
@@ -10480,7 +11453,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一只咸鱼英',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAHDqxJKn-YlUNM5ubgyJ-Lt7RHTfOFAGNdUGa0xl812MYZL4RPSKifBP6Bxbv3O2c',
-    avatarUrl: '/avatars/7396238013128245299.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -1064px',
   },
   '7396984895374884875': {
     uniqueId: 'dybrqeu35fy9',
@@ -10489,7 +11463,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '楠星（155小个子穿搭版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAwCGvo_VuVr-FjHzq_NSNoq-cRMqaStR5LceN66gsT1w',
-    avatarUrl: '/avatars/7396984895374884875.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -1064px',
   },
   '6748643344311648267': {
     uniqueId: 'FYTV123',
@@ -10498,7 +11473,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '枫叶频道',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAArePAN7QKy-xX0Qf-QLbrBKoDQ2RdP2Oor02iGLqFsPF5cI3yyUNLl6C0xNgkKpAt',
-    avatarUrl: '/avatars/6748643344311648267.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -56px',
   },
   '7577274481167106086': {
     uniqueId: 'MoneyCYH',
@@ -10507,7 +11483,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '陈译辉财经',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADfqzgw5uK8ZvcfltmAcbMBAYpakRg8VX4O34Bzdv-qY',
-    avatarUrl: '/avatars/7577274481167106086.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -1400px',
   },
   '7487163364951457802': {
     uniqueId: 'JIAMAN_110',
@@ -10516,7 +11493,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '是嘉蔓啊（迷糊姐）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAkMHTSBpUqvXwraxjxqVIvhk2dQKnrDADoDZVEi3TbB4',
-    avatarUrl: '/avatars/7487163364951457802.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -1232px',
   },
   '7114606660282220547': {
     uniqueId: 'LongFenmom',
@@ -10525,7 +11503,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小杨真不差',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAvINILuiFcXUDwjwsYIFazYQr-nkMcfqAoQ0diZBDwtmABd_skSzOza39f63bEms7',
-    avatarUrl: '/avatars/7114606660282220547.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -616px',
   },
   '7644592880509517833': {
     uniqueId: '48893986260',
@@ -10534,7 +11513,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '五五分的卡卡',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAmiDG5lGFLkAxBNevFOybEGPPLvLGHyVtGLlipfUjUHz-ef8SVHtF_DsoagJFivwJ',
-    avatarUrl: '/avatars/7644592880509517833.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -1456px',
   },
   '7134636010486366244': {
     uniqueId: '',
@@ -10551,7 +11531,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小妮kiki',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA-ELV3UpoEV38V_J4__7C3x0XrAzw4glD8RrhpuMPPoN-sy12TgBZjLIZGI3vBLmv',
-    avatarUrl: '/avatars/7134636010486366244.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -672px',
   },
   '7530445317779488804': {
     uniqueId: 'AIialialili',
@@ -10560,7 +11541,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小厘的厘（内双版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAeIHTvg2mauy4ig4C39rlaiS0CGX6LA3yYjFooLWX9T3_GOx7Z-gXFAc2-d6JNU5X',
-    avatarUrl: '/avatars/7530445317779488804.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -1344px',
   },
   '6917488161803223053': {
     uniqueId: 'zhamaosier_',
@@ -10569,7 +11551,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '炸毛丝',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQyWOPkldYhVds1ln0y0qF9QHf9164RJiu_LD_C0opLsPP8S3FYZlJt_CkeLxcfcG',
-    avatarUrl: '/avatars/6917488161803223053.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -336px',
   },
   '7475980638990893107': {
     uniqueId: 'mumuzi726',
@@ -10578,7 +11561,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '木木子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAIZRy3a8v2j7EQ3JIeQkH1VFKF5ui2D2arSSQ8el95gE',
-    avatarUrl: '/avatars/7475980638990893107.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -1232px',
   },
   '7164566032747593758': {
     uniqueId: '70531796372',
@@ -10587,7 +11571,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '詹佳佳Jaajaaa',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAbvF61sIKb-nurEXX2J8eq3n7jtvYlE_G22GMOOrR1zsw5fYTgODqUi8B7yEQl1P4',
-    avatarUrl: '/avatars/7164566032747593758.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -672px',
   },
   '7488606332547760180': {
     uniqueId: '97623156709',
@@ -10596,7 +11581,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '福羊羊',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAxm3RLa5VRj43tBd1L3UObUE9Iv41AG-m8GTlG2Sbip_P95VACEhPKoAbpT72D3HH',
-    avatarUrl: '/avatars/7488606332547760180.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -1232px',
   },
   '7156803586339373069': {
     uniqueId: '',
@@ -10613,7 +11599,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '余潮洋',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAkdth1lIUId_1x-ykC1Gre3Fj53xen347dQpljCUlOYw',
-    avatarUrl: '/avatars/7156803586339373069.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -672px',
   },
   '7067686965910437902': {
     uniqueId: '36909220063',
@@ -10622,7 +11609,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一顿胖丁',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAGRf4KBCUM7fmRmNC1ntsKkQ9CoGmJ8pfwvenS2XfkvE',
-    avatarUrl: '/avatars/7067686965910437902.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -560px',
   },
   '7495001891810574387': {
     uniqueId: 'NaoDai_1206',
@@ -10631,7 +11619,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '酒窝向向',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAjS7JsS7pmZEcTVMhnVpVBZNv0YA3l_dRL1sclnstr-sic_JAvLHNMNlUi4eOaNPf',
-    avatarUrl: '/avatars/7495001891810574387.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -1288px',
   },
   '7112479426540994568': {
     uniqueId: '56515436700',
@@ -10640,7 +11629,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '木三',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAADebP1T1TR8U-cfNb8R04SZB5G_4jKPiZzuw45zFfWwU',
-    avatarUrl: '/avatars/7112479426540994568.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -616px',
   },
   '7273746582351118391': {
     uniqueId: '94845058173',
@@ -10649,7 +11639,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '别打瞌睡',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAv0qC7IdqCc_l-A3wccxfp1B_omoboFjb99Tq4E6Yv1k',
-    avatarUrl: '/avatars/7273746582351118391.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -896px',
   },
   '7525823146614128667': {
     uniqueId: '38650911626',
@@ -10658,7 +11649,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '颂颂好脾气',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAosNSMtVVvm4SDrAXRGIZLuxs-FhsYFgonG8-ZWBaSEkw_Fu06D-HvJJWG5RXMMx-',
-    avatarUrl: '/avatars/7525823146614128667.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -1344px',
   },
   '7460757587781222426': {
     uniqueId: '',
@@ -10675,7 +11667,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'nana 羊羊羊',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAABJzeonMBFmxDMpnHjZoSZK8Z5NFyuF39fs9x4PdDk41Z4kqSHDrnqzJ1eLJJUEqf',
-    avatarUrl: '/avatars/7460757587781222426.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -1176px',
   },
   '6914522102624157710': {
     uniqueId: '93016983168',
@@ -10684,7 +11677,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '钮钴禄·梵克',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA5U_kjBS-ohl44q5ecQvPIHPpfikiOsQcxmfaBNBUk4s',
-    avatarUrl: '/avatars/6914522102624157710.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -336px',
   },
   '7271498872935940132': {
     uniqueId: '56983122299',
@@ -10693,7 +11687,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '伤心猪头',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAR6SW68IsJIVZ3VXW6FCh6VxUsjs_obieOoUeMMjADyYaTyxoZkUp4HILnk4uqXv3',
-    avatarUrl: '/avatars/7271498872935940132.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -896px',
   },
   '7642278282951393290': {
     uniqueId: 'buaichihu8866',
@@ -10702,7 +11697,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '叁叁在这里',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAOz-HAzna7U_7iLOwUkOIiqyWxMPJxwg-UL5wOU_SMvCNDVVDN2G8aweTj-Jqm9Av',
-    avatarUrl: '/avatars/7642278282951393290.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -1456px',
   },
   '6917576771864887303': {
     uniqueId: 'yogeeeee',
@@ -10711,7 +11707,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '超超YoGee',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA34PpPZzbxUajQnK793Mn6PzzVL3dNvuetHCIBLXE752tvSNELXP994Oh8FI93MR1',
-    avatarUrl: '/avatars/6917576771864887303.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -336px',
   },
   '7394760129347846180': {
     uniqueId: '27921304954',
@@ -10720,7 +11717,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '乐比悠悠',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAdyxdFmyAu57N70cJdAiUVupRuHHscCnFdfCK9gnm9E8qh8IqIg0jxhHfLn7fwplE',
-    avatarUrl: '/avatars/7394760129347846180.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-672px -1064px',
   },
   '7165759425105952805': {
     uniqueId: 'hyyyy_0926',
@@ -10729,7 +11727,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '暴躁女王',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAeOttBXQKA4pT3FBIcmWxqQVdTuFz3DQPMsCDpooL8_OUmpwaEovXMkB1NVZtiUpB',
-    avatarUrl: '/avatars/7165759425105952805.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -728px',
   },
   '7310544287022710820': {
     uniqueId: '48482123333',
@@ -10738,7 +11737,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '杨关关不是杨开开',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhkjRyCcPylqRi-OpHwPlbtuxXG_OfEbSv0lGFLDrTZY',
-    avatarUrl: '/avatars/7310544287022710820.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -896px',
   },
   '7313588079934062630': {
     uniqueId: 'wuyueoni186',
@@ -10747,7 +11747,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '五月欧尼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAXNZfRG0X1fuNUtxVtqydBp-K4gBXUFcwZLnEZ-l1iJ8',
-    avatarUrl: '/avatars/7313588079934062630.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1736px -896px',
   },
   '7082699737400344584': {
     uniqueId: 'fufuzi78689',
@@ -10756,7 +11757,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一种生物',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAta2yYDYsrloPG8W46-gZBsQs4YIHsnT8jFC9kUSmZNNBvyqIYgyALaE3qMQ7o1UV',
-    avatarUrl: '/avatars/7082699737400344584.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -560px',
   },
   '7562112583432405019': {
     uniqueId: '54812024801',
@@ -10765,7 +11767,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '嘉SURE',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAS0KCAmdXg2Xkp5Q_wWrr_0176NeBqrgj0v2rIKg7kbu9EfUQh4dZlGxYY6JBlVnB',
-    avatarUrl: '/avatars/7562112583432405019.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -1400px',
   },
   '7478202342546866202': {
     uniqueId: '74354443324',
@@ -10774,7 +11777,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '苦瓜大侠',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAuz0EUm4t6-fK40p788Kp0elt2KHcTw5q8vpp1zkb9fjzHQM43e0dn9Nms9mhoqjx',
-    avatarUrl: '/avatars/7478202342546866202.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1232px -1232px',
   },
   '6852519916994560008': {
     uniqueId: 'fjx5251314_',
@@ -10783,7 +11787,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '付四金',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAATaP-A56v6JyWxDRQo5imG6wsb1jIRCdaaFGITiNkEAo',
-    avatarUrl: '/avatars/6852519916994560008.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1624px -168px',
   },
   '7372988915457720357': {
     uniqueId: 'X0062600X',
@@ -10792,7 +11797,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小火车-',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEHrb5P5Pi99wEnP8HrQ7CUySgxy_Dpz4SWTjheOTL3M',
-    avatarUrl: '/avatars/7372988915457720357.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -1008px',
   },
   '7225567738645708837': {
     uniqueId: '170622neoooj',
@@ -10801,7 +11807,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '就不告诉你neoooj',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAASemcPEeWl41dPW4MFKbcUKRfBHvelUlWPJrVGD9UliM',
-    avatarUrl: '/avatars/7225567738645708837.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -784px',
   },
   '7377311525742051340': {
     uniqueId: '43021694587',
@@ -10810,7 +11817,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '椰汁-',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA0xwZlrp4HXqw_BO481XdTNe3PynsIZ3RfKb5kxILaSFAnur3goV58ZEGnd6cd7g_',
-    avatarUrl: '/avatars/7377311525742051340.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -1008px',
   },
   '6954140464308027422': {
     uniqueId: '',
@@ -10827,7 +11835,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '唐菇拉',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAIPjdHJzNNjSzHQY2RBgVtTRz7RL8tf0LXu9B7gbYqEs',
-    avatarUrl: '/avatars/6954140464308027422.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -392px',
   },
   '7553945753085804595': {
     uniqueId: '44815661308',
@@ -10836,7 +11845,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Ygritte。',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA88yasdNop6lPlrMKAN6pJB0Gkvh9LbQhMmm0bfK7X1NjR2P-Smn_nA8h2nQHuh2a',
-    avatarUrl: '/avatars/7553945753085804595.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -1400px',
   },
   '6870167979124850696': {
     uniqueId: '',
@@ -10853,7 +11863,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '全国知名小雪糕',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA9WNjGaJWTOis8nlmeetUOeUs5o_ixWJ2GsQrgfskEy0',
-    avatarUrl: '/avatars/6870167979124850696.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -280px',
   },
   '7404443763772227603': {
     uniqueId: '85779974784',
@@ -10862,7 +11873,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'LiLi',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAZCS45mrJI46imKFEg-vTP2vTvSvq7-p0cPmyWu7WYr9kMzpj2W3eNTwzCI5ZAa8D',
-    avatarUrl: '/avatars/7404443763772227603.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1568px -1064px',
   },
   '7306532497989304358': {
     uniqueId: '38686974769',
@@ -10871,7 +11883,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '淋酱鱼蛋',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAs2K33jFgbDfI8qYdWVwNfjUZQ-A6VB_wtC66cfP34WQ-sfAWEM4vp7FhnzsBogQW',
-    avatarUrl: '/avatars/7306532497989304358.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1456px -896px',
   },
   '7579913515436081202': {
     uniqueId: '63614201361',
@@ -10880,7 +11893,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '财经阿悦',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhJBJhRHBNwzIWNEiHEqzntj4mzyf1kcHdeKtwjUIaMObHOPTEKPCbmSgGgXqtxME',
-    avatarUrl: '/avatars/7579913515436081202.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -1400px',
   },
   '7233683588208656395': {
     uniqueId: '27980174463',
@@ -10889,7 +11903,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '绝云高高',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA3rABeGUXgBQ7SibAiOv9JB3MbzIE3ioD_fF-vtEgqdU',
-    avatarUrl: '/avatars/7233683588208656395.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -840px',
   },
   '7501206911333695526': {
     uniqueId: '53995390718',
@@ -10898,7 +11913,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小黄不吃屁',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAuSzgdITvTYM5BOhUO2iZyCackXkyFR2lPd2vaa0mEWo',
-    avatarUrl: '/avatars/7501206911333695526.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1064px -1288px',
   },
   '6867812505385697287': {
     uniqueId: 'maoyedeyucha',
@@ -10907,7 +11923,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '猫爷的渔场',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAArzi-enk8vOF6J4io3_2Lg9OL_DdkWNzarUymic-SWHur0FVnkcKE2AUIHeOfhUXr',
-    avatarUrl: '/avatars/6867812505385697287.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -224px',
   },
   '7423375352543576101': {
     uniqueId: '93092427849',
@@ -10916,7 +11933,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '快醒醒',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA26P64TXKQLHMyLKJ8ZMwFzEu8JGG_yE6ZNtEEdYXGEQ',
-    avatarUrl: '/avatars/7423375352543576101.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1288px -1120px',
   },
   '7619164309305688110': {
     uniqueId: '50019259765',
@@ -10925,7 +11943,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '攸加美学美妆颜究所',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6XS-db2U7Ppc4Oyoi0QlpRySEOJss6QIdizcIi6XIDMjOJM3SL_bHGLu-XUROgLD',
-    avatarUrl: '/avatars/7619164309305688110.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -1456px',
   },
   '6946776837691277326': {
     uniqueId: 'tt1321113689',
@@ -10934,7 +11953,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小猪佩甜w',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAJSwlrVOjB0pIZNKwXd1qSumMRuCruoDn4gZKFcTu8eE',
-    avatarUrl: '/avatars/6946776837691277326.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -392px',
   },
   '7379895602542444570': {
     uniqueId: '94351474654',
@@ -10943,7 +11963,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '伊莎贝丽',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAYMBSWORPC5rR6hJKRs2rPBAQI2AjaU5Dbe2XZVCX7qMLfd4Gf0_eknquG3iMZGtQ',
-    avatarUrl: '/avatars/7379895602542444570.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1904px -1008px',
   },
   '7009614478664794125': {
     uniqueId: 'zhenzhenya_001',
@@ -10952,7 +11973,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '这是阿贞呀',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAnkXWHZXr0OiTLmbsQDgWyyhdWVUOzc2Ja3AQn-0rhwo',
-    avatarUrl: '/avatars/7009614478664794125.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -448px',
   },
   '7375087151496560677': {
     uniqueId: '',
@@ -10969,7 +11991,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '发财兔兔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA4Nbd9FAh_REOs9qbqnKyTK-YxiRJXBgUDQMAEs5gnO4B2s1e74vWiA_I3Hg9huGh',
-    avatarUrl: '/avatars/7375087151496560677.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1512px -1008px',
   },
   '7171744585687760929': {
     uniqueId: 'JXSxiaolin',
@@ -10978,7 +12001,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '机械师 小林',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA_i6_-4ev2G4-ZyM4LOJ1k6eApNH56f_gmph_m-u6bvIpF5YCFdEUuuTh-R112LIf',
-    avatarUrl: '/avatars/7171744585687760929.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -728px',
   },
   '7444474835041779750': {
     uniqueId: '59488703640',
@@ -10987,7 +12011,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '机智羊',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAliOlqqRYV3Pr6t-z6TRaBnvj48MaITzbwjHLZ1ltwmBDGEn_yXgOlTeKYFOI2KeI',
-    avatarUrl: '/avatars/7444474835041779750.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-840px -1176px',
   },
   '7477977163065458726': {
     uniqueId: '22606473302',
@@ -10996,7 +12021,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '梅姨（49岁单身女性变美记）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA4p1DQL_ArtheczrewrndpW8748qGoTI60IRGKZTCM2MjMfBeERQzAU07vJACVHhu',
-    avatarUrl: '/avatars/7477977163065458726.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -1232px',
   },
   '7523163253858369574': {
     uniqueId: 'harry_nista',
@@ -11005,7 +12031,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '哈利 · 尼斯塔',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAgQbMZmZyxavGpq_vaw5JrhDtBZsDahpXER0Q5RIiqxsAt299_EIUrbHn2eKs4EI5',
-    avatarUrl: '/avatars/7523163253858369574.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-504px -1344px',
   },
   '7491970142453104659': {
     uniqueId: '38660853269',
@@ -11014,7 +12041,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '昏古七妮',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAjUpn48mB01VJ6uOQFZMwmLhCuYsRWj9v-uDJ7eluJHI',
-    avatarUrl: '/avatars/7491970142453104659.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -1288px',
   },
   '7230630523905769532': {
     uniqueId: '67900334080',
@@ -11023,7 +12051,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '甜酒疙瘩',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAACILHmvPamyus1BizbfdPn1UZcxeyXEciC0ZxjLPa2lzVL2POU-4vloW5UV1wMVTW',
-    avatarUrl: '/avatars/7230630523905769532.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1792px -784px',
   },
   '7521927678493442074': {
     uniqueId: 'DJcaijing',
@@ -11032,7 +12061,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大家财经',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA6prHUoYHt5lnlFQjw3NeftcAwF8-2BM3T_joodU-HMk',
-    avatarUrl: '/avatars/7521927678493442074.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -1344px',
   },
   '7338389174413688859': {
     uniqueId: '72396694730',
@@ -11041,7 +12071,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '羊圈战神',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAANykrG9oFOF9D8l9_6SNVNySxAmCa88_x2Nq1oyKSWiyfo-LbmbLG9ebhSiAbKj3Q',
-    avatarUrl: '/avatars/7338389174413688859.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -952px',
   },
   '6966837350437486600': {
     uniqueId: 'BeautyNana1995',
@@ -11050,7 +12081,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '美南子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAczI9nE0Mb8C158eeSx7VfDOrE-dsk5eh69YpnXVChNLOqbVsSqkxnIg904e7aiWF',
-    avatarUrl: '/avatars/6966837350437486600.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -392px',
   },
   '7389450722204450857': {
     uniqueId: '55709964379',
@@ -11059,7 +12091,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '165芒果崽',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAeJwCj_tekTUxGg7CmsOBmeVMiwLEF_yyl-8u6N44aTeXJ4xs8ZZHpus--42BZsFQ',
-    avatarUrl: '/avatars/7389450722204450857.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-280px -1064px',
   },
   '7145403097005686814': {
     uniqueId: '22985602776',
@@ -11068,7 +12101,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小猪咪子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAKA1eWS2E5biISLc0DzDLHa6dTj3CtK2uguXvwIHJ87YankBJlKIbUxzOpQuHfLhO',
-    avatarUrl: '/avatars/7145403097005686814.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -672px',
   },
   '7108648691107545096': {
     uniqueId: 'akuitenee',
@@ -11077,7 +12111,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '阿奎特妮（不戴美瞳版）',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEvL88lWaqKhibdR_6byR9D3VthhMqLTbfYGF5kP5V44',
-    avatarUrl: '/avatars/7108648691107545096.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1176px -616px',
   },
   '7384499015389282354': {
     uniqueId: '74236115947',
@@ -11086,7 +12121,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '汽车知识分享官H华歌',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAl-T5hC00gs9cG0AnDjIszgriEQnbozUW5saydh1GEnfDobmC1hajVUWcBCyihtmi',
-    avatarUrl: '/avatars/7384499015389282354.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -1008px',
   },
   '6989110050824388648': {
     uniqueId: '',
@@ -11103,7 +12139,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '栗子还不错哦',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA2apZiuGvsMsWnwz1ALXNaTsHH7dme43ULeJ3y8gZ157ESZ65Gn3X7IxijJThBX8D',
-    avatarUrl: '/avatars/6989110050824388648.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -392px',
   },
   '7126776900671766541': {
     uniqueId: 'Nabi_Luv',
@@ -11112,7 +12149,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '草莓味热带鱼',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzEDrhREGSZodtD2i_3NxpZfTBqCRtM5wTsU_68MqFJDNlY8ttMhwPOhxCSIbJVI8',
-    avatarUrl: '/avatars/7126776900671766541.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -672px',
   },
   '7517645700121755689': {
     uniqueId: '44174344813',
@@ -11121,7 +12159,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '懒兔🐰',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAHvpzoB27VKXeYiRwPj5GG4cT-LsglMr2ULUtkrv1DbN92ThC6vBt0fdvkh-vTaol',
-    avatarUrl: '/avatars/7517645700121755689.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-56px -1344px',
   },
   '7622873728568786950': {
     uniqueId: 'Lsy211216.',
@@ -11130,7 +12169,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '猪猪奶茶☕️',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAosvp0dX08afP7Nd84FgDDyWdfArNYnix2LW_fp4JRNY',
-    avatarUrl: '/avatars/7622873728568786950.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -1456px',
   },
   '7643891017566453803': {
     uniqueId: '92884751064',
@@ -11139,7 +12179,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '刘大顺',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA4ksVM-0r2CAPZWturdkNvG77YbxxupIZOp3TgyISRRT0P5weD37hr0uWgaR0FQts',
-    avatarUrl: '/avatars/7643891017566453803.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -1456px',
   },
   '6629657165550321672': {
     uniqueId: 'YiliaVIP',
@@ -11148,7 +12189,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '慧媛☀️',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAALyyFwv26krVdvTF40jkPhBvJ0ri2G5DHlvvf5U_y8qw',
-    avatarUrl: '/avatars/6629657165550321672.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-616px -0px',
   },
   '6629659329383366664': {
     uniqueId: 'xyh971117',
@@ -11157,7 +12199,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小熊燕和',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAATcNsDQ75hFZRKzJHHwfk6QUUAvWw6_whrHpg7Oy2uBE',
-    avatarUrl: '/avatars/6629659329383366664.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -0px',
   },
   '6870161077196308487': {
     uniqueId: 'zn20010419jay',
@@ -11166,7 +12209,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '宁痣宁Ning',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAYL2Ocm-_aWU3J1F5yd5BKGJwAPnehS21RmEGW4rxprg',
-    avatarUrl: '/avatars/6870161077196308487.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -224px',
   },
   '6970251174276497415': {
     uniqueId: '29864324258',
@@ -11175,7 +12219,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '绿子小姐姐在东京',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA31uYIDEUlVrBY56T0lwr3xl1WA7ASt-dT3gHCEd1XdsTY9-nrnIdB1YbbJMXzXdD',
-    avatarUrl: '/avatars/6970251174276497415.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1400px -392px',
   },
   '7082780757181071396': {
     uniqueId: 'yang01959',
@@ -11184,7 +12229,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '杨苏瑾.',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAawaREw2zLPFTVXvLM3NerqLYcD6rlRm2HJm-cyfhooOo92c3uj7L5U4vDXffOjN7',
-    avatarUrl: '/avatars/7082780757181071396.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -560px',
   },
   '7083750043223588894': {
     uniqueId: 'messihh',
@@ -11193,7 +12239,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '我是梅小姐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQcbF5Z9yyon_M_Y31VmP-EgUeLgBhg3p_TWnnlD0m2lcfZ5EjAAMqoJy9Sz1nJSz',
-    avatarUrl: '/avatars/7083750043223588894.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -560px',
   },
   '7088301145025675277': {
     uniqueId: '46896240607',
@@ -11202,7 +12249,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '吴小凡💓',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAzVFAtrjfoY-WumEHwwJYLByAADZfyIfC0xuZtgr61FI7hGtaKZm7U6XkBE0CVV6n',
-    avatarUrl: '/avatars/7088301145025675277.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-112px -616px',
   },
   '6925249131719950344': {
     uniqueId: 'kandaonb',
@@ -11211,7 +12259,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '李砍刀',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAEUJdtHnSOjfE0p4gwAXXJcLfnjGncWvdZ7OkEMQCDuM',
-    avatarUrl: '/avatars/6925249131719950344.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -336px',
   },
   '7119411277880885256': {
     uniqueId: '91318696364',
@@ -11220,7 +12269,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '菜籽油ya',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA1uT-K592CMt6WCz6BKiT8-CfsenWbogqepW9u_JGZoLDwTnCxfVN537ylmPt_ywk',
-    avatarUrl: '/avatars/7119411277880885256.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1848px -616px',
   },
   '7168151010106408967': {
     uniqueId: '22260149623',
@@ -11229,7 +12279,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Colour才才',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA9tqVE1iPk0YQ9hxYMZr4LnjDyJcUmB_d4YeW30X3ohjC95FOcfIFoXgoF-7ClFIf',
-    avatarUrl: '/avatars/7168151010106408967.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -728px',
   },
   '7125504289404878856': {
     uniqueId: 'lchsgdmn',
@@ -11238,7 +12289,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '高冷大小姐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAj3h5goUgCZZkoPwMGaKhLGCUmnFmK1-sr49brEkyRpVWHUery6DWzmEewLns1QEI',
-    avatarUrl: '/avatars/7125504289404878856.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -616px',
   },
   '7225493549234520122': {
     uniqueId: 'Hdan180101',
@@ -11247,7 +12299,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '全智咸',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAe3wxttipuLvdH_KX9eSIpHoTGhEEyOzO_IPwakp_IpE',
-    avatarUrl: '/avatars/7225493549234520122.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1344px -784px',
   },
   '6999769856300023845': {
     uniqueId: 'Xxxi7777777',
@@ -11256,7 +12309,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Xxxi',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAZ9haan2mUvSjkWHS5mkqLxC8Rtdnr_rjbIReTZz_Kdw',
-    avatarUrl: '/avatars/6999769856300023845.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -448px',
   },
   '7347746835873660963': {
     uniqueId: '50168277998',
@@ -11265,7 +12319,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '胖胖不胖',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAc_da9oBvQX66vjpjB6qMFpckx1Q7Z78ddW53gv1WEUqjNIrY3d581z9ALxodHnVV',
-    avatarUrl: '/avatars/7347746835873660963.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2072px -952px',
   },
   '7388788945506533387': {
     uniqueId: '46959464220',
@@ -11274,7 +12329,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '徐有劲',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA7EbhLxY5G6MgVI5kuz4vsY4B_lMU1Sx-_xbg8nGYF8lw8y6g7m2wExj89m-1BVKG',
-    avatarUrl: '/avatars/7388788945506533387.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -1064px',
   },
   '7203672555738267708': {
     uniqueId: 'JIZIFF',
@@ -11283,7 +12339,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '吉子范范',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAhBSehl_ysr6udftoZ3ByirdJYIidRxgEE8Ya4c1dLLTZUHYg4_QtYQ2gv1KelXHM',
-    avatarUrl: '/avatars/7203672555738267708.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2016px -728px',
   },
   '7055762888375402503': {
     uniqueId: 'Liyyyyyy78',
@@ -11292,7 +12349,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '玉玉玉子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAiSpyQStf_UulpWFZnj1iqIeyrZquXqkpSmLU8iytI7E',
-    avatarUrl: '/avatars/7055762888375402503.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1680px -504px',
   },
   '7421025537981677577': {
     uniqueId: 'xiaogoutang',
@@ -11301,7 +12359,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小狗糖🍬',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAjADNDeZJKKKAjtThuP6W7PmvctdyXVXdkgpGTHVQogAC6Tvg-ZitYT7YkpFiI9EB',
-    avatarUrl: '/avatars/7421025537981677577.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -1120px',
   },
   '7366797381657952282': {
     uniqueId: '69117918978',
@@ -11310,7 +12369,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '大肥圆子',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAArv-xae434o0-OMRcU3jXmSmgFDc_ctjUBPJDM3_rmhtFTgxOO6uFBAqwXxI6xsfE',
-    avatarUrl: '/avatars/7366797381657952282.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1008px -1008px',
   },
   '7237392556579881021': {
     uniqueId: '60842207219',
@@ -11319,7 +12379,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '美子姐姐',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAybR5B0CHzP6rv84-xllbxG6h8J8quG9I9hSqqOVz-wIBN0U_1Hco1k8EWHcY-TOp',
-    avatarUrl: '/avatars/7237392556579881021.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-392px -840px',
   },
   '7491886886907019273': {
     uniqueId: 'jiihooyuu8',
@@ -11328,7 +12389,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '快乐人',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAQNmBmJQKvrt6bEU7caXbmXjLR35SGL6e60MWgbwIaemLeW3wA6wgPVNMPFBRiFqa',
-    avatarUrl: '/avatars/7491886886907019273.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2184px -1232px',
   },
   '7613676332333187091': {
     uniqueId: 'SamChakBiz',
@@ -11337,7 +12399,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'Sam老师',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAPDZafSjJnIl7rktLvNkoW5yogr64Q7x6XeCAeSoJecNmLaI6cCqJPahkscBL-jli',
-    avatarUrl: '/avatars/7613676332333187091.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -1456px',
   },
   '7437020175645278246': {
     uniqueId: '36333162463',
@@ -11346,7 +12409,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '冰冰成长记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAgLRwM6Ny_jhdP2Y54ngoSPrHxVJDC_aC01X24C4Z7OteX8zRzIr46qSMkL7D6ClK',
-    avatarUrl: '/avatars/7437020175645278246.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-0px -1176px',
   },
   '7468536639497699354': {
     uniqueId: '75396296989',
@@ -11355,7 +12419,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '是icy姐哇！',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAVP3xNWQ0X7YyfCXE2Vde5WG719w55YGS_Ztatk4T5NJZkrMdqyzxMFLCaS9hc0F8',
-    avatarUrl: '/avatars/7468536639497699354.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-336px -1232px',
   },
   '7472277676380651558': {
     uniqueId: 'xiaominminhh',
@@ -11364,7 +12429,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '小包历险记',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAU4hBCrVWU47uZQWV6Gu62F0AbBOqPCGrr4PhMW2FXLut8xUACCgyqRJn1OT-1rR9',
-    avatarUrl: '/avatars/7472277676380651558.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -1232px',
   },
   '7548380885297397787': {
     uniqueId: 'isdaya',
@@ -11373,7 +12439,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '黄大亚',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAsyUvswJNr-KeMqz8LR0h9Fwp_7c2g3Ie98i5yItJxiAGSDfzZTIbOizIr_N4XHVj',
-    avatarUrl: '/avatars/7548380885297397787.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-2128px -1344px',
   },
   '7474606865008033801': {
     uniqueId: '92077635574',
@@ -11382,7 +12449,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '化妆师雪雪',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAr-ZDFHeFYC7uXVEuBImDgmZbXWFB6JsomZ7Lhf2BBQ5TbPNWFEsZARpOzVnVXZH_',
-    avatarUrl: '/avatars/7474606865008033801.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-728px -1232px',
   },
   '7413984242973016102': {
     uniqueId: 'chips628',
@@ -11391,7 +12459,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一棵薯条',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAXGhCg9P9P6jzS2oM2rICX_pf4IvRpHiowm-PDPHDDpiPSxLX5V7CLr9210lL1u5j',
-    avatarUrl: '/avatars/7413984242973016102.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-560px -1120px',
   },
   '7496718577098031140': {
     uniqueId: '89024710492',
@@ -11400,7 +12469,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '艺人化妆师余秀秀',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAFRfdc-Ivhwlr2I0hufo5a1fIKTAVGtwUBZ39_CRJ25k4mtmH2Viyp-b1h8T05jf8',
-    avatarUrl: '/avatars/7496718577098031140.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-784px -1288px',
   },
   '7477513673360015370': {
     uniqueId: 'yituo33',
@@ -11409,7 +12479,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '一陀三三',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAArOvkf9zOW37erwzZ2ZJRj0j0F9pRXHwNxZ2agAgc0IlWDMzSpKO9kk5rbrbPOqog',
-    avatarUrl: '/avatars/7477513673360015370.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1120px -1232px',
   },
   '7492870560716685338': {
     uniqueId: 'yoomakeup1',
@@ -11418,7 +12489,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '快乐小汪',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAAUlUrKSVu7HK68SU7SvHqPbWdUPS92L3Dg8C_LD1oV7Mm4lzTZLR69KtkZzhgCmo',
-    avatarUrl: '/avatars/7492870560716685338.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-168px -1288px',
   },
   '7487082394375880713': {
     uniqueId: '67269370419',
@@ -11427,7 +12499,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: 'momo2mass',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA0PByAoxnUWMOAYDMXwfA0BZHsSWIGZgXmSJeyXOG9nI',
-    avatarUrl: '/avatars/7487082394375880713.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-1960px -1232px',
   },
   '7530378150560137235': {
     uniqueId: 'M809497456',
@@ -11436,7 +12509,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '王yi',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAA8haq7w4qhMKQfaHN_K-LqCg5xm-2h4dT4bl-gN26E8_VGpbQF97jQTqTrJFlic-Y',
-    avatarUrl: '/avatars/7530378150560137235.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-952px -1344px',
   },
   '7235203035926888506': {
     uniqueId: '24053083157',
@@ -11445,7 +12519,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '平平无淇',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAATNFgZHyiZSihtZdfX4UwPScofKHSAJqFECNVCU1H83M4XVGQ8-hd72Fw2G0x34Ed',
-    avatarUrl: '/avatars/7235203035926888506.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-224px -840px',
   },
   '7602629066507681842': {
     uniqueId: 'yangyizi1215',
@@ -11454,7 +12529,8 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '杨意子_',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAb_nPGEO9ug0McO_hPS0fTgvxAB_mSEqaiP2cZevZ1Ts7Gnbf5KIkKVc9L1BX4-r8',
-    avatarUrl: '/avatars/7602629066507681842.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-448px -1456px',
   },
   '7498015236243324955': {
     uniqueId: '',
@@ -11471,6 +12547,7 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     nickName: '江酱桨',
     profileUrl:
       'https://www.douyin.com/user/MS4wLjABAAAAP_eT02m5ni30XKAMT2s2an6A3rgZvFZzPevpSd90MpA3BD03FrSRfsNpuB3Iqbyf',
-    avatarUrl: '/avatars/7498015236243324955.jpg',
+    avatarUrl: '/avatars/avatar-sprite.jpg',
+    avatarPosition: '-896px -1288px',
   },
 };

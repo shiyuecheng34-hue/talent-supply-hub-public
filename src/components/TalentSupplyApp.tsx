@@ -188,7 +188,18 @@ function TalentCard({
           rel="noreferrer"
           aria-label={`打开 ${name} 的抖音主页`}
         >
-          {douyin?.avatarUrl ? (
+          {douyin?.avatarPosition ? (
+            <span
+              className="avatar-sprite"
+              style={{
+                backgroundImage: `url(${douyin.avatarUrl})`,
+                backgroundPosition: douyin.avatarPosition,
+                backgroundSize: '2240px 1512px',
+              }}
+              role="img"
+              aria-label={`${name} 头像`}
+            />
+          ) : douyin?.avatarUrl ? (
             <img src={douyin.avatarUrl} alt={`${name} 头像`} />
           ) : (
             <span>{initials(name)}</span>
