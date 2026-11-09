@@ -9,7 +9,6 @@ import {
   ChevronRight,
   ExternalLink,
   Globe2,
-  Layers3,
   RefreshCw,
   Search,
   ShieldCheck,
@@ -21,7 +20,7 @@ import { useMemo, useState } from 'react';
 import { DataApplicationProvider } from './DataApplicationProvider';
 import { IpCampaignModule } from './IpCampaignModule';
 
-type ModuleKey = 'industry' | 'node' | 'ip' | 'team' | 'ai';
+import { ModuleBanner, type ModuleKey } from './ModuleBanner';
 type SourceOption = {
   id: string;
   label: string;
@@ -248,7 +247,9 @@ function LiveTalentModule({
   options,
   selected,
   onSelect,
+  onNavigate,
 }: {
+  onNavigate: (module: ModuleKey) => void;
   mode: 'industry' | 'node';
   options: SourceOption[];
   selected: string;
@@ -279,8 +280,11 @@ function LiveTalentModule({
   }, [query, rows]);
 
   return (
-    <section className="content-section enter">
-      <div className="section-heading">
+    <section className={`content-section enter ${isNode ? 'node-module' : ''}`}>
+      <div
+        className="section-heading"
+        id={isNode ? undefined : 'module-content'}
+      >
         <div>
           <span className="eyebrow">MODULE · {isNode ? '02' : '01'}</span>
           <h2>{isNode ? '节点精选达人' : '行业精选达人'}</h2>
@@ -346,54 +350,58 @@ function LiveTalentModule({
           刷新数据
         </button>
       </div>
-      {(sheet.status === 'idle' ||
-        (sheet.status === 'loading' && !sheet.data)) && (
-        <div className="card-grid">
-          {['a', 'b', 'c', 'd', 'e', 'f'].map(id => (
-            <div className="talent-card skeleton" key={id} />
-          ))}
-        </div>
-      )}
-      {sheet.status === 'error' && !hasRenderableData && (
-        <FeishuErrorPanel error={sheet.error} sourceUrl={sourceUrl} />
-      )}
-      {shouldUseSample && (
-        <div className="state-panel preview-panel">
-          <ShieldCheck size={18} />
-          <div>
-            <strong>本地样本预览</strong>
-            <p>
-              飞书实时数据暂不可用，当前展示前 100 位{isNode ? '节点' : '行业'}
-              样本，线上授权后会自动切回实时数据。
-            </p>
-          </div>
-        </div>
-      )}
-      {hasRenderableData && (
-        <>
-          <div className="result-line">
-            <span>优先展示前 100 位供给，当前匹配 {filtered.length} 位</span>
-            <span className="live-dot">
-              {shouldUseSample ? 'PREVIEW · 样本数据' : 'LIVE · 飞书同步'}
-            </span>
-          </div>
+      {isNode && <ModuleBanner module="node" onNavigate={onNavigate} />}
+      <div id={isNode ? 'module-content' : undefined}>
+        {(sheet.status === 'idle' ||
+          (sheet.status === 'loading' && !sheet.data)) && (
           <div className="card-grid">
-            {filtered.slice(0, 100).map(row => (
-              <TalentCard
-                key={`${current.id}-${text(row[headers.indexOf('达人星图id')])}`}
-                row={row}
-                headers={headers}
-                mode={mode}
-              />
+            {['a', 'b', 'c', 'd', 'e', 'f'].map(id => (
+              <div className="talent-card skeleton" key={id} />
             ))}
           </div>
-          {filtered.length === 0 && (
-            <div className="state-panel">
-              没有找到匹配的达人，换个关键词试试。
+        )}
+        {sheet.status === 'error' && !hasRenderableData && (
+          <FeishuErrorPanel error={sheet.error} sourceUrl={sourceUrl} />
+        )}
+        {shouldUseSample && (
+          <div className="state-panel preview-panel">
+            <ShieldCheck size={18} />
+            <div>
+              <strong>本地样本预览</strong>
+              <p>
+                飞书实时数据暂不可用，当前展示前 100 位
+                {isNode ? '节点' : '行业'}
+                样本，线上授权后会自动切回实时数据。
+              </p>
             </div>
-          )}
-        </>
-      )}
+          </div>
+        )}
+        {hasRenderableData && (
+          <>
+            <div className="result-line">
+              <span>优先展示前 100 位供给，当前匹配 {filtered.length} 位</span>
+              <span className="live-dot">
+                {shouldUseSample ? 'PREVIEW · 样本数据' : 'LIVE · 飞书同步'}
+              </span>
+            </div>
+            <div className="card-grid">
+              {filtered.slice(0, 100).map(row => (
+                <TalentCard
+                  key={`${current.id}-${text(row[headers.indexOf('达人星图id')])}`}
+                  row={row}
+                  headers={headers}
+                  mode={mode}
+                />
+              ))}
+            </div>
+            {filtered.length === 0 && (
+              <div className="state-panel">
+                没有找到匹配的达人，换个关键词试试。
+              </div>
+            )}
+          </>
+        )}
+      </div>
     </section>
   );
 }
@@ -418,7 +426,10 @@ function PendingModule({ module }: { module: ModuleKey }) {
   }[module as 'ip' | 'team' | 'ai'];
   const Icon = info.icon;
   return (
-    <section className="content-section enter pending-module">
+    <section
+      id="module-content"
+      className="content-section enter pending-module"
+    >
       <div className="pending-orb">
         <Icon size={40} />
       </div>
@@ -448,7 +459,6 @@ function App() {
   });
   const [industry, setIndustry] = useState(INDUSTRIES[0].id);
   const [node, setNode] = useState(NODES[3].id);
-  const totalIndustry = INDUSTRIES.reduce((sum, item) => sum + item.count, 0);
   return (
     <div className="app-shell">
       <aside className="sidebar">
@@ -487,70 +497,18 @@ function App() {
         </div>
       </aside>
       <main>
-        <header className="hero">
-          <div className="hero-grid" />
-          <div className="hero-copy">
-            <span className="hero-kicker">CURATED × TALENT SUPPLY</span>
-            <h1>
-              精选达人
-              <br />
-              <em>供给全景库</em>
-            </h1>
-            <p>
-              汇聚行业、节点、IP、达人团与 AI
-              小星五类供给，打造一站式达人发现与调用入口。
-            </p>
-            <div className="hero-actions">
-              <button onClick={() => setModule('industry')}>
-                <Search size={17} />
-                浏览行业达人
-              </button>
-              <button className="ghost" onClick={() => setModule('node')}>
-                <CalendarDays size={17} />
-                查看营销节点
-              </button>
-            </div>
-          </div>
-          <div className="radar">
-            <i />
-            <i />
-            <i />
-            <span />
-            <span />
-            <span />
-          </div>
-        </header>
-        <section className="overview">
-          <div className="overview-title">
-            <span className="eyebrow">SUPPLY · OVERVIEW</span>
-            <h2>五大供给模块</h2>
-            <p>行业与节点实时同步，IP 模块已接入 5 个秋冬重点合作企划。</p>
-          </div>
-          <div className="metric-strip">
-            <div>
-              <Globe2 />
-              <span>行业达人</span>
-              <strong>{totalIndustry.toLocaleString()}</strong>
-            </div>
-            <div>
-              <CalendarDays />
-              <span>营销节点</span>
-              <strong>4</strong>
-            </div>
-            <div>
-              <Layers3 />
-              <span>核心模块</span>
-              <strong>5</strong>
-            </div>
-            <div>
-              <ShieldCheck />
-              <span>数据状态</span>
-              <strong className="status-text">LIVE</strong>
-            </div>
-          </div>
-        </section>
+        <div className="module-topbar">
+          <span>
+            精选达人供给 / {MODULES.find(item => item.key === module)?.label}
+          </span>
+          <span>Talent Supply Hub</span>
+        </div>
+        {module !== 'node' && (
+          <ModuleBanner module={module} onNavigate={setModule} />
+        )}
         {module === 'industry' && (
           <LiveTalentModule
+            onNavigate={setModule}
             key={industry}
             mode="industry"
             options={INDUSTRIES}
@@ -560,6 +518,7 @@ function App() {
         )}
         {module === 'node' && (
           <LiveTalentModule
+            onNavigate={setModule}
             key={node}
             mode="node"
             options={NODES}
@@ -567,7 +526,11 @@ function App() {
             onSelect={setNode}
           />
         )}
-        {module === 'ip' && <IpCampaignModule />}
+        {module === 'ip' && (
+          <div id="module-content">
+            <IpCampaignModule />
+          </div>
+        )}
         {(module === 'team' || module === 'ai') && (
           <PendingModule module={module} />
         )}

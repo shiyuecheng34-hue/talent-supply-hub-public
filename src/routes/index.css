@@ -1265,3 +1265,25 @@ footer {
     flex-direction: column;
   }
 }
+
+/* 模块介绍与节点优先布局 */
+.module-topbar { display: flex; justify-content: space-between; gap: 16px; color: var(--muted); font-size: 12px; padding: 0 4px 20px; }
+.module-banner.hero { min-height: 280px; padding: 32px 36px; gap: 28px; margin-bottom: 28px; }
+.module-banner .hero-copy { flex: 1; }
+.module-banner h1 { font-size: clamp(28px, 3vw, 42px); line-height: 1.2; margin: 18px 0 12px; }
+.module-banner p { font-size: 14px; max-width: 640px; }
+.module-banner .hero-actions { margin-top: 20px; flex-wrap: wrap; }
+.module-decoration { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; flex: 0 0 180px; color: var(--cyan); padding: 28px 16px; border: 1px solid var(--line); border-radius: 24px; background: rgba(25, 114, 181, .12); }
+.module-decoration span { font-size: 12px; letter-spacing: .1em; }
+.banner-node .module-decoration { color: #44e1b8; border-radius: 50% 50% 20px 20px; }
+.banner-ip .module-decoration { color: #e4b7ff; transform: rotate(-3deg); background: rgba(155, 86, 230, .12); }
+.banner-team .module-decoration { color: #ffd798; background: rgba(211, 156, 64, .12); }
+.banner-ai .module-decoration { color: #a4afff; border-style: dashed; }
+.node-module > .section-heading { margin-top: 0; }
+.node-module > .module-banner { margin-top: 24px; }
+#module-content { scroll-margin-top: 24px; }
+@media (max-width: 760px) {
+  .module-banner.hero { padding: 24px; min-height: auto; }
+  .module-decoration { display: none; }
+  .module-topbar > :last-child { display: none; }
+}
