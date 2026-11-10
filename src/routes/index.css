@@ -1369,3 +1369,8 @@ footer {
   .ip-card.ip-game-card { padding-left: 20px; padding-right: 20px; }
   .ip-card.copper, .ip-card.mint { display: flex; }
 }
+
+/* 显式图框高度消除 grid 自动行对百分比图片高度的循环计算。 */
+.ip-card.copper, .ip-card.mint { container-type: inline-size; }
+.ip-gallery-03, .ip-gallery-04 { height: 56.25cqw; aspect-ratio: auto; }
+.ip-gallery-03 a { height: 100%; }
