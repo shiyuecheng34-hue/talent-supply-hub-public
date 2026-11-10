@@ -1,3 +1,6 @@
+import zhinvAvatar from '../assets/zhinv-avatar.jpg';
+import { supplementalAvatarIds } from './avatarSupplement';
+
 export type DouyinAvatarRecord = {
   uniqueId: string;
   shortId: string;
@@ -17,7 +20,9 @@ export const douyinAvatarMeta = {
   scope: '行业与节点板块每个分组前 100 位达人',
   matched: 1292,
   requested: 1297,
-  avatarsMatched: 1096,
+  avatarsMatched: 1253,
+  localAvatars: 1250,
+  unresolvedAvatars: 42,
   note: '头像通过抖音用户信息接口按 unique_id / short_id 获取；抓取失败时页面展示姓名首字 fallback。',
 } as const;
 
@@ -12551,3 +12556,15 @@ export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
     avatarPosition: '-896px -1288px',
   },
 };
+
+// 只补入已下载且通过身份字段校验的空缺，不重建原映射。
+supplementalAvatarIds.forEach((id, index) => {
+  const record = douyinAvatarMap[id];
+  if (record && !record.avatarPosition) {
+    record.avatarUrl = '/avatars/avatar-sprite.jpg';
+    record.avatarPosition = `-${(index % 40) * 56}px -${1512 + Math.floor(index / 40) * 56}px`;
+  }
+});
+douyinAvatarMap['6870163473385390093'].avatarUrl = zhinvAvatar;
+douyinAvatarMap['6870163473385390093'].profileUrl =
+  'https://www.douyin.com/user/MS4wLjABAAAAhAIMHZRI61dC4eivwuT99LAKz3VCH2P7u0RsvOQin7w';

@@ -167,7 +167,8 @@ function TalentCard({
   const score = mode === 'node' ? text(get('节点推荐分')) : '';
   const middlePrice = compactPrice(get('抖音21-60s长视频报价(元)'));
   const longPrice = compactPrice(get('抖音60s以上视频报价(元)'));
-  const id = text(get('达人星图id'));
+  // 字符串 ID 保留全部精度，仅清理空白及表格常见的 .0 后缀。
+  const id = text(get('达人星图id')).trim().replace(/\.0+$/, '');
   const profile =
     id !== '-' ? `https://www.xingtu.cn/ad/creator/author/douyin/${id}` : '#';
   const douyin = douyinAvatarMap[id];
@@ -193,7 +194,7 @@ function TalentCard({
               style={{
                 backgroundImage: `url(${douyin.avatarUrl})`,
                 backgroundPosition: douyin.avatarPosition,
-                backgroundSize: '2240px 1512px',
+                backgroundSize: '2240px 1792px',
               }}
               role="img"
               aria-label={`${name} 头像`}
@@ -255,7 +256,14 @@ function LiveTalentModule({
   selected: string;
   onSelect: (id: string) => void;
 }) {
-  const [query, setQuery] = useState('');
+  const previewSample =
+    typeof window !== 'undefined' &&
+    new URLSearchParams(window.location.search).get('preview') === 'sample';
+  const [query, setQuery] = useState(() =>
+    previewSample
+      ? new URLSearchParams(window.location.search).get('q') || ''
+      : '',
+  );
   const current = options.find(item => item.id === selected) ?? options[0];
   const isNode = mode === 'node';
   const sourceUrl = `${isNode ? NODE_URL : INDUSTRY_URL}?sheet=${current.sheetId}`;
@@ -264,7 +272,8 @@ function LiveTalentModule({
     range: isNode ? 'A1:AN101' : 'A1:AC101',
   });
   const sample = isNode ? nodeSamples[current.id] : industrySamples[current.id];
-  const shouldUseSample = !sheet.data && sheet.status === 'error' && sample;
+  const shouldUseSample =
+    sample && (previewSample || (!sheet.data && sheet.status === 'error'));
   const values = shouldUseSample
     ? [sample.headers, ...sample.rows]
     : sheet.data?.rawValues;

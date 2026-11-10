@@ -9,6 +9,7 @@ import gameImage2 from '../assets/BQtTQrSAFiZLlHhzpRqSqjrvPvwEXyDwzLAKxyeD.png';
 import gameImage4 from '../assets/FeoyMOgHtHwYzCbSvfUKqpJLiGprWHIKjHEkesaI.png';
 import gameImage6 from '../assets/KTdxMVreywAVbrUwryTOnHLedHBlzOMGxnleGIhG.png';
 import gameImage5 from '../assets/ZDbYINuWBnILpgzpgukAfFmcbyfknrFcJzpztFud.png';
+import autumnBeautyImage from '../assets/autumn-beauty.png';
 import autumnEmotionsImage from '../assets/autumn-emotions.png';
 import gameImage3 from '../assets/prdUtYPbmvkttqLOyeQnpeTuhNrazLHTXoeVXseh.png';
 import gameImage1 from '../assets/xlhUUtKDFDOAwnbmKASGEEymUUYByYmKCdWHsqvp.png';
@@ -194,6 +195,16 @@ const CAMPAIGNS: IpCampaign[] = [
 ];
 
 export function IpCampaignModule() {
+  const preview =
+    typeof window === 'undefined'
+      ? null
+      : new URLSearchParams(window.location.search).get('ipPreview');
+  const campaigns =
+    preview === 'beauty'
+      ? CAMPAIGNS.filter(c => c.index === '05')
+      : preview === 'home'
+        ? CAMPAIGNS.filter(c => c.index === '03' || c.index === '04')
+        : CAMPAIGNS;
   return (
     <section className="content-section enter ip-module">
       <div className="section-heading ip-heading">
@@ -209,7 +220,7 @@ export function IpCampaignModule() {
         </div>
       </div>
       <div className="ip-grid">
-        {CAMPAIGNS.map(campaign => (
+        {campaigns.map(campaign => (
           <article
             className={`ip-card ${campaign.tone}${campaign.index === '02' ? ' ip-game-card' : ''}`}
             key={campaign.index}
@@ -219,16 +230,24 @@ export function IpCampaignModule() {
               <span className="ip-industry">{campaign.industry}</span>
             </div>
             <h3>{campaign.title}</h3>
-            {campaign.index === '01' && (
+            {(campaign.index === '01' || campaign.index === '05') && (
               <a
-                href={autumnEmotionsImage}
+                href={
+                  campaign.index === '01'
+                    ? autumnEmotionsImage
+                    : autumnBeautyImage
+                }
                 target="_blank"
                 rel="noreferrer"
-                aria-label="查看入秋情绪图鉴完整展示图"
+                aria-label={`查看${campaign.title}完整展示图`}
               >
                 <img
-                  src={autumnEmotionsImage}
-                  alt="日化行业入秋情绪图鉴活动展示图"
+                  src={
+                    campaign.index === '01'
+                      ? autumnEmotionsImage
+                      : autumnBeautyImage
+                  }
+                  alt={`${campaign.industry}${campaign.title}活动展示图`}
                   style={{
                     width: '100%',
                     height: 'auto',
