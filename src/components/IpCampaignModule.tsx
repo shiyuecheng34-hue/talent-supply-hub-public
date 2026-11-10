@@ -5,14 +5,14 @@ import {
   Sparkles,
   UsersRound,
 } from 'lucide-react';
-import gameImage2 from '../assets/BQtTQrSAFiZLlHhzpRqSqjrvPvwEXyDwzLAKxyeD.png';
-import gameImage4 from '../assets/FeoyMOgHtHwYzCbSvfUKqpJLiGprWHIKjHEkesaI.png';
-import gameImage6 from '../assets/KTdxMVreywAVbrUwryTOnHLedHBlzOMGxnleGIhG.png';
-import gameImage5 from '../assets/ZDbYINuWBnILpgzpgukAfFmcbyfknrFcJzpztFud.png';
 import autumnBeautyImage from '../assets/autumn-beauty.png';
 import autumnEmotionsImage from '../assets/autumn-emotions.png';
-import gameImage3 from '../assets/prdUtYPbmvkttqLOyeQnpeTuhNrazLHTXoeVXseh.png';
-import gameImage1 from '../assets/xlhUUtKDFDOAwnbmKASGEEymUUYByYmKCdWHsqvp.png';
+import gameImage1 from '../assets/game-poster-1.jpg';
+import gameImage2 from '../assets/game-poster-2.jpg';
+import gameImage3 from '../assets/game-poster-3.jpg';
+import gameImage4 from '../assets/game-poster-4.jpg';
+import gameImage5 from '../assets/game-poster-5.jpg';
+import gameImage6 from '../assets/game-poster-6.jpg';
 
 import homeImage from '../assets/XJtIMkuowNpPIBrpSYoEOSvSODiZFCvpEmvmlnxI.png';
 import q4Image4 from '../assets/cmsLHnGlZkFuKWeFNgwRDAUiLqaAUPWIrLmtlvTT.png';
