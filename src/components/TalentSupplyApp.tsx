@@ -1,6 +1,7 @@
 import { douyinAvatarMap } from '@/data/douyinAvatarMap';
 import { industrySamples } from '@/data/industrySamples';
 import { nodeSamples } from '@/data/nodeSamples';
+import { shuffleNodeRows } from '@/lib/shuffleNodeRows';
 import { useFeishuSheetRange } from '@aeolus/feishu-table-sdk';
 import {
   ArrowUpRight,
@@ -16,7 +17,8 @@ import {
   Star,
   UsersRound,
 } from 'lucide-react';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { AgencyModule } from './AgencyModule';
 import { DataApplicationProvider } from './DataApplicationProvider';
 import { IpCampaignModule } from './IpCampaignModule';
 
@@ -84,7 +86,12 @@ const MODULES = [
     desc: '组合式供给',
     icon: UsersRound,
   },
-  { key: 'ai' as const, label: 'AI 小星', desc: '智能推荐助手', icon: Bot },
+  {
+    key: 'ai' as const,
+    label: '代理商使用模块',
+    desc: '代理商重点 · 千川代理商',
+    icon: Bot,
+  },
 ];
 
 const INDUSTRY_URL =
@@ -249,7 +256,9 @@ function LiveTalentModule({
   selected,
   onSelect,
   onNavigate,
+  previousNodeFirst,
 }: {
+  previousNodeFirst?: { current: string | null };
   onNavigate: (module: ModuleKey) => void;
   mode: 'industry' | 'node';
   options: SourceOption[];
@@ -279,7 +288,24 @@ function LiveTalentModule({
     : sheet.data?.rawValues;
   const hasRenderableData = Boolean(values?.length);
   const headers = useMemo(() => (values?.[0] ?? []).map(text), [values]);
-  const rows = useMemo(() => (values?.slice(1) ?? []) as unknown[][], [values]);
+  const [shuffleSeed] = useState(() => Math.floor(Math.random() * 4294967296));
+  const [previousFirst] = useState(() => previousNodeFirst?.current ?? null);
+  const rows = useMemo(() => {
+    const sourceRows = (values?.slice(1) ?? []) as unknown[][];
+    if (!isNode) return sourceRows;
+    const idIndex = headers.indexOf('达人星图id');
+    return shuffleNodeRows(
+      sourceRows,
+      shuffleSeed,
+      row => text(row[idIndex]),
+      previousFirst,
+    );
+  }, [values, isNode, headers, shuffleSeed, previousFirst]);
+  useEffect(() => {
+    if (isNode && rows.length && previousNodeFirst) {
+      previousNodeFirst.current = text(rows[0][headers.indexOf('达人星图id')]);
+    }
+  }, [isNode, rows, headers, previousNodeFirst]);
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
     if (!needle) return rows;
@@ -428,8 +454,8 @@ function PendingModule({ module }: { module: ModuleKey }) {
       icon: UsersRound,
     },
     ai: {
-      title: 'AI 小星',
-      text: '基于目标行业、预算和营销节点，智能生成达人推荐清单。',
+      title: '代理商使用模块',
+      text: '代理商重点与千川代理商供给入口。',
       icon: Bot,
     },
   }[module as 'ip' | 'team' | 'ai'];
@@ -467,6 +493,7 @@ function App() {
       : 'industry';
   });
   const [industry, setIndustry] = useState(INDUSTRIES[0].id);
+  const previousNodeFirst = useRef<string | null>(null);
   const [node, setNode] = useState(NODES[3].id);
   return (
     <div className="app-shell">
@@ -501,8 +528,14 @@ function App() {
         </nav>
         <div className="sidebar-foot">
           <span>数据源</span>
-          <strong>飞书表格 · 实时同步</strong>
-          <small>最后刷新以页面载入时间为准</small>
+          <strong>
+            {module === 'ai' ? '风神图表 · 静态快照' : '飞书表格 · 实时同步'}
+          </strong>
+          <small>
+            {module === 'ai'
+              ? '快照导出：2026-11-10 19:07 CST'
+              : '最后刷新以页面载入时间为准'}
+          </small>
         </div>
       </aside>
       <main>
@@ -530,6 +563,7 @@ function App() {
             onNavigate={setModule}
             key={node}
             mode="node"
+            previousNodeFirst={previousNodeFirst}
             options={NODES}
             selected={node}
             onSelect={setNode}
@@ -540,9 +574,8 @@ function App() {
             <IpCampaignModule />
           </div>
         )}
-        {(module === 'team' || module === 'ai') && (
-          <PendingModule module={module} />
-        )}
+        {module === 'team' && <PendingModule module={module} />}
+        {module === 'ai' && <AgencyModule />}
         <footer>
           <span>精选达人供给库 v1.0 · Powered by 飞书数据</span>
           <span>© 2026 Talent Supply</span>

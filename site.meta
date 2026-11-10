@@ -1,8 +1,9 @@
 {
   "app_name": "精选达人供给库",
-  "app_description": "行业、节点、IP、达人团、AI小星五类精选达人供给的一站式浏览与检索页面",
+  "app_description": "行业、节点、IP、达人团、代理商使用模块五类精选达人供给的一站式浏览与检索页面",
   "capabilities": ["access_control"],
   "datasources": {
+    "agency-priorities": {"provider":"aeolus.chart","uri":"https://data.bytedance.net/aeolus/pages/dataQuery?rid=19913768"},
     "industry-beauty": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=0OYgsp"},
     "industry-food": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=1RZNHB"},
     "industry-fashion": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=2JBIVb"},

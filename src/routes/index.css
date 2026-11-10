@@ -920,8 +920,8 @@ main {
   transform: translateY(-3px);
 }
 .ip-card.rose {
-  grid-column: 1 / -1;
-  min-height: 330px;
+  grid-column: 1;
+  min-height: 360px;
 }
 .ip-card.violet {
   --ip-accent: #a88cf7;

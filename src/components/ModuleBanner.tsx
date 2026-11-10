@@ -55,15 +55,15 @@ const introductions = {
     detail: '场景化达人矩阵',
   },
   ai: {
-    kicker: 'AI ASSISTANT · 智能灵感',
-    title: 'AI 小星，探索选人新方式',
+    kicker: 'AGENCY · 代理商供给',
+    title: '代理商使用模块',
     description:
-      '面向行业、预算与营销节点的智能推荐助手，推荐能力待接入，可先浏览现有达人供给。',
-    action: '了解 AI 小星',
+      '代理商重点：在原图表限定达人范围内筛选；千川代理商：直达整体底池与未变现分析入口。',
+    action: '查看代理商重点',
     secondary: '浏览现有供给',
     target: 'industry',
     icon: Bot,
-    detail: '智能推荐方向',
+    detail: '重点达人 · 千川代理商',
   },
 } as const;
 
@@ -94,9 +94,11 @@ export function ModuleBanner({
             <ArrowDown size={17} />
             {info.action}
           </button>
-          <button className="ghost" onClick={() => onNavigate(info.target)}>
-            {info.secondary}
-          </button>
+          {module !== 'ip' && module !== 'ai' && (
+            <button className="ghost" onClick={() => onNavigate(info.target)}>
+              {info.secondary}
+            </button>
+          )}
         </div>
       </div>
       <div className="module-decoration" aria-hidden="true">
