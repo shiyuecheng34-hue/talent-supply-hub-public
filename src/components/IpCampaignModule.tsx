@@ -37,6 +37,7 @@ function CampaignGallery({ campaign }: { campaign: IpCampaign }) {
   if (!images) return null;
   return (
     <div
+      id={`ip-gallery-${campaign.index}`}
       className={`ip-campaign-gallery ip-gallery-${campaign.index}`}
       aria-label={`${campaign.industry}企划展示图`}
     >
