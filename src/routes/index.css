@@ -1288,15 +1288,23 @@ footer {
   .module-topbar > :last-child { display: none; }
 }
 
-/* Only the game card: keep the screenshot's 384px frame, independent of its taller neighbour. */
+/* 最新需求：日化 / 游戏外框共用网格行高，不再将游戏独立锁定为 384px。 */
+.ip-card.amber,
 .ip-card.ip-game-card {
-  height: 384px;
-  min-height: 384px;
-  max-height: 384px;
-  align-self: start;
-  min-width: 0;
-  padding: 14px;
+  height: auto;
+  max-height: none;
+  align-self: stretch;
 }
+.ip-card.ip-game-card {
+  min-height: 384px;
+  min-width: 0;
+  padding: 24px;
+}
+@media (min-width: 821px) {
+  .ip-card.amber, .ip-card.ip-game-card { min-height: 700px; }
+}
+/* 单张卡片 hover 不再让同一行边框上下错开。 */
+.ip-card.amber:hover, .ip-card.ip-game-card:hover { transform: none; }
 .ip-game-card > :not(.ip-gallery-02) { flex-shrink: 0; }
 .ip-game-card h3 { max-width: 100%; margin: 6px 0 4px; font-size: 20px; }
 .ip-game-card .ip-summary-copy { min-height: 0; line-height: 1.5; }
@@ -1313,7 +1321,7 @@ footer {
   grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: 4px;
   flex: 1 1 0;
-  min-height: 0;
+  min-height: 180px;
   margin-top: 6px;
 }
 .ip-gallery-02 a { min-width: 0; min-height: 0; border-radius: 5px; background: rgba(1, 16, 37, .25); }
@@ -1345,7 +1353,7 @@ footer {
 /* The single full-ratio image determines this row; Q4 fills the same row height. */
 .ip-gallery-03 { flex-shrink: 0; }
 
-/* 对齐截图的左右内容边界，但游戏卡片高度及 2×3 网格保持原值。 */
+/* 保持截图的左右内容内边距；外框高度由共享网格行决定。 */
 .ip-card.ip-game-card { padding-left: 24px; padding-right: 24px; padding-top: 24px; }
 /* 家居 / Q4 共用内容行及 16:9 图框；四图完整 contain，不裁切。 */
 .ip-card.copper, .ip-card.mint {

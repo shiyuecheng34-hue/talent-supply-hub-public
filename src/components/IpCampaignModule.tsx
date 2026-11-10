@@ -202,9 +202,11 @@ export function IpCampaignModule() {
   const campaigns =
     preview === 'beauty'
       ? CAMPAIGNS.filter(c => c.index === '05')
-      : preview === 'home'
-        ? CAMPAIGNS.filter(c => c.index === '03' || c.index === '04')
-        : CAMPAIGNS;
+      : preview === 'first'
+        ? CAMPAIGNS.filter(c => c.index === '01' || c.index === '02')
+        : preview === 'home'
+          ? CAMPAIGNS.filter(c => c.index === '03' || c.index === '04')
+          : CAMPAIGNS;
   return (
     <section className="content-section enter ip-module">
       <div className="section-heading ip-heading">
