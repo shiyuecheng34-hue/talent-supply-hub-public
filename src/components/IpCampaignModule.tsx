@@ -5,7 +5,58 @@ import {
   Sparkles,
   UsersRound,
 } from 'lucide-react';
+import gameImage2 from '../assets/BQtTQrSAFiZLlHhzpRqSqjrvPvwEXyDwzLAKxyeD.png';
+import gameImage4 from '../assets/FeoyMOgHtHwYzCbSvfUKqpJLiGprWHIKjHEkesaI.png';
+import gameImage6 from '../assets/KTdxMVreywAVbrUwryTOnHLedHBlzOMGxnleGIhG.png';
+import gameImage5 from '../assets/ZDbYINuWBnILpgzpgukAfFmcbyfknrFcJzpztFud.png';
 import autumnEmotionsImage from '../assets/autumn-emotions.png';
+import gameImage3 from '../assets/prdUtYPbmvkttqLOyeQnpeTuhNrazLHTXoeVXseh.png';
+import gameImage1 from '../assets/xlhUUtKDFDOAwnbmKASGEEymUUYByYmKCdWHsqvp.png';
+
+import homeImage from '../assets/XJtIMkuowNpPIBrpSYoEOSvSODiZFCvpEmvmlnxI.png';
+import q4Image4 from '../assets/cmsLHnGlZkFuKWeFNgwRDAUiLqaAUPWIrLmtlvTT.png';
+import q4Image2 from '../assets/fIhHpwuYeMgWphuTatktEfEsBjkuKbnBHzrJnprO.png';
+import q4Image3 from '../assets/iLQXCkAlgyFnzmlaVgaPjBxFWqIRadlKJoDLmfBC.png';
+import q4Image1 from '../assets/kNYShsdOiBKkobykZECUHhOvZKZThNbwbdQMtzRT.png';
+
+const CAMPAIGN_IMAGES: Record<string, string[]> = {
+  '02': [
+    gameImage1,
+    gameImage2,
+    gameImage3,
+    gameImage4,
+    gameImage5,
+    gameImage6,
+  ],
+  '03': [homeImage],
+  '04': [q4Image1, q4Image2, q4Image3, q4Image4],
+};
+
+function CampaignGallery({ campaign }: { campaign: IpCampaign }) {
+  const images = CAMPAIGN_IMAGES[campaign.index];
+  if (!images) return null;
+  return (
+    <div
+      className={`ip-campaign-gallery ip-gallery-${campaign.index}`}
+      aria-label={`${campaign.industry}企划展示图`}
+    >
+      {images.map((image, index) => (
+        <a
+          href={image}
+          key={image}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`查看${campaign.industry}合作企划第${index + 1}张原图`}
+        >
+          <img
+            src={image}
+            alt={`${campaign.industry}合作企划展示图 ${index + 1}`}
+          />
+        </a>
+      ))}
+    </div>
+  );
+}
 
 type CampaignLink = {
   label: string;
@@ -158,7 +209,10 @@ export function IpCampaignModule() {
       </div>
       <div className="ip-grid">
         {CAMPAIGNS.map(campaign => (
-          <article className={`ip-card ${campaign.tone}`} key={campaign.index}>
+          <article
+            className={`ip-card ${campaign.tone}${campaign.index === '02' ? ' ip-game-card' : ''}`}
+            key={campaign.index}
+          >
             <div className="ip-card-head">
               <span className="ip-index">{campaign.index}</span>
               <span className="ip-industry">{campaign.industry}</span>
@@ -211,6 +265,7 @@ export function IpCampaignModule() {
                 ))}
               </ul>
             </div>
+            <CampaignGallery campaign={campaign} />
             <div className="ip-links">
               {campaign.links.map(link => (
                 <a

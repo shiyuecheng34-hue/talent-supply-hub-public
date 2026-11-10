@@ -1287,3 +1287,57 @@ footer {
   .module-decoration { display: none; }
   .module-topbar > :last-child { display: none; }
 }
+
+/* Only the game card: keep the screenshot's 384px frame, independent of its taller neighbour. */
+.ip-card.ip-game-card {
+  height: 384px;
+  min-height: 384px;
+  max-height: 384px;
+  align-self: start;
+  min-width: 0;
+  padding: 14px;
+}
+.ip-game-card > :not(.ip-gallery-02) { flex-shrink: 0; }
+.ip-game-card h3 { max-width: 100%; margin: 6px 0 4px; font-size: 20px; }
+.ip-game-card .ip-summary-copy { min-height: 0; line-height: 1.5; }
+.ip-game-card .ip-facts { margin: 6px 0; gap: 6px; grid-template-columns: 1fr 1fr; }
+.ip-game-card .ip-facts > div { min-width: 0; gap: 5px; padding: 6px; }
+.ip-game-card .ip-facts span { min-width: 0; overflow-wrap: anywhere; }
+.ip-game-card .ip-benefits ul { margin-top: 4px; gap: 4px; }
+.ip-game-card .ip-benefits li { padding: 3px 5px; }
+.ip-game-card .ip-links { margin-top: 0; padding-top: 6px; }
+.ip-game-card .ip-links a { padding: 6px 9px; }
+.ip-gallery-02 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+  flex: 1 1 0;
+  min-height: 0;
+  margin-top: 6px;
+}
+.ip-gallery-02 a { min-width: 0; min-height: 0; border-radius: 5px; background: rgba(1, 16, 37, .25); }
+.ip-gallery-02 img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.ip-gallery-02 a:focus-visible { outline: 2px solid var(--ip-accent); outline-offset: 1px; }
+@media (max-width: 540px) {
+  .ip-game-card h3 { font-size: 18px; }
+  .ip-game-card .ip-summary-copy { font-size: 11px; }
+}
+
+.ip-campaign-gallery a { display: block; min-width: 0; min-height: 0; border-radius: 6px; background: rgba(1, 16, 37, .25); }
+.ip-campaign-gallery img { display: block; width: 100%; object-fit: contain; }
+.ip-campaign-gallery a:focus-visible { outline: 2px solid var(--ip-accent); outline-offset: 2px; }
+.ip-gallery-03 { margin-top: 16px; }
+.ip-gallery-03 img { height: auto; border-radius: 6px; }
+.ip-gallery-04 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 16px;
+  height: 0;
+  min-height: 180px;
+  flex: 1 1 auto;
+}
+.ip-gallery-04 img { height: 100%; }
+.ip-card.mint > :not(.ip-gallery-04) { flex-shrink: 0; }
