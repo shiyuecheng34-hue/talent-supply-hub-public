@@ -58,7 +58,7 @@ const introductions = {
     kicker: 'AGENCY · 代理商供给',
     title: '代理商使用模块',
     description:
-      '代理商重点：在原图表限定达人范围内筛选；千川代理商：直达整体底池与未变现分析入口。',
+      '代理商重点：在原图表限定达人范围内筛选；千川代理商：查看整体底池与千川代理关注变现两组真实达人列表。',
     action: '查看代理商重点',
     secondary: '浏览现有供给',
     target: 'industry',

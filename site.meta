@@ -3,6 +3,8 @@
   "app_description": "行业、节点、IP、达人团、代理商使用模块五类精选达人供给的一站式浏览与检索页面",
   "capabilities": ["access_control"],
   "datasources": {
+    "qianchuan-overall":{"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/Vdvls4mgshxZ8AtWHOWcGbQTn3c?sheet=6ba567"},
+    "qianchuan-monetization":{"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/KR2ZsG8AyhhMgStbxpecPn2unk7?sheet=4d254b"},
     "agency-priorities": {"provider":"aeolus.chart","uri":"https://data.bytedance.net/aeolus/pages/dataQuery?rid=19913768"},
     "industry-beauty": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=0OYgsp"},
     "industry-food": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=1RZNHB"},

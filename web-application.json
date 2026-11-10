@@ -4,6 +4,18 @@
   "needAuth": true,
   "feishuResourceBindings": [
     {
+      "bindingId": "qianchuan-overall",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "Vdvls4mgshxZ8AtWHOWcGbQTn3c",
+      "sheetId": "6ba567"
+    },
+    {
+      "bindingId": "qianchuan-monetization",
+      "resourceType": "sheetRange",
+      "spreadsheetToken": "KR2ZsG8AyhhMgStbxpecPn2unk7",
+      "sheetId": "4d254b"
+    },
+    {
       "bindingId": "industry-beauty",
       "resourceType": "sheetRange",
       "spreadsheetToken": "ShwKsQe36hxTiTtEF0Dc4W4cnPe",

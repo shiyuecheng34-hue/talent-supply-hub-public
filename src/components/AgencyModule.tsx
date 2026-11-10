@@ -4,16 +4,7 @@ import { useMemo, useState } from 'react';
 import { AgencyAvatar } from './AgencyAvatar';
 import { AgencyPager } from './AgencyPager';
 
-const entries = [
-  {
-    title: '整体底池',
-    url: 'https://mmm.bytedance.net/apps/bi/new-analyze?v=5gklF%2F05tHoEtfBmb5Mvx1GXlKCjKEllV1AWviXAAK5xmHBVXvCHypuzjGUjahX1',
-  },
-  {
-    title: '千川代理未变现',
-    url: 'https://mmm.bytedance.net/apps/bi/new-analyze?v=5gklF%2F05tHoEtfBmb5MvxzIyoPCYPYJIBygikB6s5tFbIJZrC7J17LHZYdOVjSXQ',
-  },
-];
+import { QianchuanLists } from './QianchuanLists';
 const fields = [
   { key: 'industry', label: '行业' },
   { key: 'fans', label: '粉丝量级' },
@@ -41,29 +32,6 @@ export function AgencyModule() {
   return (
     <div id="module-content" className="enter">
       <section className="content-section">
-        <span className="eyebrow">A · AGENCY PRIORITIES</span>
-        <h2>代理商重点</h2>
-        <p>静态快照 · 非实时 · 导出于 {snapshot.meta.exportedAt}</p>
-        <p>
-          原图表「代理P0关注」：保留 p_date 最近有数日（data_days，偏移 0）与{' '}
-          {snapshot.meta.whitelistCount.toLocaleString()} 个达人 ID
-          白名单。元信息最新分区：{snapshot.meta.partitionMax}。
-        </p>
-        <p>
-          完整导出 {snapshot.meta.rowCount.toLocaleString()} 条 /{' '}
-          {snapshot.meta.uniqueIds.toLocaleString()}{' '}
-          位达人，未触达上限；白名单中 24 个 ID
-          未返回，不补齐、不扩池。粉丝量级直接使用原字段 W
-          档位（W=万），不推算精确粉丝数。NULL 单独展示。
-        </p>
-        <a
-          href={snapshot.meta.source}
-          target="_blank"
-          rel="noreferrer"
-          className="text-cyan-300 underline"
-        >
-          查看风神原图表与限制 ↗
-        </a>
         <div className="flex flex-wrap gap-4 my-6">
           {fields.map(({ key, label }) => (
             <label key={key} className="flex flex-col gap-2 text-sm">
@@ -102,11 +70,6 @@ export function AgencyModule() {
           </span>
           <span>SNAPSHOT · 风神图表</span>
         </div>
-        <AgencyPager
-          total={filtered.length}
-          page={pagination.page}
-          onChange={setPage}
-        />
         <div className="overflow-x-auto">
           <table className="w-full text-left text-sm">
             <thead>
@@ -155,37 +118,7 @@ export function AgencyModule() {
       <section id="qianchuan-agencies" className="content-section mt-6">
         <span className="eyebrow">B · QIANCHUAN AGENCIES</span>
         <h2>千川代理商</h2>
-        <p>
-          仅提供真实分析入口。云端浏览器访问两条链接均跳转字节 SSO
-          登录，未能读取业务数据或确认可嵌入接口；不展示虚构统计。请使用有权限的账号在新窗口登录查看。
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-          {entries.map(entry => (
-            <div key={entry.title}>
-              <a
-                href={entry.url}
-                target="_blank"
-                rel="noreferrer"
-                className="block rounded-2xl border border-slate-600 bg-slate-900 p-6"
-              >
-                <h3 className="text-xl text-cyan-300">{entry.title} ↗</h3>
-                <p className="mt-3">打开 MMM 原始分析页 · 需 SSO 与业务权限</p>
-              </a>
-              <div
-                className="rounded-lg border border-slate-700 p-4 mt-4 text-sm"
-                aria-live="polite"
-              >
-                <strong>{entry.title} · 对应达人列表暂不可用</strong>
-                <p className="mt-2">
-                  2026-11-10 再次读取来源仍跳转
-                  SSO，未获得该来源的头像、星图达人 ID
-                  与名称。未使用代理商重点底池替代，也未生成假列表；获取有权限的对应导出后才能按每页
-                  50 条展示。
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <QianchuanLists />
       </section>
     </div>
   );
