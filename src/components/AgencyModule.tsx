@@ -1,5 +1,8 @@
 import snapshot from '@/data/agencySnapshot.json';
+import { agencyPagination } from '@/lib/agencyPagination';
 import { useMemo, useState } from 'react';
+import { AgencyAvatar } from './AgencyAvatar';
+import { AgencyPager } from './AgencyPager';
 
 const entries = [
   {
@@ -34,7 +37,7 @@ export function AgencyModule() {
       ),
     [filters],
   );
-  const pages = Math.max(1, Math.ceil(filtered.length / 50));
+  const pagination = agencyPagination(filtered.length, page);
   return (
     <div id="module-content" className="enter">
       <section className="content-section">
@@ -99,11 +102,17 @@ export function AgencyModule() {
           </span>
           <span>SNAPSHOT · 风神图表</span>
         </div>
+        <AgencyPager
+          total={filtered.length}
+          page={pagination.page}
+          onChange={setPage}
+        />
         <div className="overflow-x-auto">
           <table className="w-full text-left text-sm">
             <thead>
               <tr>
                 {[
+                  '达人头像',
                   '达人昵称',
                   '达人星图 ID',
                   '行业',
@@ -117,8 +126,11 @@ export function AgencyModule() {
               </tr>
             </thead>
             <tbody>
-              {filtered.slice((page - 1) * 50, page * 50).map(r => (
+              {filtered.slice(pagination.offset, pagination.end).map(r => (
                 <tr key={r.id}>
+                  <td className="p-3">
+                    <AgencyAvatar id={r.id} name={r.name} />
+                  </td>
                   <td className="p-3">{r.name}</td>
                   <td className="p-3">{r.id}</td>
                   <td className="p-3">{display(r.industry)}</td>
@@ -134,17 +146,11 @@ export function AgencyModule() {
             </p>
           )}
         </div>
-        <div className="flex gap-4 items-center mt-6">
-          <button disabled={page === 1} onClick={() => setPage(page - 1)}>
-            上一页
-          </button>
-          <span>
-            {page} / {pages}
-          </span>
-          <button disabled={page >= pages} onClick={() => setPage(page + 1)}>
-            下一页
-          </button>
-        </div>
+        <AgencyPager
+          total={filtered.length}
+          page={pagination.page}
+          onChange={setPage}
+        />
       </section>
       <section id="qianchuan-agencies" className="content-section mt-6">
         <span className="eyebrow">B · QIANCHUAN AGENCIES</span>
@@ -155,16 +161,29 @@ export function AgencyModule() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
           {entries.map(entry => (
-            <a
-              key={entry.title}
-              href={entry.url}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-2xl border border-slate-600 bg-slate-900 p-6"
-            >
-              <h3 className="text-xl text-cyan-300">{entry.title} ↗</h3>
-              <p className="mt-3">打开 MMM 原始分析页 · 需 SSO 与业务权限</p>
-            </a>
+            <div key={entry.title}>
+              <a
+                href={entry.url}
+                target="_blank"
+                rel="noreferrer"
+                className="block rounded-2xl border border-slate-600 bg-slate-900 p-6"
+              >
+                <h3 className="text-xl text-cyan-300">{entry.title} ↗</h3>
+                <p className="mt-3">打开 MMM 原始分析页 · 需 SSO 与业务权限</p>
+              </a>
+              <div
+                className="rounded-lg border border-slate-700 p-4 mt-4 text-sm"
+                aria-live="polite"
+              >
+                <strong>{entry.title} · 对应达人列表暂不可用</strong>
+                <p className="mt-2">
+                  2026-11-10 再次读取来源仍跳转
+                  SSO，未获得该来源的头像、星图达人 ID
+                  与名称。未使用代理商重点底池替代，也未生成假列表；获取有权限的对应导出后才能按每页
+                  50 条展示。
+                </p>
+              </div>
+            </div>
           ))}
         </div>
       </section>
