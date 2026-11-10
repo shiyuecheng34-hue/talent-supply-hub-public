@@ -5,6 +5,7 @@ import {
   Sparkles,
   UsersRound,
 } from 'lucide-react';
+import autumnEmotionsImage from '../assets/autumn-emotions.png';
 
 type CampaignLink = {
   label: string;
@@ -163,6 +164,26 @@ export function IpCampaignModule() {
               <span className="ip-industry">{campaign.industry}</span>
             </div>
             <h3>{campaign.title}</h3>
+            {campaign.index === '01' && (
+              <a
+                href={autumnEmotionsImage}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="查看入秋情绪图鉴完整展示图"
+              >
+                <img
+                  src={autumnEmotionsImage}
+                  alt="日化行业入秋情绪图鉴活动展示图"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block',
+                    borderRadius: 12,
+                    marginBottom: 16,
+                  }}
+                />
+              </a>
+            )}
             <p className="ip-summary-copy">{campaign.summary}</p>
             <div className="ip-facts">
               <div>
