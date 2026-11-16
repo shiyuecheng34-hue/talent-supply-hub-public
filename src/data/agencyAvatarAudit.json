@@ -1,0 +1,18 @@
+{
+  "capturedAt": "2026-11-17 00:32:28 CST",
+  "partition": "2026-11-15",
+  "targetCount": 14903,
+  "mappingSuccess": 14903,
+  "mappingMissing": 0,
+  "reusedAvatarCount": 371,
+  "newAvatarCount": 2940,
+  "coverageCount": 3311,
+  "attempted": 3504,
+  "failures": {
+    "profile_status_5": 484,
+    "http_444": 77,
+    "ProxyError": 3
+  },
+  "timeboxUnattempted": 11028,
+  "elapsedSeconds": 900
+}

@@ -1,10 +1,12 @@
+import { agencyAvatarSprites } from '@/data/agencyAvatarSprites';
 import { douyinAvatarMap, douyinAvatarMeta } from '@/data/douyinAvatarMap';
 import { useState } from 'react';
 
 export function AgencyAvatar({ id, name }: { id: string; name: string }) {
-  const avatar = douyinAvatarMap[id];
+  const avatar = agencyAvatarSprites[id] ?? douyinAvatarMap[id];
   const [failed, setFailed] = useState(false);
-  const spriteSize = douyinAvatarMeta.spriteSize ?? [4000, 3200];
+  const spriteSize = agencyAvatarSprites[id]?.spriteSize ??
+    douyinAvatarMeta.spriteSize ?? [4000, 3200];
   const fallback = Array.from(name || '达人')
     .slice(0, 2)
     .join('');

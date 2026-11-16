@@ -2068,3 +2068,9 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.agency-module .avatar {
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+}

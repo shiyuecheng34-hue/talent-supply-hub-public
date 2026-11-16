@@ -1,0 +1,36 @@
+{
+  "avatars": 2940,
+  "shards": [
+    {
+      "file": "agency-avatar-sprite-0.jpg",
+      "count": 512,
+      "bytes": 1482086
+    },
+    {
+      "file": "agency-avatar-sprite-1.jpg",
+      "count": 512,
+      "bytes": 1490887
+    },
+    {
+      "file": "agency-avatar-sprite-2.jpg",
+      "count": 512,
+      "bytes": 1485863
+    },
+    {
+      "file": "agency-avatar-sprite-3.jpg",
+      "count": 512,
+      "bytes": 1498302
+    },
+    {
+      "file": "agency-avatar-sprite-4.jpg",
+      "count": 512,
+      "bytes": 1492205
+    },
+    {
+      "file": "agency-avatar-sprite-5.jpg",
+      "count": 380,
+      "bytes": 1134671
+    }
+  ],
+  "note": "分片图片通过src/assets import进入构建，原图留作断点缓存不进入dist。"
+}
