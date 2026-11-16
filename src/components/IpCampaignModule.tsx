@@ -13,6 +13,8 @@ import gameImage3 from '../assets/game-poster-3.jpg';
 import gameImage4 from '../assets/game-poster-4.jpg';
 import gameImage5 from '../assets/game-poster-5.jpg';
 import gameImage6 from '../assets/game-poster-6.jpg';
+import voyageBanner from '../assets/ip-voyage-banner.png';
+import voyageOnepage from '../assets/ip-voyage-onepage.png';
 
 import homeImage from '../assets/XJtIMkuowNpPIBrpSYoEOSvSODiZFCvpEmvmlnxI.png';
 import q4Image4 from '../assets/cmsLHnGlZkFuKWeFNgwRDAUiLqaAUPWIrLmtlvTT.png';
@@ -31,6 +33,7 @@ const CAMPAIGN_IMAGES: Record<string, string[]> = {
   ],
   '03': [homeImage],
   '04': [q4Image1, q4Image2, q4Image3, q4Image4],
+  '06': [voyageBanner, voyageOnepage],
 };
 
 function CampaignGallery({ campaign }: { campaign: IpCampaign }) {
@@ -82,7 +85,7 @@ const CAMPAIGNS: IpCampaign[] = [
   {
     index: '01',
     industry: '日化行业',
-    title: '入秋情绪图鉴',
+    title: '巨量星图✖️日化行业「入秋情绪图鉴」直充活动',
     period: '2026.09.01 — 10.15',
     quota: '500万 / 200万 / 100万 / 30万',
     summary: '从发丝到指尖，用四大入秋情绪人群图鉴连接品牌与消费者的秋日情绪。',
@@ -103,7 +106,7 @@ const CAMPAIGNS: IpCampaign[] = [
   {
     index: '02',
     industry: '游戏行业',
-    title: 'Q3「精选达人」合作企划',
+    title: '巨量星图｜Q3游戏「精选达人」合作企划案',
     period: '2026.08.27 — 09.30',
     quota: '报名行业：中国广告销售平台-直客业务-互动娱乐',
     summary:
@@ -125,7 +128,7 @@ const CAMPAIGNS: IpCampaign[] = [
   {
     index: '03',
     industry: '家居行业',
-    title: 'Star 超会装 · 家的秋季灵感',
+    title: '巨量星图家居行业「Star 超会装 家的秋季灵感」活动方案',
     period: '2026.09.01 — 11.15',
     quota: '500万 / 200万 / 50万',
     summary:
@@ -151,7 +154,7 @@ const CAMPAIGNS: IpCampaign[] = [
   {
     index: '04',
     industry: '婴宠行业',
-    title: 'Q4 内容洞察与星图激励',
+    title: '【巨量星图】婴宠26年Q4内容洞察&激励活动',
     period: '2026.10.01 — 12.31',
     quota: '500万 / 200万 / 50万',
     summary:
@@ -177,7 +180,7 @@ const CAMPAIGNS: IpCampaign[] = [
   {
     index: '05',
     industry: '美妆行业',
-    title: '秋日好状态加载中',
+    title: '巨量星图美妆行业「秋日好状态加载中」活动方案',
     period: '2026.09.11 — 10.25',
     quota: '500万 / 200万 / 100万 / 50万',
     summary:
@@ -192,7 +195,31 @@ const CAMPAIGNS: IpCampaign[] = [
     ],
     tone: 'rose',
   },
+  {
+    index: '06',
+    industry: '教育行业 · 全行业开放',
+    title: '【行业IP】远航计划-年终闪光答案季',
+    period: '售卖 2026.11.01—12.31；上线 2026.12.20—2027.02.28',
+    quota: '500万×1席 / 200万×2席 / 100万×3席 / 50万×3席',
+    summary:
+      '教育行业年终与寒假特别企划，以《年终答卷》串联人物对谈、知识竞技、达人共创与趋势话题，让每一个努力成长的人都被看见、被照亮。',
+    benefits: [
+      '官方主话题与 H5 品牌馆露出',
+      '年终答卷植入、年终对谈与知识竞技（依合作档位）',
+      '精选达人共创与流量激励机会；具体权益以最终资源包为准',
+    ],
+    links: [
+      {
+        label: '查看项目介绍与权益',
+        url: 'https://bytedance.larkoffice.com/wiki/VE6Ow4GoOiOS2XkQFd1cgsGenff',
+        primary: true,
+      },
+    ],
+    tone: 'voyage',
+  },
 ];
+
+const CAMPAIGN_ORDER = ['05', '01', '03', '06', '02', '04'];
 
 export function IpCampaignModule() {
   const preview =
@@ -205,8 +232,10 @@ export function IpCampaignModule() {
       : preview === 'first'
         ? CAMPAIGNS.filter(c => c.index === '01' || c.index === '02')
         : preview === 'home'
-          ? CAMPAIGNS.filter(c => c.index === '03' || c.index === '04')
-          : CAMPAIGNS;
+          ? CAMPAIGNS.filter(c => c.index === '03' || c.index === '06')
+          : CAMPAIGN_ORDER.flatMap(index =>
+              CAMPAIGNS.filter(c => c.index === index),
+            );
   return (
     <section className="content-section enter ip-module">
       <div className="section-heading ip-heading">
@@ -217,7 +246,7 @@ export function IpCampaignModule() {
         </div>
         <div className="ip-summary">
           <Sparkles size={18} />
-          <span>5 个行业企划</span>
+          <span>6 个精选企划</span>
           <b>2026 秋冬档</b>
         </div>
       </div>

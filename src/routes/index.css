@@ -1972,3 +1972,71 @@ footer {
 .ip-gallery-03 a {
   height: 100%;
 }
+
+/* 六企划：美妆/日化、家居/远航、游戏整行、婴宠整行。 */
+.ip-grid > .ip-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  height: auto;
+  align-self: stretch;
+  container-type: normal;
+}
+.ip-grid > .ip-card:hover {
+  transform: none;
+}
+.ip-grid > .ip-card h3 {
+  max-width: 100%;
+  margin: 18px 0 12px;
+}
+.ip-grid > .ip-card.violet,
+.ip-grid > .ip-card.mint {
+  grid-column: 1 / -1;
+}
+.ip-card.voyage {
+  --ip-accent: #e2ce6b;
+}
+.ip-grid .ip-campaign-gallery {
+  height: auto;
+  aspect-ratio: auto;
+  flex: none;
+}
+.ip-grid .ip-campaign-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.ip-grid .ip-gallery-03 a {
+  height: auto;
+}
+.ip-grid .ip-gallery-02 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-rows: auto;
+  min-height: 0;
+  gap: 8px;
+}
+.ip-grid .ip-gallery-04 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto auto;
+  min-height: 0;
+}
+.ip-gallery-06 {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+.ip-grid .ip-card .ip-links {
+  margin-top: auto;
+  padding-top: 20px;
+}
+@media (max-width: 820px) {
+  .ip-grid .ip-gallery-02 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 540px) {
+  .ip-grid .ip-gallery-02 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
