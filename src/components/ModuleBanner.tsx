@@ -36,12 +36,12 @@ const introductions = {
     kicker: 'CONTENT IP · 合作灵感',
     title: '特色 IP，让内容连接品牌',
     description:
-      '聚合 5 个秋冬重点合作企划，探索特色内容资产、达人权益与品牌共创机会。',
+      '聚合 6 个秋冬重点合作企划，探索特色内容资产、达人权益与品牌共创机会。',
     action: '查看 IP 合作企划',
     secondary: '发现行业达人',
     target: 'industry',
     icon: Star,
-    detail: '5 个合作企划',
+    detail: '6 个合作企划',
   },
   team: {
     kicker: 'CREATOR TEAMS · 协同供给',
@@ -58,12 +58,12 @@ const introductions = {
     kicker: 'AGENCY · 代理商供给',
     title: '代理商使用模块',
     description:
-      '代理商重点：在原图表限定达人范围内筛选；千川代理商：查看整体底池与千川代理关注变现两组真实达人列表。',
+      '在原底池限定达人范围内筛选，按星图 ID 关联真实报价、细分行业与八类粉丝人群比例，并提供精选达人推荐刊例。',
     action: '查看代理商重点',
     secondary: '浏览现有供给',
     target: 'industry',
     icon: Bot,
-    detail: '重点达人 · 千川代理商',
+    detail: '重点达人 · 真实报价',
   },
 } as const;
 

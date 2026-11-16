@@ -93,7 +93,7 @@ const MODULES = [
   {
     key: 'ai' as const,
     label: '代理商使用模块',
-    desc: '代理商重点 · 千川代理商',
+    desc: '重点达人 · 报价与全维度',
     icon: Bot,
   },
 ];
@@ -532,14 +532,27 @@ function App() {
             );
           })}
         </nav>
+        {module === 'ai' && (
+          <a
+            className="sidebar-rail sidebar-feature-entry"
+            href="#agency-booklets"
+          >
+            <span className="sidebar-feature-entry-label">
+              精选达人推荐刊例
+            </span>
+            <small>双旦 / 双11 / 中秋国庆 · 查看三份特刊</small>
+          </a>
+        )}
         <div className="sidebar-foot">
           <span>数据源</span>
           <strong>
-            {module === 'ai' ? '风神图表 · 静态快照' : '飞书表格 · 实时同步'}
+            {module === 'ai'
+              ? '风神底池 · 飞书全维度快照'
+              : '飞书表格 · 实时同步'}
           </strong>
           <small>
             {module === 'ai'
-              ? '快照导出：2026-11-10 19:07 CST'
+              ? '底池：11-10；新增报价与维度源表：11-16'
               : '最后刷新以页面载入时间为准'}
           </small>
         </div>

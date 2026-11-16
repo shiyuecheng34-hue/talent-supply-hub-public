@@ -1,3 +1,4 @@
+import enrichment from '@/data/agencyEnrichment.json';
 import snapshot from '@/data/agencySnapshot.json';
 import { agencyPagination } from '@/lib/agencyPagination';
 import { useMemo, useState } from 'react';
@@ -5,7 +6,6 @@ import { AgencyAvatar } from './AgencyAvatar';
 import { AgencyBookletRail } from './AgencyBookletRail';
 import { AgencyPager } from './AgencyPager';
 
-import { QianchuanLists } from './QianchuanLists';
 const fields = [
   { key: 'industry', label: '行业' },
   { key: 'fans', label: '粉丝量级' },
@@ -17,8 +17,27 @@ const options = Object.fromEntries(
     [...new Set(snapshot.records.map(r => r[key]))].sort(),
   ]),
 );
-const display = (value: string) =>
-  value === 'NULL' ? '未提供（NULL）' : value;
+const sourceRows: Record<string, (string | null)[]> = enrichment.records;
+const sourceIndex = (name: string) => enrichment.headers.indexOf(name);
+const sourceValue = (id: string, name: string) =>
+  sourceRows[id]?.[sourceIndex(name)];
+const display = (value: string | null | undefined) =>
+  value === 'NULL'
+    ? '未提供（NULL）'
+    : value == null || value === ''
+      ? '—'
+      : value;
+const price = (value: string | null | undefined) => {
+  if (value == null || value === '' || value === 'NULL') return '—';
+  const amount = Number(value);
+  return Number.isFinite(amount)
+    ? `¥${amount.toLocaleString('zh-CN')}`
+    : display(value);
+};
+const extraHeaders = enrichment.headers.filter(
+  header => !['达人星图id', '植入视频报价', '定制视频报价'].includes(header),
+);
+
 export function AgencyModule() {
   const [filters, setFilters] = useState({ industry: '', fans: '', tag: '' });
   const [page, setPage] = useState(1);
@@ -31,8 +50,33 @@ export function AgencyModule() {
   );
   const pagination = agencyPagination(filtered.length, page);
   return (
-    <div id="module-content" className="enter">
+    <div id="module-content" className="enter agency-module">
       <section className="content-section">
+        <div className="section-heading">
+          <div>
+            <span className="eyebrow">AGENCY · PRIORITY TALENTS</span>
+            <h2>代理商重点达人</h2>
+            <p>
+              保留原底池与三项筛选口径；新增报价及源表全维度，向右滚动查看。
+            </p>
+          </div>
+          <a
+            className="source-link"
+            href={enrichment.meta.sourceSheet}
+            target="_blank"
+            rel="noreferrer"
+          >
+            飞书报价与维度源表 ↗
+          </a>
+        </div>
+        <p className="text-sm text-slate-400 mt-4">
+          底池快照：{snapshot.meta.exportedAt} · 增量采集：
+          {enrichment.meta.capturedAt} · 源表修订{' '}
+          {enrichment.meta.sheetRevision}
+          <br />
+          植入报价＝21–60s；定制报价＝60s+（元）；0
+          按原值展示，不代表缺失。源表与底池存在跨时间差异，新增列标注「源表」。
+        </p>
         <div className="flex flex-wrap gap-4 my-6">
           {fields.map(({ key, label }) => (
             <label key={key} className="flex flex-col gap-2 text-sm">
@@ -55,6 +99,7 @@ export function AgencyModule() {
             </label>
           ))}
           <button
+            type="button"
             className="text-cyan-300 self-end p-3"
             onClick={() => {
               setFilters({ industry: '', fans: '', tag: '' });
@@ -69,21 +114,37 @@ export function AgencyModule() {
             当前匹配 {filtered.length.toLocaleString()} 位 · 全快照筛选 · 每页
             50 位
           </span>
-          <span>SNAPSHOT · 风神图表</span>
+          <a
+            href={enrichment.meta.referenceChart}
+            target="_blank"
+            rel="noreferrer"
+          >
+            全量核对 · 风神图表 ↗
+          </a>
         </div>
-        <div className="overflow-x-auto">
-          <table className="w-full text-left text-sm">
+        <div
+          className="overflow-x-auto agency-table-scroll"
+          aria-label="代理商全维度表格，可横向滚动"
+        >
+          <table className="w-full text-left text-sm whitespace-nowrap">
             <thead>
               <tr>
                 {[
                   '达人头像',
                   '达人昵称',
                   '达人星图 ID',
+                  '植入报价',
+                  '定制报价',
                   '行业',
                   '粉丝量级',
                   '内容标签',
+                  ...extraHeaders.map(h => `源表 · ${h}`),
                 ].map(h => (
-                  <th className="p-3 border-b border-slate-700" key={h}>
+                  <th
+                    className="p-3 border-b border-slate-700"
+                    scope="col"
+                    key={h}
+                  >
                     {h}
                   </th>
                 ))}
@@ -97,9 +158,20 @@ export function AgencyModule() {
                   </td>
                   <td className="p-3">{r.name}</td>
                   <td className="p-3">{r.id}</td>
+                  <td className="p-3">
+                    {price(sourceValue(r.id, '植入视频报价'))}
+                  </td>
+                  <td className="p-3">
+                    {price(sourceValue(r.id, '定制视频报价'))}
+                  </td>
                   <td className="p-3">{display(r.industry)}</td>
                   <td className="p-3">{r.fans}</td>
                   <td className="p-3">{display(r.tag)}</td>
+                  {extraHeaders.map(header => (
+                    <td className="p-3" key={header}>
+                      {display(sourceValue(r.id, header))}
+                    </td>
+                  ))}
                 </tr>
               ))}
             </tbody>
@@ -115,9 +187,6 @@ export function AgencyModule() {
           page={pagination.page}
           onChange={setPage}
         />
-      </section>
-      <section id="qianchuan-agencies" className="content-section mt-6">
-        <QianchuanLists />
       </section>
       <AgencyBookletRail />
     </div>

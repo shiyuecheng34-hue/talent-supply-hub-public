@@ -5,6 +5,9 @@
   "datasources": {
     "qianchuan-overall":{"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/Vdvls4mgshxZ8AtWHOWcGbQTn3c?sheet=6ba567"},
     "qianchuan-monetization":{"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/KR2ZsG8AyhhMgStbxpecPn2unk7?sheet=4d254b"},
+    "agency-enrichment":{"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/A3Lxs0tpeh7mxZtl11icVQUrnBe?sheet=d1e6f9"},
+    "agency-enrichment-chart":{"provider":"aeolus.chart","uri":"https://data.bytedance.net/aeolus/pages/dataQuery?rid=20057009"},
+    "agency-avatar-mapping":{"provider":"aeolus.dataset","uri":"https://data.bytedance.net/aeolus/pages/dataManage/detail/5685026"},
     "agency-priorities": {"provider":"aeolus.chart","uri":"https://data.bytedance.net/aeolus/pages/dataQuery?rid=19913768"},
     "industry-beauty": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=0OYgsp"},
     "industry-food": {"provider":"feishu.sheet","uri":"https://bytedance.larkoffice.com/sheets/ShwKsQe36hxTiTtEF0Dc4W4cnPe?sheet=1RZNHB"},

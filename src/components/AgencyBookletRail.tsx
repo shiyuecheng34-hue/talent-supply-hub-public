@@ -18,6 +18,7 @@ const BOOKLETS = [
 export function AgencyBookletRail() {
   return (
     <section
+      id="agency-booklets"
       className="sidebar-rail sidebar-booklets"
       aria-label="精选达人推荐刊例"
     >
