@@ -18,12 +18,15 @@ import {
   UsersRound,
 } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { FeaturedTalentSidebarEntry } from './AgencyBookletRail';
 import { AgencyModule } from './AgencyModule';
 import { DataApplicationProvider } from './DataApplicationProvider';
+import { FeaturedTalentIntro } from './FeaturedTalentIntro';
 import { IpCampaignModule } from './IpCampaignModule';
 import { TeamModule } from './TeamModule';
 
 import { ModuleBanner, type ModuleKey } from './ModuleBanner';
+
 type SourceOption = {
   id: string;
   label: string;
@@ -509,6 +512,7 @@ function App() {
             <span>Talent Supply Hub</span>
           </div>
         </div>
+        <FeaturedTalentSidebarEntry />
         <nav>
           {MODULES.map(item => {
             const Icon = item.icon;
@@ -547,6 +551,7 @@ function App() {
           </span>
           <span>Talent Supply Hub</span>
         </div>
+        {module === 'industry' && <FeaturedTalentIntro />}
         {module !== 'node' && (
           <ModuleBanner module={module} onNavigate={setModule} />
         )}
