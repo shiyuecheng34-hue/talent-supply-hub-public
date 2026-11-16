@@ -1162,6 +1162,29 @@ main {
   line-height: 1.35;
 }
 
+.team-cover {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(91, 176, 255, 0.24);
+  border-radius: 16px;
+  background: rgba(1, 13, 31, 0.42);
+}
+
+.team-cover img {
+  display: block;
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.team-cover figcaption {
+  padding: 8px 12px;
+  color: #8fb5da;
+  font-size: 11px;
+  letter-spacing: .08em;
+}
+
 .team-status {
   flex: none;
   padding: 5px 10px;

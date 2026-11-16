@@ -1,9 +1,12 @@
 import { ArrowUpRight, BookOpen, UsersRound } from 'lucide-react';
+import potentialTeamHero from '../assets/team-potential-first-image.png';
 
 type TeamSpec = {
   name: string;
   statusLabel: string;
   docUrl?: string;
+  coverImage?: string;
+  coverAlt?: string;
   docSummary?: {
     subtitle: string;
     bullets: string[];
@@ -16,6 +19,9 @@ const TEAMS: TeamSpec[] = [
     statusLabel: '敬请期待',
     docUrl:
       'https://bytedance.larkoffice.com/wiki/VLNBwKSyRioS6gkulvxca0ORn9g?from=from_copylink',
+    coverImage: potentialTeamHero,
+    coverAlt:
+      '2026巨量星图「潜力宝藏达人团」文档正文首图：招募任务服务商模式介绍图',
     docSummary: {
       subtitle: '已发布资料：项目总览',
       bullets: [
@@ -69,6 +75,13 @@ export function TeamModule() {
               </div>
               <span className="team-status">{team.statusLabel}</span>
             </header>
+
+            {team.coverImage ? (
+              <figure className="team-cover">
+                <img src={team.coverImage} alt={team.coverAlt ?? team.name} />
+                <figcaption>文档真实头图</figcaption>
+              </figure>
+            ) : null}
 
             {team.docSummary ? (
               <div className="team-doc">
