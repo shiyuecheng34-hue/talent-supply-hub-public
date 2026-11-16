@@ -116,8 +116,6 @@ export function AgencyModule() {
         />
       </section>
       <section id="qianchuan-agencies" className="content-section mt-6">
-        <span className="eyebrow">B · QIANCHUAN AGENCIES</span>
-        <h2>千川代理商</h2>
         <QianchuanLists />
       </section>
     </div>

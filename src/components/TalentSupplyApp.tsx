@@ -1,4 +1,4 @@
-import { douyinAvatarMap } from '@/data/douyinAvatarMap';
+import { douyinAvatarMap, douyinAvatarMeta } from '@/data/douyinAvatarMap';
 import { industrySamples } from '@/data/industrySamples';
 import { nodeSamples } from '@/data/nodeSamples';
 import { shuffleNodeRows } from '@/lib/shuffleNodeRows';
@@ -179,6 +179,7 @@ function TalentCard({
   const profile =
     id !== '-' ? `https://www.xingtu.cn/ad/creator/author/douyin/${id}` : '#';
   const douyin = douyinAvatarMap[id];
+  const spriteSize = douyinAvatarMeta.spriteSize ?? [4000, 3200];
   const douyinUrl = douyin?.profileUrl || profile;
   const subtitle =
     mode === 'node'
@@ -201,7 +202,7 @@ function TalentCard({
               style={{
                 backgroundImage: `url(${douyin.avatarUrl})`,
                 backgroundPosition: douyin.avatarPosition,
-                backgroundSize: '2240px 1792px',
+                backgroundSize: `${spriteSize[0]}px ${spriteSize[1]}px`,
               }}
               role="img"
               aria-label={`${name} 头像`}

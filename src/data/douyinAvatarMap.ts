@@ -1,4 +1,5 @@
 import zhinvAvatar from '../assets/zhinv-avatar.jpg';
+import { avatarQueryOverrides } from './avatarQueryOverrides';
 import { supplementalAvatarIds } from './avatarSupplement';
 
 export type DouyinAvatarRecord = {
@@ -15,15 +16,17 @@ export const douyinAvatarMeta = {
   dataset: '【官】星图达人数据集',
   datasetId: '5685026',
   partition: '2026-10-11',
+  spriteSize: [4000, 3200] as const,
   source:
     'https://data.bytedance.net/aeolus/pages/dataQuery?appId=1002633&id=1791867289012435&isDefault=1&rid=17268794&sid=5685026',
-  scope: '行业与节点板块每个分组前 100 位达人',
+  scope:
+    '行业与节点板块每个分组前 100 位达人 +（增量）指定 DataQuery 返回行内的补抓',
   matched: 1292,
   requested: 1297,
   avatarsMatched: 1253,
   localAvatars: 1250,
   unresolvedAvatars: 42,
-  note: '头像通过抖音用户信息接口按 unique_id / short_id 获取；抓取失败时页面展示姓名首字 fallback。',
+  note: '头像通过抖音用户信息接口按 unique_id / short_id 获取；抓取失败时页面展示姓名首字 fallback。增量补抓的头像会以 /avatars/query-<id>.jpg 形式落盘。',
 } as const;
 
 export const douyinAvatarMap: Record<string, DouyinAvatarRecord> = {
@@ -12568,3 +12571,8 @@ supplementalAvatarIds.forEach((id, index) => {
 douyinAvatarMap['6870163473385390093'].avatarUrl = zhinvAvatar;
 douyinAvatarMap['6870163473385390093'].profileUrl =
   'https://www.douyin.com/user/MS4wLjABAAAAhAIMHZRI61dC4eivwuT99LAKz3VCH2P7u0RsvOQin7w';
+
+// 增量补抓：仅覆盖出现在指定 DataQuery 返回结果中的达人。
+Object.entries(avatarQueryOverrides).forEach(([id, record]) => {
+  douyinAvatarMap[id] = record;
+});

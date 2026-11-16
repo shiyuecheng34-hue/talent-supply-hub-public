@@ -1,9 +1,10 @@
-import { douyinAvatarMap } from '@/data/douyinAvatarMap';
+import { douyinAvatarMap, douyinAvatarMeta } from '@/data/douyinAvatarMap';
 import { useState } from 'react';
 
 export function AgencyAvatar({ id, name }: { id: string; name: string }) {
   const avatar = douyinAvatarMap[id];
   const [failed, setFailed] = useState(false);
+  const spriteSize = douyinAvatarMeta.spriteSize ?? [4000, 3200];
   const fallback = Array.from(name || '达人')
     .slice(0, 2)
     .join('');
@@ -18,7 +19,7 @@ export function AgencyAvatar({ id, name }: { id: string; name: string }) {
           style={{
             backgroundImage: `url(${avatar.avatarUrl})`,
             backgroundPosition: avatar.avatarPosition,
-            backgroundSize: '2240px 1792px',
+            backgroundSize: `${spriteSize[0]}px ${spriteSize[1]}px`,
           }}
           role="img"
           aria-label={`${name} 头像`}
