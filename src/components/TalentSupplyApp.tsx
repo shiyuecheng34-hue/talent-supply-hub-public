@@ -21,6 +21,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { AgencyModule } from './AgencyModule';
 import { DataApplicationProvider } from './DataApplicationProvider';
 import { IpCampaignModule } from './IpCampaignModule';
+import { TeamModule } from './TeamModule';
 
 import { ModuleBanner, type ModuleKey } from './ModuleBanner';
 type SourceOption = {
@@ -575,7 +576,7 @@ function App() {
             <IpCampaignModule />
           </div>
         )}
-        {module === 'team' && <PendingModule module={module} />}
+        {module === 'team' && <TeamModule />}
         {module === 'ai' && <AgencyModule />}
         <footer>
           <span>精选达人供给库 v1.0 · Powered by 飞书数据</span>

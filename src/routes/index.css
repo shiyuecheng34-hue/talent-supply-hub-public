@@ -1122,6 +1122,114 @@ main {
   font-size: 11px;
   line-height: 1.5;
 }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+}
+
+.team-card {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(8, 38, 77, 0.68);
+}
+
+.team-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.team-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team-card-title svg {
+  color: #4cd9f7;
+}
+
+.team-card-title strong {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.team-status {
+  flex: none;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(55, 197, 246, 0.4);
+  background: rgba(27, 151, 217, 0.14);
+  color: #45d8ff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.team-desc {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.team-doc {
+  border-radius: 14px;
+  border: 1px dashed rgba(100, 186, 255, 0.26);
+  padding: 12px 14px;
+  background: rgba(3, 18, 43, 0.38);
+}
+
+.team-doc-title {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  color: #9fdcff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.team-doc ul {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: #b9cbe2;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.team-link {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(77, 150, 238, 0.3);
+  background: rgba(8, 60, 130, 0.28);
+  color: #cfe8ff;
+  font-size: 12px;
+}
+
+.team-link:hover {
+  border-color: rgba(49, 216, 245, 0.55);
+  background: rgba(49, 216, 245, 0.12);
+}
+
+@media (min-width: 960px) {
+  .team-card {
+    grid-column: span 6;
+  }
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -1267,25 +1375,92 @@ footer {
 }
 
 /* 模块介绍与节点优先布局 */
-.module-topbar { display: flex; justify-content: space-between; gap: 16px; color: var(--muted); font-size: 12px; padding: 0 4px 20px; }
-.module-banner.hero { min-height: 280px; padding: 32px 36px; gap: 28px; margin-bottom: 28px; }
-.module-banner .hero-copy { flex: 1; }
-.module-banner h1 { font-size: clamp(28px, 3vw, 42px); line-height: 1.2; margin: 18px 0 12px; }
-.module-banner p { font-size: 14px; max-width: 640px; }
-.module-banner .hero-actions { margin-top: 20px; flex-wrap: wrap; }
-.module-decoration { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; flex: 0 0 180px; color: var(--cyan); padding: 28px 16px; border: 1px solid var(--line); border-radius: 24px; background: rgba(25, 114, 181, .12); }
-.module-decoration span { font-size: 12px; letter-spacing: .1em; }
-.banner-node .module-decoration { color: #44e1b8; border-radius: 50% 50% 20px 20px; }
-.banner-ip .module-decoration { color: #e4b7ff; transform: rotate(-3deg); background: rgba(155, 86, 230, .12); }
-.banner-team .module-decoration { color: #ffd798; background: rgba(211, 156, 64, .12); }
-.banner-ai .module-decoration { color: #a4afff; border-style: dashed; }
-.node-module > .section-heading { margin-top: 0; }
-.node-module > .module-banner { margin-top: 24px; }
-#module-content { scroll-margin-top: 24px; }
+.module-topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--muted);
+  font-size: 12px;
+  padding: 0 4px 20px;
+}
+.module-banner.hero {
+  min-height: 280px;
+  padding: 32px 36px;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+.module-banner .hero-copy {
+  flex: 1;
+}
+.module-banner h1 {
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1.2;
+  margin: 18px 0 12px;
+}
+.module-banner p {
+  font-size: 14px;
+  max-width: 640px;
+}
+.module-banner .hero-actions {
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.module-decoration {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex: 0 0 180px;
+  color: var(--cyan);
+  padding: 28px 16px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(25, 114, 181, 0.12);
+}
+.module-decoration span {
+  font-size: 12px;
+  letter-spacing: .1em;
+}
+.banner-node .module-decoration {
+  color: #44e1b8;
+  border-radius: 50% 50% 20px 20px;
+}
+.banner-ip .module-decoration {
+  color: #e4b7ff;
+  transform: rotate(-3deg);
+  background: rgba(155, 86, 230, 0.12);
+}
+.banner-team .module-decoration {
+  color: #ffd798;
+  background: rgba(211, 156, 64, 0.12);
+}
+.banner-ai .module-decoration {
+  color: #a4afff;
+  border-style: dashed;
+}
+.node-module > .section-heading {
+  margin-top: 0;
+}
+.node-module > .module-banner {
+  margin-top: 24px;
+}
+#module-content {
+  scroll-margin-top: 24px;
+}
 @media (max-width: 760px) {
-  .module-banner.hero { padding: 24px; min-height: auto; }
-  .module-decoration { display: none; }
-  .module-topbar > :last-child { display: none; }
+  .module-banner.hero {
+    padding: 24px;
+    min-height: auto;
+  }
+  .module-decoration {
+    display: none;
+  }
+  .module-topbar > :last-child {
+    display: none;
+  }
 }
 
 /* 最新需求：日化 / 游戏外框共用网格行高，不再将游戏独立锁定为 384px。 */
@@ -1301,20 +1476,56 @@ footer {
   padding: 24px;
 }
 @media (min-width: 821px) {
-  .ip-card.amber, .ip-card.ip-game-card { min-height: 700px; }
+  .ip-card.amber,
+  .ip-card.ip-game-card {
+    min-height: 700px;
+  }
 }
 /* 单张卡片 hover 不再让同一行边框上下错开。 */
-.ip-card.amber:hover, .ip-card.ip-game-card:hover { transform: none; }
-.ip-game-card > :not(.ip-gallery-02) { flex-shrink: 0; }
-.ip-game-card h3 { max-width: 100%; margin: 6px 0 4px; font-size: 20px; }
-.ip-game-card .ip-summary-copy { min-height: 0; line-height: 1.5; }
-.ip-game-card .ip-facts { margin: 6px 0; gap: 6px; grid-template-columns: 1fr 1fr; }
-.ip-game-card .ip-facts > div { min-width: 0; gap: 5px; padding: 6px; }
-.ip-game-card .ip-facts span { min-width: 0; overflow-wrap: anywhere; }
-.ip-game-card .ip-benefits ul { margin-top: 4px; gap: 4px; }
-.ip-game-card .ip-benefits li { padding: 3px 5px; }
-.ip-game-card .ip-links { margin-top: 0; padding-top: 6px; }
-.ip-game-card .ip-links a { padding: 6px 9px; }
+.ip-card.amber:hover,
+.ip-card.ip-game-card:hover {
+  transform: none;
+}
+.ip-game-card > :not(.ip-gallery-02) {
+  flex-shrink: 0;
+}
+.ip-game-card h3 {
+  max-width: 100%;
+  margin: 6px 0 4px;
+  font-size: 20px;
+}
+.ip-game-card .ip-summary-copy {
+  min-height: 0;
+  line-height: 1.5;
+}
+.ip-game-card .ip-facts {
+  margin: 6px 0;
+  gap: 6px;
+  grid-template-columns: 1fr 1fr;
+}
+.ip-game-card .ip-facts > div {
+  min-width: 0;
+  gap: 5px;
+  padding: 6px;
+}
+.ip-game-card .ip-facts span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.ip-game-card .ip-benefits ul {
+  margin-top: 4px;
+  gap: 4px;
+}
+.ip-game-card .ip-benefits li {
+  padding: 3px 5px;
+}
+.ip-game-card .ip-links {
+  margin-top: 0;
+  padding-top: 6px;
+}
+.ip-game-card .ip-links a {
+  padding: 6px 9px;
+}
 .ip-gallery-02 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1324,19 +1535,54 @@ footer {
   min-height: 180px;
   margin-top: 6px;
 }
-.ip-gallery-02 a { min-width: 0; min-height: 0; border-radius: 5px; background: rgba(1, 16, 37, .25); }
-.ip-gallery-02 img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.ip-gallery-02 a:focus-visible { outline: 2px solid var(--ip-accent); outline-offset: 1px; }
+.ip-gallery-02 a {
+  min-width: 0;
+  min-height: 0;
+  border-radius: 5px;
+  background: rgba(1, 16, 37, 0.25);
+}
+.ip-gallery-02 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.ip-gallery-02 a:focus-visible {
+  outline: 2px solid var(--ip-accent);
+  outline-offset: 1px;
+}
 @media (max-width: 540px) {
-  .ip-game-card h3 { font-size: 18px; }
-  .ip-game-card .ip-summary-copy { font-size: 11px; }
+  .ip-game-card h3 {
+    font-size: 18px;
+  }
+  .ip-game-card .ip-summary-copy {
+    font-size: 11px;
+  }
 }
 
-.ip-campaign-gallery a { display: block; min-width: 0; min-height: 0; border-radius: 6px; background: rgba(1, 16, 37, .25); }
-.ip-campaign-gallery img { display: block; width: 100%; object-fit: contain; }
-.ip-campaign-gallery a:focus-visible { outline: 2px solid var(--ip-accent); outline-offset: 2px; }
-.ip-gallery-03 { margin-top: 16px; }
-.ip-gallery-03 img { height: auto; border-radius: 6px; }
+.ip-campaign-gallery a {
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  border-radius: 6px;
+  background: rgba(1, 16, 37, 0.25);
+}
+.ip-campaign-gallery img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+.ip-campaign-gallery a:focus-visible {
+  outline: 2px solid var(--ip-accent);
+  outline-offset: 2px;
+}
+.ip-gallery-03 {
+  margin-top: 16px;
+}
+.ip-gallery-03 img {
+  height: auto;
+  border-radius: 6px;
+}
 .ip-gallery-04 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1347,38 +1593,84 @@ footer {
   min-height: 180px;
   flex: 1 1 auto;
 }
-.ip-gallery-04 img { height: 100%; }
-.ip-card.mint > :not(.ip-gallery-04) { flex-shrink: 0; }
+.ip-gallery-04 img {
+  height: 100%;
+}
+.ip-card.mint > :not(.ip-gallery-04) {
+  flex-shrink: 0;
+}
 
 /* The single full-ratio image determines this row; Q4 fills the same row height. */
-.ip-gallery-03 { flex-shrink: 0; }
+.ip-gallery-03 {
+  flex-shrink: 0;
+}
 
 /* 保持截图的左右内容内边距；外框高度由共享网格行决定。 */
-.ip-card.ip-game-card { padding-left: 24px; padding-right: 24px; padding-top: 24px; }
+.ip-card.ip-game-card {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 24px;
+}
 /* 家居 / Q4 共用内容行及 16:9 图框；四图完整 contain，不裁切。 */
-.ip-card.copper, .ip-card.mint {
+.ip-card.copper,
+.ip-card.mint {
   display: grid;
   grid-template-rows: 28px 62px 44px 94px 70px auto 56px;
   align-content: start;
 }
-.ip-card.copper h3, .ip-card.mint h3 { max-width: 100%; margin: 18px 0 9px; }
-.ip-card.copper .ip-benefits, .ip-card.mint .ip-benefits { min-width: 0; }
-.ip-gallery-03, .ip-gallery-04 {
+.ip-card.copper h3,
+.ip-card.mint h3 {
+  max-width: 100%;
+  margin: 18px 0 9px;
+}
+.ip-card.copper .ip-benefits,
+.ip-card.mint .ip-benefits {
+  min-width: 0;
+}
+.ip-gallery-03,
+.ip-gallery-04 {
   aspect-ratio: 16 / 9;
   height: auto;
   min-height: 0;
   margin-top: 16px;
   flex: none;
 }
-.ip-gallery-03 img { width: 100%; height: 100%; object-fit: contain; }
-.ip-gallery-04 img { width: 100%; height: 100%; object-fit: contain; }
-.ip-card.copper .ip-links, .ip-card.mint .ip-links { margin-top: 0; padding-top: 16px; }
+.ip-gallery-03 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.ip-gallery-04 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.ip-card.copper .ip-links,
+.ip-card.mint .ip-links {
+  margin-top: 0;
+  padding-top: 16px;
+}
 @media (max-width: 540px) {
-  .ip-card.ip-game-card { padding-left: 20px; padding-right: 20px; }
-  .ip-card.copper, .ip-card.mint { display: flex; }
+  .ip-card.ip-game-card {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .ip-card.copper,
+  .ip-card.mint {
+    display: flex;
+  }
 }
 
 /* 显式图框高度消除 grid 自动行对百分比图片高度的循环计算。 */
-.ip-card.copper, .ip-card.mint { container-type: inline-size; }
-.ip-gallery-03, .ip-gallery-04 { height: 56.25cqw; aspect-ratio: auto; }
-.ip-gallery-03 a { height: 100%; }
+.ip-card.copper,
+.ip-card.mint {
+  container-type: inline-size;
+}
+.ip-gallery-03,
+.ip-gallery-04 {
+  height: 56.25cqw;
+  aspect-ratio: auto;
+}
+.ip-gallery-03 a {
+  height: 100%;
+}

@@ -47,12 +47,12 @@ const introductions = {
     kicker: 'CREATOR TEAMS · 协同供给',
     title: '达人组团，放大品牌声量',
     description:
-      '按营销场景组合达人矩阵，探索批量筛选与协同投放的组合式供给方向。',
-    action: '了解达人团供给',
+      '按营销场景组合达人矩阵，当前共 13 个达人团（均保留“敬请期待”标记），已补充可查看的真实资料将提供文档入口。',
+    action: '查看 13 个达人团',
     secondary: '先浏览行业达人',
     target: 'industry',
     icon: UsersRound,
-    detail: '场景化达人矩阵',
+    detail: '13 个达人团',
   },
   ai: {
     kicker: 'AGENCY · 代理商供给',
