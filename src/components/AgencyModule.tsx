@@ -2,6 +2,7 @@ import snapshot from '@/data/agencySnapshot.json';
 import { agencyPagination } from '@/lib/agencyPagination';
 import { useMemo, useState } from 'react';
 import { AgencyAvatar } from './AgencyAvatar';
+import { AgencyBookletRail } from './AgencyBookletRail';
 import { AgencyPager } from './AgencyPager';
 
 import { QianchuanLists } from './QianchuanLists';
@@ -118,6 +119,7 @@ export function AgencyModule() {
       <section id="qianchuan-agencies" className="content-section mt-6">
         <QianchuanLists />
       </section>
+      <AgencyBookletRail />
     </div>
   );
 }
