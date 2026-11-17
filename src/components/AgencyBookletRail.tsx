@@ -27,9 +27,9 @@ export const BOOKLETS: Booklet[] = [
     cover: bookletShuangdan,
     aspect: 4512 / 1344,
     docUrl: 'https://bytedance.larkoffice.com/wiki/UaPHwSE3WiHG1RkfQ92cs2sLnFg',
-    wechatUrl: null,
+    wechatUrl: 'https://mp.weixin.qq.com/s/KTsc9-yCZ8oZmQZ4LkZvbg',
     publishedAt: '2026.11 刊期',
-    wechatStatus: 'pending',
+    wechatStatus: 'published',
   },
   {
     id: '1111',

@@ -41,7 +41,9 @@ def main():
     content = '\n'.join(imports) + '\n\ntype AgencySprite = { avatarUrl: string; avatarPosition: string; spriteSize: [number, number] };\nexport const agencyAvatarSprites: Record<string, AgencySprite> = {\n' + '\n'.join(entries) + '\n};\n'
     (ROOT / 'src/data/agencyAvatarSprites.ts').write_text(content)
     report = {'avatars': len(successes), 'shards': shards, 'note': '分片图片通过src/assets import进入构建，原图留作断点缓存不进入dist。'}
-    (ROOT / 'src/data/agencySpriteAudit.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
+    (ROOT / 'src/data/agencySpriteAudit.json').write_text(
+        json.dumps(report, ensure_ascii=False, indent=2) + '\n'
+    )
     print(json.dumps(report, ensure_ascii=False))
 
 

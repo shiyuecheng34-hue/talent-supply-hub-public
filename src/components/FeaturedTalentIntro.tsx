@@ -66,18 +66,20 @@ export function FeaturedTalentIntro() {
         <span>点击进入-巨量星图｜2026Q4精选达人合作激励规则</span>
         <ArrowUpRight size={16} />
       </a>
+      <header className="featured-intro-heading">
+        <span className="eyebrow featured-intro-eyebrow">
+          HOME · FEATURED TALENT
+        </span>
+        <div className="featured-intro-title">
+          <Sparkles size={18} />
+          <span>精选达人介绍</span>
+        </div>
+      </header>
       <div className="featured-intro-lead">
         <p>{INTRO_LINES[0]}</p>
       </div>
       <div className="featured-intro-hero">
         <div className="featured-intro-copy">
-          <span className="eyebrow featured-intro-eyebrow">
-            HOME · FEATURED TALENT
-          </span>
-          <div className="featured-intro-title">
-            <Sparkles size={18} />
-            <span>精选达人介绍</span>
-          </div>
           <div className="featured-intro-text">
             {INTRO_LINES.slice(1).map(line => (
               <p key={line}>{line}</p>

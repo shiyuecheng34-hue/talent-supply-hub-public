@@ -3,8 +3,8 @@
     "source": "iesdouyin user/info via 数据集5685026星图ID映射",
     "partition": "2026-11-15",
     "generatedAt": "2026-11-17",
-    "count": 12709,
-    "note": "优先 sec_uid 真实主页深链；无 sec_uid 时回退抖音用户搜索页。"
+    "count": 12711,
+    "note": "仅保留 sec_uid 生成的抖音真实主页深链；无 sec_uid 的账号不生成主页链接。"
   },
   "profiles": {
     "1679795432672269": "https://www.douyin.com/user/MS4wLjABAAAAhqBKF1I5AiciFFceJRaQo9fVP9IaNLOpytEsUmRDzvI",
@@ -378,6 +378,7 @@
     "6675050944662601741": "https://www.douyin.com/user/MS4wLjABAAAAXtTzAdkUzj0fPSZ618xZgYZ9LG-QA9AAPF7rBuWzF4A",
     "6675220091505737735": "https://www.douyin.com/user/MS4wLjABAAAAAIixM4Ze0J9nu03_QKiYf0nt5fkbpSLeYRxtGJ-gqQc",
     "6675262482715508744": "https://www.douyin.com/user/MS4wLjABAAAA96X7L7D8aLjxV2X0kq0KbGPjU0D1eE-B_A2aB6wrHbw",
+    "6675284726267248652": "https://www.douyin.com/user/MS4wLjABAAAAJIrW24hd0KLkX6vYWlV3MfS931l5apl1ZxIBEumIhEU",
     "6675315930693632008": "https://www.douyin.com/user/MS4wLjABAAAAxE5LMWZ4OBkRpvySIuedJonCupDRDx6qHDv01LTLv6k",
     "6675458265154846728": "https://www.douyin.com/user/MS4wLjABAAAA2z-wJqKV8iCjRjrY3waFjn7UA56FlpOGCg3kqeWwvMs",
     "6675579448290443268": "https://www.douyin.com/user/MS4wLjABAAAAC5kl3bcj3da8gaXmPyHJxXXUwUInFipn8pzmq-uRedc",
@@ -4001,6 +4002,7 @@
     "7038212619311775751": "https://www.douyin.com/user/MS4wLjABAAAAPIM2wldFnFnAD6Qh5shDNg2GCzcRnnViiPkw3hSikgSHZVljVk6F4fLYQqSbGnS8",
     "7038250077801938980": "https://www.douyin.com/user/MS4wLjABAAAA2USNrZPf_xobvsWOK_6AA64W7rN_rG9q4R1lsY1b6fmOZsPPWZ8XGJ7sGeX0vHsT",
     "7038422369936867358": "https://www.douyin.com/user/MS4wLjABAAAAwnCRSFP6tGmZdE1GKQcqeHGFvSgB-bjd8ftK4IEYKk4",
+    "7038477529656590372": "https://www.douyin.com/user/MS4wLjABAAAATgRnvj3LLHIYf-KnP2qOIbBj-Q2o-KtfbtO5zzhHlb4",
     "7038489392154935304": "https://www.douyin.com/user/MS4wLjABAAAA2QRVPqnJ5giG5HepkLciwuJ_ZKmzj7nIeyB9iy0B8SFSA_hvkxL0C4X-a1alOlu0",
     "7038511640446238750": "https://www.douyin.com/user/MS4wLjABAAAAeYsgx4utuZ8eR2Ios8W5zZlt1d2iFpf0J8iXX9RyYSSrfbSeCGbzgMim45xDvXZz",
     "7038546432860618784": "https://www.douyin.com/user/MS4wLjABAAAAc6Wj2N4yPD-e9DFHlX3WyFgO2VUrNAWPbhEj1zbv5IA",

@@ -1,70 +1,70 @@
 {
-  "avatars": 12662,
+  "avatars": 12664,
   "shards": [
     {
       "file": "agency-avatar-sprite-0.jpg",
       "count": 1024,
-      "bytes": 1429834
+      "bytes": 1430458
     },
     {
       "file": "agency-avatar-sprite-1.jpg",
       "count": 1024,
-      "bytes": 1432379
+      "bytes": 1432393
     },
     {
       "file": "agency-avatar-sprite-2.jpg",
       "count": 1024,
-      "bytes": 1422489
+      "bytes": 1422684
     },
     {
       "file": "agency-avatar-sprite-3.jpg",
       "count": 1024,
-      "bytes": 1446414
+      "bytes": 1447225
     },
     {
       "file": "agency-avatar-sprite-4.jpg",
       "count": 1024,
-      "bytes": 1451370
+      "bytes": 1451721
     },
     {
       "file": "agency-avatar-sprite-5.jpg",
       "count": 1024,
-      "bytes": 1448165
+      "bytes": 1447088
     },
     {
       "file": "agency-avatar-sprite-6.jpg",
       "count": 1024,
-      "bytes": 1450371
+      "bytes": 1450620
     },
     {
       "file": "agency-avatar-sprite-7.jpg",
       "count": 1024,
-      "bytes": 1471996
+      "bytes": 1472669
     },
     {
       "file": "agency-avatar-sprite-8.jpg",
       "count": 1024,
-      "bytes": 1480104
+      "bytes": 1479899
     },
     {
       "file": "agency-avatar-sprite-9.jpg",
       "count": 1024,
-      "bytes": 1460125
+      "bytes": 1459595
     },
     {
       "file": "agency-avatar-sprite-10.jpg",
       "count": 1024,
-      "bytes": 1458757
+      "bytes": 1459630
     },
     {
       "file": "agency-avatar-sprite-11.jpg",
       "count": 1024,
-      "bytes": 1473475
+      "bytes": 1473780
     },
     {
       "file": "agency-avatar-sprite-12.jpg",
-      "count": 374,
-      "bytes": 528354
+      "count": 376,
+      "bytes": 530964
     }
   ],
   "note": "分片图片通过src/assets import进入构建，原图留作断点缓存不进入dist。"

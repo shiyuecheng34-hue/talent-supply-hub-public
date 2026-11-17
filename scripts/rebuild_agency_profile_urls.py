@@ -1,7 +1,8 @@
 """从断点状态重建抖音主页映射并输出头像覆盖审计。
 
 - 读取 .cache/avatars/agency_latest 下全部状态文件
-- 仅采用 status=ok 的记录；优先 sec_uid 真实主页，回退搜索页
+- 仅采用 status=ok 且包含 sec_uid 的记录，生成抖音真实主页深链
+- 无 sec_uid 的账号不生成主页链接，不使用搜索页兜底
 - 生成 src/data/agencyProfileUrls.json 与 src/data/agencyAvatarAudit.json
 """
 import json
@@ -28,8 +29,6 @@ for path in CACHE.glob('*.json'):
         record = status['record']
         if record.get('secUid'):
             profiles[sid] = f"https://www.douyin.com/user/{record['secUid']}"
-        elif record.get('profileUrl'):
-            profiles[sid] = record['profileUrl']
 
 total = len(target_ids)
 covered = len(profiles)
@@ -39,12 +38,12 @@ profile_json = {
         'partition': '2026-11-15',
         'generatedAt': '2026-11-17',
         'count': covered,
-        'note': '优先 sec_uid 真实主页深链；无 sec_uid 时回退抖音用户搜索页。',
+        'note': '仅保留 sec_uid 生成的抖音真实主页深链；无 sec_uid 的账号不生成主页链接。',
     },
     'profiles': dict(sorted(profiles.items())),
 }
 (ROOT / 'src/data/agencyProfileUrls.json').write_text(
-    json.dumps(profile_json, ensure_ascii=False, indent=2)
+    json.dumps(profile_json, ensure_ascii=False, indent=2) + '\n'
 )
 
 audit = {
@@ -52,10 +51,10 @@ audit = {
     'avatarCovered': covered,
     'coverage': round(covered / total, 4),
     'statusBreakdown': dict(status_counter),
-    'shortIdOnlyCannotResolve': status_counter.get('profile_status_5', 0),
-    'note': 'profile_status_5 为仅有 short_id/无 unique_id 的账号，iesdouyin v2 接口已不接受 short_id/user_id 参数；missing_handle 为数据集无任何抖音句柄。',
+    'shortIdOnlyPendingUniqueIdRetry': status_counter.get('profile_status_5', 0),
+    'note': 'profile_status_5 表示历史请求以 short_id/user_id 参数通道未命中，并不代表账号不存在或永久不可恢复；数字号可改用 unique_id 参数通道重试，成功后更新为 ok。missing_handle 为数据集无任何抖音句柄。',
 }
 (ROOT / 'src/data/agencyAvatarAudit.json').write_text(
-    json.dumps(audit, ensure_ascii=False, indent=2)
+    json.dumps(audit, ensure_ascii=False, indent=2) + '\n'
 )
 print(json.dumps(audit, ensure_ascii=False))

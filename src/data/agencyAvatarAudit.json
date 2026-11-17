@@ -1,13 +1,13 @@
 {
   "total": 14903,
-  "avatarCovered": 12662,
-  "coverage": 0.8496,
+  "avatarCovered": 12664,
+  "coverage": 0.8498,
   "statusBreakdown": {
-    "profile_status_5": 2192,
-    "ok": 12662,
+    "profile_status_5": 2190,
+    "ok": 12664,
     "missing_handle": 42,
     "identity_mismatch": 7
   },
-  "shortIdOnlyCannotResolve": 2192,
-  "note": "profile_status_5 为仅有 short_id/无 unique_id 的账号；实测数字号可改用 unique_id 参数通道命中（如阿木爷爷 22445618），剩余缺口尚未逐条按该通道重试；missing_handle 为数据集无任何抖音句柄。"
+  "shortIdOnlyPendingUniqueIdRetry": 2190,
+  "note": "profile_status_5 表示历史请求以 short_id/user_id 参数通道未命中，并不代表账号不存在或永久不可恢复；数字号可改用 unique_id 参数通道重试，成功后更新为 ok。missing_handle 为数据集无任何抖音句柄。"
 }
