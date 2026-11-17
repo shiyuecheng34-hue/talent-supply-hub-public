@@ -178,9 +178,28 @@ a {
   box-shadow: 0 12px 30px rgba(0, 12, 31, 0.18);
 }
 .sidebar-feature-entry {
+  position: relative;
   margin-bottom: 16px;
   padding: 14px 16px;
   transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+.sidebar-feature-entry-top {
+  margin-bottom: 30px;
+  padding-bottom: 18px;
+}
+.sidebar-feature-entry-top::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: -16px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(78, 153, 238, 0.38),
+    transparent
+  );
 }
 .sidebar-feature-entry:hover {
   border-color: rgba(69, 216, 255, 0.45);

@@ -55,7 +55,7 @@ export function AgencyBookletRail() {
 export function FeaturedTalentSidebarEntry() {
   return (
     <a
-      className="sidebar-rail sidebar-feature-entry"
+      className="sidebar-rail sidebar-feature-entry sidebar-feature-entry-top"
       href="#featured-talent-intro"
     >
       <span className="sidebar-feature-entry-label">精选达人介绍</span>
