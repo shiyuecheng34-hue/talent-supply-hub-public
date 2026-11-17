@@ -1,0 +1,29 @@
+{
+  "targets": 1296,
+  "industryTargets": 1099,
+  "nodeTargets": 215,
+  "unionTargets": 1296,
+  "avatarCovered": 1292,
+  "avatarCoverage": 0.9969,
+  "avatarBreakdown": {
+    "legacy_sprite_crop": 772,
+    "industry_fetch": 58,
+    "agency_cache": 310,
+    "legacy_supplement_crop": 152
+  },
+  "deepLinkCovered": 1140,
+  "displayIdCovered": 1292,
+  "unresolved": 4,
+  "shards": [
+    {
+      "file": "industry-avatar-sprite-0.jpg",
+      "count": 1024,
+      "bytes": 1418446
+    },
+    {
+      "file": "industry-avatar-sprite-1.jpg",
+      "count": 268,
+      "bytes": 378960
+    }
+  ]
+}

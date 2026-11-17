@@ -1,3 +1,5 @@
+import { ChevronRight, Sparkles } from 'lucide-react';
+
 import booklet1111 from '../assets/booklet-1111.jpg';
 import bookletMidautumn from '../assets/booklet-midautumn.jpg';
 import bookletShuangdan from '../assets/booklet-shuangdan.jpg';
@@ -67,15 +69,15 @@ export function FeaturedTalentSidebarEntry({
   return (
     <button
       type="button"
-      className={
-        active
-          ? 'sidebar-rail sidebar-feature-entry sidebar-feature-entry-top active'
-          : 'sidebar-rail sidebar-feature-entry sidebar-feature-entry-top'
-      }
+      className={active ? 'nav-item active' : 'nav-item'}
       onClick={onOpen}
     >
-      <span className="sidebar-feature-entry-label">精选达人介绍</span>
-      <small>首页导览与查询入口</small>
+      <Sparkles size={18} />
+      <span>
+        <b>精选达人介绍</b>
+        <small>首页导览与查询入口</small>
+      </span>
+      <ChevronRight size={15} />
     </button>
   );
 }

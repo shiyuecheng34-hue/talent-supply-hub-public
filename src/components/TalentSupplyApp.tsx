@@ -1,5 +1,7 @@
-import { douyinAvatarMap, douyinAvatarMeta } from '@/data/douyinAvatarMap';
+import { douyinAvatarMap } from '@/data/douyinAvatarMap';
+import { industryAvatarSprites } from '@/data/industryAvatarSprites';
 import { industrySamples } from '@/data/industrySamples';
+import industryProfiles from '@/data/industryTalentProfiles.json';
 import { nodeSamples } from '@/data/nodeSamples';
 import { shuffleNodeRows } from '@/lib/shuffleNodeRows';
 import { useFeishuSheetRange } from '@aeolus/feishu-table-sdk';
@@ -98,12 +100,6 @@ const MODULES = [
     desc: '重点达人 · 报价与全维度',
     icon: Bot,
   },
-  {
-    key: 'booklet' as const,
-    label: '精选达人推荐刊例',
-    desc: '三期特刊 · 文档与公众号',
-    icon: BookOpen,
-  },
 ];
 
 const INDUSTRY_URL =
@@ -188,11 +184,19 @@ function TalentCard({
   const longPrice = compactPrice(get('抖音60s以上视频报价(元)'));
   // 字符串 ID 保留全部精度，仅清理空白及表格常见的 .0 后缀。
   const id = text(get('达人星图id')).trim().replace(/\.0+$/, '');
-  const profile =
+  const xingtuUrl =
     id !== '-' ? `https://www.xingtu.cn/ad/creator/author/douyin/${id}` : '#';
-  const douyin = douyinAvatarMap[id];
-  const spriteSize = douyinAvatarMeta.spriteSize ?? [4000, 3200];
-  const douyinUrl = douyin?.profileUrl || profile;
+  const talentProfile = (
+    industryProfiles.profiles as Record<
+      string,
+      { profileUrl: string | null; displayId: string }
+    >
+  )[id];
+  const sprite = industryAvatarSprites[id];
+  // 仅采用经过身份核验的 sec_uid 真实主页；未核验时不输出伪链接。
+  const douyinUrl = talentProfile?.profileUrl ?? null;
+  const displayIdText =
+    talentProfile?.displayId || douyinAvatarMap[id]?.displayId || '';
   const subtitle =
     mode === 'node'
       ? [text(get('节点')), category].filter(value => value !== '-').join(' · ')
@@ -201,34 +205,54 @@ function TalentCard({
   return (
     <article className="talent-card industry-card">
       <div className="talent-topline">
-        <a
-          className="avatar avatar-photo"
-          href={douyinUrl}
-          target="_blank"
-          rel="noreferrer"
-          aria-label={`打开 ${name} 的抖音主页`}
-        >
-          {douyin?.avatarPosition ? (
-            <span
-              className="avatar-sprite"
-              style={{
-                backgroundImage: `url(${douyin.avatarUrl})`,
-                backgroundPosition: douyin.avatarPosition,
-                backgroundSize: `${spriteSize[0]}px ${spriteSize[1]}px`,
-              }}
-              role="img"
-              aria-label={`${name} 头像`}
-            />
-          ) : douyin?.avatarUrl ? (
-            <img src={douyin.avatarUrl} alt={`${name} 头像`} />
-          ) : (
-            <span>{initials(name)}</span>
-          )}
-        </a>
+        {douyinUrl ? (
+          <a
+            className="avatar avatar-photo"
+            href={douyinUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`打开 ${name} 的抖音主页`}
+          >
+            {sprite ? (
+              <span
+                className="avatar-sprite"
+                style={{
+                  backgroundImage: `url(${sprite.avatarUrl})`,
+                  backgroundPosition: sprite.avatarPosition,
+                  backgroundSize: `${sprite.spriteSize[0]}px ${sprite.spriteSize[1]}px`,
+                }}
+                role="img"
+                aria-label={`${name} 头像`}
+              />
+            ) : (
+              <span>{initials(name)}</span>
+            )}
+          </a>
+        ) : (
+          <span
+            className="avatar avatar-disabled"
+            aria-label={`${name} 暂未获取到抖音主页`}
+          >
+            {sprite ? (
+              <span
+                className="avatar-sprite"
+                style={{
+                  backgroundImage: `url(${sprite.avatarUrl})`,
+                  backgroundPosition: sprite.avatarPosition,
+                  backgroundSize: `${sprite.spriteSize[0]}px ${sprite.spriteSize[1]}px`,
+                }}
+                role="img"
+                aria-label={`${name} 头像`}
+              />
+            ) : (
+              <span>{initials(name)}</span>
+            )}
+          </span>
+        )}
         <div className="talent-title">
           <strong>{name}</strong>
           <span>{subtitle || '精选达人'}</span>
-          {douyin?.displayId ? <em>抖音号：{douyin.displayId}</em> : null}
+          {displayIdText ? <em>抖音号：{displayIdText}</em> : null}
         </div>
         {score !== '' && score !== '-' ? (
           <span className="score">{score}</span>
@@ -252,10 +276,19 @@ function TalentCard({
         </div>
       </div>
       <div className="card-actions">
-        <a href={douyinUrl} target="_blank" rel="noreferrer">
-          抖音主页 <ExternalLink size={13} />
-        </a>
-        <a href={profile} target="_blank" rel="noreferrer">
+        {douyinUrl ? (
+          <a href={douyinUrl} target="_blank" rel="noreferrer">
+            抖音主页 <ExternalLink size={13} />
+          </a>
+        ) : (
+          <span
+            className="card-link-disabled"
+            title="暂未获取到该达人的抖音主页链接"
+          >
+            抖音主页
+          </span>
+        )}
+        <a href={xingtuUrl} target="_blank" rel="noreferrer">
           星图主页 <ExternalLink size={13} />
         </a>
       </div>
@@ -342,14 +375,6 @@ function LiveTalentModule({
               : '覆盖 11 个重点行业，汇总核心推荐达人与商业合作信息。'}
           </p>
         </div>
-        <a
-          className="source-link"
-          href={sourceUrl}
-          target="_blank"
-          rel="noreferrer"
-        >
-          原始数据源 <ExternalLink size={14} />
-        </a>
       </div>
       <div className="filter-bar">
         <div className="pill-scroll">
@@ -410,19 +435,6 @@ function LiveTalentModule({
         )}
         {sheet.status === 'error' && !hasRenderableData && (
           <FeishuErrorPanel error={sheet.error} sourceUrl={sourceUrl} />
-        )}
-        {shouldUseSample && (
-          <div className="state-panel preview-panel">
-            <ShieldCheck size={18} />
-            <div>
-              <strong>本地样本预览</strong>
-              <p>
-                飞书实时数据暂不可用，当前展示前 100 位
-                {isNode ? '节点' : '行业'}
-                样本，线上授权后会自动切回实时数据。
-              </p>
-            </div>
-          </div>
         )}
         {hasRenderableData && (
           <>
@@ -522,11 +534,23 @@ function App() {
             <span>Talent Supply Hub</span>
           </div>
         </div>
-        <FeaturedTalentSidebarEntry
-          onOpen={() => setModule('featured')}
-          active={module === 'featured'}
-        />
         <nav>
+          <FeaturedTalentSidebarEntry
+            onOpen={() => setModule('featured')}
+            active={module === 'featured'}
+          />
+          <button
+            type="button"
+            className={module === 'booklet' ? 'nav-item active' : 'nav-item'}
+            onClick={() => setModule('booklet')}
+          >
+            <BookOpen size={18} />
+            <span>
+              <b>精选达人推荐刊例</b>
+              <small>双旦 / 双11 / 中秋国庆 · 三份特刊</small>
+            </span>
+            <ChevronRight size={15} />
+          </button>
           {MODULES.map(item => {
             const Icon = item.icon;
             return (
@@ -545,27 +569,6 @@ function App() {
             );
           })}
         </nav>
-        <div className="sidebar-foot">
-          <span>数据源</span>
-          <strong>
-            {module === 'ai'
-              ? '风神底池 · 飞书全维度快照'
-              : module === 'featured'
-                ? '巨量星图 · 精选达人'
-                : module === 'booklet'
-                  ? '巨量星图 · 推荐刊例'
-                  : '飞书表格 · 实时同步'}
-          </strong>
-          <small>
-            {module === 'ai'
-              ? '底池：11-10；新增报价与维度源表：11-16'
-              : module === 'featured'
-                ? '名单动态更新，以星图平台为准'
-                : module === 'booklet'
-                  ? '三期精选达人特刊，飞书 Wiki 维护'
-                  : '最后刷新以页面载入时间为准'}
-          </small>
-        </div>
       </aside>
       <main>
         <div className="module-topbar">
