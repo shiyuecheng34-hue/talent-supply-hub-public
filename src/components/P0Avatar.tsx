@@ -1,3 +1,4 @@
+import { industryAvatarSprites } from '@/data/industryAvatarSprites';
 import { useEffect, useState } from 'react';
 import { AgencyAvatar } from './AgencyAvatar';
 
@@ -35,7 +36,8 @@ function useSpriteMap() {
 
 export function P0Avatar({ id, name }: { id: string; name: string }) {
   const sprites = useSpriteMap();
-  const sprite = sprites?.[id];
+  // P0 专属图集 → 行业图集（已在主包）→ 代理商头像组件（代理图集/兜底）。
+  const sprite = sprites?.[id] ?? industryAvatarSprites[id];
   if (!sprite) return <AgencyAvatar id={id} name={name} />;
   return (
     <span className="avatar avatar-photo" title={`${name} 头像`}>
