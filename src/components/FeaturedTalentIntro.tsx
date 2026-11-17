@@ -57,15 +57,20 @@ export function FeaturedTalentIntro() {
       id="featured-talent-intro"
       className="featured-intro-section content-section enter"
     >
-      <div className="featured-intro-topline">
-        <span className="eyebrow">HOME · FEATURED TALENT</span>
-        <a href={RULES_URL} target="_blank" rel="noreferrer">
-          点击进入-巨量星图｜2026Q4精选达人合作激励规则{' '}
-          <ArrowUpRight size={14} />
-        </a>
-      </div>
+      <a
+        className="featured-intro-rules-banner"
+        href={RULES_URL}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span>点击进入-巨量星图｜2026Q4精选达人合作激励规则</span>
+        <ArrowUpRight size={16} />
+      </a>
       <div className="featured-intro-hero">
         <div className="featured-intro-copy">
+          <span className="eyebrow featured-intro-eyebrow">
+            HOME · FEATURED TALENT
+          </span>
           <div className="featured-intro-title">
             <Sparkles size={18} />
             <span>精选达人介绍</span>
