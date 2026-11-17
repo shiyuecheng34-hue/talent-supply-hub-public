@@ -1,5 +1,5 @@
 import { ArrowUpRight, BookOpen, UsersRound } from 'lucide-react';
-import potentialTeamHero from '../assets/team-potential-first-image.png';
+import potentialTeamHero from '../assets/team-potential-cover.png';
 
 type TeamSpec = {
   name: string;
@@ -21,7 +21,7 @@ const TEAMS: TeamSpec[] = [
       'https://bytedance.larkoffice.com/wiki/VLNBwKSyRioS6gkulvxca0ORn9g?from=from_copylink',
     coverImage: potentialTeamHero,
     coverAlt:
-      '2026巨量星图「潜力宝藏达人团」文档正文首图：招募任务服务商模式介绍图',
+      '2026巨量星图「潜力宝藏达人团」飞书文档头图：潜力宝藏达人团主视觉',
     docSummary: {
       subtitle: '已发布资料：项目总览',
       bullets: [

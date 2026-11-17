@@ -2100,6 +2100,86 @@ footer {
   outline: 2px solid #5bdef5;
   outline-offset: 3px;
 }
+.agency-home-link {
+  display: inline-flex;
+  align-items: center;
+  color: #6fe7ff;
+  white-space: nowrap;
+}
+.agency-home-link:hover {
+  color: #a7f3ff;
+  text-decoration: underline;
+}
+.booklet-page-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+.booklet-page-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 26px;
+  border: 1px solid rgba(84, 153, 235, 0.24);
+  border-radius: 16px;
+  background: linear-gradient(
+    100deg,
+    rgba(9, 40, 78, 0.72),
+    rgba(6, 27, 55, 0.5)
+  );
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+.booklet-page-card:hover {
+  border-color: rgba(78, 216, 255, 0.55);
+  background: linear-gradient(
+    100deg,
+    rgba(16, 64, 112, 0.8),
+    rgba(8, 36, 70, 0.62)
+  );
+  transform: translateY(-2px);
+}
+.booklet-page-index {
+  flex: none;
+  color: #45d8ff;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+.booklet-page-body {
+  flex: 1;
+  min-width: 0;
+}
+.booklet-page-body strong {
+  display: block;
+  color: #eaf6ff;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.booklet-page-body small {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+  color: #7f9cbd;
+  font-size: 12px;
+}
+.booklet-page-arrow {
+  flex: none;
+  color: #6fe7ff;
+}
+@media (max-width: 640px) {
+  .booklet-page-card {
+    align-items: flex-start;
+    gap: 14px;
+    padding: 18px;
+  }
+  .booklet-page-index {
+    font-size: 22px;
+  }
+  .booklet-page-body strong {
+    font-size: 14px;
+  }
+}
 .agency-module .sidebar-booklet-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

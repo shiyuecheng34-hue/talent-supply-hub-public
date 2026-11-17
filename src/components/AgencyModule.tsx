@@ -1,9 +1,10 @@
 import enrichment from '@/data/agencyEnrichment.json';
+import profileUrls from '@/data/agencyProfileUrls.json';
 import snapshot from '@/data/agencySnapshot.json';
+import { douyinAvatarMap } from '@/data/douyinAvatarMap';
 import { agencyPagination } from '@/lib/agencyPagination';
 import { useMemo, useState } from 'react';
 import { AgencyAvatar } from './AgencyAvatar';
-import { AgencyBookletRail } from './AgencyBookletRail';
 import { AgencyPager } from './AgencyPager';
 
 const fields = [
@@ -34,9 +35,22 @@ const price = (value: string | null | undefined) => {
     ? `¥${amount.toLocaleString('zh-CN')}`
     : display(value);
 };
+// 「星图达人抖音昵称」与第二列达人昵称重复，不再展示。
 const extraHeaders = enrichment.headers.filter(
-  header => !['达人星图id', '植入视频报价', '定制视频报价'].includes(header),
+  header =>
+    ![
+      '达人星图id',
+      '植入视频报价',
+      '定制视频报价',
+      '星图达人抖音昵称',
+    ].includes(header),
 );
+const xingtuProfile = (id: string) =>
+  `https://www.xingtu.cn/ad/creator/author/douyin/${id}`;
+const douyinProfile = (id: string) =>
+  (profileUrls.profiles as Record<string, string>)[id] ??
+  douyinAvatarMap[id]?.profileUrl ??
+  null;
 
 export function AgencyModule() {
   const [filters, setFilters] = useState({ industry: '', fans: '', tag: '' });
@@ -75,7 +89,7 @@ export function AgencyModule() {
           {enrichment.meta.sheetRevision}
           <br />
           植入报价＝21–60s；定制报价＝60s+（元）；0
-          按原值展示，不代表缺失。源表与底池存在跨时间差异，新增列标注「源表」。
+          按原值展示，不代表缺失。源表与底池存在跨时间差异，报价与扩展维度以源表为准。
         </p>
         <div className="flex flex-wrap gap-4 my-6">
           {fields.map(({ key, label }) => (
@@ -135,10 +149,12 @@ export function AgencyModule() {
                   '达人星图 ID',
                   '植入报价',
                   '定制报价',
+                  '抖音主页',
+                  '星图主页',
                   '行业',
                   '粉丝量级',
                   '内容标签',
-                  ...extraHeaders.map(h => `源表 · ${h}`),
+                  ...extraHeaders,
                 ].map(h => (
                   <th
                     className="p-3 border-b border-slate-700"
@@ -164,6 +180,30 @@ export function AgencyModule() {
                   <td className="p-3">
                     {price(sourceValue(r.id, '定制视频报价'))}
                   </td>
+                  <td className="p-3">
+                    {douyinProfile(r.id) ? (
+                      <a
+                        className="agency-home-link"
+                        href={douyinProfile(r.id) ?? undefined}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        抖音主页 ↗
+                      </a>
+                    ) : (
+                      '—'
+                    )}
+                  </td>
+                  <td className="p-3">
+                    <a
+                      className="agency-home-link"
+                      href={xingtuProfile(r.id)}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      星图主页 ↗
+                    </a>
+                  </td>
                   <td className="p-3">{display(r.industry)}</td>
                   <td className="p-3">{r.fans}</td>
                   <td className="p-3">{display(r.tag)}</td>
@@ -188,7 +228,6 @@ export function AgencyModule() {
           onChange={setPage}
         />
       </section>
-      <AgencyBookletRail />
     </div>
   );
 }

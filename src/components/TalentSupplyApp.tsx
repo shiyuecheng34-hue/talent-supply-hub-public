@@ -18,8 +18,12 @@ import {
   UsersRound,
 } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { FeaturedTalentSidebarEntry } from './AgencyBookletRail';
+import {
+  BookletSidebarEntry,
+  FeaturedTalentSidebarEntry,
+} from './AgencyBookletRail';
 import { AgencyModule } from './AgencyModule';
+import { BookletModule } from './BookletModule';
 import { DataApplicationProvider } from './DataApplicationProvider';
 import { FeaturedTalentIntro } from './FeaturedTalentIntro';
 import { IpCampaignModule } from './IpCampaignModule';
@@ -494,6 +498,7 @@ function App() {
     if (typeof window === 'undefined') return 'industry';
     const requested = new URLSearchParams(window.location.search).get('module');
     return requested === 'featured' ||
+      requested === 'booklet' ||
       MODULES.some(item => item.key === requested)
       ? (requested as ModuleKey)
       : 'industry';
@@ -517,6 +522,10 @@ function App() {
           onOpen={() => setModule('featured')}
           active={module === 'featured'}
         />
+        <BookletSidebarEntry
+          onOpen={() => setModule('booklet')}
+          active={module === 'booklet'}
+        />
         <nav>
           {MODULES.map(item => {
             const Icon = item.icon;
@@ -536,17 +545,6 @@ function App() {
             );
           })}
         </nav>
-        {module === 'ai' && (
-          <a
-            className="sidebar-rail sidebar-feature-entry"
-            href="#agency-booklets"
-          >
-            <span className="sidebar-feature-entry-label">
-              精选达人推荐刊例
-            </span>
-            <small>双旦 / 双11 / 中秋国庆 · 查看三份特刊</small>
-          </a>
-        )}
         <div className="sidebar-foot">
           <span>数据源</span>
           <strong>
@@ -554,14 +552,18 @@ function App() {
               ? '风神底池 · 飞书全维度快照'
               : module === 'featured'
                 ? '巨量星图 · 精选达人'
-                : '飞书表格 · 实时同步'}
+                : module === 'booklet'
+                  ? '巨量星图 · 推荐刊例'
+                  : '飞书表格 · 实时同步'}
           </strong>
           <small>
             {module === 'ai'
               ? '底池：11-10；新增报价与维度源表：11-16'
               : module === 'featured'
                 ? '名单动态更新，以星图平台为准'
-                : '最后刷新以页面载入时间为准'}
+                : module === 'booklet'
+                  ? '三期精选达人特刊，飞书 Wiki 维护'
+                  : '最后刷新以页面载入时间为准'}
           </small>
         </div>
       </aside>
@@ -571,12 +573,15 @@ function App() {
             精选达人供给 /{' '}
             {module === 'featured'
               ? '精选达人介绍'
-              : MODULES.find(item => item.key === module)?.label}
+              : module === 'booklet'
+                ? '精选达人推荐刊例'
+                : MODULES.find(item => item.key === module)?.label}
           </span>
           <span>Talent Supply Hub</span>
         </div>
         {module === 'featured' && <FeaturedTalentIntro />}
-        {module !== 'node' && module !== 'featured' && (
+        {module === 'booklet' && <BookletModule />}
+        {module !== 'node' && module !== 'featured' && module !== 'booklet' && (
           <ModuleBanner module={module} onNavigate={setModule} />
         )}
         {module === 'industry' && (

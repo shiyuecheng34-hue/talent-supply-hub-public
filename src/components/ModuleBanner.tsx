@@ -7,9 +7,16 @@ import {
   UsersRound,
 } from 'lucide-react';
 
-export type ModuleKey = 'industry' | 'node' | 'ip' | 'team' | 'ai' | 'featured';
+export type ModuleKey =
+  | 'industry'
+  | 'node'
+  | 'ip'
+  | 'team'
+  | 'ai'
+  | 'featured'
+  | 'booklet';
 
-export type BannerModuleKey = Exclude<ModuleKey, 'featured'>;
+export type BannerModuleKey = Exclude<ModuleKey, 'featured' | 'booklet'>;
 
 const introductions = {
   industry: {

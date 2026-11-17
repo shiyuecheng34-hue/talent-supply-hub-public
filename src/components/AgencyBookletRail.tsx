@@ -1,6 +1,6 @@
 import { ArrowUpRight, BookOpen, Sparkles } from 'lucide-react';
 
-const BOOKLETS = [
+export const BOOKLETS = [
   {
     title: '把年末的心意，过成一场值得分享的节日｜双旦巨量星图精选达人特刊',
     url: 'https://bytedance.larkoffice.com/wiki/UaPHwSE3WiHG1RkfQ92cs2sLnFg',
@@ -71,6 +71,29 @@ export function FeaturedTalentSidebarEntry({
     >
       <span className="sidebar-feature-entry-label">精选达人介绍</span>
       <small>首页导览与查询入口</small>
+    </button>
+  );
+}
+
+export function BookletSidebarEntry({
+  onOpen,
+  active,
+}: {
+  onOpen: () => void;
+  active?: boolean;
+}) {
+  return (
+    <button
+      type="button"
+      className={
+        active
+          ? 'sidebar-rail sidebar-feature-entry active'
+          : 'sidebar-rail sidebar-feature-entry'
+      }
+      onClick={onOpen}
+    >
+      <span className="sidebar-feature-entry-label">精选达人推荐刊例</span>
+      <small>双旦 / 双11 / 中秋国庆 · 三份特刊</small>
     </button>
   );
 }
