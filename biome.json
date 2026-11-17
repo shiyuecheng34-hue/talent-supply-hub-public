@@ -87,7 +87,10 @@
       "node_modules/**/*",
       "**/@mf-types/**",
       "dist/**/*",
-      "build/**/*"
+      "build/**/*",
+      "src/data/p0Authors.json",
+      "src/data/p0ProfileUrls.json",
+      "src/data/p0AvatarSprites.ts"
     ]
   }
 }

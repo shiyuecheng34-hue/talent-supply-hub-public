@@ -31,6 +31,7 @@ import { BookletModule } from './BookletModule';
 import { DataApplicationProvider } from './DataApplicationProvider';
 import { FeaturedTalentIntro } from './FeaturedTalentIntro';
 import { IpCampaignModule } from './IpCampaignModule';
+import { P0AuthorsModule } from './P0AuthorsModule';
 import { TeamModule } from './TeamModule';
 
 import { ModuleBanner, type ModuleKey } from './ModuleBanner';
@@ -366,16 +367,11 @@ function LiveTalentModule({
         exportRows,
       );
     } catch (error) {
-      // 无登录态、样本模式或网络异常时回退到当前已载入数据，保证按钮可用。
+      // 全量要求下不导出半量文件，避免把当前载入的样本误当全量结果。
       window.alert(
-        `全量数据拉取失败，已导出当前载入的 ${filtered.length} 条数据。${
+        `全量数据拉取失败，未生成文件，请稍后重试。${
           error instanceof Error ? `原因：${error.message}` : ''
         }`,
-      );
-      downloadRowsTable(
-        `${modulePrefix}-${safeLabel}-${filtered.length}条.csv`,
-        headers,
-        filtered,
       );
     } finally {
       setDownloading(false);
@@ -647,7 +643,12 @@ function App() {
           </div>
         )}
         {module === 'team' && <TeamModule />}
-        {module === 'ai' && <AgencyModule />}
+        {module === 'ai' && (
+          <>
+            <AgencyModule />
+            <P0AuthorsModule />
+          </>
+        )}
         <footer>
           <span>精选达人供给库 v1.0 · Powered by 飞书数据</span>
           <span>© 2026 Talent Supply</span>

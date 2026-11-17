@@ -1,0 +1,151 @@
+{
+  "avatars": 28903,
+  "shards": [
+    {
+      "file": "p0-avatar-sprite-0.jpg",
+      "count": 1024,
+      "bytes": 1439610
+    },
+    {
+      "file": "p0-avatar-sprite-1.jpg",
+      "count": 1024,
+      "bytes": 1442312
+    },
+    {
+      "file": "p0-avatar-sprite-2.jpg",
+      "count": 1024,
+      "bytes": 1447728
+    },
+    {
+      "file": "p0-avatar-sprite-3.jpg",
+      "count": 1024,
+      "bytes": 1440187
+    },
+    {
+      "file": "p0-avatar-sprite-4.jpg",
+      "count": 1024,
+      "bytes": 1463187
+    },
+    {
+      "file": "p0-avatar-sprite-5.jpg",
+      "count": 1024,
+      "bytes": 1450202
+    },
+    {
+      "file": "p0-avatar-sprite-6.jpg",
+      "count": 1024,
+      "bytes": 1458649
+    },
+    {
+      "file": "p0-avatar-sprite-7.jpg",
+      "count": 1024,
+      "bytes": 1424490
+    },
+    {
+      "file": "p0-avatar-sprite-8.jpg",
+      "count": 1024,
+      "bytes": 1434917
+    },
+    {
+      "file": "p0-avatar-sprite-9.jpg",
+      "count": 1024,
+      "bytes": 1443144
+    },
+    {
+      "file": "p0-avatar-sprite-10.jpg",
+      "count": 1024,
+      "bytes": 1442428
+    },
+    {
+      "file": "p0-avatar-sprite-11.jpg",
+      "count": 1024,
+      "bytes": 1453671
+    },
+    {
+      "file": "p0-avatar-sprite-12.jpg",
+      "count": 1024,
+      "bytes": 1446812
+    },
+    {
+      "file": "p0-avatar-sprite-13.jpg",
+      "count": 1024,
+      "bytes": 1451696
+    },
+    {
+      "file": "p0-avatar-sprite-14.jpg",
+      "count": 1024,
+      "bytes": 1436255
+    },
+    {
+      "file": "p0-avatar-sprite-15.jpg",
+      "count": 1024,
+      "bytes": 1438997
+    },
+    {
+      "file": "p0-avatar-sprite-16.jpg",
+      "count": 1024,
+      "bytes": 1426357
+    },
+    {
+      "file": "p0-avatar-sprite-17.jpg",
+      "count": 1024,
+      "bytes": 1415161
+    },
+    {
+      "file": "p0-avatar-sprite-18.jpg",
+      "count": 1024,
+      "bytes": 1440400
+    },
+    {
+      "file": "p0-avatar-sprite-19.jpg",
+      "count": 1024,
+      "bytes": 1449356
+    },
+    {
+      "file": "p0-avatar-sprite-20.jpg",
+      "count": 1024,
+      "bytes": 1444433
+    },
+    {
+      "file": "p0-avatar-sprite-21.jpg",
+      "count": 1024,
+      "bytes": 1447802
+    },
+    {
+      "file": "p0-avatar-sprite-22.jpg",
+      "count": 1024,
+      "bytes": 1446880
+    },
+    {
+      "file": "p0-avatar-sprite-23.jpg",
+      "count": 1024,
+      "bytes": 1436653
+    },
+    {
+      "file": "p0-avatar-sprite-24.jpg",
+      "count": 1024,
+      "bytes": 1411297
+    },
+    {
+      "file": "p0-avatar-sprite-25.jpg",
+      "count": 1024,
+      "bytes": 1444248
+    },
+    {
+      "file": "p0-avatar-sprite-26.jpg",
+      "count": 1024,
+      "bytes": 1434424
+    },
+    {
+      "file": "p0-avatar-sprite-27.jpg",
+      "count": 1024,
+      "bytes": 1443505
+    },
+    {
+      "file": "p0-avatar-sprite-28.jpg",
+      "count": 231,
+      "bytes": 327607
+    }
+  ],
+  "note": "P0 独立分片；原图留作缓存不进入 dist。"
+}

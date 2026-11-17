@@ -87,7 +87,6 @@ export function TeamModule() {
             {team.coverImage ? (
               <figure className="team-cover">
                 <img src={team.coverImage} alt={team.coverAlt ?? team.name} />
-                <figcaption>文档真实头图</figcaption>
               </figure>
             ) : null}
 

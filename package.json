@@ -20,7 +20,10 @@
   "lint-staged": {
     "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
       "biome check --files-ignore-unknown=true"
-    ]
+    ],
+    "!src/data/p0Authors.json": [],
+    "!src/data/p0ProfileUrls.json": [],
+    "!src/data/p0AvatarSprites.ts": []
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

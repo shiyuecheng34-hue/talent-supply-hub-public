@@ -4,13 +4,19 @@ export function AgencyPager({
   total,
   page,
   onChange,
-}: { total: number; page: number; onChange: (page: number) => void }) {
+  ariaLabel = '代理商重点分页',
+}: {
+  total: number;
+  page: number;
+  onChange: (page: number) => void;
+  ariaLabel?: string;
+}) {
   const data = agencyPagination(total, page);
   const buttonClass =
     'rounded-lg border border-slate-600 px-3 py-2 text-sm disabled:opacity-40 disabled:cursor-not-allowed';
   return (
     <nav
-      aria-label="代理商重点分页"
+      aria-label={ariaLabel}
       className="flex flex-wrap gap-2 items-center my-4"
     >
       <span className="text-sm mr-2" aria-live="polite">

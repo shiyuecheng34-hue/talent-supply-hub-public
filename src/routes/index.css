@@ -1326,13 +1326,6 @@ main {
   object-position: center top;
 }
 
-.team-cover figcaption {
-  padding: 8px 12px;
-  color: #8fb5da;
-  font-size: 11px;
-  letter-spacing: .08em;
-}
-
 .team-status {
   flex: none;
   padding: 5px 10px;
@@ -2249,4 +2242,30 @@ footer {
   width: 56px;
   height: 56px;
   overflow: hidden;
+}
+
+/* P0 作者板块：与代理商重点达人表格同构 */
+.p0-section {
+  margin-top: 40px;
+}
+.p0-section .avatar {
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+}
+.p0-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 180px;
+  color: #9ec8ee;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+}
+/* 节点横幅移除按钮与装饰后收紧纵向留白 */
+.module-banner.hero.banner-node {
+  min-height: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }

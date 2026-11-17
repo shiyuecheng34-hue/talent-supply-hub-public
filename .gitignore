@@ -27,4 +27,5 @@ edenx.config.local.*
 
 # A模块头像原图仅用于断点恢复，部署使用src/assets下的分片图集。
 avatar-assets/agency-*.jpg
+avatar-assets/p0-*.jpg
 src/data/agencyAvatarOverrides.ts
