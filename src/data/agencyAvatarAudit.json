@@ -1,18 +1,13 @@
 {
-  "capturedAt": "2026-11-17 00:32:28 CST",
-  "partition": "2026-11-15",
-  "targetCount": 14903,
-  "mappingSuccess": 14903,
-  "mappingMissing": 0,
-  "reusedAvatarCount": 371,
-  "newAvatarCount": 2940,
-  "coverageCount": 3311,
-  "attempted": 3504,
-  "failures": {
-    "profile_status_5": 484,
-    "http_444": 77,
-    "ProxyError": 3
+  "total": 14903,
+  "avatarCovered": 12661,
+  "coverage": 0.8496,
+  "statusBreakdown": {
+    "profile_status_5": 2193,
+    "ok": 12661,
+    "missing_handle": 42,
+    "identity_mismatch": 7
   },
-  "timeboxUnattempted": 11028,
-  "elapsedSeconds": 900
+  "shortIdOnlyCannotResolve": 2193,
+  "note": "profile_status_5 为仅有 short_id/无 unique_id 的账号，iesdouyin v2 接口已不接受 short_id/user_id 参数；missing_handle 为数据集无任何抖音句柄。"
 }

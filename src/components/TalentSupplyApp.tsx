@@ -5,6 +5,7 @@ import { shuffleNodeRows } from '@/lib/shuffleNodeRows';
 import { useFeishuSheetRange } from '@aeolus/feishu-table-sdk';
 import {
   ArrowUpRight,
+  BookOpen,
   Bot,
   CalendarDays,
   ChevronRight,
@@ -18,10 +19,7 @@ import {
   UsersRound,
 } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import {
-  BookletSidebarEntry,
-  FeaturedTalentSidebarEntry,
-} from './AgencyBookletRail';
+import { FeaturedTalentSidebarEntry } from './AgencyBookletRail';
 import { AgencyModule } from './AgencyModule';
 import { BookletModule } from './BookletModule';
 import { DataApplicationProvider } from './DataApplicationProvider';
@@ -99,6 +97,12 @@ const MODULES = [
     label: '代理商使用模块',
     desc: '重点达人 · 报价与全维度',
     icon: Bot,
+  },
+  {
+    key: 'booklet' as const,
+    label: '精选达人推荐刊例',
+    desc: '三期特刊 · 文档与公众号',
+    icon: BookOpen,
   },
 ];
 
@@ -521,10 +525,6 @@ function App() {
         <FeaturedTalentSidebarEntry
           onOpen={() => setModule('featured')}
           active={module === 'featured'}
-        />
-        <BookletSidebarEntry
-          onOpen={() => setModule('booklet')}
-          active={module === 'booklet'}
         />
         <nav>
           {MODULES.map(item => {

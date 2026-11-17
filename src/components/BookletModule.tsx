@@ -1,4 +1,4 @@
-import { ArrowUpRight, BookOpen } from 'lucide-react';
+import { ArrowUpRight, BookOpen, FileText, Megaphone } from 'lucide-react';
 import { BOOKLETS } from './AgencyBookletRail';
 
 export function BookletModule() {
@@ -11,28 +11,67 @@ export function BookletModule() {
             <h2>精选达人推荐刊例</h2>
             <p>
               双旦、双
-              11、中秋国庆三期巨量星图精选达人特刊，点击卡片在飞书中查看完整刊例。
+              11、中秋国庆三期巨量星图精选达人特刊，封面与摘要均取自飞书文档原文。
             </p>
           </div>
         </div>
         <div className="booklet-page-grid">
-          {BOOKLETS.map((booklet, index) => (
-            <a
-              key={booklet.url}
-              className="booklet-page-card"
-              href={booklet.url}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className="booklet-page-index">0{index + 1}</span>
+          {BOOKLETS.map(booklet => (
+            <article className="booklet-page-card" key={booklet.id}>
+              <a
+                className="booklet-cover"
+                href={booklet.docUrl}
+                target="_blank"
+                rel="noreferrer"
+                style={{ aspectRatio: String(booklet.aspect) }}
+                aria-label={`打开文档：${booklet.title}`}
+              >
+                <img src={booklet.cover} alt={`${booklet.issue}封面`} />
+                <span className="booklet-cover-tag">{booklet.issue}</span>
+              </a>
               <div className="booklet-page-body">
                 <strong>{booklet.title}</strong>
-                <small>
-                  <BookOpen size={13} /> 飞书 Wiki · 点击查看完整刊例
+                <p>{booklet.summary}</p>
+                <small className="booklet-meta">
+                  <BookOpen size={13} />
+                  巨量星图营销观察 · {booklet.publishedAt}
                 </small>
+                <div className="booklet-actions">
+                  <a
+                    className="booklet-btn booklet-btn-primary"
+                    href={booklet.docUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FileText size={14} />
+                    点击进入文档
+                    <ArrowUpRight size={14} />
+                  </a>
+                  {booklet.wechatStatus === 'published' && booklet.wechatUrl ? (
+                    <a
+                      className="booklet-btn"
+                      href={booklet.wechatUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Megaphone size={14} />
+                      点击进入公众号
+                      <ArrowUpRight size={14} />
+                    </a>
+                  ) : (
+                    <span
+                      className="booklet-btn booklet-btn-disabled"
+                      title="该期公众号文章尚未发布，链接后续补充"
+                      aria-disabled="true"
+                    >
+                      <Megaphone size={14} />
+                      点击进入公众号
+                      <em>待发布</em>
+                    </span>
+                  )}
+                </div>
               </div>
-              <ArrowUpRight size={20} className="booklet-page-arrow" />
-            </a>
+            </article>
           ))}
         </div>
       </section>

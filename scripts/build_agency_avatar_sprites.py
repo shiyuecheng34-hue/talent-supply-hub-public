@@ -6,7 +6,7 @@ from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT.parent / '.cache/avatars/agency_latest'
-TILE, DISPLAY, COLS, PER_SHARD = 100, 56, 16, 512
+TILE, DISPLAY, COLS, PER_SHARD = 72, 56, 16, 1024
 
 
 def main():
@@ -36,7 +36,7 @@ def main():
             sprite.paste(tile, (col * TILE, row * TILE))
             entries.append(f"  '{sid}': {{ avatarUrl: sprite{shard}, avatarPosition: '-{col * DISPLAY}px -{row * DISPLAY}px', spriteSize: [{COLS * DISPLAY}, {rows * DISPLAY}] }},")
         destination = ROOT / 'src/assets' / name
-        sprite.save(destination, 'JPEG', quality=84, optimize=True, progressive=True)
+        sprite.save(destination, 'JPEG', quality=78, optimize=True, progressive=True)
         shards.append({'file': name, 'count': len(chunk), 'bytes': destination.stat().st_size})
     content = '\n'.join(imports) + '\n\ntype AgencySprite = { avatarUrl: string; avatarPosition: string; spriteSize: [number, number] };\nexport const agencyAvatarSprites: Record<string, AgencySprite> = {\n' + '\n'.join(entries) + '\n};\n'
     (ROOT / 'src/data/agencyAvatarSprites.ts').write_text(content)

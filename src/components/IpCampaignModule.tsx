@@ -13,8 +13,7 @@ import gameImage3 from '../assets/game-poster-3.jpg';
 import gameImage4 from '../assets/game-poster-4.jpg';
 import gameImage5 from '../assets/game-poster-5.jpg';
 import gameImage6 from '../assets/game-poster-6.jpg';
-import voyageBanner from '../assets/ip-voyage-banner.png';
-import voyageOnepage from '../assets/ip-voyage-onepage.png';
+import voyageAnswer from '../assets/ip-voyage-answer.jpg';
 
 import homeImage from '../assets/XJtIMkuowNpPIBrpSYoEOSvSODiZFCvpEmvmlnxI.png';
 import q4Image4 from '../assets/cmsLHnGlZkFuKWeFNgwRDAUiLqaAUPWIrLmtlvTT.png';
@@ -33,7 +32,7 @@ const CAMPAIGN_IMAGES: Record<string, string[]> = {
   ],
   '03': [homeImage],
   '04': [q4Image1, q4Image2, q4Image3, q4Image4],
-  '06': [voyageBanner, voyageOnepage],
+  '06': [voyageAnswer],
 };
 
 function CampaignGallery({ campaign }: { campaign: IpCampaign }) {
@@ -279,13 +278,7 @@ export function IpCampaignModule() {
                       : autumnBeautyImage
                   }
                   alt={`${campaign.industry}${campaign.title}活动展示图`}
-                  style={{
-                    width: '100%',
-                    height: 'auto',
-                    display: 'block',
-                    borderRadius: 12,
-                    marginBottom: 16,
-                  }}
+                  className="ip-hero-image"
                 />
               </a>
             )}
