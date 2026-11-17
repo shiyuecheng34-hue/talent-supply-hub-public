@@ -86,9 +86,6 @@ export function FeaturedTalentIntro() {
               Q4 精选达人刊例 <ExternalLink size={13} />
             </a>
           </p>
-          <p className="featured-intro-note">
-            *基于达人近日内容质量、活跃度等表现综合评估，名单动态更新，查询当日最新名单可登陆巨量星图平台官网，选择【精选达人】标签。巨量星图达人广场、小星ai均上线抖音「精选达人」标签，可快速一键筛选～
-          </p>
         </div>
         <figure className="featured-intro-visual">
           <img
@@ -97,6 +94,9 @@ export function FeaturedTalentIntro() {
           />
         </figure>
       </div>
+      <p className="featured-intro-note">
+        *基于达人近日内容质量、活跃度等表现综合评估，名单动态更新，查询当日最新名单可登陆巨量星图平台官网，选择【精选达人】标签。巨量星图达人广场、小星ai均上线抖音「精选达人」标签，可快速一键筛选～
+      </p>
       <div className="featured-query-grid">
         {QUERY_CARDS.map(card => (
           <article className="featured-query-card" key={card.title}>
