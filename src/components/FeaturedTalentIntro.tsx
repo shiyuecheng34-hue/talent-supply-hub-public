@@ -35,7 +35,7 @@ const QUERY_CARDS: QueryCard[] = [
     description:
       '官方达人广场筛选位示意，登录后可在找达人页按「精选达人」标签快速查询。',
     href: QUERY_URL,
-    cta: '点击进入查询',
+    cta: '点击进入巨量星图',
   },
   {
     title: '小星ai · 精选达人标识',
@@ -66,6 +66,9 @@ export function FeaturedTalentIntro() {
         <span>点击进入-巨量星图｜2026Q4精选达人合作激励规则</span>
         <ArrowUpRight size={16} />
       </a>
+      <div className="featured-intro-lead">
+        <p>{INTRO_LINES[0]}</p>
+      </div>
       <div className="featured-intro-hero">
         <div className="featured-intro-copy">
           <span className="eyebrow featured-intro-eyebrow">
@@ -76,16 +79,10 @@ export function FeaturedTalentIntro() {
             <span>精选达人介绍</span>
           </div>
           <div className="featured-intro-text">
-            {INTRO_LINES.map(line => (
+            {INTRO_LINES.slice(1).map(line => (
               <p key={line}>{line}</p>
             ))}
           </div>
-          <p className="featured-intro-linkline">
-            全量达人刊例可参考：
-            <a href={RATECARD_URL} target="_blank" rel="noreferrer">
-              Q4 精选达人刊例 <ExternalLink size={13} />
-            </a>
-          </p>
         </div>
         <figure className="featured-intro-visual">
           <img
@@ -94,6 +91,12 @@ export function FeaturedTalentIntro() {
           />
         </figure>
       </div>
+      <p className="featured-intro-linkline">
+        全量达人刊例可参考：
+        <a href={RATECARD_URL} target="_blank" rel="noreferrer">
+          Q4 精选达人刊例 <ExternalLink size={13} />
+        </a>
+      </p>
       <p className="featured-intro-note">
         *基于达人近日内容质量、活跃度等表现综合评估，名单动态更新，查询当日最新名单可登陆巨量星图平台官网，选择【精选达人】标签。巨量星图达人广场、小星ai均上线抖音「精选达人」标签，可快速一键筛选～
       </p>

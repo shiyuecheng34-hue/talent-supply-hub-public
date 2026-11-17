@@ -31,23 +31,23 @@ const TEAMS: TeamSpec[] = [
       ],
     },
   },
-  { name: '2026巨量图「新年焕新达人团」', statusLabel: 'NEW' },
-  { name: '2026巨量星图「年度好物决策团」', statusLabel: 'NEW' },
-  { name: '2026巨量星图「优质参数研究院」', statusLabel: 'NEW' },
-  { name: '2026巨量星图达人团【真实家庭实验】', statusLabel: 'NEW' },
-  { name: '2026巨量星图「种收有道·短直达人团」', statusLabel: 'NEW' },
-  { name: '2026巨量星图「驭见星途·汽车达人团」', statusLabel: 'NEW' },
-  { name: '2026巨量星图「剧情达人团」', statusLabel: 'NEW' },
-  { name: '2026巨量星图「旅行科普」达人团', statusLabel: 'NEW' },
-  { name: '目2026巨量星图服饰行业「创意营销」达人团', statusLabel: 'NEW' },
+  { name: '2026巨量图「新年焕新达人团」', statusLabel: '敬请期待' },
+  { name: '2026巨量星图「年度好物决策团」', statusLabel: '敬请期待' },
+  { name: '2026巨量星图「优质参数研究院」', statusLabel: '敬请期待' },
+  { name: '2026巨量星图达人团【真实家庭实验】', statusLabel: '敬请期待' },
+  { name: '2026巨量星图「种收有道·短直达人团」', statusLabel: '敬请期待' },
+  { name: '2026巨量星图「驭见星途·汽车达人团」', statusLabel: '敬请期待' },
+  { name: '2026巨量星图「剧情达人团」', statusLabel: '敬请期待' },
+  { name: '2026巨量星图「旅行科普」达人团', statusLabel: '敬请期待' },
+  { name: '目2026巨量星图服饰行业「创意营销」达人团', statusLabel: '敬请期待' },
   {
     name: '2026巨量星图服饰行业「婴童权威种草」达人团',
-    statusLabel: 'NEW',
+    statusLabel: '敬请期待',
   },
-  { name: '2026巨量星图美妆行业「优质成分研究院」', statusLabel: 'NEW' },
+  { name: '2026巨量星图美妆行业「优质成分研究院」', statusLabel: '敬请期待' },
   {
     name: '2026巨量星图母婴行业「教育行业达人团」达人团',
-    statusLabel: 'NEW',
+    statusLabel: '敬请期待',
   },
 ];
 
@@ -59,7 +59,8 @@ export function TeamModule() {
           <span className="eyebrow">MODULE · 04</span>
           <h2>达人团供给</h2>
           <p>
-            共 13 个达人团，均标注 NEW 状态展示；已补充的资料将提供文档入口。
+            共 13 个达人团，潜力宝藏达人团标注
+            NEW，其余保持「敬请期待」状态；已补充的资料将提供文档入口。
           </p>
         </div>
       </div>
@@ -72,7 +73,13 @@ export function TeamModule() {
                 <UsersRound size={18} />
                 <strong>{team.name}</strong>
               </div>
-              <span className="team-status team-status-new">
+              <span
+                className={
+                  team.statusLabel === 'NEW'
+                    ? 'team-status team-status-new'
+                    : 'team-status'
+                }
+              >
                 {team.statusLabel}
               </span>
             </header>

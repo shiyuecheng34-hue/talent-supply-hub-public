@@ -411,6 +411,19 @@ main {
   align-items: stretch;
   margin-top: 20px;
 }
+.featured-intro-lead {
+  margin-top: 18px;
+  padding: 20px 24px;
+  border: 1px solid rgba(92, 158, 234, 0.18);
+  border-radius: 18px;
+  background: rgba(4, 24, 52, 0.46);
+}
+.featured-intro-lead p {
+  margin: 0;
+  color: #d9e9fb;
+  font-size: 14px;
+  line-height: 1.85;
+}
 .featured-intro-copy {
   padding: 24px;
   border: 1px solid rgba(92, 158, 234, 0.18);
@@ -440,7 +453,11 @@ main {
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
-  margin: 4px 0 0;
+  margin: 16px 0 0;
+  padding: 14px 18px;
+  border: 1px solid rgba(92, 158, 234, 0.16);
+  border-radius: 12px;
+  background: rgba(4, 24, 52, 0.4);
   color: #9fbcde;
   font-size: 13px;
 }
@@ -516,12 +533,13 @@ main {
   line-height: 1.7;
 }
 .featured-query-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
-  align-self: flex-start;
+  align-self: stretch;
   margin: auto 16px 16px;
-  padding: 10px 12px;
+  padding: 11px 12px;
   border: 1px solid rgba(78, 204, 236, 0.32);
   border-radius: 10px;
   background: rgba(13, 82, 120, 0.16);
@@ -1708,7 +1726,8 @@ footer {
 .ip-gallery-02 a {
   min-width: 0;
   min-height: 0;
-  border-radius: 12px;
+  overflow: hidden;
+  border-radius: 16px;
   background: rgba(1, 16, 37, 0.25);
 }
 .ip-gallery-02 img {
@@ -1734,7 +1753,8 @@ footer {
   display: block;
   min-width: 0;
   min-height: 0;
-  border-radius: 12px;
+  overflow: hidden;
+  border-radius: 16px;
   background: rgba(1, 16, 37, 0.25);
 }
 .ip-campaign-gallery img {
@@ -1751,14 +1771,14 @@ footer {
 }
 .ip-gallery-03 img {
   height: auto;
-  border-radius: 12px;
+  border-radius: 16px;
 }
 .ip-hero-image {
   display: block;
   width: 100%;
   height: auto;
   margin-bottom: 16px;
-  border-radius: 12px;
+  border-radius: 16px;
 }
 .ip-gallery-04 {
   display: grid;
