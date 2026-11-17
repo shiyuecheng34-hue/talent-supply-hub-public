@@ -52,14 +52,25 @@ export function AgencyBookletRail() {
   );
 }
 
-export function FeaturedTalentSidebarEntry() {
+export function FeaturedTalentSidebarEntry({
+  onOpen,
+  active,
+}: {
+  onOpen: () => void;
+  active?: boolean;
+}) {
   return (
-    <a
-      className="sidebar-rail sidebar-feature-entry sidebar-feature-entry-top"
-      href="#featured-talent-intro"
+    <button
+      type="button"
+      className={
+        active
+          ? 'sidebar-rail sidebar-feature-entry sidebar-feature-entry-top active'
+          : 'sidebar-rail sidebar-feature-entry sidebar-feature-entry-top'
+      }
+      onClick={onOpen}
     >
       <span className="sidebar-feature-entry-label">精选达人介绍</span>
       <small>首页导览与查询入口</small>
-    </a>
+    </button>
   );
 }

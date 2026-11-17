@@ -181,7 +181,16 @@ a {
   position: relative;
   margin-bottom: 16px;
   padding: 14px 16px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
   transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+.sidebar-feature-entry.active {
+  border-color: rgba(69, 216, 255, 0.55);
+  background: rgba(20, 76, 133, 0.45);
 }
 .sidebar-feature-entry-top {
   margin-bottom: 30px;

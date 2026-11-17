@@ -493,7 +493,8 @@ function App() {
   const [module, setModule] = useState<ModuleKey>(() => {
     if (typeof window === 'undefined') return 'industry';
     const requested = new URLSearchParams(window.location.search).get('module');
-    return MODULES.some(item => item.key === requested)
+    return requested === 'featured' ||
+      MODULES.some(item => item.key === requested)
       ? (requested as ModuleKey)
       : 'industry';
   });
@@ -512,7 +513,10 @@ function App() {
             <span>Talent Supply Hub</span>
           </div>
         </div>
-        <FeaturedTalentSidebarEntry />
+        <FeaturedTalentSidebarEntry
+          onOpen={() => setModule('featured')}
+          active={module === 'featured'}
+        />
         <nav>
           {MODULES.map(item => {
             const Icon = item.icon;
@@ -548,24 +552,31 @@ function App() {
           <strong>
             {module === 'ai'
               ? '风神底池 · 飞书全维度快照'
-              : '飞书表格 · 实时同步'}
+              : module === 'featured'
+                ? '巨量星图 · 精选达人'
+                : '飞书表格 · 实时同步'}
           </strong>
           <small>
             {module === 'ai'
               ? '底池：11-10；新增报价与维度源表：11-16'
-              : '最后刷新以页面载入时间为准'}
+              : module === 'featured'
+                ? '名单动态更新，以星图平台为准'
+                : '最后刷新以页面载入时间为准'}
           </small>
         </div>
       </aside>
       <main>
         <div className="module-topbar">
           <span>
-            精选达人供给 / {MODULES.find(item => item.key === module)?.label}
+            精选达人供给 /{' '}
+            {module === 'featured'
+              ? '精选达人介绍'
+              : MODULES.find(item => item.key === module)?.label}
           </span>
           <span>Talent Supply Hub</span>
         </div>
-        {module === 'industry' && <FeaturedTalentIntro />}
-        {module !== 'node' && (
+        {module === 'featured' && <FeaturedTalentIntro />}
+        {module !== 'node' && module !== 'featured' && (
           <ModuleBanner module={module} onNavigate={setModule} />
         )}
         {module === 'industry' && (

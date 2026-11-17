@@ -7,7 +7,9 @@ import {
   UsersRound,
 } from 'lucide-react';
 
-export type ModuleKey = 'industry' | 'node' | 'ip' | 'team' | 'ai';
+export type ModuleKey = 'industry' | 'node' | 'ip' | 'team' | 'ai' | 'featured';
+
+export type BannerModuleKey = Exclude<ModuleKey, 'featured'>;
 
 const introductions = {
   industry: {
@@ -70,7 +72,10 @@ const introductions = {
 export function ModuleBanner({
   module,
   onNavigate,
-}: { module: ModuleKey; onNavigate: (module: ModuleKey) => void }) {
+}: {
+  module: BannerModuleKey;
+  onNavigate: (module: ModuleKey) => void;
+}) {
   const info = introductions[module];
   const Icon = info.icon;
   return (
