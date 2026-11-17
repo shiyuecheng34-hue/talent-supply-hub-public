@@ -182,17 +182,9 @@ export function AgencyModule() {
             <span className="eyebrow">AGENCY · PRIORITY TALENTS</span>
             <h2>代理商重点达人</h2>
             <p>
-              保留原底池；支持行业、粉丝量级、内容标签、植入报价、定制报价五项组合筛选，向右滚动查看全维度。
+              支持行业、粉丝量级、内容标签、植入报价、定制报价五项组合筛选，向右滚动查看全维度。
             </p>
           </div>
-          <a
-            className="source-link"
-            href={enrichment.meta.sourceSheet}
-            target="_blank"
-            rel="noreferrer"
-          >
-            飞书报价与维度源表 ↗
-          </a>
         </div>
         <div className="flex flex-wrap gap-4 my-6 agency-filter-bar">
           {fields.map(({ key, label }) => (
@@ -258,13 +250,6 @@ export function AgencyModule() {
             当前匹配 {filtered.length.toLocaleString()} 位 · 全快照筛选 · 每页
             50 位
           </span>
-          <a
-            href={enrichment.meta.referenceChart}
-            target="_blank"
-            rel="noreferrer"
-          >
-            全量核对 · 风神图表 ↗
-          </a>
         </div>
         <div
           className="overflow-x-auto agency-table-scroll"

@@ -256,7 +256,6 @@ export function IpCampaignModule() {
             key={campaign.index}
           >
             <div className="ip-card-head">
-              <span className="ip-index">{campaign.index}</span>
               <span className="ip-industry">{campaign.industry}</span>
             </div>
             <h3>{campaign.title}</h3>

@@ -157,7 +157,6 @@ function TalentCard({
   const name = text(get('星图达人抖音昵称'));
   const city = text(get('常驻城市'));
   const talentType = text(get('达人类型'));
-  const priority = text(get('推荐优先级'));
   const fans = text(get('达人抖音粉丝量级'));
   const category = text(get(mode === 'node' ? '细分行业' : '推荐行业'));
   const score = mode === 'node' ? text(get('节点推荐分')) : '';
@@ -237,14 +236,11 @@ function TalentCard({
         </div>
         {score !== '' && score !== '-' ? (
           <span className="score">{score}</span>
-        ) : (
-          <span className="priority">{priority.replace('S-', '')}</span>
-        )}
+        ) : null}
       </div>
       <div className="tag-row">
         <span>{category}</span>
         <span>{fans}</span>
-        <span>{priority}</span>
       </div>
       <div className="price-board">
         <div>
@@ -356,24 +352,23 @@ function LiveTalentModule({
               : '覆盖 11 个重点行业，汇总核心推荐达人与商业合作信息。'}
           </p>
         </div>
-        {!isNode && (
-          <button
-            type="button"
-            className="table-download-btn"
-            disabled={!hasRenderableData}
-            onClick={() => {
-              const safeLabel = current.label.replace(/[\\/:*?"<>|]/g, '_');
-              downloadRowsTable(
-                `行业-${safeLabel}-${filtered.length}条.csv`,
-                headers,
-                filtered,
-              );
-            }}
-          >
-            <Download size={15} />
-            点击下载表格
-          </button>
-        )}
+        <button
+          type="button"
+          className="table-download-btn"
+          disabled={!hasRenderableData}
+          onClick={() => {
+            const safeLabel = current.label.replace(/[\\/:*?"<>|]/g, '_');
+            const modulePrefix = isNode ? '节点' : '行业';
+            downloadRowsTable(
+              `${modulePrefix}-${safeLabel}-${filtered.length}条.csv`,
+              headers,
+              filtered,
+            );
+          }}
+        >
+          <Download size={15} />
+          点击下载表格
+        </button>
       </div>
       <div className="filter-bar">
         <div className="pill-scroll">
@@ -530,7 +525,6 @@ function App() {
           </div>
           <div>
             <strong>精选达人</strong>
-            <span>Talent Supply Hub</span>
           </div>
         </div>
         <nav>
@@ -579,7 +573,6 @@ function App() {
                 ? '精选达人推荐刊例'
                 : MODULES.find(item => item.key === module)?.label}
           </span>
-          <span>Talent Supply Hub</span>
         </div>
         {module === 'featured' && <FeaturedTalentIntro />}
         {module === 'booklet' && <BookletModule />}

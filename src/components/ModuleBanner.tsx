@@ -96,35 +96,37 @@ export function ModuleBanner({
         <span className="hero-kicker">{info.kicker}</span>
         <h1>{info.title}</h1>
         <p>{info.description}</p>
-        <div className="hero-actions">
-          <button
-            onClick={() =>
-              document
-                .getElementById('module-content')
-                ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-            }
-          >
-            <ArrowDown size={17} />
-            {info.action}
-          </button>
-          {module !== 'ip' && module !== 'ai' && (
-            <button className="ghost" onClick={() => onNavigate(info.target)}>
-              {info.secondary}
+        {module !== 'node' && module !== 'ip' && (
+          <div className="hero-actions">
+            <button
+              onClick={() =>
+                document
+                  .getElementById('module-content')
+                  ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+              }
+            >
+              <ArrowDown size={17} />
+              {info.action}
             </button>
-          )}
-        </div>
+            {module !== 'ai' && (
+              <button className="ghost" onClick={() => onNavigate(info.target)}>
+                {info.secondary}
+              </button>
+            )}
+          </div>
+        )}
       </div>
       {module === 'industry' ? (
         <div className="module-decoration industry-share-decoration">
           <IndustryShareDonut />
           <span>11 个行业供给占比</span>
         </div>
-      ) : (
+      ) : module !== 'node' ? (
         <div className="module-decoration" aria-hidden="true">
           <Icon size={76} strokeWidth={1.2} />
           <span>{info.detail}</span>
         </div>
-      )}
+      ) : null}
     </section>
   );
 }

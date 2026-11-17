@@ -69,9 +69,6 @@ export function FeaturedTalentIntro() {
         <ArrowUpRight size={16} />
       </a>
       <header className="featured-intro-heading">
-        <span className="eyebrow featured-intro-eyebrow">
-          HOME · FEATURED TALENT
-        </span>
         <div className="featured-intro-title">
           <Sparkles size={18} />
           <span>精选达人介绍</span>

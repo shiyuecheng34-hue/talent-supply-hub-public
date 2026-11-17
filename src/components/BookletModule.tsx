@@ -7,7 +7,6 @@ export function BookletModule() {
       <section className="content-section">
         <div className="section-heading">
           <div>
-            <span className="eyebrow">FEATURED TALENT · RATE CARDS</span>
             <h2>精选达人推荐刊例</h2>
             <p>双旦、双 11、中秋国庆三期巨量星图精选达人特刊。</p>
           </div>
