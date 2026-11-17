@@ -3,7 +3,7 @@
     "source": "iesdouyin user/info via 数据集5685026星图ID映射",
     "partition": "2026-11-15",
     "generatedAt": "2026-11-17",
-    "count": 12661,
+    "count": 12709,
     "note": "优先 sec_uid 真实主页深链；无 sec_uid 时回退抖音用户搜索页。"
   },
   "profiles": {
@@ -12714,6 +12714,7 @@
     "6771334605027934221": "https://www.douyin.com/user/MS4wLjABAAAATUPp0DIc65mIflMEDEA7wABMtfg_zS6vuNjfIOrW3N0",
     "7418222561144504357": "https://www.douyin.com/user/MS4wLjABAAAAcNsEUpTPZYd2pUsOdeZ5z2CTjuHB-b-HCdMWECKHKos",
     "6808501684642250760": "https://www.douyin.com/user/MS4wLjABAAAA5Jq0a-RTw_8DOb_PJ25I_DD_zUO615GBiHhBHSDb1gw",
-    "6771308460555370504": "https://www.douyin.com/user/MS4wLjABAAAA-3m9qRBRRT3j1Ai9kvExEDIHv0pRRvwdqR0rQHXvjrA"
+    "6771308460555370504": "https://www.douyin.com/user/MS4wLjABAAAA-3m9qRBRRT3j1Ai9kvExEDIHv0pRRvwdqR0rQHXvjrA",
+    "6734265466392412167": "https://www.douyin.com/user/MS4wLjABAAAAfVfgeaa5CiORUUiePnWKL-8HHdMWbZdVnAneV8E1TEY"
   }
 }

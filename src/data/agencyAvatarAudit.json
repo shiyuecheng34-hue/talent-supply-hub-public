@@ -1,13 +1,13 @@
 {
   "total": 14903,
-  "avatarCovered": 12661,
+  "avatarCovered": 12662,
   "coverage": 0.8496,
   "statusBreakdown": {
-    "profile_status_5": 2193,
-    "ok": 12661,
+    "profile_status_5": 2192,
+    "ok": 12662,
     "missing_handle": 42,
     "identity_mismatch": 7
   },
-  "shortIdOnlyCannotResolve": 2193,
-  "note": "profile_status_5 为仅有 short_id/无 unique_id 的账号，iesdouyin v2 接口已不接受 short_id/user_id 参数；missing_handle 为数据集无任何抖音句柄。"
+  "shortIdOnlyCannotResolve": 2192,
+  "note": "profile_status_5 为仅有 short_id/无 unique_id 的账号；实测数字号可改用 unique_id 参数通道命中（如阿木爷爷 22445618），剩余缺口尚未逐条按该通道重试；missing_handle 为数据集无任何抖音句柄。"
 }
