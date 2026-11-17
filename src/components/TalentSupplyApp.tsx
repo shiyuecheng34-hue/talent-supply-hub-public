@@ -4,6 +4,7 @@ import { INDUSTRY_OPTIONS } from '@/data/industryOptions';
 import { industrySamples } from '@/data/industrySamples';
 import industryProfiles from '@/data/industryTalentProfiles.json';
 import { nodeSamples } from '@/data/nodeSamples';
+import { fetchFullSheet } from '@/lib/feishuFullSheet';
 import { shuffleNodeRows } from '@/lib/shuffleNodeRows';
 import { downloadRowsTable } from '@/lib/tableCsv';
 import { useFeishuSheetRange } from '@aeolus/feishu-table-sdk';
@@ -296,6 +297,7 @@ function LiveTalentModule({
       ? new URLSearchParams(window.location.search).get('q') || ''
       : '',
   );
+  const [downloading, setDownloading] = useState(false);
   const current = options.find(item => item.id === selected) ?? options[0];
   const isNode = mode === 'node';
   const sourceUrl = `${isNode ? NODE_URL : INDUSTRY_URL}?sheet=${current.sheetId}`;
@@ -337,6 +339,49 @@ function LiveTalentModule({
     );
   }, [query, rows]);
 
+  const handleDownload = async () => {
+    const safeLabel = current.label.replace(/[\\/:*?"<>|]/g, '_');
+    const modulePrefix = isNode ? '节点' : '行业';
+    // 节点维持当前已载入数据导出；行业点击时实时拉取该分组飞书表全量数据。
+    if (isNode) {
+      downloadRowsTable(
+        `${modulePrefix}-${safeLabel}-${filtered.length}条.csv`,
+        headers,
+        filtered,
+      );
+      return;
+    }
+    setDownloading(true);
+    try {
+      const full = await fetchFullSheet(current.id, 'AC', current.count);
+      const needle = query.trim().toLowerCase();
+      const exportRows = needle
+        ? full.rows.filter(row =>
+            row.some(value => text(value).toLowerCase().includes(needle)),
+          )
+        : full.rows;
+      downloadRowsTable(
+        `${modulePrefix}-${safeLabel}-${exportRows.length}条.csv`,
+        full.headers,
+        exportRows,
+      );
+    } catch (error) {
+      // 无登录态、样本模式或网络异常时回退到当前已载入数据，保证按钮可用。
+      window.alert(
+        `全量数据拉取失败，已导出当前载入的 ${filtered.length} 条数据。${
+          error instanceof Error ? `原因：${error.message}` : ''
+        }`,
+      );
+      downloadRowsTable(
+        `${modulePrefix}-${safeLabel}-${filtered.length}条.csv`,
+        headers,
+        filtered,
+      );
+    } finally {
+      setDownloading(false);
+    }
+  };
+
   return (
     <section className={`content-section enter ${isNode ? 'node-module' : ''}`}>
       <div
@@ -355,19 +400,15 @@ function LiveTalentModule({
         <button
           type="button"
           className="table-download-btn"
-          disabled={!hasRenderableData}
-          onClick={() => {
-            const safeLabel = current.label.replace(/[\\/:*?"<>|]/g, '_');
-            const modulePrefix = isNode ? '节点' : '行业';
-            downloadRowsTable(
-              `${modulePrefix}-${safeLabel}-${filtered.length}条.csv`,
-              headers,
-              filtered,
-            );
-          }}
+          disabled={!hasRenderableData || downloading}
+          onClick={handleDownload}
         >
-          <Download size={15} />
-          点击下载表格
+          {downloading ? (
+            <RefreshCw size={15} className="spin" />
+          ) : (
+            <Download size={15} />
+          )}
+          {downloading ? '正在拉取全量数据…' : '点击下载表格'}
         </button>
       </div>
       <div className="filter-bar">

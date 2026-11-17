@@ -96,7 +96,7 @@ export function ModuleBanner({
         <span className="hero-kicker">{info.kicker}</span>
         <h1>{info.title}</h1>
         <p>{info.description}</p>
-        {module !== 'node' && module !== 'ip' && (
+        {module !== 'node' && module !== 'ip' && module !== 'industry' && (
           <div className="hero-actions">
             <button
               onClick={() =>
