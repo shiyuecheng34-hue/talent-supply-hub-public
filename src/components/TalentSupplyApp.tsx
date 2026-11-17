@@ -1,9 +1,11 @@
 import { douyinAvatarMap } from '@/data/douyinAvatarMap';
 import { industryAvatarSprites } from '@/data/industryAvatarSprites';
+import { INDUSTRY_OPTIONS } from '@/data/industryOptions';
 import { industrySamples } from '@/data/industrySamples';
 import industryProfiles from '@/data/industryTalentProfiles.json';
 import { nodeSamples } from '@/data/nodeSamples';
 import { shuffleNodeRows } from '@/lib/shuffleNodeRows';
+import { downloadRowsTable } from '@/lib/tableCsv';
 import { useFeishuSheetRange } from '@aeolus/feishu-table-sdk';
 import {
   ArrowUpRight,
@@ -11,6 +13,7 @@ import {
   Bot,
   CalendarDays,
   ChevronRight,
+  Download,
   ExternalLink,
   Globe2,
   RefreshCw,
@@ -38,29 +41,7 @@ type SourceOption = {
   count: number;
 };
 
-const INDUSTRIES: SourceOption[] = [
-  { id: 'industry-beauty', label: '美妆', sheetId: '0OYgsp', count: 7389 },
-  { id: 'industry-food', label: '食品饮料', sheetId: '1RZNHB', count: 1969 },
-  { id: 'industry-fashion', label: '服装配饰', sheetId: '2JBIVb', count: 2761 },
-  { id: 'industry-mom', label: '母婴宠物', sheetId: '3UBBZb', count: 1733 },
-  { id: 'industry-care', label: '日化', sheetId: '4QiWFQ', count: 5728 },
-  { id: 'industry-health', label: '医药健康', sheetId: '5rncze', count: 1801 },
-  {
-    id: 'industry-digital',
-    label: '3C 及电器',
-    sheetId: '6aYmtl',
-    count: 5204,
-  },
-  { id: 'industry-auto', label: '汽车', sheetId: '7myfJs', count: 3221 },
-  { id: 'industry-game', label: '游戏', sheetId: '8kFWgq', count: 29215 },
-  {
-    id: 'industry-commerce',
-    label: '互联网电商服务',
-    sheetId: '9FoKhW',
-    count: 9986,
-  },
-  { id: 'industry-finance', label: '金融业', sheetId: '10chQs', count: 2131 },
-];
+const INDUSTRIES: SourceOption[] = INDUSTRY_OPTIONS;
 
 const NODES: SourceOption[] = [
   { id: 'node-1111', label: '双 11', sheetId: '0iHZMy', count: 16500 },
@@ -375,6 +356,24 @@ function LiveTalentModule({
               : '覆盖 11 个重点行业，汇总核心推荐达人与商业合作信息。'}
           </p>
         </div>
+        {!isNode && (
+          <button
+            type="button"
+            className="table-download-btn"
+            disabled={!hasRenderableData}
+            onClick={() => {
+              const safeLabel = current.label.replace(/[\\/:*?"<>|]/g, '_');
+              downloadRowsTable(
+                `行业-${safeLabel}-${filtered.length}条.csv`,
+                headers,
+                filtered,
+              );
+            }}
+          >
+            <Download size={15} />
+            点击下载表格
+          </button>
+        )}
       </div>
       <div className="filter-bar">
         <div className="pill-scroll">

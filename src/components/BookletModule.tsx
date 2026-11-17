@@ -9,10 +9,7 @@ export function BookletModule() {
           <div>
             <span className="eyebrow">FEATURED TALENT · RATE CARDS</span>
             <h2>精选达人推荐刊例</h2>
-            <p>
-              双旦、双
-              11、中秋国庆三期巨量星图精选达人特刊，封面与摘要均取自飞书文档原文。
-            </p>
+            <p>双旦、双 11、中秋国庆三期巨量星图精选达人特刊。</p>
           </div>
         </div>
         <div className="booklet-page-grid">

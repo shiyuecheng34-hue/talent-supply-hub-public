@@ -6,6 +6,7 @@ import {
   Star,
   UsersRound,
 } from 'lucide-react';
+import { IndustryShareDonut } from './IndustryShareDonut';
 
 export type ModuleKey =
   | 'industry'
@@ -113,10 +114,17 @@ export function ModuleBanner({
           )}
         </div>
       </div>
-      <div className="module-decoration" aria-hidden="true">
-        <Icon size={76} strokeWidth={1.2} />
-        <span>{info.detail}</span>
-      </div>
+      {module === 'industry' ? (
+        <div className="module-decoration industry-share-decoration">
+          <IndustryShareDonut />
+          <span>11 个行业供给占比</span>
+        </div>
+      ) : (
+        <div className="module-decoration" aria-hidden="true">
+          <Icon size={76} strokeWidth={1.2} />
+          <span>{info.detail}</span>
+        </div>
+      )}
     </section>
   );
 }

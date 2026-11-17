@@ -52,6 +52,8 @@ const QUERY_CARDS: QueryCard[] = [
 ];
 
 export function FeaturedTalentIntro() {
+  const queryCta = QUERY_CARDS.find(card => card.href);
+
   return (
     <section
       id="featured-talent-intro"
@@ -112,19 +114,19 @@ export function FeaturedTalentIntro() {
               <strong>{card.title}</strong>
               <p>{card.description}</p>
             </div>
-            {card.href ? (
-              <a
-                className="featured-query-link"
-                href={card.href}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {card.cta} <ArrowUpRight size={13} />
-              </a>
-            ) : null}
           </article>
         ))}
       </div>
+      {queryCta?.href ? (
+        <a
+          className="featured-query-cta"
+          href={queryCta.href}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {queryCta.cta} <ArrowUpRight size={14} />
+        </a>
+      ) : null}
     </section>
   );
 }

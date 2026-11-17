@@ -104,7 +104,7 @@ export function TeamModule() {
                 </ul>
               </div>
             ) : (
-              <p className="team-desc">暂无已发布资料入口（等待补充材料）。</p>
+              <p className="team-desc">待上线……</p>
             )}
 
             {team.docUrl ? (
