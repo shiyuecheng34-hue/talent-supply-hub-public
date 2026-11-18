@@ -4,7 +4,7 @@ import { INDUSTRY_OPTIONS } from '@/data/industryOptions';
 import { industrySamples } from '@/data/industrySamples';
 import industryProfiles from '@/data/industryTalentProfiles.json';
 import { nodeSamples } from '@/data/nodeSamples';
-import { fetchFullSheet } from '@/lib/feishuFullSheet';
+import { fetchIndustryDownload } from '@/lib/feishuFullSheet';
 import { shuffleNodeRows } from '@/lib/shuffleNodeRows';
 import { downloadRowsTable } from '@/lib/tableCsv';
 import { useFeishuSheetRange } from '@aeolus/feishu-table-sdk';
@@ -43,6 +43,7 @@ type SourceOption = {
   count: number;
 };
 
+const DISPLAY_LIMIT = 99;
 const INDUSTRIES: SourceOption[] = INDUSTRY_OPTIONS;
 
 const NODES: SourceOption[] = [
@@ -161,7 +162,6 @@ function TalentCard({
   const talentType = text(get('达人类型'));
   const fans = text(get('达人抖音粉丝量级'));
   const category = text(get(mode === 'node' ? '细分行业' : '推荐行业'));
-  const score = mode === 'node' ? text(get('节点推荐分')) : '';
   const middlePrice = compactPrice(get('抖音21-60s长视频报价(元)'));
   const longPrice = compactPrice(get('抖音60s以上视频报价(元)'));
   // 字符串 ID 保留全部精度，仅清理空白及表格常见的 .0 后缀。
@@ -236,9 +236,6 @@ function TalentCard({
           <span>{subtitle || '精选达人'}</span>
           {displayIdText ? <em>抖音号：{displayIdText}</em> : null}
         </div>
-        {score !== '' && score !== '-' ? (
-          <span className="score">{score}</span>
-        ) : null}
       </div>
       <div className="tag-row">
         <span>{category}</span>
@@ -299,6 +296,7 @@ function LiveTalentModule({
       : '',
   );
   const [downloading, setDownloading] = useState(false);
+  const [downloadNotice, setDownloadNotice] = useState('');
   const current = options.find(item => item.id === selected) ?? options[0];
   const isNode = mode === 'node';
   const sourceUrl = `${isNode ? NODE_URL : INDUSTRY_URL}?sheet=${current.sheetId}`;
@@ -352,19 +350,25 @@ function LiveTalentModule({
       );
       return;
     }
+    if (downloading) return;
     setDownloading(true);
+    setDownloadNotice('');
     try {
-      const full = await fetchFullSheet(current.id, 'AC', current.count);
+      const full = await fetchIndustryDownload(current.id, current.count);
       const needle = query.trim().toLowerCase();
       const exportRows = needle
         ? full.rows.filter(row =>
             row.some(value => text(value).toLowerCase().includes(needle)),
           )
         : full.rows;
+      const snapshotDate = full.capturedAt?.slice(0, 10);
       downloadRowsTable(
-        `${modulePrefix}-${safeLabel}-${exportRows.length}条.csv`,
+        `${modulePrefix}-${safeLabel}-${exportRows.length}条${snapshotDate ? `-源表快照${snapshotDate}` : ''}.csv`,
         full.headers,
         exportRows,
+      );
+      setDownloadNotice(
+        `${current.label}：已生成 ${exportRows.length.toLocaleString()} 条下载数据${snapshotDate ? `（完整源表快照 ${snapshotDate}，非实时数据）` : '（实时源表）'}。`,
       );
     } catch (error) {
       // 全量要求下不导出半量文件，避免把当前载入的样本误当全量结果。
@@ -407,6 +411,7 @@ function LiveTalentModule({
           {downloading ? '正在拉取全量数据…' : '点击下载表格'}
         </button>
       </div>
+      {downloadNotice && <output>{downloadNotice}</output>}
       <div className="filter-bar">
         <div className="pill-scroll">
           {options.map(item => (
@@ -440,8 +445,8 @@ function LiveTalentModule({
           <strong>{current.count.toLocaleString()}</strong>
         </div>
         <div>
-          <span>本页载入</span>
-          <strong>{rows.length}</strong>
+          <span>本页展示</span>
+          <strong>{Math.min(filtered.length, DISPLAY_LIMIT)}</strong>
         </div>
         <button
           onClick={() => sheet.reload()}
@@ -470,13 +475,15 @@ function LiveTalentModule({
         {hasRenderableData && (
           <>
             <div className="result-line">
-              <span>优先展示前 100 位供给，当前匹配 {filtered.length} 位</span>
+              <span>
+                优先展示前 {DISPLAY_LIMIT} 位供给，当前匹配 {filtered.length} 位
+              </span>
               <span className="live-dot">
                 {shouldUseSample ? 'PREVIEW · 样本数据' : 'LIVE · 飞书同步'}
               </span>
             </div>
             <div className="card-grid">
-              {filtered.slice(0, 100).map(row => (
+              {filtered.slice(0, DISPLAY_LIMIT).map(row => (
                 <TalentCard
                   key={`${current.id}-${text(row[headers.indexOf('达人星图id')])}`}
                   row={row}

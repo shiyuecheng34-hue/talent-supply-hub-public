@@ -29,6 +29,10 @@ export function downloadRowsTable(
   const link = document.createElement('a');
   link.href = url;
   link.download = fileLabel;
+  link.style.display = 'none';
+  document.body.appendChild(link);
   link.click();
-  URL.revokeObjectURL(url);
+  link.remove();
+  // 异步全量读取后，给浏览器足够时间接管 Blob 下载，避免立即释放导致下载取消。
+  window.setTimeout(() => URL.revokeObjectURL(url), 60_000);
 }

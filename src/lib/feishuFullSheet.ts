@@ -77,6 +77,8 @@ function isEmptyRow(row: readonly JsonValue[]): boolean {
 export type FullSheetResult = {
   headers: JsonValue[];
   rows: JsonValue[][];
+  source?: 'snapshot';
+  capturedAt?: string;
 };
 
 /**
@@ -94,6 +96,7 @@ export async function fetchFullSheet(
   const maxSegments = Math.max(1, Math.ceil(expectedRows / PAGE_SIZE) + 2);
   const collected: JsonValue[][] = [];
   let headers: JsonValue[] = [];
+  let reachedEnd = false;
 
   for (let segment = 0; segment < maxSegments; segment += 1) {
     const startRow = segment === 0 ? 1 : 2 + segment * PAGE_SIZE;
@@ -105,7 +108,10 @@ export async function fetchFullSheet(
       signal,
     );
     const rawValues = (data.rawValues ?? []) as JsonValue[][];
-    if (rawValues.length === 0) break;
+    if (rawValues.length === 0) {
+      reachedEnd = true;
+      break;
+    }
 
     if (segment === 0) {
       headers = rawValues[0] ?? [];
@@ -116,9 +122,55 @@ export async function fetchFullSheet(
 
     // 实际返回行数少于请求范围，说明已读到工作表末尾。
     const requestedRows = endRow - startRow + 1;
-    if (rawValues.length < requestedRows) break;
+    if (rawValues.length < requestedRows) {
+      reachedEnd = true;
+      break;
+    }
   }
 
   const rows = collected.filter(row => !isEmptyRow(row));
+  if (!reachedEnd || !headers.length || rows.length < expectedRows) {
+    throw new Error(
+      `全量校验未通过：预期至少 ${expectedRows} 条，实际 ${rows.length} 条`,
+    );
+  }
   return { headers, rows };
+}
+
+/** 无风神会话或接口失败时使用经过源表行数校验的完整快照，绝不回退100条样本。 */
+export async function fetchIndustryDownload(
+  bindingId: string,
+  expectedRows: number,
+): Promise<FullSheetResult> {
+  const controller = new AbortController();
+  const timer = window.setTimeout(() => controller.abort(), 30_000);
+  try {
+    return await fetchFullSheet(
+      bindingId,
+      'AC',
+      expectedRows,
+      controller.signal,
+    );
+  } catch (liveError) {
+    console.warn('实时全量读取不可用，尝试完整源表快照', liveError);
+    if (!/^industry-[a-z]+$/.test(bindingId)) {
+      throw new Error('未知行业下载分组');
+    }
+    const response = await fetch(`/downloads/${bindingId}.data`);
+    if (!response.ok) throw new Error('完整源表快照读取失败');
+    const data = (await response.json()) as FullSheetResult;
+    if (
+      data.source !== 'snapshot' ||
+      !data.capturedAt ||
+      !Array.isArray(data.headers) ||
+      data.headers.length !== 29 ||
+      !Array.isArray(data.rows) ||
+      data.rows.length !== expectedRows
+    ) {
+      throw new Error('完整源表快照校验失败，未生成文件');
+    }
+    return data;
+  } finally {
+    window.clearTimeout(timer);
+  }
 }

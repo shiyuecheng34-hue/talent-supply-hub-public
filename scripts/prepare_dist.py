@@ -14,6 +14,10 @@ def main():
         raise FileNotFoundError('请先运行 pnpm run build')
     shutil.copy2(source, DIST / 'index.html')
     shutil.rmtree(DIST / 'html')
+    downloads = DIST / 'downloads'
+    if downloads.exists():
+        shutil.rmtree(downloads)
+    shutil.copytree(ROOT / 'download-assets', downloads)
     target = DIST / 'avatars'
     if target.exists():
         shutil.rmtree(target)
