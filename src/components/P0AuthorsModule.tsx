@@ -12,6 +12,7 @@ type P0Data = {
   rows: P0Row[];
 };
 type P0ProfileDoc = { profiles: Record<string, string> };
+type P0ShortDoc = { shortIds: Record<string, string> };
 
 const NAME = 0;
 const ID = 1;
@@ -139,6 +140,10 @@ const xingtuProfile = (id: string) =>
 const douyinProfile = (secUid: string) =>
   `https://www.douyin.com/user/${secUid}`;
 
+// 当无法获取 sec_uid 时，允许使用 short_id 生成可点击跳转链接。
+const douyinShortProfile = (shortId: string) =>
+  `https://www.douyin.com/user/${shortId}`;
+
 const TABLE_HEADERS = [
   '达人头像',
   '达人昵称',
@@ -169,6 +174,7 @@ const CSV_HEADERS = [
 export function P0AuthorsModule() {
   const [data, setData] = useState<P0Data | null>(null);
   const [profiles, setProfiles] = useState<Record<string, string>>({});
+  const [shortIds, setShortIds] = useState<Record<string, string>>({});
   const [loadError, setLoadError] = useState(false);
   const [filters, setFilters] = useState<FilterState>(EMPTY_FILTERS);
   const [page, setPage] = useState(1);
@@ -178,13 +184,15 @@ export function P0AuthorsModule() {
     Promise.all([
       import('@/data/p0Authors.json'),
       import('@/data/p0ProfileUrls.json'),
+      import('@/data/p0ShortIds.json'),
     ])
-      .then(([dataModule, profileModule]) => {
+      .then(([dataModule, profileModule, shortModule]) => {
         if (cancelled) return;
         setData(dataModule.default as unknown as P0Data);
         setProfiles(
           (profileModule.default as unknown as P0ProfileDoc).profiles,
         );
+        setShortIds((shortModule.default as unknown as P0ShortDoc).shortIds);
       })
       .catch(() => {
         if (!cancelled) setLoadError(true);
@@ -233,7 +241,11 @@ export function P0AuthorsModule() {
       row[ID],
       rawCell(row[PRICE_MID]),
       rawCell(row[PRICE_LONG]),
-      profiles[text(row[ID])] ? douyinProfile(profiles[text(row[ID])]) : '',
+      profiles[text(row[ID])]
+        ? douyinProfile(profiles[text(row[ID])])
+        : shortIds[text(row[ID])]
+          ? douyinShortProfile(shortIds[text(row[ID])])
+          : '',
       xingtuProfile(text(row[ID])),
       rawCell(row[INDUSTRY]),
       rawCell(row[FANS]),
@@ -368,7 +380,12 @@ export function P0AuthorsModule() {
                   const id = text(row[ID]);
                   const name = text(row[NAME]);
                   const secUid = profiles[id] ?? null;
-                  const douyinUrl = secUid ? douyinProfile(secUid) : null;
+                  const shortId = shortIds[id] ?? null;
+                  const douyinUrl = secUid
+                    ? douyinProfile(secUid)
+                    : shortId
+                      ? douyinShortProfile(shortId)
+                      : null;
                   return (
                     <tr key={id}>
                       <td className="p-3">
