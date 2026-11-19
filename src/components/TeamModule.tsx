@@ -116,11 +116,17 @@ export function TeamModule() {
               </span>
             </header>
 
-            {team.coverImage ? (
-              <figure className="team-cover">
+            <figure
+              className={
+                team.coverImage ? 'team-cover' : 'team-cover team-cover-empty'
+              }
+            >
+              {team.coverImage ? (
                 <img src={team.coverImage} alt={team.coverAlt ?? team.name} />
-              </figure>
-            ) : null}
+              ) : (
+                <div className="team-cover-placeholder">资料整理中</div>
+              )}
+            </figure>
 
             {team.docSummary ? (
               <div className="team-doc">

@@ -1275,6 +1275,7 @@ main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 18px;
+  align-items: stretch;
 }
 
 .team-card {
@@ -1282,6 +1283,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  height: 100%;
   padding: 18px;
   border: 1px solid var(--line);
   border-radius: 18px;
@@ -1312,6 +1314,7 @@ main {
 
 .team-cover {
   margin: 0;
+  height: 176px;
   overflow: hidden;
   border: 1px solid rgba(91, 176, 255, 0.24);
   border-radius: 16px;
@@ -1321,9 +1324,28 @@ main {
 .team-cover img {
   display: block;
   width: 100%;
-  max-height: 220px;
+  height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
+}
+
+.team-cover-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+      circle at top,
+      rgba(49, 216, 245, 0.16),
+      transparent 52%
+    ), linear-gradient(135deg, rgba(8, 60, 130, 0.55), rgba(3, 18, 43, 0.88));
+}
+
+.team-cover-placeholder {
+  padding: 0 16px;
+  color: #9fdcff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
 }
 
 .team-status {
@@ -1339,6 +1361,9 @@ main {
 }
 
 .team-desc {
+  flex: 1;
+  display: flex;
+  align-items: center;
   margin: 0;
   color: var(--muted);
   font-size: 12px;
@@ -1346,6 +1371,7 @@ main {
 }
 
 .team-doc {
+  flex: 1;
   border-radius: 14px;
   border: 1px dashed rgba(100, 186, 255, 0.26);
   padding: 12px 14px;
