@@ -1,13 +1,10 @@
 import { douyinAvatarMap } from '@/data/douyinAvatarMap';
 import { industryAvatarSprites } from '@/data/industryAvatarSprites';
 import { INDUSTRY_OPTIONS } from '@/data/industryOptions';
-import { industrySamples } from '@/data/industrySamples';
 import industryProfiles from '@/data/industryTalentProfiles.json';
-import { nodeSamples } from '@/data/nodeSamples';
-import { fetchFullSheet, fetchIndustryDownload } from '@/lib/feishuFullSheet';
+import { clearPublicSheetCache, fetchPublicSheet } from '@/lib/publicSheet';
 import { shuffleNodeRows } from '@/lib/shuffleNodeRows';
 import { downloadRowsTable } from '@/lib/tableCsv';
-import { useFeishuSheetRange } from '@aeolus/feishu-table-sdk';
 import {
   ArrowUpRight,
   BookOpen,
@@ -28,7 +25,6 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { FeaturedTalentSidebarEntry } from './AgencyBookletRail';
 import { AgencyModule } from './AgencyModule';
 import { BookletModule } from './BookletModule';
-import { DataApplicationProvider } from './DataApplicationProvider';
 import { FeaturedTalentIntro } from './FeaturedTalentIntro';
 import { IpCampaignModule } from './IpCampaignModule';
 import { P0AuthorsModule } from './P0AuthorsModule';
@@ -287,35 +283,54 @@ function LiveTalentModule({
   selected: string;
   onSelect: (id: string) => void;
 }) {
-  const previewSample =
-    typeof window !== 'undefined' &&
-    new URLSearchParams(window.location.search).get('preview') === 'sample';
-  const [query, setQuery] = useState(() =>
-    previewSample
-      ? new URLSearchParams(window.location.search).get('q') || ''
-      : '',
-  );
+  const [query, setQuery] = useState('');
+  const [reloadToken, setReloadToken] = useState(0);
   const [downloading, setDownloading] = useState(false);
   const [downloadNotice, setDownloadNotice] = useState('');
+  const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [fullData, setFullData] = useState<{
+    headers: string[];
+    rows: unknown[][];
+    capturedAt?: string;
+  } | null>(null);
   const current = options.find(item => item.id === selected) ?? options[0];
   const isNode = mode === 'node';
   const sourceUrl = `${isNode ? NODE_URL : INDUSTRY_URL}?sheet=${current.sheetId}`;
-  const sheet = useFeishuSheetRange({
-    bindingId: current.id,
-    range: isNode ? 'A1:AN101' : 'A1:AC101',
-  });
-  const sample = isNode ? nodeSamples[current.id] : industrySamples[current.id];
-  const shouldUseSample =
-    sample && (previewSample || (!sheet.data && sheet.status === 'error'));
-  const values = shouldUseSample
-    ? [sample.headers, ...sample.rows]
-    : sheet.data?.rawValues;
-  const hasRenderableData = Boolean(values?.length);
-  const headers = useMemo(() => (values?.[0] ?? []).map(text), [values]);
+
+  useEffect(() => {
+    let active = true;
+    setLoading(true);
+    setLoadError(null);
+    setDownloadNotice('');
+    clearPublicSheetCache(current.id);
+    fetchPublicSheet(current.id)
+      .then(result => {
+        if (!active) return;
+        setFullData({
+          headers: result.headers.map(text),
+          rows: result.rows,
+          capturedAt: result.capturedAt,
+        });
+      })
+      .catch(error => {
+        if (!active) return;
+        console.error(error);
+        setLoadError('当前分组数据加载失败，请稍后重试。');
+      })
+      .finally(() => {
+        if (active) setLoading(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, [current.id, reloadToken]);
+
   const [shuffleSeed] = useState(() => Math.floor(Math.random() * 4294967296));
   const [previousFirst] = useState(() => previousNodeFirst?.current ?? null);
+  const headers = fullData?.headers ?? [];
   const rows = useMemo(() => {
-    const sourceRows = (values?.slice(1) ?? []) as unknown[][];
+    const sourceRows = fullData?.rows ?? [];
     if (!isNode) return sourceRows;
     const idIndex = headers.indexOf('达人星图id');
     return shuffleNodeRows(
@@ -324,12 +339,7 @@ function LiveTalentModule({
       row => text(row[idIndex]),
       previousFirst,
     );
-  }, [values, isNode, headers, shuffleSeed, previousFirst]);
-  useEffect(() => {
-    if (isNode && rows.length && previousNodeFirst) {
-      previousNodeFirst.current = text(rows[0][headers.indexOf('达人星图id')]);
-    }
-  }, [isNode, rows, headers, previousNodeFirst]);
+  }, [fullData?.rows, isNode, headers, shuffleSeed, previousFirst]);
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
     if (!needle) return rows;
@@ -337,48 +347,33 @@ function LiveTalentModule({
       row.some(value => text(value).toLowerCase().includes(needle)),
     );
   }, [query, rows]);
+  const hasBaseData = headers.length > 0 && rows.length > 0;
 
   const handleDownload = async () => {
     const safeLabel = current.label.replace(/[\\/:*?"<>|]/g, '_');
     const modulePrefix = isNode ? '节点' : '行业';
-    // 节点维持当前已载入数据导出；行业点击时实时拉取该分组飞书表全量数据。
-    if (isNode) {
-      downloadRowsTable(
-        `${modulePrefix}-${safeLabel}-${filtered.length}条.csv`,
-        headers,
-        filtered,
-      );
-      return;
-    }
-    if (downloading) return;
+    if (!fullData || downloading) return;
     setDownloading(true);
     setDownloadNotice('');
     try {
-      const full = isNode
-        ? await fetchFullSheet(current.id, 'AN', current.count)
-        : await fetchIndustryDownload(current.id, current.count);
       const needle = query.trim().toLowerCase();
       const exportRows = needle
-        ? full.rows.filter(row =>
+        ? fullData.rows.filter(row =>
             row.some(value => text(value).toLowerCase().includes(needle)),
           )
-        : full.rows;
-      const snapshotDate = full.capturedAt?.slice(0, 10);
+        : fullData.rows;
+      const snapshotDate = fullData.capturedAt?.slice(0, 10);
       downloadRowsTable(
         `${modulePrefix}-${safeLabel}-${exportRows.length}条${snapshotDate ? `-源表快照${snapshotDate}` : ''}.csv`,
-        full.headers,
+        fullData.headers,
         exportRows,
       );
       setDownloadNotice(
-        `${current.label}：已生成 ${exportRows.length.toLocaleString()} 条下载数据${snapshotDate ? `（完整源表快照 ${snapshotDate}，非实时数据）` : '（实时源表）'}。`,
+        `${current.label}：已生成 ${exportRows.length.toLocaleString()} 条下载数据${snapshotDate ? `（完整源表快照 ${snapshotDate}）` : ''}。`,
       );
     } catch (error) {
-      // 全量要求下不导出半量文件，避免把当前载入的样本误当全量结果。
-      window.alert(
-        `全量数据拉取失败，未生成文件，请稍后重试。${
-          error instanceof Error ? `原因：${error.message}` : ''
-        }`,
-      );
+      console.error(error);
+      window.alert('表格生成失败，请稍后重试。');
     } finally {
       setDownloading(false);
     }
@@ -395,14 +390,14 @@ function LiveTalentModule({
           <h2>{isNode ? '节点精选达人' : '行业精选达人'}</h2>
           <p>
             {isNode
-              ? '按营销节点与行业推荐分，快速定位节点型达人供给。'
-              : '覆盖 11 个重点行业，汇总核心推荐达人与商业合作信息。'}
+              ? '对外公开版：按营销节点与行业规则汇总真实达人供给。'
+              : '对外公开版：覆盖 11 个重点行业，汇总真实达人与合作信息。'}
           </p>
         </div>
         <button
           type="button"
           className="table-download-btn"
-          disabled={!hasRenderableData || downloading}
+          disabled={!hasBaseData || downloading}
           onClick={handleDownload}
         >
           {downloading ? (
@@ -410,7 +405,7 @@ function LiveTalentModule({
           ) : (
             <Download size={15} />
           )}
-          {downloading ? '正在拉取全量数据…' : '点击下载表格'}
+          {downloading ? '正在生成表格…' : '点击下载表格'}
         </button>
       </div>
       {downloadNotice && <output>{downloadNotice}</output>}
@@ -451,50 +446,52 @@ function LiveTalentModule({
           <strong>{Math.min(filtered.length, DISPLAY_LIMIT)}</strong>
         </div>
         <button
-          onClick={() => sheet.reload()}
-          disabled={sheet.status === 'loading'}
+          onClick={() => setReloadToken(token => token + 1)}
+          disabled={loading}
+          type="button"
+          title="重新读取本地快照"
         >
-          <RefreshCw
-            size={15}
-            className={sheet.status === 'loading' ? 'spin' : ''}
-          />
-          刷新数据
+          <RefreshCw size={15} className={loading ? 'spin' : ''} />
+          重新读取
         </button>
       </div>
       {isNode && <ModuleBanner module="node" onNavigate={onNavigate} />}
       <div id={isNode ? 'module-content' : undefined}>
-        {(sheet.status === 'idle' ||
-          (sheet.status === 'loading' && !sheet.data)) && (
+        {loading && (
           <div className="card-grid">
             {['a', 'b', 'c', 'd', 'e', 'f'].map(id => (
               <div className="talent-card skeleton" key={id} />
             ))}
           </div>
         )}
-        {sheet.status === 'error' && !hasRenderableData && (
-          <FeishuErrorPanel error={sheet.error} sourceUrl={sourceUrl} />
+        {!loading && loadError && (
+          <div className="state-panel error-panel">{loadError}</div>
         )}
-        {hasRenderableData && (
+        {!loading && !loadError && !hasBaseData && (
+          <div className="state-panel error-panel">
+            当前分组暂无可展示数据，请切换分组或稍后重试。
+          </div>
+        )}
+        {!loading && !loadError && hasBaseData && (
           <>
             <div className="result-line">
               <span>
                 优先展示前 {DISPLAY_LIMIT} 位供给，当前匹配 {filtered.length} 位
               </span>
-              <span className="live-dot">
-                {shouldUseSample ? 'PREVIEW · 样本数据' : 'LIVE · 飞书同步'}
-              </span>
+              <span className="live-dot">PUBLIC · 本地快照</span>
             </div>
-            <div className="card-grid">
-              {filtered.slice(0, DISPLAY_LIMIT).map(row => (
-                <TalentCard
-                  key={`${current.id}-${text(row[headers.indexOf('达人星图id')])}`}
-                  row={row}
-                  headers={headers}
-                  mode={mode}
-                />
-              ))}
-            </div>
-            {filtered.length === 0 && (
+            {filtered.length > 0 ? (
+              <div className="card-grid">
+                {filtered.slice(0, DISPLAY_LIMIT).map(row => (
+                  <TalentCard
+                    key={`${current.id}-${text(row[headers.indexOf('达人星图id')])}`}
+                    row={row}
+                    headers={headers}
+                    mode={mode}
+                  />
+                ))}
+              </div>
+            ) : (
               <div className="state-panel">
                 没有找到匹配的达人，换个关键词试试。
               </div>
@@ -668,9 +665,5 @@ function App() {
 }
 
 export function TalentSupplyApp() {
-  return (
-    <DataApplicationProvider>
-      <App />
-    </DataApplicationProvider>
-  );
+  return <App />;
 }
