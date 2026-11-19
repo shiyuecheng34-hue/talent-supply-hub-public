@@ -7,6 +7,7 @@
     "setup": "pnpm run reset && pnpm install",
     "dev": "edenx dev",
     "build": "edenx build",
+    "build:github-pages": "pnpm run build && python3 scripts/prepare_dist.py && python3 scripts/prepare_github_pages.py",
     "start": "edenx start",
     "serve": "edenx serve",
     "new": "edenx new",

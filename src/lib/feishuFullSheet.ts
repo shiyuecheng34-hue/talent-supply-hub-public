@@ -199,7 +199,7 @@ export async function fetchIndustryDownload(
     if (!/^industry-[a-z]+$/.test(bindingId)) {
       throw new Error('未知行业下载分组');
     }
-    const response = await fetch(`/downloads/${bindingId}.data`);
+    const response = await fetch(`./downloads/${bindingId}.data`);
     if (!response.ok) throw new Error('完整源表快照读取失败');
     const data = (await response.json()) as FullSheetResult;
     if (

@@ -22,20 +22,22 @@ export function fetchPublicSheet(
 ): Promise<PublicSheetResult> {
   const cached = cache.get(bindingId);
   if (cached) return cached;
-  const request = fetch(`/downloads/${bindingId}.data`).then(async response => {
-    if (!response.ok) {
-      throw new Error(`快照读取失败（HTTP ${response.status}）`);
-    }
-    const data = (await response.json()) as PublicSheetResult;
-    if (
-      !Array.isArray(data.headers) ||
-      !data.headers.length ||
-      !Array.isArray(data.rows)
-    ) {
-      throw new Error('快照结构无效');
-    }
-    return data;
-  });
+  const request = fetch(`./downloads/${bindingId}.data`).then(
+    async response => {
+      if (!response.ok) {
+        throw new Error(`快照读取失败（HTTP ${response.status}）`);
+      }
+      const data = (await response.json()) as PublicSheetResult;
+      if (
+        !Array.isArray(data.headers) ||
+        !data.headers.length ||
+        !Array.isArray(data.rows)
+      ) {
+        throw new Error('快照结构无效');
+      }
+      return data;
+    },
+  );
   cache.set(bindingId, request);
   return request;
 }
