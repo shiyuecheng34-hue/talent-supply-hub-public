@@ -34,7 +34,7 @@ const TEAMS: TeamSpec[] = [
   },
   {
     name: '2026巨量星图「新年焕新达人团」',
-    statusLabel: '敬请期待',
+    statusLabel: 'NEW',
     docUrl: 'https://bytedance.larkoffice.com/wiki/YWIBw2B1PiujDFkjE7mc3gIgnYf',
     coverImage: newYearTeamHero,
     coverAlt:
