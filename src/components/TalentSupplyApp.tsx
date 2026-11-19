@@ -4,7 +4,7 @@ import { INDUSTRY_OPTIONS } from '@/data/industryOptions';
 import { industrySamples } from '@/data/industrySamples';
 import industryProfiles from '@/data/industryTalentProfiles.json';
 import { nodeSamples } from '@/data/nodeSamples';
-import { fetchIndustryDownload } from '@/lib/feishuFullSheet';
+import { fetchFullSheet, fetchIndustryDownload } from '@/lib/feishuFullSheet';
 import { shuffleNodeRows } from '@/lib/shuffleNodeRows';
 import { downloadRowsTable } from '@/lib/tableCsv';
 import { useFeishuSheetRange } from '@aeolus/feishu-table-sdk';
@@ -354,7 +354,9 @@ function LiveTalentModule({
     setDownloading(true);
     setDownloadNotice('');
     try {
-      const full = await fetchIndustryDownload(current.id, current.count);
+      const full = isNode
+        ? await fetchFullSheet(current.id, 'AN', current.count)
+        : await fetchIndustryDownload(current.id, current.count);
       const needle = query.trim().toLowerCase();
       const exportRows = needle
         ? full.rows.filter(row =>

@@ -11,6 +11,45 @@ const GLUE_ENDPOINT =
 /** 单次拉取行数，分段串行请求，避免单次响应过大或网关超时。 */
 const PAGE_SIZE = 5000;
 
+const FORBIDDEN_INDUSTRY_DOWNLOAD_HEADERS = new Set([
+  '推荐优先级',
+  '是否补充推荐',
+  '星图作者一级分类(T-3标签)',
+  '星图作者二级分类(T-3标签)',
+]);
+
+function normalizeHeader(value: JsonValue): string {
+  return value === null || value === undefined ? '' : String(value).trim();
+}
+
+function stripForbiddenIndustryColumns(
+  result: FullSheetResult,
+): FullSheetResult {
+  if (!Array.isArray(result.headers) || result.headers.length === 0)
+    return result;
+  const indices: number[] = [];
+  result.headers.forEach((value, index) => {
+    const normalized = normalizeHeader(value);
+    if (!FORBIDDEN_INDUSTRY_DOWNLOAD_HEADERS.has(normalized)) {
+      indices.push(index);
+    }
+  });
+  if (indices.length === result.headers.length) return result;
+  return {
+    ...result,
+    headers: indices.map(index => result.headers[index] as JsonValue),
+    rows: result.rows.map(row =>
+      indices.map(index => (row[index] ?? null) as JsonValue),
+    ),
+  };
+}
+
+function hasForbiddenIndustryHeader(headers: readonly JsonValue[]): boolean {
+  return headers.some(value =>
+    FORBIDDEN_INDUSTRY_DOWNLOAD_HEADERS.has(normalizeHeader(value)),
+  );
+}
+
 /** 与 SDK 内部逻辑保持一致：从 URL query 读取运行时鉴权信息。 */
 function getRuntimeAuthHeaders(): Record<string, string> {
   if (typeof window === 'undefined') return {};
@@ -145,12 +184,16 @@ export async function fetchIndustryDownload(
   const controller = new AbortController();
   const timer = window.setTimeout(() => controller.abort(), 30_000);
   try {
-    return await fetchFullSheet(
+    const live = await fetchFullSheet(
       bindingId,
       'AC',
       expectedRows,
       controller.signal,
     );
+    if (/^industry-[a-z]+$/.test(bindingId)) {
+      return stripForbiddenIndustryColumns(live);
+    }
+    return live;
   } catch (liveError) {
     console.warn('实时全量读取不可用，尝试完整源表快照', liveError);
     if (!/^industry-[a-z]+$/.test(bindingId)) {
@@ -163,11 +206,14 @@ export async function fetchIndustryDownload(
       data.source !== 'snapshot' ||
       !data.capturedAt ||
       !Array.isArray(data.headers) ||
-      data.headers.length !== 29 ||
       !Array.isArray(data.rows) ||
-      data.rows.length !== expectedRows
+      data.rows.length !== expectedRows ||
+      data.headers.length === 0
     ) {
       throw new Error('完整源表快照校验失败，未生成文件');
+    }
+    if (hasForbiddenIndustryHeader(data.headers)) {
+      throw new Error('完整源表快照校验失败，包含不可下载字段');
     }
     return data;
   } finally {
