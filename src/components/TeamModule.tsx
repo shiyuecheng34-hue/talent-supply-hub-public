@@ -1,4 +1,5 @@
 import { ArrowUpRight, BookOpen, UsersRound } from 'lucide-react';
+import autoTeamHero from '../assets/team-auto-cover.png';
 import newYearTeamHero from '../assets/team-newyear-cover.png';
 import potentialTeamHero from '../assets/team-potential-cover.png';
 
@@ -15,6 +16,22 @@ type TeamSpec = {
 };
 
 const TEAMS: TeamSpec[] = [
+  {
+    name: '2026巨量星图「驭见星途·汽车达人团」',
+    statusLabel: 'NEW',
+    docUrl: 'https://bytedance.larkoffice.com/wiki/QsFuwyUM0ir9pykeJ8FcN5Vrnje',
+    coverImage: autoTeamHero,
+    coverAlt:
+      '2026巨量星图「驭见星途·汽车达人团」飞书文档封面图：汽车达人团主视觉',
+    docSummary: {
+      subtitle: '已发布资料：项目总览',
+      bullets: [
+        '达人结构：专业汽车 / 女性视角 / 生活方式三类核心达人',
+        '适配方向：新能源 / 燃油车 / 豪华车，并延展至旅行露营、宠物、亲子等生活方式场景',
+        '合作价值：场景化内容定制 + 品效指标闭环，覆盖购车决策到生活表达',
+      ],
+    },
+  },
   {
     name: '2026巨量星图「潜力宝藏达人团」',
     statusLabel: 'NEW',
@@ -52,7 +69,6 @@ const TEAMS: TeamSpec[] = [
   { name: '2026巨量星图「优质参数研究院」', statusLabel: '敬请期待' },
   { name: '2026巨量星图达人团【真实家庭实验】', statusLabel: '敬请期待' },
   { name: '2026巨量星图「种收有道·短直达人团」', statusLabel: '敬请期待' },
-  { name: '2026巨量星图「驭见星途·汽车达人团」', statusLabel: '敬请期待' },
   { name: '2026巨量星图「剧情达人团」', statusLabel: '敬请期待' },
   { name: '2026巨量星图「旅行科普」达人团', statusLabel: '敬请期待' },
   { name: '目2026巨量星图服饰行业「创意营销」达人团', statusLabel: '敬请期待' },
@@ -75,8 +91,8 @@ export function TeamModule() {
           <span className="eyebrow">MODULE · 04</span>
           <h2>达人团供给</h2>
           <p>
-            共 13 个达人团，潜力宝藏达人团标注
-            NEW，其余保持「敬请期待」状态；已补充的资料将提供文档入口。
+            共 13 个达人团，已上线资料的达人团标注
+            NEW，并提供文档入口；其余保持「敬请期待」状态。
           </p>
         </div>
       </div>
