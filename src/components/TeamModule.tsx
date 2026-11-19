@@ -1,4 +1,5 @@
 import { ArrowUpRight, BookOpen, UsersRound } from 'lucide-react';
+import newYearTeamHero from '../assets/team-newyear-cover.png';
 import potentialTeamHero from '../assets/team-potential-cover.png';
 
 type TeamSpec = {
@@ -31,7 +32,22 @@ const TEAMS: TeamSpec[] = [
       ],
     },
   },
-  { name: '2026巨量图「新年焕新达人团」', statusLabel: '敬请期待' },
+  {
+    name: '2026巨量星图「新年焕新达人团」',
+    statusLabel: '敬请期待',
+    docUrl: 'https://bytedance.larkoffice.com/wiki/YWIBw2B1PiujDFkjE7mc3gIgnYf',
+    coverImage: newYearTeamHero,
+    coverAlt:
+      '2026巨量星图「新年焕新达人团」飞书文档封面图：新年焕新达人团主视觉',
+    docSummary: {
+      subtitle: '已发布资料：项目总览',
+      bullets: [
+        '营销节点：2026年12月–2027年2月（双旦 & CNY）',
+        '六大方向：家庭焕新 / 悦己焕新 / 礼赠焕新 / 专业测评 / 生活实测 / 采购清单',
+        '合作链路：创造需求 → 辅助决策 → 承接购买',
+      ],
+    },
+  },
   { name: '2026巨量星图「年度好物决策团」', statusLabel: '敬请期待' },
   { name: '2026巨量星图「优质参数研究院」', statusLabel: '敬请期待' },
   { name: '2026巨量星图达人团【真实家庭实验】', statusLabel: '敬请期待' },
